@@ -1,0 +1,28 @@
+#### **Real-Time Applications developed by Python Programming**
+
+- **Web Applications**
+  - Java Language: Servlets, JSP, Spring, Hibernate etc..,(SUN, MS-Oracle).
+  - C#.net Language: ASAP.net
+  - Python Lnaguage: Django, Bottleneck, Pyramid etc..,
+- **Gaming Applications**
+- **Artificial Intelligence Applications(ML, DL)**
+- **Desktop Applications(GUI Applications) Look & Feel**
+- **Image Processing Applications**
+- **Text Processing Applications**
+- **Business Applications development(B.Apps)**
+- **Audio and Video based Applications**
+- **Web Scrapping/Harvesting Applications**
+- **Data Visualization and Complex Math Calculations**
+- **Scientific Applications(NASA, FB)**
+- **Software Development**
+- **Operating System Installers**
+- **CAD and CAM Based Applications(Computer-Aided Manufacturing & Design)**
+- **Embedded Applications**
+- **IOT Based Applications**
+- **Console Based Applications**
+- **Automation of Testing**
+- **Animation Based Applications**
+- **Data Analysis and Data Analytics Applications**
+- **Computer Vision**
+- **Education Programmes**
+- **etc......,**
