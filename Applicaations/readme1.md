@@ -26,3 +26,12 @@
 - **Computer Vision**
 - **Education Programmes**
 - **etc......,**
+  
+#### **History of Python**
+- Python Programming Language concevied (foundation stone) in the year 1980.
+- Python Programming Language implementation was began in the year 1989.
+- Python Programming Language officially released in the year 1991 Feb.
+- Python Programming Language developed by **Guido Van Rossum** (Father of Python).
+- Python Programming Language developed at CWI (Centrum Winkunde Informatica) institute in Netherlands.
+- Python Programming Language managed and maintained by a Non-Commercial Organization called **Python Software Foundation(PSF).**
+- The official website of python software foundation(PSF) is www.python.org
