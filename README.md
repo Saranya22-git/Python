@@ -84,6 +84,7 @@ Hey everybody!!!
    
 3. **Platform and Independent Language**
    *All datatypes tke same memory space on different OS's*
+
 4. **Dynamically Typed**
    *In IT we have 2 types of programming languages. They are*
    1. Static Typed Programming Languages
@@ -98,6 +99,7 @@ Hey everybody!!!
    **Example:** >>>a=10
                 >>>print(a,type(a)) 10 <class 'int'>
    **Example Languages:** Python
+   
 5. **Interpreted Programming Language**
 6. **High Level Language**
 7. **Robust**
