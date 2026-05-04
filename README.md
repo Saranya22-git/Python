@@ -87,6 +87,7 @@ Hey everybody!!!
 
 4. **Dynamically Typed**
    *In IT we have 2 types of programming languages. They are*
+   
    1. Static Typed Programming Languages
    2. Dynamically Typed Programming Languages
    **Static Typed Programming Languages:** *In Static Typed Programming Languages it is mandatory to specify variable declaration for storing inputs in main memory of computer.
