@@ -73,7 +73,7 @@ Hey everybody!!!
    - *Grabage collector is one of the in-built python program in Python software and it is running behind of regular python program and whose role is collects un-used memory space and improves the performance of Python Based Applications.*
    - *Hence Garbage collector takes about Automatic Memory management.*
   
-  **Factor-3:** *Python Programming Language provides user-friendly syntaxes and makes the programmer to develop error-free programs within Limited Span of time.*
+   **Factor-3:** *Python Programming Language provides user-friendly syntaxes and makes the programmer to develop error-free programs within Limited Span of time.*
 
 2. **Freeware and Opensource:**
    
