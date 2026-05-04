@@ -98,7 +98,7 @@ Hey everybody!!!
    1. Static Typed Programming Languages
    2. Dynamically Typed Programming Languages
    
-   **Static Typed Programming Languages:** *In Static Typed Programming Languages it is mandatory to specify variable declaration for storing inputs in main memory of computer.
+   **Static Typed Programming Languages:** *In Static Typed Programming Languages it is mandatory to specify variable declaration for storing inputs in main memory of computer.*
 
    **Example:** int x,y,z;
                 x=10
@@ -114,7 +114,7 @@ Hey everybody!!!
    >>>a=10
    >>>print(a,type(a)) 10 <class 'int'>
    ```
-   
+
    **Example Languages:** Python
    
 5. **Interpreted Programming Language**
