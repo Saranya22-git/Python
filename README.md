@@ -11,7 +11,7 @@ Hey everybody!!!
 
 #### **Real-Time Applications developed by Python Programming**
 
-- **Web Applications**
+*- **Web Applications**
   - Java Language: Servlets, JSP, Spring, Hibernate etc..,(SUN, MS-Oracle).
   - C#.net Language: ASAP.net
   - Python Lnaguage: Django, Bottleneck, Pyramid etc..,
@@ -36,7 +36,7 @@ Hey everybody!!!
 - **Data Analysis and Data Analytics Applications**
 - **Computer Vision**
 - **Education Programmes**
-- **etc......,**
+- **etc......,***
   
 #### **History of Python**
 - Python Programming Language concevied (foundation stone) in the year 1980.
