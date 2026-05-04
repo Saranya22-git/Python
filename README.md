@@ -90,10 +90,10 @@ Hey everybody!!!
         5. **ANACONDA PYTHON:** *Used to run big data/Hadoop based applications.*
         6. **STACKLESS PYTHON:** *Used for concurrency applications etc..,*
    
-3. **Platform and Independent Language**
-   *All datatypes tke same memory space on different OS's*
+3. **Platform and Independent Language:**
+   *All datatypes take same memory space on different OS's*
 
-4. **Dynamically Typed**
+4. **Dynamically Typed:**
    *In IT we have 2 types of programming languages. They are*
    1. Static Typed Programming Languages
    2. Dynamically Typed Programming Languages
