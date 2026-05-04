@@ -76,7 +76,9 @@ Hey everybody!!!
   **Factor-3:** *Python Programming Language provides user-friendly syntaxes and makes the programmer to develop error-free programs within Limited Span of time.*
 
 2. **Freeware and Opensource**
+   
    **Freeware:** *If any software downloaded freely and that software comes under freeware. **Example:** Python, JAVA*
+   
    **Opensource:** 
    - *The Standard name of Python Software is "CPYTHON".*
    - *Many software companies came forward and customized CPYTHON and developed their own in-house tools.*
