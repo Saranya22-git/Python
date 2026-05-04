@@ -99,18 +99,22 @@ Hey everybody!!!
    2. Dynamically Typed Programming Languages
    
    **Static Typed Programming Languages:** *In Static Typed Programming Languages it is mandatory to specify variable declaration for storing inputs in main memory of computer.
+
    **Example:** int x,y,z;
                 x=10
                 y=8
                 z=x=y*
+
    **Example Languages:** Java, C, C#.net, etc.,
 
    **Dynamically Typed Programming Languages:** *In Dynamically Typed Programming Languages depends on type of value we are assigning, whose data type automatically/implicitly assigned by python execution environment. There is no need to write variable declaration in Dynamically Typed Programming Languages*
+
    **Example:** 
    ```python
    >>>a=10
    >>>print(a,type(a)) 10 <class 'int'>
    ```
+   
    **Example Languages:** Python
    
 5. **Interpreted Programming Language**
