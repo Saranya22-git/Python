@@ -14,7 +14,7 @@ Hey everybody!!!
 - **Web Applications**
   - Java Language: Servlets, JSP, Spring, Hibernate etc..,(SUN, MS-Oracle).
   - C#.net Language: ASAP.net
-  - Python Lnaguage: Django, Bottleneck, Pyramid etc..,
+  - Python Language: Django, Bottleneck, Pyramid etc..,
 - **Gaming Applications**
 - **Artificial Intelligence Applications(ML, DL)**
 - **Desktop Applications(GUI Applications) Look & Feel**
@@ -53,6 +53,7 @@ Hey everybody!!!
 *Python Programming Language contains **3 types of versions**. They are*
 1. **Python 1.x(outdated)** - *Here 1 is called major version. Here x represents 0 1 2 3 4 5 6 7 etc..., called Minor Version.*
 2. **Python 2.x(outdated)** - *Python 2.x does not support Backward Compatability.*
+   ***Backward Compatability** means New Versions of Software can still work with stuff made for older versions.*
 3. **Python 3.x** - Here 3 is called Major Version. Here x represents 0 1 2 3 4 5 6 7 8 9 (7, 8, 9 are secured) 10 11(10,11 are bug fix) 12(Future release)
 
 #### **Features of Python**
@@ -61,12 +62,17 @@ Hey everybody!!!
 
 1. **Simple**
    *Python is one of the simple programming language because of 3 important technical factors. They are*
+
    **Factor-1:** *Python Programming provides "Rich set of modules(libraries)". So that python programmers are Re-using the predefined code without writing our own code.*
+
    **Definition of Module:** *A module is a collection of functions, attributes and class names. Examples are Calendar, math, random, threading, qrcode etc..,*
+
    **Factor-2:** *Python Programming provides in-built(already present) garbage collection facility by executing garbage collector program. So that garbage collector collects un-used memory space and improves the performance of python based applications.*
+
    **Definition of Garbage Collector:** 
    - *Grabage collector is one of the in-built python program in Python software and it is running behind of regular python program and whose role is collects un-used memory space and improves the performance of Python Based Applications.*
    - *Hence Garbage collector takes about Automatic Memory management.*
+  
   **Factor-3:** *Python Programming Language provides user-friendly syntaxes and makes the programmer to develop error-free programs within Limited Span of time.*
 
 2. **Freeware and Opensource**
