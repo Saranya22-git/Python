@@ -188,6 +188,8 @@ Hey everybody!!!
   - *Keep projects isolated.*
   - **Example:** python -m venv myenv
   
+  **Definition of PVM:** *PVM stands for Python Virtual Environment. PVM is one program in Python Software and whose role is to read LINE by LINE of Byte code and convereted into Machine Understandable code(Executable or Binary code).*
+  
 6. **High Level Language**
 7. **Robust**
 8. **Both functional(Procedure) and Object Oriented Programming Language(OOPs)**
