@@ -118,6 +118,76 @@ Hey everybody!!!
    **Example Languages:** Python
    
 5. **Interpreted Programming Language**
+   
+   **Interpretation:** *Line by Line conversion of source into destination is called Interpretation.*
+
+   **Interpreter:** *Program performs interpretation process.*
+
+   **Compilation:** *All lines at once conversion is called Compilation.*
+
+   **Compiler:** *Program performs compilation process.*
+
+   **Python Programming Language Execution Environment**
+
+   **Execution Environment:** *It is the complete setup that runs your python code(including tools, memory, interpreter and system support).*
+
+   **Main Components of Python Execution Environment**
+
+   1. **Python Interpreter:** 
+   - *This is the engine of Python.*
+   - *It reads your .py file.*
+   - *Converts it into something the computer understands.*
+   - *Executes it line by line.*
+  
+  2. **Source code(.py file):**
+  ```python
+   print("Saranya")
+  ```
+
+  3. **Compilation to Bytecode:**
+   - *Python does a hidden step: Your code is converted into Bytecode.*
+   - *Stores as .pyc files(inside __pycache__)*
+   - *Not human readable.*
+   - *Platform independent.*
+  
+  4. **Python Virtual Machine(PVM):**
+   - *This is where actual execution happens.*
+   - *Takes bytecode.*
+   - *Executes instructions.*
+   - *Works like a mini CPU for Python.*
+   - *Python doesn't directly run your code on OS, it runs inside PVM.*
+  
+  **Execution Modes in Python:** *Python can run code in 2 main ways.*
+
+  1. **Interactive Mode:** *Python Shell*
+      - *You type commands - get output immediately.*
+      - *Used for Testing, Learning.*
+      - **Example:**
+         ```python
+         >>> 5+3
+         8
+         ```
+
+  2. **Script Mode:**
+      - *You write code in a file(file.py)*
+      - *Run it using: python file.py*
+      - *Used for real projects.*
+  
+  **Runtime Environment:** *The runtime environment includes:*
+  - **Memory Management:** *Python automatically allocates & frees memory.*
+  - **Garbage Collection:** *Removes unused objects.*
+  - **Variables & Objects:** *Everything in Python is an object.*
+  
+  **Libraries & Modules Environment:** *Python execution also depends on:*
+  - *Built-in libraries(math, sys)*
+  - *External packages.*
+  - **Example:** pip install numpy
+      
+  **Virtual Environment:** *A virtual environment is like a separate Python workspace.*
+  - *Avoid version conflicts.*
+  - *Keep projects isolated.*
+  - **Example:** python -m venv myenv
+  
 6. **High Level Language**
 7. **Robust**
 8. **Both functional(Procedure) and Object Oriented Programming Language(OOPs)**
