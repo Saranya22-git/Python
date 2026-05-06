@@ -191,8 +191,37 @@ Hey everybody!!!
   **Definition of PVM:** *PVM stands for Python Virtual Environment. PVM is one program in Python Software and whose role is to read LINE by LINE of Byte code and convereted into Machine Understandable code(Executable or Binary code).*
   
 6. **High Level Language**
-7. **Robust**
+   *In IT, we have 2 types of languages. They are:*
+   - *Low Level Programming Language*
+   - *High Level Programming Language*
+   **Low Level Programming Language:** *In Low Level Languages, data is always stored in the form of low level values such as Binary data, Octal data, Hexa decimal data. These number systems are not directly understandable by end-users.*
+
+   **High Level Programming Language:** *In these languages, internally even the programmer specifies the data in the form of low level format such binary data, octal data and hexa decimal data, automatically python programming language execution environment converts into high level data which is understandable by end-users. Hence python is one of the **High Level Programming Language.***
+
+7. **Robust** (Strong)
+   *Python is one of the Robust Programming Language because it provides "Exception handling" facility. If the python programmer uses exception handling then python based application becomes robust.*
+
+   **Definition of Exception:** 
+   - *All runtime errors are called Exception.*
+   - *By default, all programming language, when exception occurs then we get Technical Error Messages.*
+   - *In industry it is not recommended to generate technical error messages because these messages are not understandable by end-users.*
+   - *Industry is recommended to generate user-friendly error messages by using "Exception Handling".*
+  
+   **Definition of Exception Handling:**
+   - *The process of converting Technical error messages into user-friendly error messages is called Exception Handling.*
+
 8. **Both functional(Procedure) and Object Oriented Programming Language(OOPs)**
+   
 9.  **Extensible**
+    
+    - *A programming language is said to be "Extensible" if it is provides programming facilities to other languages.*
+    - **Example:** *Python programming provides it's programming facilities to C, C++, JAVA, etc.., and hence python is one of the extensible programming language.*
+
 10. **Embedded**
+    - *A programming language is said to be embedded if it takes the programming services of other languages.*
+    - **Example:** *Python programming embedded the programming services of C because C is the faster programming language.*
+  
 11. **Supports third APIs such as NumPy, Pandas, SciPy, Scikit, Matplotlib, Seaborn etc..,**
+    - *First party - Modules*
+    - *Second party - OS*
+    - *Third party - Numpy(Travis), Pandas(MC Kinney)*
