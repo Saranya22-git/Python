@@ -8,13 +8,14 @@ Hey everybody!!!
 - [**History of Python**](#history-of-python)
 - [**Versions of Python**](#versions-of-python)
 - [**Features of Python**](#features-of-python)
+- [**Importance of Identifiers or Variables:**](#importance-of-identifiers-or-variables)
 
 #### **Real-Time Applications developed by Python Programming**
 
 - **Web Applications**
   - Java Language: Servlets, JSP, Spring, Hibernate etc..,(SUN, MS-Oracle).
-  - C#.net Language: ASAP.net
-  - Python Language: Django, Bottleneck, Pyramid etc..,
+  - C#.net Language: ASP.NET
+  - Python Language: Django, Pyramid etc..,
 - **Gaming Applications**
 - **Artificial Intelligence Applications(ML, DL)**
 - **Desktop Applications(GUI Applications) Look & Feel**
@@ -42,7 +43,7 @@ Hey everybody!!!
 - Python Programming Language concevied (foundation stone) in the year 1980.
 - Python Programming Language implementation was began in the year 1989.
 - Python Programming Language officially released in the year 1991 Feb.
-- Python Programming Language developed by **Guido Van Rossum** (Father of Python).
+- Python Programming Language developed by **Guido van Rossum** (Father of Python).
 - Python Programming Language developed at CWI (Centrum Winkunde Informatica) institute in Netherlands.
 - Python Programming Language managed and maintained by a Non-Commercial Organization called **Python Software Foundation(PSF).**
 - The official website of python software foundation(PSF) is www.python.org
@@ -103,7 +104,7 @@ Hey everybody!!!
    **Example:** int x,y,z;
                 x=10
                 y=8
-                z=x=y*
+                z=x+y
 
    **Example Languages:** Java, C, C#.net, etc.,
 
@@ -188,7 +189,7 @@ Hey everybody!!!
   - *Keep projects isolated.*
   - **Example:** python -m venv myenv
   
-  **Definition of PVM:** *PVM stands for Python Virtual Environment. PVM is one program in Python Software and whose role is to read LINE by LINE of Byte code and convereted into Machine Understandable code(Executable or Binary code).*
+  **Definition of PVM:** *PVM stands for Python Virtual Machine. PVM reads bytecode line by line and converts it into machine-understandable instructions.*
   
 6. **High Level Language**
    *In IT, we have 2 types of languages. They are:*
@@ -225,3 +226,17 @@ Hey everybody!!!
     - *First party - Modules*
     - *Second party - OS*
     - *Third party - Numpy(Travis), Pandas(MC Kinney)*
+  
+#### **Importance of Identifiers or Variables:**
+**What is an Identifier?**
+*An identifier is the name used to identify:*
+- *Variables*
+- *Functions*
+- *Classes*
+- *Objects*
+- *Modules*
+**Example:**
+```python
+  student_name="Saranya"
+```
+*Here student_name is Identifier and "Saranya" is Value.*
