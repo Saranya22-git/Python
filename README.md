@@ -240,3 +240,11 @@ Hey everybody!!!
   student_name="Saranya"
 ```
 *Here student_name is Identifier and "Saranya" is Value.*
+
+**What is Variable?**
+*A Variable is a memory container used to store data temporarily during program execution.*
+**Example:**
+```python
+ age=20
+```
+*Here age is Variable name(Identifier) and 20 is Value stored in memory.*
