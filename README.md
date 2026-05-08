@@ -9,6 +9,14 @@ Hey everybody!!!
 - [**Versions of Python**](#versions-of-python)
 - [**Features of Python**](#features-of-python)
 - [**Importance of Identifiers or Variables:**](#importance-of-identifiers-or-variables)
+- [**Rules for Identifiers/Variables in Python Programming:**](#rules-for-identifiersvariables-in-python-programming)
+- [**Data Types in Python**](#data-types-in-python)
+  - [**Fundamental Category data type**](#fundamental-category-data-type)
+  - [**Sequence Category data type**](#sequence-category-data-type)
+  - [**List Category data type**](#list-category-data-type)
+  - [**Set Category data type**](#set-category-data-type)
+  - [**Dict Category data type**](#dict-category-data-type)
+  - [**None Category data type**](#none-category-data-type)
 
 #### **Real-Time Applications developed by Python Programming**
 
@@ -257,3 +265,54 @@ Hey everybody!!!
 - *Manipulate data*
 - *Make programs dynamic*
 *Without Variables, programming is almost impossible.*
+
+#### **Rules for Identifiers/Variables in Python Programming:**
+- **RULE-1:** *The Variable name is a combination of Alphabets, Digits and Special Symbol Underscore(_) only.*
+- **RULE-2:** *The first letter of Variable must starts with either Alphabet or Underscore(_) only.*
+  **Example:** 
+  ```python
+   >>> sal=34        # Valid
+   >>> sal__=34      # Valid
+   >>> 123sal=345    # Invalid
+   >>> sal1=34       # Valid
+   >>> &sal=34       # Invalid
+   >>> _sal=34       # Valid
+   >>> __=89         # Valid
+  ```
+- **RULE-3:** *Within the variable name, special symbols are not allowed except underscore(_).*
+  **Example:**
+  ```python
+   >>> emp_sal=9000  # Valid
+   >>> emp%sal=6789  # Invalid
+   >>> emp sal=9789  # Invalid
+  ```
+- **RULE-4:** *We should not use Keywords as Variable names because Keywords are reserved words and they have contains some special meaning to the language compiler.*
+  **Example:**
+  ```python
+  >>> if=937   # Invalid
+  >>> _if=898  # Valid
+  ```
+- **RULE-5:** *All the variable names are case-sensitive.*
+  **Example:**
+  ```python
+  >>> AGE=90
+  >>> age=90
+  ```
+  *Both are different variables.*
+
+#### **Data Types in Python**
+- *The purpose of data types in python is that **"To allocate sufficient amount of memory space in main memory of computer and inputs can stored."***
+- *Python programming provides 14 data types and classified into 6 categories. They are*
+  - *Fundamental Category data type*
+  - *Sequence Category data type*
+  - *List Category data type*
+  - *Set Category data type*
+  - *Dict Category data type*
+  - *None Category data type*
+  
+##### **Fundamental Category data type**
+##### **Sequence Category data type**
+##### **List Category data type**
+##### **Set Category data type**
+##### **Dict Category data type**
+##### **None Category data type**
