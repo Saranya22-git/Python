@@ -248,3 +248,12 @@ Hey everybody!!!
  age=20
 ```
 *Here age is Variable name(Identifier) and 20 is Value stored in memory.*
+
+**Importance:**
+*Variables and Identifiers are extremely important because they help programs:*
+- *Store data*
+- *Process data*
+- *Reuse data*
+- *Manipulate data*
+- *Make programs dynamic*
+*Without Variables, programming is almost impossible.*
