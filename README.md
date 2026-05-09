@@ -12,6 +12,7 @@ Hey everybody!!!
 - [**Rules for Identifiers/Variables in Python Programming:**](#rules-for-identifiersvariables-in-python-programming)
 - [**Data Types in Python**](#data-types-in-python)
   - [**Fundamental Category data type**](#fundamental-category-data-type)
+    - [**int**](#int)
   - [**Sequence Category data type**](#sequence-category-data-type)
   - [**List Category data type**](#list-category-data-type)
   - [**Set Category data type**](#set-category-data-type)
@@ -318,6 +319,10 @@ Hey everybody!!!
   3. bool
   4. complex
 
+###### **int**
+- *'int' is immutable type.*
+- *'int' is one of the pre defined class name and treated as fundamental data type.*
+- **
 ##### **Sequence Category data type**
 ##### **List Category data type**
 ##### **Set Category data type**
