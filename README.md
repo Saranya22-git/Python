@@ -323,6 +323,11 @@ Hey everybody!!!
 - *'int' is immutable type.*
 - *'int' is one of the pre defined class name and treated as fundamental data type.*
 - *The purpose of int data type is that "To store integer data or whole numbers or integral data(numbers without decimal places)".*
+**Example:**
+```python
+>>> a=123
+>>> print(a)        # 123
+```
 ##### **Sequence Category data type**
 ##### **List Category data type**
 ##### **Set Category data type**
