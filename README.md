@@ -311,6 +311,13 @@ Hey everybody!!!
   - *None Category data type*
   
 ##### **Fundamental Category data type**
+- *The purpose of fundamental category data types is that **"To store single values."***
+- *In python programming we have 4 data types in fundamental category. They are*
+  1. int
+  2. float
+  3. bool
+  4. complex
+
 ##### **Sequence Category data type**
 ##### **List Category data type**
 ##### **Set Category data type**
