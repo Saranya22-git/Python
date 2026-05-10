@@ -302,6 +302,7 @@ Hey everybody!!!
   *Both are different variables.*
 
 #### **Data Types in Python**
+- *Data types define the type of value a variable holds.*
 - *The purpose of data types in python is that **"To allocate sufficient amount of memory space in main memory of computer and inputs can stored."***
 - *Python programming provides 14 data types and classified into 6 categories. They are*
   - *Fundamental Category data type*
