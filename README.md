@@ -344,27 +344,26 @@ Hey everybody!!!
 >>> print(int, type(int))   # 34 <class 'int'>
 ```
 
-# %% [markdown]
-# Cached Integer - The actual cached number itself.
-#     Example: 34
-# 
-# Integer Caching - Python reuses small integers(-5 to 256).
-#     Example: a=34
-#              b=34
-# 
-# Object Referencing - Whenever a variable points to an object.
-#     Example: a=10
-#     Memory a->10
-# 
-# Reference Assignment - When one variable gets reference from another variable.
-#     Example: a=12345
-#              b=a
-#         
-# Separate Object Creation
-#     Example: a=12345
-#              b=12345
+**Cached Integer** - *The actual cached number itself.*
+**Example:** 34
 
-# %%
+**Integer Caching** - *Python reuses small integers(-5 to 256).*
+**Example:** a=34
+             b=34
+ 
+**Object Referencing** - *Whenever a variable points to an object.*
+**Example:** a=10
+             Memory a->10
+
+**Reference Assignment** - *When one variable gets reference from another variable.*
+**Example:** a=12345
+             b=a
+       
+**Separate Object Creation**
+**Example:** a=12345
+             b=12345
+
+```python
 # int
 # Integer Caching OR Small Integer Caching and also related to Object Interning
 
@@ -375,9 +374,8 @@ print(b,id(b))
 
 # Both variables point to SAME object.
 # This concept is called Integer Caching OR Small Integer Caching and also related to Object Interning.
+------------------------------------------------
 
-
-# %%
 # Object Referencing OR Reference Assignment
 
 c=34
@@ -420,6 +418,7 @@ a=True
 b=1
 print(a,id(a),type(a))
 print(b,id(b),type(b))
+```
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
