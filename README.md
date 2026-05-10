@@ -323,10 +323,24 @@ Hey everybody!!!
 - *'int' is immutable type.*
 - *'int' is one of the pre defined class name and treated as fundamental data type.*
 - *The purpose of int data type is that "To store integer data or whole numbers or integral data(numbers without decimal places)".*
+- *The range of int is -5 to 256. Only integers from -5 to 256 are always reused.*
+  
 **Example:**
 ```python
 >>> a=123
 >>> print(a)        # 123
+>>> type(a)         # <class 'int'>
+>>> id(a)           # 1407134318018
+>>> sno=4567        
+>>> print(sno, type(sno))   # 4567 <class 'int'>
+```
+
+**NOTE:** *One can use class names as variable names.*
+
+**Example:**
+```python
+>>> int=34                  # Here int is an object/variable
+>>> print(int, type(int))   # 34 <class 'int'>
 ```
 ##### **Sequence Category data type**
 ##### **List Category data type**
