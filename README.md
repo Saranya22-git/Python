@@ -325,7 +325,7 @@ Hey everybody!!!
 - *'int' is one of the pre defined class name and treated as fundamental data type.*
 - *The purpose of int data type is that "To store integer data or whole numbers or integral data(numbers without decimal places)".*
 - *The range of int is -5 to 256. Only integers from -5 to 256 are always reused.*
-  
+
 **Example:**
 ```python
 >>> a=123
@@ -343,6 +343,84 @@ Hey everybody!!!
 >>> int=34                  # Here int is an object/variable
 >>> print(int, type(int))   # 34 <class 'int'>
 ```
+
+# %% [markdown]
+# Cached Integer - The actual cached number itself.
+#     Example: 34
+# 
+# Integer Caching - Python reuses small integers(-5 to 256).
+#     Example: a=34
+#              b=34
+# 
+# Object Referencing - Whenever a variable points to an object.
+#     Example: a=10
+#     Memory a->10
+# 
+# Reference Assignment - When one variable gets reference from another variable.
+#     Example: a=12345
+#              b=a
+#         
+# Separate Object Creation
+#     Example: a=12345
+#              b=12345
+
+# %%
+# int
+# Integer Caching OR Small Integer Caching and also related to Object Interning
+
+a=34
+b=34
+print(a,id(a))
+print(b,id(b))
+
+# Both variables point to SAME object.
+# This concept is called Integer Caching OR Small Integer Caching and also related to Object Interning.
+
+
+# %%
+# Object Referencing OR Reference Assignment
+
+c=34
+d=c
+print(c,id(a))
+print(d,id(d))
+
+# This concept is called Object Referencing OR Reference Assignment because multiple variables reference same object.
+
+# %%
+a=12345
+b=a
+print(a,id(a))
+print(b,id(b))
+
+# %%
+# No Integer Caching OR Separate Object Creation 
+
+a=257
+b=257
+print(a,id(a))
+print(b,id(b))
+
+# This concept is called No Integer Caching OR Separate Object Creation and still Object Referencing.
+
+# %%
+a=12345
+b=12345
+print(a,id(a))
+print(b,id(b))
+
+# %%
+a=1
+b=True+False
+print(a,id(a),type(a))
+print(b,id(b),type(b))
+
+# %%
+a=True
+b=1
+print(a,id(a),type(a))
+print(b,id(b),type(b))
+
 ##### **Sequence Category data type**
 ##### **List Category data type**
 ##### **Set Category data type**
