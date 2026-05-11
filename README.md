@@ -374,7 +374,7 @@ print(b,id(b))
 
 # Both variables point to SAME object.
 # This concept is called Integer Caching OR Small Integer Caching and also related to Object Interning.
-------------------------------------------------
+
 
 # Object Referencing OR Reference Assignment
 
@@ -425,3 +425,8 @@ print(b,id(b),type(b))
 ##### **Set Category data type**
 ##### **Dict Category data type**
 ##### **None Category data type**
+
+
+```markdown
+This concept is called Integer Caching OR Small Integer Caching and also related to Object Interning.
+```
