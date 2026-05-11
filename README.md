@@ -3,7 +3,6 @@ Hey everybody!!!
 **PYTHON**
 
 #### **Table of Contents**
-- [*This concept is called Object Referencing OR Reference Assignment because multiple variables reference same object.*](#this-concept-is-called-object-referencing-or-reference-assignment-because-multiple-variables-reference-same-object)
 - [*This concept is called No Integer Caching OR Separate Object Creation and still Object Referencing.*](#this-concept-is-called-no-integer-caching-or-separate-object-creation-and-still-object-referencing)
       - [**Sequence Category data type**](#sequence-category-data-type)
       - [**List Category data type**](#list-category-data-type)
@@ -382,6 +381,7 @@ print(d,id(d))
 ```
 
 *This concept is called Object Referencing OR Reference Assignment because multiple variables reference same object.*
+
 ---
 
 ```python
