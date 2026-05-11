@@ -527,7 +527,7 @@ print(a)        # 100
      - **Base:** 8
    - *Base 8 literals are called Octal number system values.*
    - *In python programming to store octal data, Octal data must be preceded by letter either 0O or 0o.*
-   - *oct() is used converting any number system data into Binary number system type.*
+   - *oct() is used converting any number system data into Octal number system type.*
   
     ```python
      a=0o56
@@ -536,7 +536,14 @@ print(a)        # 100
      oct(89)                # '0o131'
     ```
 4. **Hexa decimal Number System:**
-   - **
+   - *Hexa decimal number system used in development OSes.*
+   - *This number system contains*
+     - **Digits:** 0 1 2 3 4 5 6 7 8 9 
+                   A(10) B(11) C(12) D(13) E(14) F(15) - Total=16
+     -  **Base:** 16
+   - *Base 16 literals are called Hexa decimal number system values.* 
+   - *In python programming to store hexa decimal data, Hexa decimal data must be preceded by letter either 0X or 0x.*
+   -  *hex() is used converting any number system data into Hexa decimal number system type.*
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
