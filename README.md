@@ -324,7 +324,7 @@ Hey everybody!!!
 - *'int' is immutable type.*
 - *'int' is one of the pre defined class name and treated as fundamental data type.*
 - *The purpose of int data type is that "To store integer data or whole numbers or integral data(numbers without decimal places)".*
-- *The range of int is -5 to 256. Only integers from -5 to 256 are always reused.*
+- *Python integers have unlimited size. Only integers from -5 to 256 are automatically cached and reused by Python.*
 
 **Example:**
 ```python
@@ -485,7 +485,7 @@ print(a)        # 100
 ```
 
 - *Old reference removed.*
-- *If no reference exist garbage collector cleans memory.*
+- *If no references exist, the garbage collector cleans memory.*
 
 ---
 
@@ -496,7 +496,7 @@ print(a)        # 100
 - *Decimal Number System*
 - *Binary Number System*
 - *Octal Number System*
-- *Hexa decimal Number System*
+- *Hexadecimal Number System*
 
 1. **Decimal Number System:** 
    - *Decimal number system is one of the default number system in programming language.*
@@ -520,6 +520,7 @@ print(a)        # 100
 
     bin(a)                  # '0b1010'
     ```
+
 3. **Octal Number System:**
    - *Octal number system is understandable by Micro processor kits-8086.*
    - *This number system contains*
@@ -535,16 +536,25 @@ print(a)        # 100
 
      oct(89)                # '0o131'
     ```
-4. **Hexa decimal Number System:**
-   - *Hexa decimal number system used in development OSes.*
+
+4. **Hexadecimal Number System:**
+   - *Hexadecimal number system used in development OSes.*
    - *This number system contains*
      - **Digits:** 0 1 2 3 4 5 6 7 8 9 
                    A(10) B(11) C(12) D(13) E(14) F(15) - Total=16
      -  **Base:** 16
-   - *Base 16 literals are called Hexa decimal number system values.* 
-   - *In python programming to store hexa decimal data, Hexa decimal data must be preceded by letter either 0X or 0x.*
-   -  *hex() is used converting any number system data into Hexa decimal number system type.*
+   - *Base 16 literals are called Hexadecimal number system values.* 
+   - *In python programming to store hexadecimal data, Hexa decimal data must be preceded by letter either 0X or 0x.*
+   -  *hex() is used converting any number system data into Hexadecimal number system type.*
+   
+   ```python
+   a=0x90
+   print(a,type(a))         # 144 <class 'int'>
 
+   hex(144)                 # '0x90'
+   ```
+###### **float**
+  
 ##### **Sequence Category data type**
 ##### **List Category data type**
 ##### **Set Category data type**
