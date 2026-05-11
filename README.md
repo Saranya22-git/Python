@@ -3,21 +3,13 @@ Hey everybody!!!
 **PYTHON**
 
 #### **Table of Contents**
-- [**Table of Contents**](#table-of-contents)
-- [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
-- [**History of Python**](#history-of-python)
-- [**Versions of Python**](#versions-of-python)
-- [**Features of Python**](#features-of-python)
-- [**Importance of Identifiers or Variables:**](#importance-of-identifiers-or-variables)
-- [**Rules for Identifiers/Variables in Python Programming:**](#rules-for-identifiersvariables-in-python-programming)
-- [**Data Types in Python**](#data-types-in-python)
-  - [**Fundamental Category data type**](#fundamental-category-data-type)
-    - [**int**](#int)
-  - [**Sequence Category data type**](#sequence-category-data-type)
-  - [**List Category data type**](#list-category-data-type)
-  - [**Set Category data type**](#set-category-data-type)
-  - [**Dict Category data type**](#dict-category-data-type)
-  - [**None Category data type**](#none-category-data-type)
+- [*This concept is called Object Referencing OR Reference Assignment because multiple variables reference same object.*](#this-concept-is-called-object-referencing-or-reference-assignment-because-multiple-variables-reference-same-object)
+- [*This concept is called No Integer Caching OR Separate Object Creation and still Object Referencing.*](#this-concept-is-called-no-integer-caching-or-separate-object-creation-and-still-object-referencing)
+      - [**Sequence Category data type**](#sequence-category-data-type)
+      - [**List Category data type**](#list-category-data-type)
+      - [**Set Category data type**](#set-category-data-type)
+      - [**Dict Category data type**](#dict-category-data-type)
+      - [**None Category data type**](#none-category-data-type)
 
 #### **Real-Time Applications developed by Python Programming**
 
@@ -363,22 +355,22 @@ Hey everybody!!!
 **Example:** a=12345
              b=12345
 
-```markdown
 
-int
-Integer Caching OR Small Integer Caching and also related to Object Interning
+**Integer Caching OR Small Integer Caching and also related to Object Interning**
 
+```python
 a=34
 b=34
 print(a,id(a))
 print(b,id(b))
+```
 
+- *Both variables point to SAME object.*
+- *This concept is called Integer Caching OR Small Integer Caching and also related to Object Interning.*
 
-Both variables point to SAME object.
-This concept is called Integer Caching OR Small Integer Caching and also related to Object Interning.
+---
 
-
-Object Referencing OR Reference Assignment
+**Object Referencing OR Reference Assignment**
 
 ```python
 c=34
@@ -387,7 +379,8 @@ print(c,id(a))
 print(d,id(d))
 ```
 
-This concept is called Object Referencing OR Reference Assignment because multiple variables reference same object.
+*This concept is called Object Referencing OR Reference Assignment because multiple variables reference same object.*
+---
 
 ```python
 a=12345
@@ -396,7 +389,9 @@ print(a,id(a))
 print(b,id(b))
 ```
 
-No Integer Caching OR Separate Object Creation 
+---
+
+**No Integer Caching OR Separate Object Creation** 
 
 ```python
 a=257
@@ -405,7 +400,8 @@ print(a,id(a))
 print(b,id(b))
 ```
 
-This concept is called No Integer Caching OR Separate Object Creation and still Object Referencing.
+*This concept is called No Integer Caching OR Separate Object Creation and still Object Referencing.*
+---
 
 ```python
 a=12345
