@@ -371,8 +371,8 @@ Hey everybody!!!
 ```python
 a=34
 b=34
-print(a,id(a))
-print(b,id(b))
+print(a,id(a))       # 34 140733555255448
+print(b,id(b))       # 34 140733555255448
 ```
 
 - *Both variables point to SAME object.*
@@ -385,8 +385,8 @@ print(b,id(b))
 ```python
 c=34
 d=c
-print(c,id(a))
-print(d,id(d))
+print(c,id(a))      # 34 140733555255448
+print(d,id(d))      # 34 140733555255448
 ```
 
 *This concept is called Object Referencing OR Reference Assignment because multiple variables reference same object.*
@@ -396,8 +396,8 @@ print(d,id(d))
 ```python
 a=12345
 b=a
-print(a,id(a))
-print(b,id(b))
+print(a,id(a))      # 12345 2334956197840
+print(b,id(b))      # 12345 2334956197840
 ```
 
 ---
@@ -407,8 +407,8 @@ print(b,id(b))
 ```python
 a=257
 b=257
-print(a,id(a))
-print(b,id(b))
+print(a,id(a))      # 257 2334956201840
+print(b,id(b))      # 257 2334956199600
 ```
 
 *This concept is called No Integer Caching OR Separate Object Creation and still Object Referencing.*
@@ -418,24 +418,24 @@ print(b,id(b))
 ```python
 a=12345
 b=12345
-print(a,id(a))
-print(b,id(b))
+print(a,id(a))      # 12345 2334956202000
+print(b,id(b))      # 12345 2334956200880
 ```
 --- 
 
 ```python
 a=1
 b=True+False
-print(a,id(a),type(a))
-print(b,id(b),type(b))
+print(a,id(a),type(a))      # 1 140733555254392 <class 'int'>
+print(b,id(b),type(b))      # 1 140733555254392 <class 'int'>
 ```
 ---
 
 ```python
 a=True
 b=1
-print(a,id(a),type(a))
-print(b,id(b),type(b))
+print(a,id(a),type(a))      # True 140733554346752 <class 'bool'>
+print(b,id(b),type(b))      # 1 140733555254392 <class 'int'>
 ```
 ---
 
@@ -445,10 +445,10 @@ print(b,id(b),type(b))
 
 ```python
 a=10
-print(a,id(a))
+print(a,id(a))            # 10 140716343600536
 
 a=a+1
-print(a,id(a))
+print(a,id(a))            # 11 140716343600568
 ```
 *ID's change because new integer object created.*
 
@@ -464,14 +464,14 @@ print(a,id(a))
 a=100
 b=100
 
-print(a==b)
-print(a is b)
+print(a==b)         # True
+print(a is b)       # True
 
 c=1000
 d=1000
 
-print(c==d)
-print(c is d)
+print(c==d)         # True
+print(c is d)       # False
 ```
 
 --- 
@@ -481,7 +481,7 @@ print(c is d)
 ```python
 a=10
 a=100
-print(a)
+print(a)        # 100
 ```
 
 - *Old reference removed.*
@@ -504,7 +504,39 @@ print(a)
      - **Digits:** 0 1 2 3 4 5 6 7 8 9 - Total digits=10
      - **Base:** 10
    - *Base 10 literals are called Decimal Number System values.*
-2. 
+  
+2. **Binary Number System:**
+   - *Binary Number system is understandable by OS and processor.*
+   - *This number system contains*
+     - **Digits:** 0 1 - Total digits=2
+     - **Base:** 2
+   - *Base 2 literals are called Binary Number System values.*
+   - *In python programming to store binary data, Binary data must be preceded by letter either 0b or 0B.*
+   - *bin() is used converting any number system data into Binary number system type.*
+
+    ```python
+    a=0b1010
+    print(a,type(a))        # 10 <class 'int'>
+
+    bin(a)                  # '0b1010'
+    ```
+3. **Octal Number System:**
+   - *Octal number system is understandable by Micro processor kits-8086.*
+   - *This number system contains*
+     - **Digit:** 0 1 2 3 4 5 6 7 - Total digits=8
+     - **Base:** 8
+   - *Base 8 literals are called Octal number system values.*
+   - *In python programming to store octal data, Octal data must be preceded by letter either 0O or 0o.*
+   - *oct() is used converting any number system data into Binary number system type.*
+  
+    ```python
+     a=0o56
+     print(a,type(a))       # 46 <class 'int'>
+
+     oct(89)                # '0o131'
+    ```
+4. **Hexa decimal Number System:**
+   - **
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
