@@ -439,6 +439,18 @@ print(b,id(b),type(b))
 ```
 ---
 
+**Integer Immutability**
+*Once created, integer objects cannot be changed.*
+
+```python
+a=10
+print(a,id(a))
+
+a=a+1
+print(a,id(a))
+```
+---
+
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
