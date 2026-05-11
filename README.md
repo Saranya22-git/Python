@@ -440,6 +440,7 @@ print(b,id(b),type(b))
 ---
 
 **Integer Immutability**
+
 *Once created, integer objects cannot be changed.*
 
 ```python
@@ -449,7 +450,30 @@ print(a,id(a))
 a=a+1
 print(a,id(a))
 ```
+*ID's change because new integer object created.*
+
 ---
+
+**is vs ==**
+
+*== checks value equality.*
+*is checks object identity.*
+
+```python
+a=100
+b=100
+
+print(a==b)
+print(a is b)
+
+c=1000
+d=1000
+
+print(c==d)
+print(c is d)
+```
+
+--- 
 
 
 ##### **Sequence Category data type**
