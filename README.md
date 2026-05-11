@@ -430,6 +430,7 @@ print(b,id(b),type(b))
 ```
 ---
 
+
 ##### **Sequence Category data type**
 ##### **List Category data type**
 ##### **Set Category data type**
