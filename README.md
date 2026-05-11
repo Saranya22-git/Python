@@ -489,6 +489,22 @@ print(a)
 
 ---
 
+*With **int** data type, in python programming along with integer data we can also store different number system values. In any programming language we have 4 types of Number systems. They are*
+
+**Number System**
+
+- *Decimal Number System*
+- *Binary Number System*
+- *Octal Number System*
+- *Hexa decimal Number System*
+
+1. **Decimal Number System:** 
+   - *Decimal number system is one of the default number system in programming language.*
+   - *This number system contains*
+     - **Digits:** 0 1 2 3 4 5 6 7 8 9 - Total digits=10
+     - **Base:** 10
+   - *Base 10 literals are called Decimal Number System values.*
+2. 
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
