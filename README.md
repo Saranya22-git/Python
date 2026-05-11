@@ -363,61 +363,70 @@ Hey everybody!!!
 **Example:** a=12345
              b=12345
 
-```python
-# int
-# Integer Caching OR Small Integer Caching and also related to Object Interning
+```markdown
+int
+Integer Caching OR Small Integer Caching and also related to Object Interning
 
+```python
 a=34
 b=34
 print(a,id(a))
 print(b,id(b))
+```
 
-# Both variables point to SAME object.
-# This concept is called Integer Caching OR Small Integer Caching and also related to Object Interning.
+Both variables point to SAME object.
+This concept is called Integer Caching OR Small Integer Caching and also related to Object Interning.
 
 
-# Object Referencing OR Reference Assignment
+Object Referencing OR Reference Assignment
 
+```python
 c=34
 d=c
 print(c,id(a))
 print(d,id(d))
+```
 
-# This concept is called Object Referencing OR Reference Assignment because multiple variables reference same object.
+This concept is called Object Referencing OR Reference Assignment because multiple variables reference same object.
 
-# %%
+```python
 a=12345
 b=a
 print(a,id(a))
 print(b,id(b))
+```
 
-# %%
-# No Integer Caching OR Separate Object Creation 
+No Integer Caching OR Separate Object Creation 
 
+```python
 a=257
 b=257
 print(a,id(a))
 print(b,id(b))
+```
 
-# This concept is called No Integer Caching OR Separate Object Creation and still Object Referencing.
+This concept is called No Integer Caching OR Separate Object Creation and still Object Referencing.
 
-# %%
+```python
 a=12345
 b=12345
 print(a,id(a))
 print(b,id(b))
+```
 
-# %%
+```python
 a=1
 b=True+False
 print(a,id(a),type(a))
 print(b,id(b),type(b))
+```
 
-# %%
+```python
 a=True
 b=1
 print(a,id(a),type(a))
 print(b,id(b),type(b))
+```
 ```
 
 ##### **Sequence Category data type**
@@ -427,6 +436,3 @@ print(b,id(b),type(b))
 ##### **None Category data type**
 
 
-```markdown
-This concept is called Integer Caching OR Small Integer Caching and also related to Object Interning.
-```
