@@ -3,12 +3,21 @@ Hey everybody!!!
 **PYTHON**
 
 #### **Table of Contents**
-- [*This concept is called No Integer Caching OR Separate Object Creation and still Object Referencing.*](#this-concept-is-called-no-integer-caching-or-separate-object-creation-and-still-object-referencing)
-      - [**Sequence Category data type**](#sequence-category-data-type)
-      - [**List Category data type**](#list-category-data-type)
-      - [**Set Category data type**](#set-category-data-type)
-      - [**Dict Category data type**](#dict-category-data-type)
-      - [**None Category data type**](#none-category-data-type)
+- [**Table of Contents**](#table-of-contents)
+- [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
+- [**History of Python**](#history-of-python)
+- [**Versions of Python**](#versions-of-python)
+- [**Features of Python**](#features-of-python)
+- [**Importance of Identifiers or Variables:**](#importance-of-identifiers-or-variables)
+- [**Rules for Identifiers/Variables in Python Programming:**](#rules-for-identifiersvariables-in-python-programming)
+- [**Data Types in Python**](#data-types-in-python)
+  - [**Fundamental Category data type**](#fundamental-category-data-type)
+    - [**int**](#int)
+  - [**Sequence Category data type**](#sequence-category-data-type)
+  - [**List Category data type**](#list-category-data-type)
+  - [**Set Category data type**](#set-category-data-type)
+  - [**Dict Category data type**](#dict-category-data-type)
+  - [**None Category data type**](#none-category-data-type)
 
 #### **Real-Time Applications developed by Python Programming**
 
