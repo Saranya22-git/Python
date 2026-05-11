@@ -335,6 +335,7 @@ Hey everybody!!!
 >>> int=34                  # Here int is an object/variable
 >>> print(int, type(int))   # 34 <class 'int'>
 ```
+--- 
 
 **Cached Integer** - *The actual cached number itself.*
 **Example:** 34
@@ -355,6 +356,7 @@ Hey everybody!!!
 **Example:** a=12345
              b=12345
 
+--- 
 
 **Integer Caching OR Small Integer Caching and also related to Object Interning**
 
@@ -409,6 +411,7 @@ b=12345
 print(a,id(a))
 print(b,id(b))
 ```
+--- 
 
 ```python
 a=1
@@ -416,6 +419,7 @@ b=True+False
 print(a,id(a),type(a))
 print(b,id(b),type(b))
 ```
+---
 
 ```python
 a=True
@@ -423,7 +427,7 @@ b=1
 print(a,id(a),type(a))
 print(b,id(b),type(b))
 ```
-```
+---
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
