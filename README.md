@@ -364,15 +364,15 @@ Hey everybody!!!
              b=12345
 
 ```markdown
+
 int
 Integer Caching OR Small Integer Caching and also related to Object Interning
 
-```python
 a=34
 b=34
 print(a,id(a))
 print(b,id(b))
-```
+
 
 Both variables point to SAME object.
 This concept is called Integer Caching OR Small Integer Caching and also related to Object Interning.
