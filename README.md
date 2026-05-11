@@ -457,6 +457,7 @@ print(a,id(a))
 **is vs ==**
 
 *== checks value equality.*
+
 *is checks object identity.*
 
 ```python
@@ -474,6 +475,19 @@ print(c is d)
 ```
 
 --- 
+
+**Garbage Collection Relation**
+
+```python
+a=10
+a=100
+print(a)
+```
+
+- *Old reference removed.*
+- *If no reference exist garbage collector cleans memory.*
+
+---
 
 
 ##### **Sequence Category data type**
