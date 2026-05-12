@@ -573,8 +573,11 @@ print(a)        # 100
 ---
 
 ###### **float**
-- *float is immutable type.*
-- *float*
+- *'**float**' is immutable type.*
+- *'**float**' is one of the pre-defined class name and treated as fundamental data type.*
+- *The purpose of float data type is that to store real constant values or float or double pointing(number with decimal places).*
+- *float data type never allows us to store/represent binary, octal and hexadecimal values.*
+- *float data types allows us to store Scientific Notation data.*
 ##### **Sequence Category data type**
 ##### **List Category data type**
 ##### **Set Category data type**
