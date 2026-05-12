@@ -584,6 +584,22 @@ print(a)        # 100
 a=13.45
 print(a,type(a))        # 13.45 <class 'float'>
 ```
+
+----
+
+```python
+a=1.00
+print(a,type(a),id(a))          # 1.0 <class 'float'> 2870877521008
+
+b=1.00
+print(b,type(a),id(a))          # 1.0 <class 'float'> 2870877521008
+```
+
+---
+
+```python
+
+```
 ##### **Sequence Category data type**
 ##### **List Category data type**
 ##### **Set Category data type**
