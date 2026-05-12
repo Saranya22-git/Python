@@ -337,9 +337,9 @@ Hey everybody!!!
   4. complex
 
 ###### **int**
-- *'int' is immutable type.*
-- *'int' is one of the pre defined class name and treated as fundamental data type.*
-- *The purpose of int data type is that "To store integer data or whole numbers or integral data(numbers without decimal places)".*
+- *'**int**' is immutable type.*
+- *'**int**' is one of the pre defined class name and treated as fundamental data type.*
+- *The purpose of int data type is that "**To store integer data or whole numbers or integral data(numbers without decimal places)**".*
 - *Python integers have unlimited size. Only integers from -5 to 256 are automatically cached and reused by Python.*
 
 **Example:**
@@ -573,7 +573,8 @@ print(a)        # 100
 ---
 
 ###### **float**
-  
+- *float is immutable type.*
+- *float*
 ##### **Sequence Category data type**
 ##### **List Category data type**
 ##### **Set Category data type**
