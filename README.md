@@ -13,11 +13,15 @@ Hey everybody!!!
 - [**Data Types in Python**](#data-types-in-python)
   - [**Fundamental Category data type**](#fundamental-category-data-type)
     - [**int**](#int)
+    - [**float**](#float)
   - [**Sequence Category data type**](#sequence-category-data-type)
   - [**List Category data type**](#list-category-data-type)
   - [**Set Category data type**](#set-category-data-type)
   - [**Dict Category data type**](#dict-category-data-type)
   - [**None Category data type**](#none-category-data-type)
+
+
+---
 
 #### **Real-Time Applications developed by Python Programming**
 
@@ -47,7 +51,9 @@ Hey everybody!!!
 - **Computer Vision**
 - **Education Programmes**
 - **etc......,**
-  
+
+---
+
 #### **History of Python**
 - Python Programming Language concevied (foundation stone) in the year 1980.
 - Python Programming Language implementation was began in the year 1989.
@@ -56,7 +62,9 @@ Hey everybody!!!
 - Python Programming Language developed at CWI (Centrum Winkunde Informatica) institute in Netherlands.
 - Python Programming Language managed and maintained by a Non-Commercial Organization called **Python Software Foundation(PSF).**
 - The official website of python software foundation(PSF) is www.python.org
-  
+
+---
+
 #### **Versions of Python**
 
 ***Version** is a numerical value(integer values) they are using for identification purpose.*
@@ -65,6 +73,8 @@ Hey everybody!!!
 2. **Python 2.x(outdated)** - *Python 2.x does not support Backward Compatability.*
    ***Backward Compatability** means New Versions of Software can still work with stuff made for older versions.*
 3. **Python 3.x** - Here 3 is called Major Version. Here x represents 0 1 2 3 4 5 6 7 8 9 (7, 8, 9 are secured) 10 11(10,11 are bug fix) 12(Future release)
+
+---
 
 #### **Features of Python**
 - *Features of a language are nothing but services or facilities provided by Language Developers and they are available in Languages and used by Language Programmers for developing real time applications.*
@@ -235,7 +245,9 @@ Hey everybody!!!
     - *First party - Modules*
     - *Second party - OS*
     - *Third party - Numpy(Travis), Pandas(MC Kinney)*
-  
+
+---
+
 #### **Importance of Identifiers or Variables:**
 **What is an Identifier?**
 *An identifier is the name used to identify:*
@@ -266,6 +278,8 @@ Hey everybody!!!
 - *Manipulate data*
 - *Make programs dynamic*
 *Without Variables, programming is almost impossible.*
+
+---
 
 #### **Rules for Identifiers/Variables in Python Programming:**
 - **RULE-1:** *The Variable name is a combination of Alphabets, Digits and Special Symbol Underscore(_) only.*
@@ -300,6 +314,8 @@ Hey everybody!!!
   >>> age=90
   ```
   *Both are different variables.*
+
+---
 
 #### **Data Types in Python**
 - *Data types define the type of value a variable holds.*
@@ -553,6 +569,9 @@ print(a)        # 100
 
    hex(144)                 # '0x90'
    ```
+
+---
+
 ###### **float**
   
 ##### **Sequence Category data type**
