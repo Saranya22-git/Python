@@ -578,6 +578,12 @@ print(a)        # 100
 - *The purpose of float data type is that to store real constant values or float or double pointing(number with decimal places).*
 - *float data type never allows us to store/represent binary, octal and hexadecimal values.*
 - *float data types allows us to store Scientific Notation data.*
+
+**Example:**
+```python
+a=13.45
+print(a,type(a))        # 13.45 <class 'float'>
+```
 ##### **Sequence Category data type**
 ##### **List Category data type**
 ##### **Set Category data type**
