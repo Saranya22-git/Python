@@ -701,7 +701,13 @@ print(float("89.76"))     # 89.76
 - *In python programming TRUE FALSE are called keywords and it is treated as value of bool data type.*
 - *In python programming internally the value of True is treated is 1 and false is treated as 0.*
 
+**Example:**
+```python
+a=True
+b=True
+print(a,id(a))
 
+```
 ##### **Sequence Category data type**
 ##### **List Category data type**
 ##### **Set Category data type**
