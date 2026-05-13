@@ -14,6 +14,7 @@ Hey everybody!!!
   - [**Fundamental Category data type**](#fundamental-category-data-type)
     - [**int**](#int)
     - [**float**](#float)
+    - [**bool**](#bool)
   - [**Sequence Category data type**](#sequence-category-data-type)
   - [**List Category data type**](#list-category-data-type)
   - [**Set Category data type**](#set-category-data-type)
@@ -647,6 +648,8 @@ print(b,type(b),id(b))          # 2.34 <class 'float'> 2870877520720
 **Scientific Notation**
 
 - *Scientific notation is used to represent very large or very small decimal values.*
+- *Advantages of Scientific notation is that to take less memory space for bigger floating point values.*
+
 **Example:**
 - 3e2  means 3 × 10² = 300.0
 - 3e-2 means 3 × 10⁻² = 0.03
@@ -690,6 +693,14 @@ print(float("89.76"))     # 89.76
   - str-bool               -> ValueError
 
 ---
+
+###### **bool**
+- *'**bool**' is an immutable type.*
+- *'**bool**' is one of the predefined class name and treated as fundamental data type.*
+- *The purpose of bool data type value is "To store TRUE, FALSE values."*
+- *In python programming TRUE FALSE are called keywords and it is treated as value of bool data type.*
+- *In python programming internally the value of True is treated is 1 and false is treated as 0.*
+
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
