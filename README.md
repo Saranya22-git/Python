@@ -676,6 +676,18 @@ print(0.1+0.2)              # 0.30000000000000004
 
 ---
 
+**is vs ==**
+
+```python
+a=12.34
+b=12.34
+
+print(a==b)
+print(a is b)
+```
+
+---
+
 **Type casting to float**
 
 ```python
@@ -697,17 +709,74 @@ print(float("89.76"))     # 89.76
 ###### **bool**
 - *'**bool**' is an immutable type.*
 - *'**bool**' is one of the predefined class name and treated as fundamental data type.*
-- *The purpose of bool data type value is "To store TRUE, FALSE values."*
-- *In python programming TRUE FALSE are called keywords and it is treated as value of bool data type.*
-- *In python programming internally the value of True is treated is 1 and false is treated as 0.*
+- *The purpose of bool data type value is "To store True and False values."*
+- *In python programming True False are called keywords and it is treated as value of bool data type.*
+- *In python programming internally, True is treated as 1 and false is treated as 0.*
 
 **Example:**
+
+**Boolean Immutability**
+
+```python
+a=True
+print(a,id(a))          # True 140728191798016
+
+a=False
+print(a,id(a))          # False 140728191798048
+```
+
+---
+
+**Object Referencing OR Shared Object Referencing OR Singleton Boolean Objects OR Object Reuse**
+
 ```python
 a=True
 b=True
-print(a,id(a))
 
+print(a,id(a))            # True 140728191798016
+print(b,id(b))            # True 140728191798016
 ```
+
+---
+
+**Reference Assignment**
+
+```python
+a=True
+b=a
+
+print(a,id(a))            # True 140728191798016
+print(b,id(b))            # True 140728191798016
+```
+
+---
+
+**bool-int relationship OR bool() type casting OR Shared object referencing**
+
+```python
+a=True
+b=bool(1)
+
+print(a,id(a))            # True 140728191798016
+print(b,id(b))            # True 140728191798016
+```
+
+---
+
+**bool-int arithmetic relation**
+
+```python
+a=True+False
+b=bool(1+0)
+
+print(a,id(a))             # 1 140728192705656
+print(b,id(b))             # True 140728191798016
+```
+
+---
+
+****
+
 ##### **Sequence Category data type**
 ##### **List Category data type**
 ##### **Set Category data type**
