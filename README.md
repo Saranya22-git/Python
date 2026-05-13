@@ -619,6 +619,21 @@ b=a
 print(a,type(a),id(a))          # 2.34 <class 'float'> 2870877520720
 print(b,type(b),id(b))          # 2.34 <class 'float'> 2870877520720
 ```
+
+---
+
+**Scientific Notation**
+
+```python
+a=3e2
+print(a,id(a),type(a))          # 300.0 1642266526544 <class 'float'>
+
+b=3e-2
+print(b,id(b),type(b))          # 0.03 1642242380016 <class 'float'>
+```
+
+---
+
 ##### **Sequence Category data type**
 ##### **List Category data type**
 ##### **Set Category data type**
