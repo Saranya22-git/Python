@@ -505,6 +505,22 @@ print(a)        # 100
 
 ---
 
+**Type Casting to int**
+
+```python
+print(int(10))                    # 10
+print(int(89.98))                 # 89
+print(int(True))                  # 1
+print(int("678"))                 # 678
+```
+- *int() removes decimal part from float values.*
+- *int() does not support:*
+  - complex            -> TypeError 
+  - str-float          -> ValueError 
+  - str-bool           -> ValueError
+  - str-complex        -> ValueError
+  - str-str            -> ValueError
+
 *With **int** data type, in python programming along with integer data we can also store different number system values. In any programming language we have 4 types of Number systems. They are*
 
 **Number System**
@@ -589,6 +605,8 @@ print(a,type(a))        # 13.45 <class 'float'>
 
 **Float Immutability**
 
+- *IDs change because float objects are immutable and a new object is created after modification.*
+
 ```python
 a=12.5
 print(a,id(a))
@@ -599,14 +617,17 @@ print(a,id(a))
 
 ---
 
-**Float Object Reuse**
+**Possible Float Object Reuse OR Interpreter Optimization**
+
+- *Python does not officially cache float values like integers.*
+- *Same float IDs may occur due to interpreter optimization or object reuse behavior.*
 
 ```python
 a=1.00
 print(a,type(a),id(a))          # 1.0 <class 'float'> 2870877521008
 
 b=1.00
-print(b,type(a),id(a))          # 1.0 <class 'float'> 2870877521008
+print(b,type(b),id(b))          # 1.0 <class 'float'> 2870877521008
 ```
 
 ---
@@ -624,6 +645,11 @@ print(b,type(b),id(b))          # 2.34 <class 'float'> 2870877520720
 
 **Scientific Notation**
 
+- *Scientific notation is used to represent very large or very small decimal values.*
+**Example:**
+3e2  means 3 × 10² = 300.0
+3e-2 means 3 × 10⁻² = 0.03
+
 ```python
 a=3e2
 print(a,id(a),type(a))          # 300.0 1642266526544 <class 'float'>
@@ -633,6 +659,20 @@ print(b,id(b),type(b))          # 0.03 1642242380016 <class 'float'>
 ```
 
 ---
+
+**Float precision issue**
+
+- *Float values are internally stored in binary format.*
+- *Some decimal values cannot be represented exactly in binary.*
+- *Therefore small precision errors may occur.*
+
+```python
+print(0.1+0.2)              # 0.30000000000000004
+```
+
+---
+
+**Type casting to float**
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
