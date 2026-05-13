@@ -71,6 +71,7 @@ Hey everybody!!!
 *Python Programming Language contains **3 types of versions**. They are*
 1. **Python 1.x(outdated)** - *Here 1 is called major version. Here x represents 0 1 2 3 4 5 6 7 etc..., called Minor Version.*
 2. **Python 2.x(outdated)** - *Python 2.x does not support Backward Compatability.*
+   
    ***Backward Compatability** means New Versions of Software can still work with stuff made for older versions.*
 3. **Python 3.x** - Here 3 is called Major Version. Here x represents 0 1 2 3 4 5 6 7 8 9 (7, 8, 9 are secured) 10 11(10,11 are bug fix) 12(Future release)
 
@@ -337,7 +338,7 @@ Hey everybody!!!
   4. complex
 
 ###### **int**
-- *'**int**' is immutable type.*
+- *'**int**' is an immutable type.*
 - *'**int**' is one of the pre defined class name and treated as fundamental data type.*
 - *The purpose of int data type is that "**To store integer data or whole numbers or integral data(numbers without decimal places)**".*
 - *Python integers have unlimited size. Only integers from -5 to 256 are automatically cached and reused by Python.*
@@ -589,11 +590,11 @@ print(int("678"))                 # 678
 ---
 
 ###### **float**
-- *'**float**' is immutable type.*
+- *'**float**' is an immutable data type.*
 - *'**float**' is one of the pre-defined class name and treated as fundamental data type.*
 - *The purpose of float data type is to store decimal values or floating point numbers.*
-- *float data type never allows us to store/represent binary, octal and hexadecimal values.*
-- *float data types allows us to store Scientific Notation data.*
+- *float data type do not support binary, octal and hexadecimal representations directly.*
+- *float data type allows us to store Scientific Notation data.*
 
 **Example:**
 ```python
@@ -647,8 +648,8 @@ print(b,type(b),id(b))          # 2.34 <class 'float'> 2870877520720
 
 - *Scientific notation is used to represent very large or very small decimal values.*
 **Example:**
-3e2  means 3 × 10² = 300.0
-3e-2 means 3 × 10⁻² = 0.03
+- 3e2  means 3 × 10² = 300.0
+- 3e-2 means 3 × 10⁻² = 0.03
 
 ```python
 a=3e2
@@ -673,6 +674,22 @@ print(0.1+0.2)              # 0.30000000000000004
 ---
 
 **Type casting to float**
+
+```python
+print(float(89))          # 89.0
+print(float(87.99))       # 87.99
+print(float(True))        # 1.0
+print(float("90"))        # 90.0
+print(float("89.76"))     # 89.76
+```
+
+- ***float()** does not support:*
+  - complex values         -> TypeError
+  - str-str                -> ValueError
+  - str-complex            -> ValueError
+  - str-bool               -> ValueError
+
+---
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
