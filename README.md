@@ -8,7 +8,7 @@ Hey everybody!!!
 - [**History of Python**](#history-of-python)
 - [**Versions of Python**](#versions-of-python)
 - [**Features of Python**](#features-of-python)
-- [**Importance of Identifiers or Variables:**](#importance-of-identifiers-or-variables)
+- [**Importance of Identifiers or Variables**](#importance-of-identifiers-or-variables)
 - [**Rules for Identifiers/Variables in Python Programming:**](#rules-for-identifiersvariables-in-python-programming)
 - [**Data Types in Python**](#data-types-in-python)
   - [**Fundamental Category data type**](#fundamental-category-data-type)
@@ -216,9 +216,9 @@ Hey everybody!!!
    *In IT, we have 2 types of languages. They are:*
    - *Low Level Programming Language*
    - *High Level Programming Language*
-   **Low Level Programming Language:** *In Low Level Languages, data is always stored in the form of low level values such as Binary data, Octal data, Hexa decimal data. These number systems are not directly understandable by end-users.*
+   **Low Level Programming Language:** *In Low Level Languages, data is always stored in the form of low level values such as Binary data, Octal data, Hexadecimal data. These number systems are not directly understandable by end-users.*
 
-   **High Level Programming Language:** *In these languages, internally even the programmer specifies the data in the form of low level format such binary data, octal data and hexa decimal data, automatically python programming language execution environment converts into high level data which is understandable by end-users. Hence python is one of the **High Level Programming Language.***
+   **High Level Programming Language:** *In these languages, internally even the programmer specifies the data in the form of low level format such binary data, octal data and hexadecimal data, automatically python programming language execution environment converts into high level data which is understandable by end-users. Hence python is one of the **High Level Programming Language.***
 
 7. **Robust** (Strong)
    *Python is one of the Robust Programming Language because it provides "Exception handling" facility. If the python programmer uses exception handling then python based application becomes robust.*
@@ -250,7 +250,7 @@ Hey everybody!!!
 
 ---
 
-#### **Importance of Identifiers or Variables:**
+#### **Importance of Identifiers or Variables**
 **What is an Identifier?**
 *An identifier is the name used to identify:*
 - *Variables*
@@ -340,7 +340,7 @@ Hey everybody!!!
 
 ###### **int**
 - *'**int**' is an immutable type.*
-- *'**int**' is one of the pre defined class name and treated as fundamental data type.*
+- *'**int**' is one of the predefined class name and treated as fundamental data type.*
 - *The purpose of int data type is that "**To store integer data or whole numbers or integral data(numbers without decimal places)**".*
 - *Python integers have unlimited size. Only integers from -5 to 256 are automatically cached and reused by Python.*
 
@@ -468,7 +468,7 @@ print(a,id(a))            # 10 140716343600536
 a=a+1
 print(a,id(a))            # 11 140716343600568
 ```
-*ID's change because new integer object created.*
+*IDs change because new integer object created.*
 
 ---
 
@@ -578,7 +578,7 @@ print(int("678"))                 # 678
                    A(10) B(11) C(12) D(13) E(14) F(15) - Total=16
      -  **Base:** 16
    - *Base 16 literals are called Hexadecimal number system values.* 
-   - *In python programming to store hexadecimal data, Hexa decimal data must be preceded by letter either 0X or 0x.*
+   - *In python programming to store hexadecimal data, Hexadecimal data must be preceded by letter either 0X or 0x.*
    -  *hex() is used converting any number system data into Hexadecimal number system type.*
    
    ```python
@@ -594,7 +594,7 @@ print(int("678"))                 # 678
 - *'**float**' is an immutable data type.*
 - *'**float**' is one of the pre-defined class name and treated as fundamental data type.*
 - *The purpose of float data type is to store decimal values or floating point numbers.*
-- *float data type do not support binary, octal and hexadecimal representations directly.*
+- *float data type does not support binary, octal and hexadecimal representations directly.*
 - *float data type allows us to store Scientific Notation data.*
 
 **Example:**
