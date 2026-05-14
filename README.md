@@ -709,9 +709,9 @@ print(float("89.76"))     # 89.76
 ###### **bool**
 - *'**bool**' is an immutable type.*
 - *'**bool**' is one of the predefined class name and treated as fundamental data type.*
-- *The purpose of bool data type value is "To store True and False values."*
-- *In python programming True False are called keywords and it is treated as value of bool data type.*
-- *In python programming internally, True is treated as 1 and false is treated as 0.*
+- *The purpose of bool data type is "To store True and False values."*
+- *In python programming, True and False are called keywords and treated as boolean values.*
+- *In python programming internally, True is treated as 1 and False is treated as 0.*
 
 **Example:**
 
@@ -763,7 +763,7 @@ print(b,id(b))            # True 140728191798016
 
 ---
 
-**bool-int arithmetic relation**
+**Arithmetic operations on bool values return int results**
 
 ```python
 a=True+False
@@ -807,12 +807,14 @@ print(bool("8+8j"))          # True
 ```python
 print(bool(0))              # False
 print(bool(0.0))            # False
+print(bool(0+0j))           # False
 print(bool(""))             # False
 print(bool(" "))            # True
 print(bool(False))          # False
 print(bool(''))             # False
-print(bool([ ]))            # False
-print(bool({ }))            # False
+print(bool([]))            # False
+print(bool(()))             # False
+print(bool({}))            # False
 print(bool(set()))          # False
 ```
 
