@@ -775,7 +775,48 @@ print(b,id(b))             # True 140728191798016
 
 ---
 
-****
+**is vs ==**
+
+```python
+a=True
+b=1
+
+print(a==b)           # True
+print(a is b)         # False
+```
+
+---
+
+**Type Casting to bool**
+
+```python
+print(bool(1))               # True
+print(bool(1.0))             # True
+print(bool(0+1j))            # True
+print(bool("Saran"))         # True
+print(bool("89"))            # True
+print(bool("89.67"))         # True
+print(bool("False"))         # True
+print(bool("8+8j"))          # True
+```
+
+---
+
+**Falsy Values**
+
+```python
+print(bool(0))              # False
+print(bool(0.0))            # False
+print(bool(""))             # False
+print(bool(" "))            # True
+print(bool(False))          # False
+print(bool(''))             # False
+print(bool([ ]))            # False
+print(bool({ }))            # False
+print(bool(set()))          # False
+```
+
+---
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
