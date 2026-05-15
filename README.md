@@ -15,6 +15,7 @@ Hey everybody!!!
     - [**int**](#int)
     - [**float**](#float)
     - [**bool**](#bool)
+    - [**complex**](#complex)
   - [**Sequence Category data type**](#sequence-category-data-type)
   - [**List Category data type**](#list-category-data-type)
   - [**Set Category data type**](#set-category-data-type)
@@ -822,7 +823,9 @@ print(bool(set()))          # False
 
 ###### **complex**
 
-- **
+- *'**complex**' is an immutable type.*
+- *'**complex**' is one of the pre-defined class and treated as fundamental data type.*
+- 
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
