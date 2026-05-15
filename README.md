@@ -832,6 +832,7 @@ print(bool(set()))          # False
 
   - *Here "x" is called Real part*.
   - *Here "y" is called Imaginary part.*
+  - *And "j" represents root of -1 or +1*
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
