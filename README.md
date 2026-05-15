@@ -826,7 +826,12 @@ print(bool(set()))          # False
 - *'**complex**' is an immutable type.*
 - *'**complex**' is one of the pre-defined class and treated as fundamental data type.*
 - *The purpose of complex data type is that "To store complex values/Imaginary values."*
-- 
+- *The general notation of complex data type is given below*
+  
+          x+yj or x-yj
+
+  - *Here "x" is called Real part*.
+  - *Here "y" is called Imaginary part.*
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
