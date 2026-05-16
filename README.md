@@ -954,7 +954,14 @@ float(2+7j)                 # TypeError
 complex("2 + 3j")            # ValueError
 ```
 
+---
+
+
+
 ##### **Sequence Category data type**
+
+- *The purpose of sequence category data types is that "To store sequence of values."*
+- 
 ##### **List Category data type**
 ##### **Set Category data type**
 ##### **Dict Category data type**
