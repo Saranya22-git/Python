@@ -824,15 +824,135 @@ print(bool(set()))          # False
 ###### **complex**
 
 - *'**complex**' is an immutable type.*
-- *'**complex**' is one of the pre-defined class and treated as fundamental data type.*
-- *The purpose of complex data type is that "To store complex values/Imaginary values."*
+- *'**complex**' is one of the predefined class names and treated as fundamental data type.*
+- *The purpose of complex data type is "To store complex numbers containing real and imaginary parts."*
 - *The general notation of complex data type is given below*
   
           x+yj or x-yj
 
   - *Here "x" is called Real part*.
   - *Here "y" is called Imaginary part.*
-  - *And "j" represents root of -1 or +1*
+  - *And "j" represents √(-1)*
+
+**Examples:**
+
+**Complex datatype representation**
+
+```python
+a=2+5j
+print(a,type(a))                  # (2+5j) <class 'complex'>
+```
+
+---
+
+**Complex Immutability**
+
+```python
+a=2+5j
+print(a,id(a),type(a))              # (2+5j) 2023119824368 <class 'complex'>
+
+a=a+1
+print(a,id(a),type(a))              # (3+5j) 2023119824976 <class 'complex'>
+```
+
+**Separate Object Creation OR Object Referencing**
+
+```python
+a=3+3j
+b=3+3j
+
+print(a,id(a))                # (3+3j) 2023119820784
+print(b,id(b))                # (3+3j) 2023119824944              
+```
+
+---
+
+**Reference Assignment**
+
+```python
+a=3+3j
+b=a
+
+print(a,id(a))                # (3+3j) 2023119824976
+print(b,id(b))                # (3+3j) 2023119824976
+```
+
+---
+
+**Real and Imaginary parts**
+
+```python
+a=2+3j
+
+print(a.real)             # 2.0
+print(a.imag)             # 3.0
+```
+
+---
+
+**Two-Argument complex()**
+
+```python
+print(complex(2,9))         # (2+9j)
+```
+
+---
+
+**is vs ==**
+
+```python
+a=2+3j
+b=2+3j
+
+
+print(a==b)
+print(a is b)
+```
+
+---
+
+**No ordering comparison**
+
+```python
+(2+3j) >= (2+3j)
+```
+
+- *Complex numbers cannot use: < > >= <=*
+  
+---
+
+**Type Casting to complex**
+
+```python
+print(complex(10))              # (10+0j)
+print(complex(9.9))             # (9.9+0j)
+print(complex(True))            # (1+0j)
+print(complex(False))           # 0j
+print(complex("10"))            # (10+0j)
+print(complex("67.98"))         # (67.98+0j)
+print(complex("2+5j"))          # (2+5j)
+```
+
+ - *complex() does not support:*
+   - str-bool               # ValueError
+   - str-str                # ValueError
+  
+---
+
+**Complex values do not support direct int/float conversion**
+
+```python
+int(2+3j)                   # TypeError
+float(2+7j)                 # TypeError 
+```
+
+---
+
+**Complex literals do not support spaces inside string conversion**
+
+```python
+complex("2 + 3j")            # ValueError
+```
 
 ##### **Sequence Category data type**
 ##### **List Category data type**
