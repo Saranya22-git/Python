@@ -17,6 +17,7 @@ Hey everybody!!!
     - [**bool**](#bool)
     - [**complex**](#complex)
   - [**Sequence Category data type**](#sequence-category-data-type)
+    - [**str**](#str)
   - [**List Category data type**](#list-category-data-type)
   - [**Set Category data type**](#set-category-data-type)
   - [**Dict Category data type**](#dict-category-data-type)
@@ -961,7 +962,21 @@ complex("2 + 3j")            # ValueError
 ##### **Sequence Category data type**
 
 - *The purpose of sequence category data types is that "To store sequence of values."*
-- 
+- *In python programming, we have 4 data types in Sequence category. They are*
+  1. str
+  2. bytes
+  3. bytearray
+  4. range
+
+###### **str**
+
+- *'**str**' is one of the predefined class and treated as Sequence data type.*
+- *The purpose of str data type is "To store string data or text data or alphanumeric data or numeric data or special symbols within double quotes or single quotes or tripple double quotes or tripple single quotes."*
+
+**Types of str**
+- *In python programming we have two types of str data. They are*
+  1. Single line string data
+  2. Multi line string data
 ##### **List Category data type**
 ##### **Set Category data type**
 ##### **Dict Category data type**
