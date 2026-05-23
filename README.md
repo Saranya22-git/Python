@@ -11,8 +11,17 @@ Hey everybody!!!
   - [**Features of Python**](#features-of-python)
 - [**Python Program Structure**](#python-program-structure)
   - [**Keywords**](#keywords)
-  - [**Importance of Identifiers or Variables**](#importance-of-identifiers-or-variables)
-- [**Rules for Identifiers/Variables in Python Programming:**](#rules-for-identifiersvariables-in-python-programming)
+  - [**Identifiers**](#identifiers)
+  - [**Variables**](#variables)
+  - [**Rules for Identifiers/Variables in Python Programming:**](#rules-for-identifiersvariables-in-python-programming)
+  - [**Comments**](#comments)
+    - [**Single-Line Comment**](#single-line-comment)
+    - [**Multi-Line Comment**](#multi-line-comment)
+  - [**Indentation**](#indentation)
+  - [**Case-Sensitivity**](#case-sensitivity)
+  - [**Multiple Assignment**](#multiple-assignment)
+  - [**Multiple Variable Assignment**](#multiple-variable-assignment)
+  - [**Swapping Variables**](#swapping-variables)
   - [**Data Types in Python**](#data-types-in-python)
     - [**Fundamental Category data type**](#fundamental-category-data-type)
       - [**int**](#int)
@@ -292,23 +301,21 @@ import keyword
 print(keyword.kwlist)
 ```
 
-#### **Importance of Identifiers or Variables**
+#### **Identifiers**
 
-**What is an Identifier?**
-*An identifier is the name used to identify:*
-- *Variables*
-- *Functions*
-- *Classes*
-- *Objects*
-- *Modules*
+*An identifier is the name used to identify variables, functions, classes, modules, objects.*
+
 **Example:**
 ```python
   student_name="Saranya"
 ```
 *Here student_name is Identifier and "Saranya" is Value.*
 
-**What is Variable?**
-*A Variable is a memory container used to store data temporarily during program execution.*
+#### **Variables**
+
+- *A Variable is a memory container used to store data temporarily during program execution.*
+- *In Python, variables store references to objects not actual values directly.*
+
 **Example:**
 ```python
  age=20
@@ -326,11 +333,12 @@ print(keyword.kwlist)
 
 ---
 
-### **Rules for Identifiers/Variables in Python Programming:**
+#### **Rules for Identifiers/Variables in Python Programming:**
 
 - **RULE-1:** *The Variable name is a combination of Alphabets, Digits and Special Symbol Underscore(_) only.*
   
 - **RULE-2:** *The first letter of Variable must starts with either Alphabet or Underscore(_) only.*
+
   **Example:** 
   ```python
    >>> sal=34        # Valid
@@ -343,6 +351,7 @@ print(keyword.kwlist)
   ```
 
 - **RULE-3:** *Within the variable name, special symbols are not allowed except underscore(_).*
+
   **Example:**
   ```python
    >>> emp_sal=9000  # Valid
@@ -351,6 +360,7 @@ print(keyword.kwlist)
   ```
 
 - **RULE-4:** *We should not use Keywords as Variable names because Keywords are reserved words and they have contains some special meaning to the language compiler.*
+
   **Example:**
   ```python
   >>> if=937   # Invalid
@@ -366,6 +376,83 @@ print(keyword.kwlist)
   *Both are different variables.*
 
 ---
+
+#### **Comments**
+
+*Comments are non-executable statements used for explanation/documentation.*
+
+##### **Single-Line Comment**
+
+```python
+# This is Single-Line comment
+print("Hello")
+```
+
+##### **Multi-Line Comment**
+
+```python
+"""
+This is Multi-Line
+Comment
+"""
+```
+
+---
+
+#### **Indentation**
+
+- *Space/tabs given before code statements.*
+- *Python uses indentation to define code blocks instead of curly braces {}.*
+
+#### **Case-Sensitivity**
+
+*Python is Cse-Sensitive.*
+
+```python
+name="Saranya"
+Name="Python"
+
+print(name)
+print(Name)
+```
+
+---
+
+#### **Multiple Assignment**
+
+```python
+a=b=c=100
+
+print(a)
+print(b)
+print(c)
+```
+*This is called Share object referencing.*
+
+#### **Multiple Variable Assignment**
+
+```python
+a,b,c=10,20,30
+
+print(a)
+print(b)
+print(c)
+```
+
+#### **Swapping Variables**
+
+```python
+a=10
+b=20
+
+a,b=b,a
+
+print(a)
+print(b)
+```
+- *Python special feature.*
+- *Internally, Python uses tuple packing/unpacking.*
+
 
 #### **Data Types in Python**
 - *Data types define the type of value a variable holds.*
