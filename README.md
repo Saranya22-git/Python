@@ -2,29 +2,47 @@ Hey everybody!!!
 
 **PYTHON**
 
-#### **Table of Contents**
+### **Table of Contents**
 - [**Table of Contents**](#table-of-contents)
-- [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
-- [**History of Python**](#history-of-python)
-- [**Versions of Python**](#versions-of-python)
-- [**Features of Python**](#features-of-python)
-- [**Importance of Identifiers or Variables**](#importance-of-identifiers-or-variables)
-- [**Rules for Identifiers/Variables in Python Programming:**](#rules-for-identifiersvariables-in-python-programming)
-- [**Data Types in Python**](#data-types-in-python)
-  - [**Fundamental Category data type**](#fundamental-category-data-type)
-    - [**int**](#int)
-    - [**float**](#float)
-    - [**bool**](#bool)
-    - [**complex**](#complex)
-  - [**Sequence Category data type**](#sequence-category-data-type)
-    - [**str**](#str)
-  - [**List Category data type**](#list-category-data-type)
-  - [**Set Category data type**](#set-category-data-type)
-  - [**Dict Category data type**](#dict-category-data-type)
-  - [**None Category data type**](#none-category-data-type)
+- [**Introduction to Python**](#introduction-to-python)
+  - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
+  - [**History of Python**](#history-of-python)
+  - [**Versions of Python**](#versions-of-python)
+  - [**Features of Python**](#features-of-python)
+  - [**Importance of Identifiers or Variables**](#importance-of-identifiers-or-variables)
+  - [**Rules for Identifiers/Variables in Python Programming:**](#rules-for-identifiersvariables-in-python-programming)
+  - [**Data Types in Python**](#data-types-in-python)
+    - [**Fundamental Category data type**](#fundamental-category-data-type)
+      - [**int**](#int)
+      - [**float**](#float)
+      - [**bool**](#bool)
+      - [**complex**](#complex)
+    - [**Sequence Category data type**](#sequence-category-data-type)
+      - [**str**](#str)
+    - [**List Category data type**](#list-category-data-type)
+    - [**Set Category data type**](#set-category-data-type)
+    - [**Dict Category data type**](#dict-category-data-type)
+    - [**None Category data type**](#none-category-data-type)
 
 
 ---
+### **Introduction to Python**
+
+**What is Python?**
+
+*Python is a high-level, interpreted, dynamically typed, general-purpose programming language.*
+
+- ***Created by:** Gudio Van Rossum*
+- ***Official release:** 1991*
+- ***Official website:** python.org*
+
+**Why was Python created?**
+
+*Simple and readable programming language*
+
+**Why python becomes very popular?**
+
+*Because python is easy to learn, easy to write, less code, huge libraries and supports AI/Data Science/Web Development.*
 
 #### **Real-Time Applications developed by Python Programming**
 
