@@ -9,8 +9,8 @@ Hey everybody!!!
   - [**History of Python**](#history-of-python)
   - [**Versions of Python**](#versions-of-python)
   - [**Features of Python**](#features-of-python)
-  - [**Importance of Identifiers or Variables**](#importance-of-identifiers-or-variables)
-  - [**Rules for Identifiers/Variables in Python Programming:**](#rules-for-identifiersvariables-in-python-programming)
+- [**Importance of Identifiers or Variables**](#importance-of-identifiers-or-variables)
+- [**Rules for Identifiers/Variables in Python Programming:**](#rules-for-identifiersvariables-in-python-programming)
   - [**Data Types in Python**](#data-types-in-python)
     - [**Fundamental Category data type**](#fundamental-category-data-type)
       - [**int**](#int)
@@ -76,13 +76,14 @@ Hey everybody!!!
 ---
 
 #### **History of Python**
-- Python Programming Language concevied (foundation stone) in the year 1980.
-- Python Programming Language implementation was began in the year 1989.
-- Python Programming Language officially released in the year 1991 Feb.
-- Python Programming Language developed by **Guido van Rossum** (Father of Python).
-- Python Programming Language developed at CWI (Centrum Winkunde Informatica) institute in Netherlands.
-- Python Programming Language managed and maintained by a Non-Commercial Organization called **Python Software Foundation(PSF).**
-- The official website of python software foundation(PSF) is www.python.org
+
+- *Python Programming Language concevied (foundation stone) in the year 1980.*
+- *Python Programming Language implementation was began in the year 1989.*
+- *Python Programming Language officially released in the year 1991 Feb.*
+- *Python Programming Language developed by **Guido van Rossum** (Father of Python)*.
+- *Python Programming Language developed at CWI (Centrum Winkunde Informatica) institute in Netherlands.*
+- *Python Programming Language managed and maintained by a Non-Commercial Organization called Python Software Foundation(PSF).*
+- *The official website of python software foundation(PSF) is www.python.org*
 
 ---
 
@@ -99,6 +100,7 @@ Hey everybody!!!
 ---
 
 #### **Features of Python**
+
 - *Features of a language are nothing but services or facilities provided by Language Developers and they are available in Languages and used by Language Programmers for developing real time applications.*
 - *Python Programming Language provides 11 features. They are*
 
@@ -270,7 +272,8 @@ Hey everybody!!!
 
 ---
 
-#### **Importance of Identifiers or Variables**
+### **Importance of Identifiers or Variables**
+
 **What is an Identifier?**
 *An identifier is the name used to identify:*
 - *Variables*
@@ -303,8 +306,10 @@ Hey everybody!!!
 
 ---
 
-#### **Rules for Identifiers/Variables in Python Programming:**
+### **Rules for Identifiers/Variables in Python Programming:**
+
 - **RULE-1:** *The Variable name is a combination of Alphabets, Digits and Special Symbol Underscore(_) only.*
+  
 - **RULE-2:** *The first letter of Variable must starts with either Alphabet or Underscore(_) only.*
   **Example:** 
   ```python
@@ -316,6 +321,7 @@ Hey everybody!!!
    >>> _sal=34       # Valid
    >>> __=89         # Valid
   ```
+
 - **RULE-3:** *Within the variable name, special symbols are not allowed except underscore(_).*
   **Example:**
   ```python
@@ -323,12 +329,14 @@ Hey everybody!!!
    >>> emp%sal=6789  # Invalid
    >>> emp sal=9789  # Invalid
   ```
+
 - **RULE-4:** *We should not use Keywords as Variable names because Keywords are reserved words and they have contains some special meaning to the language compiler.*
   **Example:**
   ```python
   >>> if=937   # Invalid
   >>> _if=898  # Valid
   ```
+
 - **RULE-5:** *All the variable names are case-sensitive.*
   **Example:**
   ```python
