@@ -9,7 +9,9 @@ Hey everybody!!!
   - [**History of Python**](#history-of-python)
   - [**Versions of Python**](#versions-of-python)
   - [**Features of Python**](#features-of-python)
-- [**Importance of Identifiers or Variables**](#importance-of-identifiers-or-variables)
+- [**Python Program Structure**](#python-program-structure)
+  - [**Keywords**](#keywords)
+  - [**Importance of Identifiers or Variables**](#importance-of-identifiers-or-variables)
 - [**Rules for Identifiers/Variables in Python Programming:**](#rules-for-identifiersvariables-in-python-programming)
   - [**Data Types in Python**](#data-types-in-python)
     - [**Fundamental Category data type**](#fundamental-category-data-type)
@@ -272,7 +274,25 @@ Hey everybody!!!
 
 ---
 
-### **Importance of Identifiers or Variables**
+### **Python Program Structure**
+
+#### **Keywords**
+
+- *Keywords are reserved words in Python that already have predefined meaning.*
+- *Python interpreter already understands them so we should not use keywords as variable names.*
+
+**Examples of Keywords:**
+
+*False  None  True  and  as  assert  async  await  break  class  continue  def  del  elif  else  except  finally  for  from  global  if  import  in  is  lambda  nonlocal  not  or  pass  raise  return  try  while  with  yield*
+
+**How to see all Keywords:**
+
+```python
+import keyword
+print(keyword.kwlist)
+```
+
+#### **Importance of Identifiers or Variables**
 
 **What is an Identifier?**
 *An identifier is the name used to identify:*
