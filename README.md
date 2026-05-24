@@ -453,6 +453,7 @@ print(b)
 - *Python special feature.*
 - *Internally, Python uses tuple packing/unpacking.*
 
+---
 
 #### **Data Types in Python**
 - *Data types define the type of value a variable holds.*
