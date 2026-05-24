@@ -22,9 +22,19 @@ Hey everybody!!!
   - [**Multiple Assignment**](#multiple-assignment)
   - [**Multiple Variable Assignment**](#multiple-variable-assignment)
   - [**Swapping Variables**](#swapping-variables)
-  - [**Data Types in Python**](#data-types-in-python)
-    - [**Fundamental Category data type**](#fundamental-category-data-type)
-      - [**int**](#int)
+- [**Memory Model \& Internal Concepts**](#memory-model--internal-concepts)
+  - [**Objects**](#objects)
+  - [**References**](#references)
+  - [**Variables Store References**](#variables-store-references)
+  - [**id() function**](#id-function)
+  - [**type() function**](#type-function)
+  - [**Object Identity**](#object-identity)
+  - [**Reference Assignment**](#reference-assignment)
+  - [**Shared Object Referencing**](#shared-object-referencing)
+  - [**Integer Caching**](#integer-caching)
+  - [**Mutable vs Immutable**](#mutable-vs-immutable)
+  - [**Garbage Collection**](#garbage-collection)
+  - [**is vs ==**](#is-vs-)
       - [**float**](#float)
       - [**bool**](#bool)
       - [**complex**](#complex)
@@ -455,6 +465,218 @@ print(b)
 
 ---
 
+### **Memory Model & Internal Concepts**
+
+#### **Objects**
+
+- *Everything in python is treated as an Object.*
+- *Object contains value/data, datatype, memory location.*
+
+**Examples:** *int, float, bool, list, function, class*
+
+```python
+a=10
+
+# Here 10 is Object.
+```
+
+```python
+name="Saranya"
+
+# Here "Saranya" is String Object.
+```
+
+#### **References**
+
+- *Reference is the memory link/address pointing to an object.*
+- *Python variables do not store actual values directly. They store references to objects.*
+
+```python
+a=10
+
+# Memory representation a->10
+# Here a-reference/variable, 10-object
+```
+
+#### **Variables Store References**
+
+```python
+a=[1,2,3]
+
+# Memory-a->[1,2,3]
+# Variable-a stores reference. NOT actual list internally.
+```
+
+#### **id() function**
+
+- *id() returns unique identity/memory reference value of object.*
+
+```python
+a=10
+
+print(id(a))         # 140728203512 (number changes system-to-system)
+```
+
+- *If two variables have same id() then both reference same object.*
+
+```python
+a=10
+b=a
+
+print(a)
+print(b)
+```
+
+#### **type() function**
+
+*type() returns datatype/class of object.*
+
+```python
+a=10
+
+print(type(a))      # <class 'int'>
+```
+
+#### **Object Identity**
+
+- *Identity means uniqueness of object in memory.*
+- *Python checks identity using id() or is operator.*
+
+```python
+a=10
+b=10
+
+print(id(a))        
+print(id(b))        
+```
+
+*Possibly same IDs because Integer Caching.*
+
+#### **Reference Assignment**
+
+```python
+a=[1,2]
+b=a
+
+print(a)
+print(b)
+```
+
+- *Both variables reference SAME object.*
+- *b=a does NOT create copy. It copies reference.*
+
+#### **Shared Object Referencing**
+
+```python
+a=100
+b=100
+
+print(id(a))
+print(id(b))
+
+id(a)==id(b)
+```
+
+*Especially for -5 to 256 due to Integer Caching.*
+
+#### **Integer Caching**
+
+- *Python internally caches small integers from -5 to 256.*
+- *Instead of creating new objects repeatedly python reuses existing objects.*
+
+```python
+a=100
+b=100
+
+print(id(a))
+print(id(b))
+```
+*Same IDs*
+
+```python
+a=10002
+b=10002
+
+print(id(a))
+print(id(b))
+```
+
+*May produce same IDs or different IDs depending on optimization.*
+
+#### **Mutable vs Immutable**
+
+**Immutable Objects:** *Objects whose values cannot be changed after creation.*
+
+**Immutable Types:** 
+
+- *int*
+- *float*
+- *bool*
+- *complex*
+- *str*
+- *tuple*
+- *frozenset*
+
+```python
+a=10
+print(id(a))
+
+a=a+1
+print(a,id(a))
+```
+
+*IDs change because new object created. Old object unchanged.*
+
+**Mutable Objects:** *Objects whose values can be modified after creation.*
+
+**Mutable Types:**
+
+- *list*
+- *dict*
+- *set*
+- *bytearray*
+
+```python
+a=[1,2]
+print(id(a))
+
+a.append(3)
+print(a,id(a))
+```
+
+*Usually same ID because object modified internally. NOT recreated.*
+
+#### **Garbage Collection**
+
+*Python automatically removes unused objects from memory.*
+
+```python
+a=10
+a=20
+
+print(a)
+```
+
+*Old=10 may become unused. Garbage collector can clean it. Without Garbage collection memory waste.*
+
+#### **is vs ==**
+
+- ***==** checks VALUE equality.*
+- ***is** checks OBJECT identity.*
+
+```python
+a=[1,2]
+b=[1,2]
+
+print(a)          # True
+print(b)          # False
+```
+
+```python
+a=b=[1,2]
+
+print(a==b)
+print(a is b)
 #### **Data Types in Python**
 - *Data types define the type of value a variable holds.*
 - *The purpose of data types in python is that **"To allocate sufficient amount of memory space in main memory of computer and inputs can stored."***
