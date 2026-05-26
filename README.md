@@ -206,9 +206,9 @@ Hey everybody!!!
       - *Executes it line by line.*
   
    - **Source code(.py file):**
-  ```python
-   print("Saranya")
-  ```
+      ```python
+        print("Saranya")
+      ```
 
    - **Compilation to Bytecode:**
       - *Python does a hidden step: Your code is converted into Bytecode.*
