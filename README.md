@@ -204,18 +204,18 @@ Hey everybody!!!
    - *Converts it into something the computer understands.*
    - *Executes it line by line.*
   
-  2. **Source code(.py file):**
+   2. **Source code(.py file):**
   ```python
    print("Saranya")
   ```
 
-  3. **Compilation to Bytecode:**
+   3. **Compilation to Bytecode:**
    - *Python does a hidden step: Your code is converted into Bytecode.*
    - *Stores as .pyc files(inside __pycache__)*
    - *Not human readable.*
    - *Platform independent.*
   
-  4. **Python Virtual Machine(PVM):**
+   4. **Python Virtual Machine(PVM):**
    - *This is where actual execution happens.*
    - *Takes bytecode.*
    - *Executes instructions.*
