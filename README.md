@@ -198,7 +198,7 @@ Hey everybody!!!
 
    **Main Components of Python Execution Environment**
 
-   1. **Python Interpreter:** 
+  1. **Python Interpreter:** 
    - *This is the engine of Python.*
    - *It reads your .py file.*
    - *Converts it into something the computer understands.*
@@ -211,14 +211,14 @@ Hey everybody!!!
   ```
 
 
-   3. **Compilation to Bytecode:**
+   1. **Compilation to Bytecode:**
    - *Python does a hidden step: Your code is converted into Bytecode.*
    - *Stores as .pyc files(inside __pycache__)*
    - *Not human readable.*
    - *Platform independent.*
   
-  
-   4. **Python Virtual Machine(PVM):**
+
+   1. **Python Virtual Machine(PVM):**
    - *This is where actual execution happens.*
    - *Takes bytecode.*
    - *Executes instructions.*
