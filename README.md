@@ -38,10 +38,10 @@ Hey everybody!!!
 - [**Data Types in Python**](#data-types-in-python)
   - [**Fundamental Category data type**](#fundamental-category-data-type)
     - [**int**](#int)
-      - [**float**](#float)
-      - [**bool**](#bool)
+    - [**float**](#float)
+    - [**bool**](#bool)
       - [**complex**](#complex)
-    - [**Sequence Category data type**](#sequence-category-data-type)
+  - [**Sequence Category data type**](#sequence-category-data-type)
       - [**str**](#str)
     - [**List Category data type**](#list-category-data-type)
     - [**Set Category data type**](#set-category-data-type)
@@ -967,7 +967,8 @@ print(int("678"))                 # 678
 
 ---
 
-###### **float**
+##### **float**
+
 - *'**float**' is an immutable data type.*
 - *'**float**' is one of the pre-defined class name and treated as fundamental data type.*
 - *The purpose of float data type is to store decimal values or floating point numbers.*
@@ -975,6 +976,7 @@ print(int("678"))                 # 678
 - *float data type allows us to store Scientific Notation data.*
 
 **Example:**
+
 ```python
 a=13.45
 print(a,type(a))        # 13.45 <class 'float'>
@@ -988,10 +990,10 @@ print(a,type(a))        # 13.45 <class 'float'>
 
 ```python
 a=12.5
-print(a,id(a))
+print(a,id(a))          # 12.5 2707329680496
 
 a=a+1
-print(a,id(a))
+print(a,id(a))          # 13.5 2707329680208
 ```
 
 ---
@@ -1002,11 +1004,11 @@ print(a,id(a))
 - *Same float IDs may occur due to interpreter optimization or object reuse behavior.*
 
 ```python
-a=1.00
-print(a,type(a),id(a))          # 1.0 <class 'float'> 2870877521008
+a=10.98
+b=10.98
 
-b=1.00
-print(b,type(b),id(b))          # 1.0 <class 'float'> 2870877521008
+print(id(a))          # 1959594296688
+print(id(b))          # 1959600251888
 ```
 
 ---
@@ -1059,8 +1061,8 @@ print(0.1+0.2)              # 0.30000000000000004
 a=12.34
 b=12.34
 
-print(a==b)
-print(a is b)
+print(a==b)                 # True
+print(a is b)               # False
 ```
 
 ---
@@ -1073,6 +1075,7 @@ print(float(87.99))       # 87.99
 print(float(True))        # 1.0
 print(float("90"))        # 90.0
 print(float("89.76"))     # 89.76
+print(float("3e2"))       # 300.0
 ```
 
 - ***float()** does not support:*
@@ -1083,7 +1086,7 @@ print(float("89.76"))     # 89.76
 
 ---
 
-###### **bool**
+##### **bool**
 - *'**bool**' is an immutable type.*
 - *'**bool**' is one of the predefined class name and treated as fundamental data type.*
 - *The purpose of bool data type is "To store True and False values."*
@@ -1334,7 +1337,7 @@ complex("2 + 3j")            # ValueError
 
 
 
-##### **Sequence Category data type**
+#### **Sequence Category data type**
 
 - *The purpose of sequence category data types is that "To store sequence of values."*
 - *In python programming, we have 4 data types in Sequence category. They are*
