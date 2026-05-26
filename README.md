@@ -266,8 +266,9 @@ Hey everybody!!!
 
     **High Level Programming Language:** *In these languages, internally even the programmer specifies the data in the form of low level format such binary data, octal data and hexadecimal data, automatically python programming language execution environment converts into high level data which is understandable by end-users. Hence python is one of the **High Level Programming Language.***
 
-7. **Robust** (Strong)
-   *Python is one of the Robust Programming Language because it provides "Exception handling" facility. If the python programmer uses exception handling then python based application becomes robust.*
+7. **Robust**(Strong)
+   
+    *Python is one of the Robust Programming Language because it provides "Exception handling" facility. If the python programmer uses exception handling then python based application becomes robust.*
 
    **Definition of Exception:** 
    - *All runtime errors are called Exception.*
@@ -305,7 +306,7 @@ Hey everybody!!!
 
 **Examples of Keywords:**
 
-*False  None  True  and  as  assert  async  await  break  class  continue  def  del  elif  else  except  finally  for  from  global  if  import  in  is  lambda  nonlocal  not  or  pass  raise  return  try  while  with  yield*
+*False    None    True    and   as    assert    async        await    break   class   continue    def   del  elif  else  except  finally  for  from  global  if  import  in  is  lambda  nonlocal  not  or  pass  raise  return  try  while  with  yield*
 
 **How to see all Keywords:**
 
