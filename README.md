@@ -35,6 +35,9 @@ Hey everybody!!!
   - [**Mutable vs Immutable**](#mutable-vs-immutable)
   - [**Garbage Collection**](#garbage-collection)
   - [**is vs ==**](#is-vs-)
+  - [**Data Types in Python**](#data-types-in-python)
+    - [**Fundamental Category data type**](#fundamental-category-data-type)
+      - [**int**](#int)
       - [**float**](#float)
       - [**bool**](#bool)
       - [**complex**](#complex)
@@ -343,7 +346,8 @@ print(keyword.kwlist)
 - *Reuse data*
 - *Manipulate data*
 - *Make programs dynamic*
-*Without Variables, programming is almost impossible.*
+  
+  *Without Variables, programming is almost impossible.*
 
 ---
 
@@ -420,7 +424,7 @@ Comment
 
 #### **Case-Sensitivity**
 
-*Python is Cse-Sensitive.*
+*Python is Case-Sensitive.*
 
 ```python
 name="Saranya"
@@ -681,6 +685,8 @@ a=b=[1,2]
 
 print(a==b)
 print(a is b)
+```
+
 #### **Data Types in Python**
 - *Data types define the type of value a variable holds.*
 - *The purpose of data types in python is that **"To allocate sufficient amount of memory space in main memory of computer and inputs can stored."***
