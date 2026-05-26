@@ -261,9 +261,10 @@ Hey everybody!!!
    *In IT, we have 2 types of languages. They are:*
    - *Low Level Programming Language*
    - *High Level Programming Language*
-   **Low Level Programming Language:** *In Low Level Languages, data is always stored in the form of low level values such as Binary data, Octal data, Hexadecimal data. These number systems are not directly understandable by end-users.*
+  
+    **Low Level Programming Language:** *In Low Level Languages, data is always stored in the form of low level values such as Binary data, Octal data, Hexadecimal data. These number systems are not directly understandable by end-users.*
 
-   **High Level Programming Language:** *In these languages, internally even the programmer specifies the data in the form of low level format such binary data, octal data and hexadecimal data, automatically python programming language execution environment converts into high level data which is understandable by end-users. Hence python is one of the **High Level Programming Language.***
+    **High Level Programming Language:** *In these languages, internally even the programmer specifies the data in the form of low level format such binary data, octal data and hexadecimal data, automatically python programming language execution environment converts into high level data which is understandable by end-users. Hence python is one of the **High Level Programming Language.***
 
 7. **Robust** (Strong)
    *Python is one of the Robust Programming Language because it provides "Exception handling" facility. If the python programmer uses exception handling then python based application becomes robust.*
