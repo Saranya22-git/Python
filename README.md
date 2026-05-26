@@ -35,9 +35,9 @@ Hey everybody!!!
   - [**Mutable vs Immutable**](#mutable-vs-immutable)
   - [**Garbage Collection**](#garbage-collection)
   - [**is vs ==**](#is-vs-)
-  - [**Data Types in Python**](#data-types-in-python)
-    - [**Fundamental Category data type**](#fundamental-category-data-type)
-      - [**int**](#int)
+- [**Data Types in Python**](#data-types-in-python)
+  - [**Fundamental Category data type**](#fundamental-category-data-type)
+    - [**int**](#int)
       - [**float**](#float)
       - [**bool**](#bool)
       - [**complex**](#complex)
@@ -687,9 +687,12 @@ print(a==b)
 print(a is b)
 ```
 
-#### **Data Types in Python**
+---
+
+### **Data Types in Python**
+
 - *Data types define the type of value a variable holds.*
-- *The purpose of data types in python is that **"To allocate sufficient amount of memory space in main memory of computer and inputs can stored."***
+- *Python automatically identifies datatype. This is Dynamic Typing.*
 - *Python programming provides 14 data types and classified into 6 categories. They are*
   - *Fundamental Category data type*
   - *Sequence Category data type*
@@ -698,7 +701,8 @@ print(a is b)
   - *Dict Category data type*
   - *None Category data type*
   
-##### **Fundamental Category data type**
+#### **Fundamental Category data type**
+
 - *The purpose of fundamental category data types is that **"To store single values."***
 - *In python programming we have 4 data types in fundamental category. They are*
   1. int
@@ -706,7 +710,7 @@ print(a is b)
   3. bool
   4. complex
 
-###### **int**
+##### **int**
 - *'**int**' is an immutable type.*
 - *'**int**' is one of the predefined class name and treated as fundamental data type.*
 - *The purpose of int data type is that "**To store integer data or whole numbers or integral data(numbers without decimal places)**".*
