@@ -676,8 +676,8 @@ print(a)
 a=[1,2]
 b=[1,2]
 
-print(a)          # True
-print(b)          # False
+print(a is b)          # True
+print(a==b)          # False
 ```
 
 ```python
