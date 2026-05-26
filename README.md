@@ -198,13 +198,13 @@ Hey everybody!!!
 
    **Main Components of Python Execution Environment**
 
-      1. **Python Interpreter:** 
+   - **Python Interpreter:** 
+   
       - *This is the engine of Python.*
       - *It reads your .py file.*
       - *Converts it into something the computer understands.*
       - *Executes it line by line.*
   
-
    - **Source code(.py file):**
   ```python
    print("Saranya")
