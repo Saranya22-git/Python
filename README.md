@@ -1288,7 +1288,6 @@ print(a.imag)             # 3.0
 **Two-Argument complex()**
 
 ```python
--- Syntax 
 complex(real, imaginary)
 
 print(complex(2,9))         # (2+9j)
@@ -1378,10 +1377,13 @@ complex("2 + 3j")            # ValueError
 
  **Single Line String data**
 
- ```python
- -- Syntax
- 
- ```
+  ```python
+  varname='Single line string data'
+              OR
+  varname="Single line string data"
+  ```
+
+  - *With the help of double quotes("") and Single quote('') we can store Single line str data only but not possible to store multi line string data.*
 
 
 ##### **List Category data type**
