@@ -42,7 +42,7 @@ Hey everybody!!!
     - [**bool**](#bool)
     - [**complex**](#complex)
   - [**Sequence Category data type**](#sequence-category-data-type)
-      - [**str**](#str)
+    - [**str**](#str)
     - [**List Category data type**](#list-category-data-type)
     - [**Set Category data type**](#set-category-data-type)
     - [**Dict Category data type**](#dict-category-data-type)
@@ -1363,15 +1363,27 @@ complex("2 + 3j")            # ValueError
   3. bytearray
   4. range
 
-###### **str**
+##### **str**
 
 - *'**str**' is one of the predefined class and treated as Sequence data type.*
 - *The purpose of str data type is "To store string data or text data or alphanumeric data or numeric data or special symbols within double quotes or single quotes or tripple double quotes or tripple single quotes."*
 
+---
+
 **Types of str**
+
 - *In python programming we have two types of str data. They are*
   1. Single line string data
   2. Multi line string data
+
+ **Single Line String data**
+
+ ```python
+ -- Syntax
+ 
+ ```
+
+
 ##### **List Category data type**
 ##### **Set Category data type**
 ##### **Dict Category data type**
