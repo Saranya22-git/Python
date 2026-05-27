@@ -1227,7 +1227,7 @@ print(bool(None))           # False
 
   - *Here "x" is called Real part*.
   - *Here "y" is called Imaginary part.*
-  - *And "j" represents √(-1)*
+  - *"j" is called imaginary unit and represents √(-1)*
 
 **Examples:**
 
@@ -1288,6 +1288,9 @@ print(a.imag)             # 3.0
 **Two-Argument complex()**
 
 ```python
+-- Syntax 
+complex(real, imaginary)
+
 print(complex(2,9))         # (2+9j)
 ```
 
@@ -1300,8 +1303,8 @@ a=2+3j
 b=2+3j
 
 
-print(a==b)
-print(a is b)
+print(a==b)           # True
+print(a is b)         # False
 ```
 
 ---
@@ -1350,8 +1353,6 @@ complex("2 + 3j")            # ValueError
 ```
 
 ---
-
-
 
 #### **Sequence Category data type**
 
