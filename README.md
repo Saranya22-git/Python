@@ -40,7 +40,7 @@ Hey everybody!!!
     - [**int**](#int)
     - [**float**](#float)
     - [**bool**](#bool)
-      - [**complex**](#complex)
+    - [**complex**](#complex)
   - [**Sequence Category data type**](#sequence-category-data-type)
       - [**str**](#str)
     - [**List Category data type**](#list-category-data-type)
@@ -1216,7 +1216,7 @@ print(bool(None))           # False
 
 ---
 
-###### **complex**
+##### **complex**
 
 - *'**complex**' is an immutable type.*
 - *'**complex**' is one of the predefined class names and treated as fundamental data type.*
