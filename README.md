@@ -1329,8 +1329,8 @@ print(complex("2+5j"))          # (2+5j)
 ```
 
  - *complex() does not support:*
-   - str-bool               # ValueError
-   - str-str                # ValueError
+   - str-bool->ValueError
+   - str-str->ValueError
   
 ---
 
