@@ -1364,6 +1364,7 @@ complex("2 + 3j")            # ValueError
 
 ##### **str**
 
+- *'**str**' is an immutable type.*
 - *'**str**' is one of the predefined class and treated as Sequence data type.*
 - *The purpose of str data type is "To store string data or text data or alphanumeric data or numeric data or special symbols within double quotes or single quotes or tripple double quotes or tripple single quotes."*
 
@@ -1433,6 +1434,18 @@ name                             # 'Python'
   print(name)
   print(branch)
   ```
+
+**Immutability type**
+
+  ```python
+   name="Python"
+
+   print(name,id(name))             # Python 2902389817632
+
+   name="Python"+'123'
+
+   print(name,id(name))             # Python123 2902490339312
+   ```
 
 ---
 
