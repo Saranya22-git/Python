@@ -1367,6 +1367,15 @@ complex("2 + 3j")            # ValueError
 - *'**str**' is one of the predefined class and treated as Sequence data type.*
 - *The purpose of str data type is "To store string data or text data or alphanumeric data or numeric data or special symbols within double quotes or single quotes or tripple double quotes or tripple single quotes."*
 
+**Example:**
+
+```python
+name="Python"
+print(name,type(name))           # Python <class 'str'>
+
+name                             # 'Python'
+```
+
 ---
 
 **Types of str**
@@ -1385,6 +1394,47 @@ complex("2 + 3j")            # ValueError
 
   - *With the help of double quotes("") and Single quote('') we can store Single line str data only but not possible to store multi line string data.*
 
+   **Example:**
+
+   ```python
+    name="Saranya"
+    branch='Ai&ds'
+
+    print(name)           # Saranya
+    print(branch)         # Ai&ds
+   ```
+
+ **Multiple Line String data**
+
+  ```python
+  varname='''String data 1
+             String data 2
+             -------------
+             String data-n'''
+              OR
+  varname="""String data 1
+             String data 2
+             -------------
+             String data-n"""
+  ```
+
+  - *With the help of triple double quotes(""" """) and tripple single quote(''' ''') we can store Single line str data and multi line string data.*
+
+   **Example:**
+
+   ```python
+   name="""Hello, Saranya. 
+        How are you?"""
+
+   branch='''Artificial Intelligence and
+          Data Science'''
+
+
+  print(name)
+  print(branch)
+  ```
+
+---
 
 ##### **List Category data type**
 ##### **Set Category data type**
