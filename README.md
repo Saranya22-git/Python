@@ -1196,6 +1196,8 @@ print(bool({1:3}))          # True
 print(bool("False"))        # True         
 ```
 
+---
+
 **Falsy Values**
 
 ```python
