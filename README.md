@@ -1092,6 +1092,7 @@ print(float("3e2"))       # 300.0
 - *The purpose of bool data type is "To store True and False values."*
 - *In python programming, True and False are called keywords and treated as boolean values.*
 - *In python programming internally, True is treated as 1 and False is treated as 0.*
+- *Used for conditions, decision making, comparisons, logical operations.*
 
 **Example:**
 
@@ -1182,6 +1183,19 @@ print(bool("8+8j"))          # True
 
 ---
 
+**Truthy Values**
+
+```python
+print(bool(100))            # True
+print(bool(" "))            # True
+print(bool(' '))            # True
+print(bool("Saran"))        # True
+print(bool([1,2]))          # True
+print(bool((1,2)))          # True
+print(bool({1:3}))          # True
+print(bool("False"))        # True         
+```
+
 **Falsy Values**
 
 ```python
@@ -1189,13 +1203,13 @@ print(bool(0))              # False
 print(bool(0.0))            # False
 print(bool(0+0j))           # False
 print(bool(""))             # False
-print(bool(" "))            # True
 print(bool(False))          # False
 print(bool(''))             # False
 print(bool([]))            # False
 print(bool(()))             # False
 print(bool({}))            # False
 print(bool(set()))          # False
+print(bool(None))           # False
 ```
 
 ---
