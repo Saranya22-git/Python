@@ -1456,9 +1456,6 @@ name                             # 'Python'
 
 - *On str data, we can perform two types of operations. They are*
     1. *Indexing*
-    2. *Slicing*
-
-  1. *Indexing*
 
      - *The process of obtaining single value from given main str object is called **Indexing**.*
      - **Syntax:** *strobj[index]*
@@ -1466,8 +1463,14 @@ name                             # 'Python'
         - *Index represents either +ve index or -ve index.*
         - *If we enter valid index value then we get corresponding indexed value.*
         - *If we enter invalid index value then we get IndexError.*
+  
+    2. *Slicing*
 
-  2. *Slicing*
+  
+
+   
+
+  
 ##### **List Category data type**
 ##### **Set Category data type**
 ##### **Dict Category data type**
