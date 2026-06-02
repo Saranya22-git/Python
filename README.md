@@ -1455,7 +1455,7 @@ name                             # 'Python'
 **Operations on str data**
 
 - *On str data, we can perform two types of operations. They are*
-    1. *Indexing*
+    **1. Indexing**
 
      - *The process of obtaining single value from given main str object is called **Indexing**.*
      - **Syntax:** *strobj[index]*
@@ -1463,8 +1463,42 @@ name                             # 'Python'
         - *Index represents either +ve index or -ve index.*
         - *If we enter valid index value then we get corresponding indexed value.*
         - *If we enter invalid index value then we get IndexError.*
-  
-    2. *Slicing*
+     - **Example:**
+        ```python
+        a="Python"
+        ``` 
+
+        **Positive Indexing:**
+          P   y   t   h   o   n
+          0   1   2   3   4   5
+
+        **Negative Indexing:**
+           P   y   t   h   o   n
+          -6  -5  -4  -3  -2  -1
+
+     - **Examples:**
+        ```python
+        s="Python"
+
+        print(s,type(s))             # Python <class 'str'>
+        print(s[0])                  # P
+        print(s[-6])                 # P
+        print(s[5])                  # n
+        s[2]                         # 't'
+
+        print(s[-7])                 # IndexError
+        ```
+
+        ```python
+        >>> s="123456789"
+        >>> print(s,type(s))         123456789 <class 'str'>
+        >>> s[2]                     '3'
+        >>> s[-1]                    '9'
+        >>> s[len(s)-1]              '9'
+        >>> s[-len(s)]               '1'
+        ```
+
+    **2. Slicing**
 
   
 
