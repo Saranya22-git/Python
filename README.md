@@ -1364,6 +1364,7 @@ complex("2 + 3j")            # ValueError
 
 ##### **str**
 
+
 - *'**str**' is an immutable type.*
 - *'**str**' is one of the predefined class and treated as Sequence data type.*
 - *The purpose of str data type is "To store string data or text data or alphanumeric data or numeric data or special symbols within double quotes or single quotes or tripple double quotes or tripple single quotes."*
@@ -1435,6 +1436,8 @@ name                             # 'Python'
   print(branch)
   ```
 
+---
+
 **Immutability type**
 
   ```python
@@ -1449,6 +1452,22 @@ name                             # 'Python'
 
 ---
 
+**Operations on str data**
+
+- *On str data, we can perform two types of operations. They are*
+    1. *Indexing*
+    2. *Slicing*
+
+  1. *Indexing*
+
+     - *The process of obtaining single value from given main str object is called **Indexing**.*
+     - **Syntax:** *strobj[index]*
+        - *Here strobj is an ojbect of <class 'str'>*
+        - *Index represents either +ve index or -ve index.*
+        - *If we enter valid index value then we get corresponding indexed value.*
+        - *If we enter invalid index value then we get IndexError.*
+
+  2. *Slicing*
 ##### **List Category data type**
 ##### **Set Category data type**
 ##### **Dict Category data type**
