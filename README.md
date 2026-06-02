@@ -1480,7 +1480,7 @@ name                             # 'Python'
 
          -6  -5  -4  -3  -2  -1
 
-     - **Examples:**
+     - **Access Characters**
         ```python
         s="Python"
 
@@ -1503,6 +1503,30 @@ name                             # 'Python'
         ```
 
     **2. Slicing**
+
+     - *The process of obtaining range of values or substring from given main str object is called Slicing.*
+     - *To perform slicing operations, we have 5 syntaxes. They are:*
+      
+        **NOTE:** *start included...end excluded*
+
+       - **Syntax-1:** *strobj[BEGIN:END]*
+        
+         - *This syntax generates ranges of values or substring from BEGIN Index to END-1 index provided **BEGIN<END** otherwise we never get any result or space or '' as a result.* 
+         - **Examples:**
+            ```python
+            s="PYTHON"
+
+            print(s,type(s))          # PYTHON <class 'str'>
+            print(s[0:3])             # PYT
+            print(s[2:6])             # THON
+            print(s[1:6])             # YTHON
+            print(s[0:6])             # PYTHON
+            s[2:1]                    # '' because here BEGIN index is greater than END index
+            ``` 
+       - **Syntax-2:** *strobj[BEGIN:]*
+       - **Syntax-3:** *strobj[:END]*
+       - **Syntax-4:** *strobj[:]*
+       - **Syntax-5:** *strobj[BEGIN:END:STEP]* 
 
   
 
