@@ -1476,9 +1476,9 @@ name                             # 'Python'
 
         **Negative Indexing:**
 
-           P   y   t   h   o   n
-           
-          -6  -5  -4  -3  -2  -1
+          P   y   t   h   o   n
+
+         -6  -5  -4  -3  -2  -1
 
      - **Examples:**
         ```python
