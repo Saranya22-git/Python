@@ -1523,7 +1523,31 @@ name                             # 'Python'
             print(s[0:6])             # PYTHON
             s[2:1]                    # '' because here BEGIN index is greater than END index
             ``` 
+
+         - **Sub Rule:** ***strobj[BEGINPOSINDEX:ENDNEGATIVEINDEX]***
+         - *This syntax gives range of characters from BEGINPOSINDEX to ENDNEGATIVEINDEX-1 provided BEGINPOSINDEX>ENDNEGATIVEINDEX. Otherwise we get space or no result or '' as a result.*
+         - **Examples:**
+          ```python
+          s='saranya'
+
+          print(s[3:8])           # anya
+          print(s[3:-8])          # 
+          print(s[2:-1])          # rany
+          s[2:-2]                 # 'ran'
+          ``` 
+          
        - **Syntax-2:** *strobj[BEGIN:]*
+
+        - *In this syntax, we are specifying BEGIN index and we didn't specify END index.* 
+        - *If we don't specify END index then PVM takes END index as len(strobj).*
+        - **Examples:** 
+          ```python
+          s='saranya'
+
+          print(s[3:])            # anya
+          print(s[4:])            # nya
+          print(s[-1:])           # a
+          ```
        - **Syntax-3:** *strobj[:END]*
        - **Syntax-4:** *strobj[:]*
        - **Syntax-5:** *strobj[BEGIN:END:STEP]* 
