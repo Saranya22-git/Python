@@ -1538,9 +1538,9 @@ name                             # 'Python'
           
        - **Syntax-2:** *strobj[BEGIN:]*
 
-        - *In this syntax, we are specifying BEGIN index and we didn't specify END index.* 
-        - *If we don't specify END index then PVM takes END index as len(strobj).*
-        - **Examples:** 
+         - *In this syntax, we are specifying BEGIN index and we didn't specify END index.* 
+         - *If we don't specify END index then PVM takes END index as len(strobj).*
+         - **Examples:** 
           ```python
           s='saranya'
 
@@ -1548,7 +1548,21 @@ name                             # 'Python'
           print(s[4:])            # nya
           print(s[-1:])           # a
           ```
+
        - **Syntax-3:** *strobj[:END]*
+         
+         - *In this syntax, we are specifying END index and we didn't specify BEGIN index.*
+         - *If we don't specify BEGIN index then PVM takes BEGIN index as 0 or -len(strobj).*
+         - **Examples:**
+           ```python
+            s='saranya'
+
+            print(s[:5])            # saran
+            print(s[:-1])           # sarany
+            print(s[:90])           # saranya
+            s[:-89]                 # ''
+           ``` 
+           
        - **Syntax-4:** *strobj[:]*
        - **Syntax-5:** *strobj[BEGIN:END:STEP]* 
 
