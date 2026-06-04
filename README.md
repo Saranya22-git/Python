@@ -43,6 +43,8 @@ Hey everybody!!!
     - [**complex**](#complex)
   - [**Sequence Category data type**](#sequence-category-data-type)
     - [**str**](#str)
+      - [**Operations on str data**](#operations-on-str-data)
+      - [**String Methods**](#string-methods)
     - [**List Category data type**](#list-category-data-type)
     - [**Set Category data type**](#set-category-data-type)
     - [**Dict Category data type**](#dict-category-data-type)
@@ -1452,7 +1454,7 @@ name                             # 'Python'
 
 ---
 
-**Operations on str data**
+###### **Operations on str data**
 
 - *On str data, we can perform two types of operations. They are*
     **1. Indexing**
@@ -1623,12 +1625,87 @@ name                             # 'Python'
               print(s[:-1:-3])        #
             ```
 
+**Concatenation**
 
-  
+*Joining strings.*
 
+  ```python
+   a="Hello"
+   b="Python"
+
+   print(a+b)           # HelloPython
+  ```
+
+**With Space**
+
+  ```python
+    a="Hello"
+    b="Python"
+
+    print(a+" "+b)      # Hello Python
+    print(a+""+b)       # HelloPython
+  ```
+
+**String Repetition**
+
+   ```python
+    print("Python"*3)    # PythonPythonPython
+  ```
+
+**Membership Operators**
+
+   ```python
+   a="Python"
+
+   print("P" in a)        # True
+   print('z' in a)        # False
+   print('p' in a)        # False
+   ```
+
+**Escape Characters**
+
+*Used to insert special characters.*
+
+  **Common Escape Characters**
+
+      | Escape | Meaning      |
+      | ------ | ------------ |
+      | `\n`   | new line     |
+      | `\t`   | tab          |
+      | `\'`   | single quote |
+      | `\"`   | double quote |
+
+   **Example:**
+
+   ```python
+   print("Hello\nPython")         /* Hello
+                                    Python */
+   print("Hello\tPython")         # Hello Python
+                      
+   ```
+
+**String memory behavior**
+
+  - *Same IDs due to string object reuse/interning.*
+  - *Python sometimes reuses string objects for optimization.*
    
+   ```python
+    a="sony"
+    b="sony"
 
-  
+    print(id(a))              # 2081418619248
+    print(id(a))              # 2081418619248
+   ```
+
+###### **String Methods**
+
+**upper()**
+**lower()**
+**replace()**
+**split()**
+
+
+
 ##### **List Category data type**
 ##### **Set Category data type**
 ##### **Dict Category data type**
