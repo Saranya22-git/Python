@@ -1564,7 +1564,65 @@ name                             # 'Python'
            ``` 
            
        - **Syntax-4:** *strobj[:]*
+
+         - *In this syntax, we are not specifying BEGIN index and END index.*
+         - *If we don't specify BEGIN index and END index then PVM takes BEGIN index as 0 or -len(strobj) and END index as len(strobj) or -1.*
+         - *Hence this syntax always gives total string data.*
+         - **Examples:**
+           ```python
+            s='saranya'
+
+            print(s[:])           # saranya
+            print(s[0:])          # saranya
+            print(s[:len(s)])     # saranya
+            print(s[-len(s):])    # saranya
+            s[:0]                 # ''
+           ```  
+        - **NOTE:** *All the above syntaxes are extracting the data from strobj in forward direction with default step value 1.*
+         
        - **Syntax-5:** *strobj[BEGIN:END:STEP]* 
+
+         - **RULE-1:** *Here BEGIN, END and STEP values can be either +ve or -ve.*
+         - **RULE-2:** *If STEP value is +ve then PVM takes the range of characters from BEGIN Index to END-1 index in FORWARD direction with step value provided **BEGIN INDEX<END INDEX** otherwise we get space or ' ' as a result.*
+           - **Examples:** 
+           ```python
+            s="saranya"
+
+            print(s[::1])               # saranya
+            print(s[0:-1:1])            # sarany
+            print(s[0::2])              # srna
+            print(s[::3])               # saa
+            print(s[-6:-1:2])           # aay
+           ```  
+         - **RULE-3:** *If STEP value is -ve then PVM takes the range of characters from BEGIN Index to END-1 index in BACKWARD direction with step value provided **BEGIN INDEX>END INDEX** otherwise we get space or ' ' as a result.*
+           - **Examples:**
+            ```python
+              s="saranya"
+
+              print(s[::-1])          # aynaras
+              print(s[::-3])          # aas
+              print(s[7::-1])         # aynaras
+              print(s[::2][::-1])     # anrs
+              print(s[-1:-7:-1])      # aynara
+            ``` 
+         - **RULE-4:** *In FORWARD direction, if END value is 0 then we get space or ' ' as a result.*
+           - **Examples:**
+            ```python
+              s='saranya'
+
+              print(s[:0:])           # 
+              print(s[2:0:1])         #
+            ``` 
+         - **RULE-5:** *In BACKWARD direction, if END value is -1 then we get space or ' ' as a result.*
+           - **Examples:**
+            ```python
+              s='saranya'
+
+              print(s[:-1:-1])        #
+              print(s[:-1:])          # sarany
+              print(s[:-1:-3])        #
+            ```
+
 
   
 
