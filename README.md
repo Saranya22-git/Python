@@ -1756,6 +1756,8 @@ name                             # 'Python'
   print(a is b)                 # True
  ```
 
+---
+
 ###### **String Methods**
 
 **upper()**
