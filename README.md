@@ -44,6 +44,9 @@ Hey everybody!!!
   - [**Sequence Category data type**](#sequence-category-data-type)
     - [**str**](#str)
       - [**Operations on str data**](#operations-on-str-data)
+      - [**String formatting**](#string-formatting)
+      - [**Unicode \& ASCII Basics**](#unicode--ascii-basics)
+      - [**is vs ==**](#is-vs--1)
       - [**String Methods**](#string-methods)
     - [**List Category data type**](#list-category-data-type)
     - [**Set Category data type**](#set-category-data-type)
@@ -1625,6 +1628,8 @@ name                             # 'Python'
               print(s[:-1:-3])        #
             ```
 
+---
+
 **Concatenation**
 
 *Joining strings.*
@@ -1636,6 +1641,8 @@ name                             # 'Python'
    print(a+b)           # HelloPython
   ```
 
+---
+
 **With Space**
 
   ```python
@@ -1646,11 +1653,15 @@ name                             # 'Python'
     print(a+""+b)       # HelloPython
   ```
 
+---
+
 **String Repetition**
 
    ```python
     print("Python"*3)    # PythonPythonPython
   ```
+
+---
 
 **Membership Operators**
 
@@ -1661,6 +1672,8 @@ name                             # 'Python'
    print('z' in a)        # False
    print('p' in a)        # False
    ```
+
+---
 
 **Escape Characters**
 
@@ -1684,6 +1697,8 @@ name                             # 'Python'
                       
    ```
 
+---
+
 **String memory behavior**
 
   - *Same IDs due to string object reuse/interning.*
@@ -1696,6 +1711,50 @@ name                             # 'Python'
     print(id(a))              # 2081418619248
     print(id(a))              # 2081418619248
    ```
+
+---
+
+###### **String formatting**
+
+ ```python
+   name="Saranya"
+
+  print(f"My name is {name}")
+  print("My name is {}".format(name))
+  print("My name is %s"%(name))
+ ```
+
+- *This is called f-string formatting.*
+
+---
+
+###### **Unicode & ASCII Basics**
+
+**ASCII:** 
+- *American Standard Code for Information Interchange.*
+- *Every character has numeric code.*
+- **Example:**
+  ```python
+   print(ord("A"))            # 65
+  ``` 
+
+**Unicode:**
+- **Example:**
+  ```python
+   print(ord("🫠"))           # 129760
+  ``` 
+
+---
+
+###### **is vs ==**
+
+ ```python
+  a="Python"
+  b="Python"
+
+  print(a==b)                   # True
+  print(a is b)                 # True
+ ```
 
 ###### **String Methods**
 
