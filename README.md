@@ -47,6 +47,7 @@ Hey everybody!!!
       - [**String formatting**](#string-formatting)
       - [**Unicode \& ASCII Basics**](#unicode--ascii-basics)
       - [**is vs ==**](#is-vs--1)
+      - [**Strings cannot be modified using indexing**](#strings-cannot-be-modified-using-indexing)
       - [**String Methods**](#string-methods)
     - [**List Category data type**](#list-category-data-type)
     - [**Set Category data type**](#set-category-data-type)
@@ -1757,6 +1758,24 @@ name                             # 'Python'
  ```
 
 ---
+
+###### **Strings cannot be modified using indexing**
+
+  ```python
+    a="Saranya"
+
+    a[0]="J"                # TypeError: 'str' object does not support item assignment
+  ```
+ 
+ - *Because str is immutable.*
+
+ **Correct way:** 
+   ```python
+
+  a="Saranya" 
+
+  a="J"+a[0]
+  print(a)
 
 ###### **String Methods**
 
