@@ -41,10 +41,10 @@ Hey everybody!!!
   - [**Fundamental Category data type**](#fundamental-category-data-type)
     - [**int**](#int)
       - [**Integer Immutability**](#integer-immutability)
-      - [**Cached Integer** - *The actual cached number itself.*](#cached-integer---the-actual-cached-number-itself)
-      - [**Integer Caching** - *Python reuses small integers(-5 to 256).*](#integer-caching---python-reuses-small-integers-5-to-256)
-      - [**Object Referencing** - *Whenever a variable points to an object.*](#object-referencing---whenever-a-variable-points-to-an-object)
-      - [**Reference Assignment** - *When one variable gets reference from another variable.*](#reference-assignment---when-one-variable-gets-reference-from-another-variable)
+      - [**Cached Integer**](#cached-integer)
+      - [**Integer Caching**](#integer-caching-1)
+      - [**Object Referencing**](#object-referencing)
+      - [**Reference Assignment**](#reference-assignment-1)
       - [**Separate Object Creation**](#separate-object-creation)
       - [**Integer Caching OR Small Integer Caching and also related to Object Interning**](#integer-caching-or-small-integer-caching-and-also-related-to-object-interning)
       - [**Object Referencing OR Reference Assignment**](#object-referencing-or-reference-assignment)
@@ -776,21 +776,29 @@ print(a,id(a))            # 11 140716343600568
 
 ---
 
-###### **Cached Integer** - *The actual cached number itself.*
+###### **Cached Integer** 
+
+- *The actual cached number itself.*
 
 **Example:** 34
 
-###### **Integer Caching** - *Python reuses small integers(-5 to 256).*
+###### **Integer Caching** 
+
+- *Python reuses small integers(-5 to 256).*
 
 **Example:** a=34
              b=34
  
-###### **Object Referencing** - *Whenever a variable points to an object.*
+###### **Object Referencing** 
+
+- *Whenever a variable points to an object.*
 
 **Example:** a=10
              Memory a->10
 
-###### **Reference Assignment** - *When one variable gets reference from another variable.*
+###### **Reference Assignment** 
+
+- *When one variable gets reference from another variable.*
 
 **Example:** a=12345
              b=a
