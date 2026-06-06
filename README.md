@@ -84,7 +84,15 @@ Hey everybody!!!
       - [**Complex literals do not support spaces inside string conversion**](#complex-literals-do-not-support-spaces-inside-string-conversion)
   - [**Sequence Category data type**](#sequence-category-data-type)
     - [**str**](#str)
+      - [**Types of str**](#types-of-str)
+      - [**Immutability type**](#immutability-type)
       - [**Operations on str data**](#operations-on-str-data)
+      - [**Concatenation**](#concatenation)
+      - [**With Space**](#with-space)
+      - [**String Repetition**](#string-repetition)
+      - [**Membership Operators**](#membership-operators)
+      - [**Escape Characters**](#escape-characters)
+      - [**String memory behavior**](#string-memory-behavior)
       - [**String References**](#string-references)
       - [**String formatting**](#string-formatting)
       - [**Unicode \& ASCII Basics**](#unicode--ascii-basics)
@@ -1441,7 +1449,7 @@ name                             # 'Python'
 
 ---
 
-**Types of str**
+###### **Types of str**
 
 - *In python programming we have two types of str data. They are*
   1. Single line string data
@@ -1499,7 +1507,7 @@ name                             # 'Python'
 
 ---
 
-**Immutability type**
+###### **Immutability type**
 
   ```python
    name="Python"
@@ -1686,7 +1694,7 @@ name                             # 'Python'
 
 ---
 
-**Concatenation**
+###### **Concatenation**
 
 *Joining strings.*
 
@@ -1699,7 +1707,7 @@ name                             # 'Python'
 
 ---
 
-**With Space**
+###### **With Space**
 
   ```python
     a="Hello"
@@ -1711,7 +1719,7 @@ name                             # 'Python'
 
 ---
 
-**String Repetition**
+###### **String Repetition**
 
    ```python
     print("Python"*3)    # PythonPythonPython
@@ -1719,7 +1727,7 @@ name                             # 'Python'
 
 ---
 
-**Membership Operators**
+###### **Membership Operators**
 
    ```python
    a="Python"
@@ -1731,7 +1739,7 @@ name                             # 'Python'
 
 ---
 
-**Escape Characters**
+###### **Escape Characters**
 
 *Used to insert special characters.*
 
@@ -1755,7 +1763,7 @@ name                             # 'Python'
 
 ---
 
-**String memory behavior**
+###### **String memory behavior**
 
   - *Same IDs due to string object reuse/interning.*
   - *Python sometimes reuses string objects for optimization.*
