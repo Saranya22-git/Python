@@ -33,8 +33,8 @@ Hey everybody!!!
   - [**Shared Object Referencing**](#shared-object-referencing)
   - [**Integer Caching**](#integer-caching)
   - [**Mutable vs Immutable**](#mutable-vs-immutable)
-    - [**Immutable Objects:** *Objects whose values cannot be changed after creation.*](#immutable-objects-objects-whose-values-cannot-be-changed-after-creation)
-    - [**Mutable Objects:** *Objects whose values can be modified after creation.*](#mutable-objects-objects-whose-values-can-be-modified-after-creation)
+    - [**Immutable Objects**](#immutable-objects)
+    - [**Mutable Objects**](#mutable-objects)
   - [**Garbage Collection**](#garbage-collection)
   - [**is vs ==**](#is-vs-)
 - [**Data Types in Python**](#data-types-in-python)
@@ -635,7 +635,9 @@ print(id(b))
 
 #### **Mutable vs Immutable**
 
-##### **Immutable Objects:** *Objects whose values cannot be changed after creation.*
+##### **Immutable Objects** 
+
+- *Objects whose values cannot be changed after creation.*
 
 **Immutable Types:** 
 
@@ -657,7 +659,9 @@ print(a,id(a))
 
 *IDs change because new object created. Old object unchanged.*
 
-##### **Mutable Objects:** *Objects whose values can be modified after creation.*
+##### **Mutable Objects** 
+
+- *Objects whose values can be modified after creation.*
 
 **Mutable Types:**
 
