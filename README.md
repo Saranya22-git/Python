@@ -54,6 +54,12 @@ Hey everybody!!!
       - [**Type Casting to int**](#type-casting-to-int)
     - [**float**](#float)
       - [**Float Immutability**](#float-immutability)
+      - [**Possible Float Object Reuse OR Interpreter Optimization**](#possible-float-object-reuse-or-interpreter-optimization)
+      - [**Reference Assignment**](#reference-assignment-2)
+      - [**Scientific Notation**](#scientific-notation)
+      - [**Float precision issue**](#float-precision-issue)
+      - [**is vs ==**](#is-vs--2)
+      - [**Type casting to float**](#type-casting-to-float)
     - [**bool**](#bool)
     - [**complex**](#complex)
   - [**Sequence Category data type**](#sequence-category-data-type)
@@ -62,7 +68,7 @@ Hey everybody!!!
       - [**String References**](#string-references)
       - [**String formatting**](#string-formatting)
       - [**Unicode \& ASCII Basics**](#unicode--ascii-basics)
-      - [**is vs ==**](#is-vs--2)
+      - [**is vs ==**](#is-vs--3)
       - [**Strings cannot be modified using indexing**](#strings-cannot-be-modified-using-indexing)
       - [**String Methods**](#string-methods)
     - [**List Category data type**](#list-category-data-type)
@@ -1033,7 +1039,7 @@ print(a,id(a))          # 13.5 2707329680208
 
 ---
 
-**Possible Float Object Reuse OR Interpreter Optimization**
+###### **Possible Float Object Reuse OR Interpreter Optimization**
 
 - *Python does not officially cache float values like integers.*
 - *Same float IDs may occur due to interpreter optimization or object reuse behavior.*
@@ -1048,7 +1054,7 @@ print(id(b))          # 1959600251888
 
 ---
 
-**Reference Assignment**
+###### **Reference Assignment**
 
 ```python
 a=2.34
@@ -1059,7 +1065,7 @@ print(b,type(b),id(b))          # 2.34 <class 'float'> 2870877520720
 
 ---
 
-**Scientific Notation**
+###### **Scientific Notation**
 
 - *Scientific notation is used to represent very large or very small decimal values.*
 - *Advantages of Scientific notation is that to take less memory space for bigger floating point values.*
@@ -1078,7 +1084,7 @@ print(b,id(b),type(b))          # 0.03 1642242380016 <class 'float'>
 
 ---
 
-**Float precision issue**
+###### **Float precision issue**
 
 - *Float values are internally stored in binary format.*
 - *Some decimal values cannot be represented exactly in binary.*
@@ -1090,7 +1096,7 @@ print(0.1+0.2)              # 0.30000000000000004
 
 ---
 
-**is vs ==**
+###### **is vs ==**
 
 ```python
 a=12.34
@@ -1102,7 +1108,7 @@ print(a is b)               # False
 
 ---
 
-**Type casting to float**
+###### **Type casting to float**
 
 ```python
 print(float(89))          # 89.0
