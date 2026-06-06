@@ -112,6 +112,16 @@ Hey everybody!!!
 
 *Python is a high-level, interpreted, dynamically typed, general-purpose programming language.*
 
+  **High-level:** *A high-level language is a programming language that is easy for humans to read, write, and understand.*
+
+  **Interpreted language:** *An interpreted language executes code through an interpreter. However, Python is not purely interpreted.*
+
+  **Dynamically Typed Language:** *Python automatically determines the data type of a variable. You don't need to declare types explicitly.*
+
+  **General Purpose Language:** *A language that can be used in multiple domains is called a general-purpose language.*
+
+  *Python can be used for Web Development (Examples: Django, Flask, FastAPI), Data Science (Libraries: NumPy, Pandas, Matplotlib), Machine Learning (Libraries: Scikit-learn, TensorFlow, PyTorch), Automation (Example: import OS) automating file operations, Cyber Security (Used for Networking scanning, Automation, Security testing), Desktop Applications (Libraries: Tkinter, PyQt), Game Development (Library: Pygame).*
+
 - ***Created by:** Gudio Van Rossum*
 - ***Official release:** 1991*
 - ***Official website:** python.org*
