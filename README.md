@@ -122,7 +122,7 @@ Hey everybody!!!
 
   *Python can be used for Web Development (Examples: Django, Flask, FastAPI), Data Science (Libraries: NumPy, Pandas, Matplotlib), Machine Learning (Libraries: Scikit-learn, TensorFlow, PyTorch), Automation (Example: import OS) automating file operations, Cyber Security (Used for Networking scanning, Automation, Security testing), Desktop Applications (Libraries: Tkinter, PyQt), Game Development (Library: Pygame).*
 
-- ***Created by:** Gudio Van Rossum*
+- ***Created by:** Gudio van Rossum*
 - ***Official release:** 1991*
 - ***Official website:** python.org*
 
