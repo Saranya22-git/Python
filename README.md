@@ -71,13 +71,24 @@ Hey everybody!!!
       - [**Truthy Values**](#truthy-values)
       - [**Falsy Values**](#falsy-values)
     - [**complex**](#complex)
+      - [**Complex datatype representation**](#complex-datatype-representation)
+      - [**Complex Immutability**](#complex-immutability)
+      - [**Separate Object Creation OR Object Referencing**](#separate-object-creation-or-object-referencing)
+      - [**Reference Assignment**](#reference-assignment-4)
+      - [**Real and Imaginary parts**](#real-and-imaginary-parts)
+      - [**Two-Argument complex()**](#two-argument-complex)
+      - [**is vs ==**](#is-vs--4)
+      - [**No ordering comparison**](#no-ordering-comparison)
+      - [**Type Casting to complex**](#type-casting-to-complex)
+      - [**Complex values do not support direct int/float conversion**](#complex-values-do-not-support-direct-intfloat-conversion)
+      - [**Complex literals do not support spaces inside string conversion**](#complex-literals-do-not-support-spaces-inside-string-conversion)
   - [**Sequence Category data type**](#sequence-category-data-type)
     - [**str**](#str)
       - [**Operations on str data**](#operations-on-str-data)
       - [**String References**](#string-references)
       - [**String formatting**](#string-formatting)
       - [**Unicode \& ASCII Basics**](#unicode--ascii-basics)
-      - [**is vs ==**](#is-vs--4)
+      - [**is vs ==**](#is-vs--5)
       - [**Strings cannot be modified using indexing**](#strings-cannot-be-modified-using-indexing)
       - [**String Methods**](#string-methods)
     - [**List Category data type**](#list-category-data-type)
@@ -1281,7 +1292,7 @@ print(bool(None))           # False
 
 **Examples:**
 
-**Complex datatype representation**
+###### **Complex datatype representation**
 
 ```python
 a=2+5j
@@ -1290,7 +1301,7 @@ print(a,type(a))                  # (2+5j) <class 'complex'>
 
 ---
 
-**Complex Immutability**
+###### **Complex Immutability**
 
 ```python
 a=2+5j
@@ -1300,7 +1311,7 @@ a=a+1
 print(a,id(a),type(a))              # (3+5j) 2023119824976 <class 'complex'>
 ```
 
-**Separate Object Creation OR Object Referencing**
+###### **Separate Object Creation OR Object Referencing**
 
 ```python
 a=3+3j
@@ -1312,7 +1323,7 @@ print(b,id(b))                # (3+3j) 2023119824944
 
 ---
 
-**Reference Assignment**
+###### **Reference Assignment**
 
 ```python
 a=3+3j
@@ -1324,7 +1335,7 @@ print(b,id(b))                # (3+3j) 2023119824976
 
 ---
 
-**Real and Imaginary parts**
+###### **Real and Imaginary parts**
 
 ```python
 a=2+3j
@@ -1335,7 +1346,7 @@ print(a.imag)             # 3.0
 
 ---
 
-**Two-Argument complex()**
+###### **Two-Argument complex()**
 
 ```python
 complex(real, imaginary)
@@ -1345,7 +1356,7 @@ print(complex(2,9))         # (2+9j)
 
 ---
 
-**is vs ==**
+###### **is vs ==**
 
 ```python
 a=2+3j
@@ -1358,7 +1369,7 @@ print(a is b)         # False
 
 ---
 
-**No ordering comparison**
+###### **No ordering comparison**
 
 ```python
 (2+3j) >= (2+3j)
@@ -1368,7 +1379,7 @@ print(a is b)         # False
   
 ---
 
-**Type Casting to complex**
+###### **Type Casting to complex**
 
 ```python
 print(complex(10))              # (10+0j)
@@ -1386,7 +1397,7 @@ print(complex("2+5j"))          # (2+5j)
   
 ---
 
-**Complex values do not support direct int/float conversion**
+###### **Complex values do not support direct int/float conversion**
 
 ```python
 int(2+3j)                   # TypeError
@@ -1395,7 +1406,7 @@ float(2+7j)                 # TypeError
 
 ---
 
-**Complex literals do not support spaces inside string conversion**
+###### **Complex literals do not support spaces inside string conversion**
 
 ```python
 complex("2 + 3j")            # ValueError
