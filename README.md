@@ -9,6 +9,7 @@ Hey everybody!!!
   - [**History of Python**](#history-of-python)
   - [**Versions of Python**](#versions-of-python)
   - [**Features of Python**](#features-of-python)
+- [**Python Distributions**](#python-distributions)
 - [**Python Program Structure**](#python-program-structure)
   - [**Keywords**](#keywords)
   - [**Identifiers**](#identifiers)
@@ -191,75 +192,91 @@ Hey everybody!!!
 
 #### **Features of Python**
 
-- *Features of a language are nothing but services or facilities provided by Language Developers and they are available in Languages and used by Language Programmers for developing real time applications.*
+- *Features of a language are nothing but services or facilities provided by a programming language.*
+- *Features tell us why a language is useful and why developers choose it.*
 - *Python Programming Language provides 11 features. They are*
 
-1. **Simple**
-   *Python is one of the simple programming language because of 3 important technical factors. They are*
-
-   **Factor-1:** *Python Programming provides "Rich set of modules(libraries)". So that python programmers are Re-using the predefined code without writing our own code.*
-
-   **Definition of Module:** *A module is a collection of functions, attributes and class names. Examples are Calendar, math, random, threading, qrcode etc..,*
-
-   **Factor-2:** *Python Programming provides in-built(already present) garbage collection facility by executing garbage collector program. So that garbage collector collects un-used memory space and improves the performance of python based applications.*
-
-   **Definition of Garbage Collector:** 
-   - *Grabage collector is one of the in-built python program in Python software and it is running behind of regular python program and whose role is collects un-used memory space and improves the performance of Python Based Applications.*
-   - *Hence Garbage collector takes about Automatic Memory management.*
+**Feature-1:** **Simple**
   
-   **Factor-3:** *Python Programming Language provides user-friendly syntaxes and makes the programmer to develop error-free programs within Limited Span of time.*
+  *Python is one of the simple programming language because of 3 important technical factors. They are*
 
-2. **Freeware and Opensource:**
+  **Factor-1:** *Python Programming provides "Rich set of modules(libraries)". So that python programmers are Re-using the predefined code without writing our own code.*
+
+  **Definition of Module:** *A module is a collection of functions, attributes and class names. Examples are Calendar, math, random, threading, qrcode etc..,*
+
+  **Factor-2:** *Python Programming provides in-built(already present) garbage collection facility by executing garbage collector program. So that garbage collector collects un-used memory space and improves the performance of python based applications.*
+
+  **Definition of Garbage Collector:** 
+  - *Garbage collector is one of the in-built python program in Python software and it is running behind of regular python program and whose role is collects un-used memory space and improves the performance of Python Based Applications.*
+  - *Hence Garbage collector takes about Automatic Memory management.*
+  
+  **Factor-3:** *Python Programming Language provides user-friendly syntaxes and makes the programmer to develop error-free programs within Limited Span of time.*
+
+**Feature-2:** **Freeware and Opensource:**
    
-   **Freeware:** *If any software downloaded freely and that software comes under freeware. **Example:** Python, JAVA*
-
-   **Opensource:** 
-   - *The Standard name of Python Software is "CPYTHON".*
-   - *Many software companies came forward and customized CPYTHON and developed their own in-house tools.*
-   - *The customized versions of CPYTHON are called "Python Distributions". Some of the Python Distributions are*
-        1. **JPYTHON or JYTHON:** *Used for running java based applications.*
-        2. **IRON PYTHON or IYTHON:** *Used to run C#.net applications.*
-        3. **RUBY PYTHON:** *Used to run ruby applications.*
-        4. **MICRO PYTHON:** *Used to run/develop micro controller applications.*
-        5. **ANACONDA PYTHON:** *Used to run big data/Hadoop based applications.*
-        6. **STACKLESS PYTHON:** *Used for concurrency applications etc..,*
+  **Freeware:** *If any software downloaded freely and that software comes under freeware.* 
    
-3. **Platform and Independent Language:**
-   *All datatypes take same memory space on different OS's*
+  **Example:** *Python, JAVA*
 
-4. **Dynamically Typed:**
-   *In IT we have 2 types of programming languages. They are*
+  **Opensource:** *Source code is publicly available and can be viewed, modified, and improved.*
+
+  - *The Standard name of Python Software is "CPYTHON".*
+  - *Many software companies came forward and customized CPYTHON and developed their own in-house tools.*
+  - *The customized versions of CPYTHON are called "Python Distributions". Some of the Python Distributions are*
+   1. **JPYTHON or JYTHON:** *Used for running java based applications.*
+   2. **IRON PYTHON or IYTHON:** *Used to run C#.net applications.*
+   3. **RUBY PYTHON:** *Used to run ruby applications.*
+   4. **MICRO PYTHON:** *Used to run/develop micro controller applications.*
+   5. **ANACONDA PYTHON:** *Used to run big data/Hadoop based applications.*
+   6. **STACKLESS PYTHON:** *Used for concurrency applications etc..,*
+   
+**Feature-3:** **Platform and Independent Language:**
+
+  *Python programs can run on different operating systems without changing source code.*
+
+  **Example:**
+  ```python
+    print("Hello")
+  ```
+  *Can run on windows, Linux, macOS.*
+
+  **How?**
+  - *Python converts source code into Bytecode.*
+  - *Bytecode is platform independent.*
+  - *Then PVM executes the bytecode on the target operating system.*
+
+**Feature-4:** **Dynamically Typed:**
+
+ *In IT we have 2 types of programming languages. They are*
    1. Static Typed Programming Languages
    2. Dynamically Typed Programming Languages
    
-   **Static Typed Programming Languages:** *In Static Typed Programming Languages it is mandatory to specify variable declaration for storing inputs in main memory of computer.*
+  **Static Typed Programming Languages:** *In Static Typed Programming Languages it is mandatory to specify variable declaration for storing inputs in main memory of computer.*
 
-   **Example:** int x,y,z;
-                x=10
-                y=8
-                z=x+y
+  **Example Languages:** Java, C, C#.net, etc.,
 
-   **Example Languages:** Java, C, C#.net, etc.,
+   **Example:** 
+     ```c
+      int x,y,z;
+      x=10
+      y=8
+      z=x+y
+    ```
 
-   **Dynamically Typed Programming Languages:** *In Dynamically Typed Programming Languages depends on type of value we are assigning, whose data type automatically/implicitly assigned by python execution environment. There is no need to write variable declaration in Dynamically Typed Programming Languages*
+  **Dynamically Typed Programming Languages:** *In Dynamically Typed Programming Languages depends on type of value we are assigning, whose data type automatically/implicitly assigned by python execution environment. There is no need to write variable declaration in Dynamically Typed Programming Languages*
+
+  **Example Languages:** Python
 
    **Example:** 
    ```python
    >>>a=10
    >>>print(a,type(a)) 10 <class 'int'>
    ```
-
-   **Example Languages:** Python
    
-5. **Interpreted Programming Language**
-   
-   **Interpretation:** *Line by Line conversion of source into destination is called Interpretation.*
+**Feature-5:** **Interpreted Programming Language**
 
-   **Interpreter:** *Program performs interpretation process.*
-
-   **Compilation:** *All lines at once conversion is called Compilation.*
-
-   **Compiler:** *Program performs compilation process.*
+ - *An interpreted language is a language whose code is executed through an interpreter.*
+ - *Python is actually both compiled and interpreted.*
 
    **Python Programming Language Execution Environment**
 
@@ -285,7 +302,6 @@ Hey everybody!!!
       - *Not human readable.*
       - *Platform independent.*
   
-
    - **Python Virtual Machine(PVM):**
       - *This is where actual execution happens.*
       - *Takes bytecode.*
@@ -326,45 +342,72 @@ Hey everybody!!!
   
   **Definition of PVM:** *PVM stands for Python Virtual Machine. PVM reads bytecode line by line and converts it into machine-understandable instructions.*
   
-6. **High Level Language**
+**Feature-6:** **High Level Language**
+
    *In IT, we have 2 types of languages. They are:*
    - *Low Level Programming Language*
    - *High Level Programming Language*
   
-    **Low Level Programming Language:** *In Low Level Languages, data is always stored in the form of low level values such as Binary data, Octal data, Hexadecimal data. These number systems are not directly understandable by end-users.*
+  **Low Level Programming Language:** *In Low Level Languages, data is always stored in the form of low level values such as Binary data, Octal data, Hexadecimal data. These number systems are not directly understandable by end-users.*
 
-    **High Level Programming Language:** *In these languages, internally even the programmer specifies the data in the form of low level format such binary data, octal data and hexadecimal data, automatically python programming language execution environment converts into high level data which is understandable by end-users. Hence python is one of the **High Level Programming Language.***
+  **High Level Programming Language:** *In these languages, internally even the programmer specifies the data in the form of low level format such binary data, octal data and hexadecimal data, automatically python programming language execution environment converts into high level data which is understandable by end-users. Hence python is one of the **High Level Programming Language.***
 
-7. **Robust**(Strong)
+**Feature-7:** **Robust**(Strong)
    
-    *Python is one of the Robust Programming Language because it provides "Exception handling" facility. If the python programmer uses exception handling then python based application becomes robust.*
+  *Python is one of the Robust Programming Language because it provides "Exception handling" facility. If the python programmer uses exception handling then python based application becomes robust.*
 
-   **Definition of Exception:** 
+  **Definition of Exception:** 
    - *All runtime errors are called Exception.*
    - *By default, all programming language, when exception occurs then we get Technical Error Messages.*
    - *In industry it is not recommended to generate technical error messages because these messages are not understandable by end-users.*
    - *Industry is recommended to generate user-friendly error messages by using "Exception Handling".*
   
-   **Definition of Exception Handling:**
+  **Definition of Exception Handling:**
    - *The process of converting Technical error messages into user-friendly error messages is called Exception Handling.*
 
-8. **Both functional(Procedure) and Object Oriented Programming Language(OOPs)**
-   
-9.  **Extensible**
-    
-    - *A programming language is said to be "Extensible" if it is provides programming facilities to other languages.*
-    - **Example:** *Python programming provides it's programming facilities to C, C++, JAVA, etc.., and hence python is one of the extensible programming language.*
+**Feature-8:** **Both functional(Procedure) and Object Oriented Programming Language(OOP)**
 
-10. **Embedded**
-    - *A programming language is said to be embedded if it takes the programming services of other languages.*
-    - **Example:** *Python programming embedded the programming services of C because C is the faster programming language.*
+ - *Python supports Object Oriented Programming Language(OOP).*
+
+ **Object:** *Everything in Python is an object.*
+
+ **Example:** 
+  ```python
+  a=10
+  ```
+  *Here 10 is object.*
+   
+**Feature-9:** **Extensible**
+
+ - *A programming language is said to be "Extensible" if it is provides programming facilities to other languages.*
+   
+ **Example:** *Python programming provides it's programming facilities to C, C++, JAVA, etc.., and hence python is one of the extensible programming language.*
+
+**Feature-10:** **Embedded**
+
+ - *A programming language is said to be embedded if it takes the programming services of other languages.*
+   
+ **Example:** *Python programming embedded the programming services of C because C is the faster programming language.*
   
-11. **Supports third APIs such as NumPy, Pandas, SciPy, Scikit, Matplotlib, Seaborn etc..,**
-    - *First party - Modules*
-    - *Second party - OS*
-    - *Third party - Numpy(Travis), Pandas(MC Kinney)*
+**Feature-11:** **Supports third APIs such as NumPy, Pandas, SciPy, Scikit, Matplotlib, Seaborn etc..,**
+
+  - *First party - Modules*
+  - *Second party - OS*
+  - *Third party - Numpy(Travis), Pandas(MC Kinney)*
 
 ---
+
+### **Python Distributions**
+
+- *Because Python is open source, different versions were created.*
+  
+  - **Jython:** *Runs Python on Java platform.*
+  - **IronPython:** *Runs Python on .NET platform.*
+  - **MicroPython:** *Used in IoT, Embedded Systems, Microcontrollers.*
+  - **Anaconda:** *Very important for data science. Includes NumPy, Pandas, Jupyter Notebook.*
+  - **Stackless Python:** *Used for Concurrency, High-performance applications.*
+
+--- 
 
 ### **Python Program Structure**
 
