@@ -44,6 +44,7 @@ Hey everybody!!!
   - [**Sequence Category data type**](#sequence-category-data-type)
     - [**str**](#str)
       - [**Operations on str data**](#operations-on-str-data)
+      - [**String References**](#string-references)
       - [**String formatting**](#string-formatting)
       - [**Unicode \& ASCII Basics**](#unicode--ascii-basics)
       - [**is vs ==**](#is-vs--1)
@@ -1715,6 +1716,16 @@ name                             # 'Python'
 
 ---
 
+###### **String References**
+
+ ```python
+  a="sony"
+  b=a
+
+  print(id(a))                # 2081418619248
+  print(id(b))                # 2081418619248
+```
+
 ###### **String formatting**
 
  ```python
@@ -1772,10 +1783,11 @@ name                             # 'Python'
  **Correct way:** 
    ```python
 
-  a="Saranya" 
+    a="Saranya" 
 
-  a="J"+a[0]
-  print(a)
+    a="J"+a[1:]
+    print(a)                # Jaranya              
+   ```
 
 ###### **String Methods**
 
