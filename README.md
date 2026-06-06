@@ -61,6 +61,15 @@ Hey everybody!!!
       - [**is vs ==**](#is-vs--2)
       - [**Type casting to float**](#type-casting-to-float)
     - [**bool**](#bool)
+      - [**Boolean Immutability**](#boolean-immutability)
+      - [**Object Referencing OR Shared Object Referencing OR Singleton Boolean Objects OR Object Reuse**](#object-referencing-or-shared-object-referencing-or-singleton-boolean-objects-or-object-reuse)
+      - [**Reference Assignment**](#reference-assignment-3)
+      - [**bool-int relationship OR bool() type casting OR Shared object referencing**](#bool-int-relationship-or-bool-type-casting-or-shared-object-referencing)
+      - [**Arithmetic operations on bool values return int results**](#arithmetic-operations-on-bool-values-return-int-results)
+      - [**is vs ==**](#is-vs--3)
+      - [**Type Casting to bool**](#type-casting-to-bool)
+      - [**Truthy Values**](#truthy-values)
+      - [**Falsy Values**](#falsy-values)
     - [**complex**](#complex)
   - [**Sequence Category data type**](#sequence-category-data-type)
     - [**str**](#str)
@@ -68,7 +77,7 @@ Hey everybody!!!
       - [**String References**](#string-references)
       - [**String formatting**](#string-formatting)
       - [**Unicode \& ASCII Basics**](#unicode--ascii-basics)
-      - [**is vs ==**](#is-vs--3)
+      - [**is vs ==**](#is-vs--4)
       - [**Strings cannot be modified using indexing**](#strings-cannot-be-modified-using-indexing)
       - [**String Methods**](#string-methods)
     - [**List Category data type**](#list-category-data-type)
@@ -1137,7 +1146,7 @@ print(float("3e2"))       # 300.0
 
 **Example:**
 
-**Boolean Immutability**
+###### **Boolean Immutability**
 
 ```python
 a=True
@@ -1149,7 +1158,7 @@ print(a,id(a))          # False 140728191798048
 
 ---
 
-**Object Referencing OR Shared Object Referencing OR Singleton Boolean Objects OR Object Reuse**
+###### **Object Referencing OR Shared Object Referencing OR Singleton Boolean Objects OR Object Reuse**
 
 ```python
 a=True
@@ -1161,7 +1170,7 @@ print(b,id(b))            # True 140728191798016
 
 ---
 
-**Reference Assignment**
+###### **Reference Assignment**
 
 ```python
 a=True
@@ -1173,7 +1182,7 @@ print(b,id(b))            # True 140728191798016
 
 ---
 
-**bool-int relationship OR bool() type casting OR Shared object referencing**
+###### **bool-int relationship OR bool() type casting OR Shared object referencing**
 
 ```python
 a=True
@@ -1185,7 +1194,7 @@ print(b,id(b))            # True 140728191798016
 
 ---
 
-**Arithmetic operations on bool values return int results**
+###### **Arithmetic operations on bool values return int results**
 
 ```python
 a=True+False
@@ -1197,7 +1206,7 @@ print(b,id(b))             # True 140728191798016
 
 ---
 
-**is vs ==**
+###### **is vs ==**
 
 ```python
 a=True
@@ -1209,7 +1218,7 @@ print(a is b)         # False
 
 ---
 
-**Type Casting to bool**
+###### **Type Casting to bool**
 
 ```python
 print(bool(1))               # True
@@ -1224,7 +1233,7 @@ print(bool("8+8j"))          # True
 
 ---
 
-**Truthy Values**
+###### **Truthy Values**
 
 ```python
 print(bool(100))            # True
@@ -1239,7 +1248,7 @@ print(bool("False"))        # True
 
 ---
 
-**Falsy Values**
+###### **Falsy Values**
 
 ```python
 print(bool(0))              # False
