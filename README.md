@@ -33,12 +33,27 @@ Hey everybody!!!
   - [**Shared Object Referencing**](#shared-object-referencing)
   - [**Integer Caching**](#integer-caching)
   - [**Mutable vs Immutable**](#mutable-vs-immutable)
+    - [**Immutable Objects:** *Objects whose values cannot be changed after creation.*](#immutable-objects-objects-whose-values-cannot-be-changed-after-creation)
+    - [**Mutable Objects:** *Objects whose values can be modified after creation.*](#mutable-objects-objects-whose-values-can-be-modified-after-creation)
   - [**Garbage Collection**](#garbage-collection)
   - [**is vs ==**](#is-vs-)
 - [**Data Types in Python**](#data-types-in-python)
   - [**Fundamental Category data type**](#fundamental-category-data-type)
     - [**int**](#int)
+      - [**Integer Immutability**](#integer-immutability)
+      - [**Cached Integer** - *The actual cached number itself.*](#cached-integer---the-actual-cached-number-itself)
+      - [**Integer Caching** - *Python reuses small integers(-5 to 256).*](#integer-caching---python-reuses-small-integers-5-to-256)
+      - [**Object Referencing** - *Whenever a variable points to an object.*](#object-referencing---whenever-a-variable-points-to-an-object)
+      - [**Reference Assignment** - *When one variable gets reference from another variable.*](#reference-assignment---when-one-variable-gets-reference-from-another-variable)
+      - [**Separate Object Creation**](#separate-object-creation)
+      - [**Integer Caching OR Small Integer Caching and also related to Object Interning**](#integer-caching-or-small-integer-caching-and-also-related-to-object-interning)
+      - [**Object Referencing OR Reference Assignment**](#object-referencing-or-reference-assignment)
+      - [**No Integer Caching OR Separate Object Creation**](#no-integer-caching-or-separate-object-creation)
+      - [**is vs ==**](#is-vs--1)
+      - [**Garbage Collection Relation**](#garbage-collection-relation)
+      - [**Type Casting to int**](#type-casting-to-int)
     - [**float**](#float)
+      - [**Float Immutability**](#float-immutability)
     - [**bool**](#bool)
     - [**complex**](#complex)
   - [**Sequence Category data type**](#sequence-category-data-type)
@@ -47,7 +62,7 @@ Hey everybody!!!
       - [**String References**](#string-references)
       - [**String formatting**](#string-formatting)
       - [**Unicode \& ASCII Basics**](#unicode--ascii-basics)
-      - [**is vs ==**](#is-vs--1)
+      - [**is vs ==**](#is-vs--2)
       - [**Strings cannot be modified using indexing**](#strings-cannot-be-modified-using-indexing)
       - [**String Methods**](#string-methods)
     - [**List Category data type**](#list-category-data-type)
@@ -620,7 +635,7 @@ print(id(b))
 
 #### **Mutable vs Immutable**
 
-**Immutable Objects:** *Objects whose values cannot be changed after creation.*
+##### **Immutable Objects:** *Objects whose values cannot be changed after creation.*
 
 **Immutable Types:** 
 
@@ -642,7 +657,7 @@ print(a,id(a))
 
 *IDs change because new object created. Old object unchanged.*
 
-**Mutable Objects:** *Objects whose values can be modified after creation.*
+##### **Mutable Objects:** *Objects whose values can be modified after creation.*
 
 **Mutable Types:**
 
@@ -742,33 +757,48 @@ print(a is b)
 ```
 --- 
 
-**Cached Integer** - *The actual cached number itself.*
+###### **Integer Immutability**
+
+*Once created, integer objects cannot be changed.*
+
+```python
+a=10
+print(a,id(a))            # 10 140716343600536
+
+a=a+1
+print(a,id(a))            # 11 140716343600568
+```
+*IDs change because new integer object created.*
+
+---
+
+###### **Cached Integer** - *The actual cached number itself.*
 
 **Example:** 34
 
-**Integer Caching** - *Python reuses small integers(-5 to 256).*
+###### **Integer Caching** - *Python reuses small integers(-5 to 256).*
 
 **Example:** a=34
              b=34
  
-**Object Referencing** - *Whenever a variable points to an object.*
+###### **Object Referencing** - *Whenever a variable points to an object.*
 
 **Example:** a=10
              Memory a->10
 
-**Reference Assignment** - *When one variable gets reference from another variable.*
+###### **Reference Assignment** - *When one variable gets reference from another variable.*
 
 **Example:** a=12345
              b=a
        
-**Separate Object Creation**
+###### **Separate Object Creation**
 
 **Example:** a=12345
              b=12345
 
 --- 
 
-**Integer Caching OR Small Integer Caching and also related to Object Interning**
+###### **Integer Caching OR Small Integer Caching and also related to Object Interning**
 
 ```python
 a=34
@@ -782,7 +812,7 @@ print(b,id(b))       # 34 140733555255448
 
 ---
 
-**Object Referencing OR Reference Assignment**
+###### **Object Referencing OR Reference Assignment**
 
 ```python
 c=34
@@ -804,7 +834,7 @@ print(b,id(b))      # 12345 2334956197840
 
 ---
 
-**No Integer Caching OR Separate Object Creation** 
+###### **No Integer Caching OR Separate Object Creation** 
 
 ```python
 a=257
@@ -839,24 +869,10 @@ b=1
 print(a,id(a),type(a))      # True 140733554346752 <class 'bool'>
 print(b,id(b),type(b))      # 1 140733555254392 <class 'int'>
 ```
----
-
-**Integer Immutability**
-
-*Once created, integer objects cannot be changed.*
-
-```python
-a=10
-print(a,id(a))            # 10 140716343600536
-
-a=a+1
-print(a,id(a))            # 11 140716343600568
-```
-*IDs change because new integer object created.*
 
 ---
 
-**is vs ==**
+###### **is vs ==**
 
 *== checks value equality.*
 
@@ -878,7 +894,7 @@ print(c is d)       # False
 
 --- 
 
-**Garbage Collection Relation**
+###### **Garbage Collection Relation**
 
 ```python
 a=10
@@ -891,7 +907,7 @@ print(a)        # 100
 
 ---
 
-**Type Casting to int**
+###### **Type Casting to int**
 
 ```python
 print(int(10))                    # 10
@@ -991,7 +1007,7 @@ print(a,type(a))        # 13.45 <class 'float'>
 
 ----
 
-**Float Immutability**
+###### **Float Immutability**
 
 - *IDs change because float objects are immutable and a new object is created after modification.*
 
