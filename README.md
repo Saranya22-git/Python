@@ -399,12 +399,25 @@ Hey everybody!!!
 
 ### **Python Distributions**
 
-- *Because Python is open source, different versions were created.*
-  
-  - **Jython:** *Runs Python on Java platform.*
-  - **IronPython:** *Runs Python on .NET platform.*
+
+**Distribution:** *A distribution is a customized version of python created to serve a specific need. Because Python is open source, developers can modify it and create their own distributions.*
+
+  - **CPython:**
+    - *CPython is the standard and most widely used implementation of Python.*
+    - *When you download Python from python.org you are usually downloading CPython.* 
+     
+  - **Jython:** 
+    - *Jython is Python implemented on the Java platform.*
+    - *Allows Python code to work with Java libraries.*
+    
+  - **IronPython:** 
+    - *IronPython is Python implemented for the .NET framework.*
+    - *Allows Python to work with C#, .NET Libraries.* 
+     
   - **MicroPython:** *Used in IoT, Embedded Systems, Microcontrollers.*
+   
   - **Anaconda:** *Very important for data science. Includes NumPy, Pandas, Jupyter Notebook.*
+   
   - **Stackless Python:** *Used for Concurrency, High-performance applications.*
 
 --- 
