@@ -261,7 +261,7 @@ Hey everybody!!!
       x=10
       y=8
       z=x+y
-    ```
+     ```
 
   **Dynamically Typed Programming Languages:** *In Dynamically Typed Programming Languages depends on type of value we are assigning, whose data type automatically/implicitly assigned by python execution environment. There is no need to write variable declaration in Dynamically Typed Programming Languages*
 
