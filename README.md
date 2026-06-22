@@ -143,7 +143,21 @@ Hey everybody!!!
  - *No Whatsapp*
  - *No ChatGPT*
 
-*Everything software-related is created through programming.*  
+*Everything software-related is created through programming.* 
+
+**Applications of Programming**
+
+- **Web Development:** *Websites, E-commerce platforms.*
+    **Example:** *Amazon, Flipkart* 
+- **Mobile Apps:**
+    **Example:** *WhatsApp, Instagram, Telegram.*  
+- **Data Science:** *Used for Data Analysis, Machine Learning, AI.*
+- **Automation:**
+    **Example:** *Instead of manually renaming 1000 files, write a program. Computer does it automatically.* 
+- **Game Development:**
+    **Example:** *Minecraft, PUBG: Battlegrounds.* 
+- **Cybersecurity:** *Programming is used to detect attacks, create security tools, analyze malware.*
+ 
 
 
 
