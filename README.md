@@ -173,6 +173,24 @@ Hey everybody!!!
 - **Reusable:** *Can be used again.*
 
 
+**What is a Program?**
+
+- *A program is a collection of instructions written to perform a specific task.*
+- *A program tells the computer:*
+ - *What to do*
+ - *How to do it*
+ - *When to do it*
+
+**Example:** *Imagine a recipe for making biryani.*
+*The recipe contains steps:*
+1. *Wash rice*
+2. *Cook rice*
+3. *Prepare masala*
+4. *Mix ingredients*
+5. *Serve*
+
+*The recipe is a set of instructions.*
+
 ### **Introduction to Python**
 
 **What is Python?**
