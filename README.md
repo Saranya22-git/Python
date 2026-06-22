@@ -177,9 +177,9 @@ Hey everybody!!!
 
 - *A program is a collection of instructions written to perform a specific task.*
 - *A program tells the computer:*
- - *What to do*
- - *How to do it*
- - *When to do it*
+  - *What to do*
+  - *How to do it*
+  - *When to do it*
 
 **Example:** *Imagine a recipe for making biryani.*
 *The recipe contains steps:*
