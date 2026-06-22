@@ -192,6 +192,31 @@ Hey everybody!!!
 
 *The recipe is a set of instructions.*
 
+**Characteristics of a Program**
+
+- **Set of instructions:** *A program contains multiple instructions.*
+    **Example:**
+    ```python
+     a=10
+     b=10
+     print(a+b)
+    ```
+- **Performs a specific task:** 
+    **Examples:**
+     - *Calculator program*
+     - *Attendance program*
+     - *Banking program*
+     - *Payroll program* 
+- **Written in a Programming Language:**
+    **Examples:**
+     - *Python*
+     - *C*
+     - *Java*
+     - *C++*
+     - *JavaScript* 
+- **Executed by Computer:** *Computer reads instructions one by one and executes them.*
+   
+
 ### **Introduction to Python**
 
 **What is Python?**
