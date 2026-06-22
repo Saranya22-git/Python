@@ -4,6 +4,8 @@ Hey everybody!!!
 
 ### **Table of Contents**
 - [**Table of Contents**](#table-of-contents)
+- [**Programming Fundamentals**](#programming-fundamentals)
+  - [**Introduction to Programming**](#introduction-to-programming)
 - [**Introduction to Python**](#introduction-to-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -107,6 +109,45 @@ Hey everybody!!!
 
 
 ---
+
+### **Programming Fundamentals**
+
+#### **Introduction to Programming**
+
+**What is Programming?**
+
+- *Programming is the process of giving instructions to a computer to perform a specific task.*
+- *A computer is a machine. It cannot think, decide, or understand of human language on its own.*
+- *It only follows instructions.*
+- *Those instructions are called a program and the process of writing those instructions is called Programming.*
+
+**Example:** *Imagine you are teaching a robot to make tea.*
+
+*You must tell it:*
+1. *Take a cup*
+2. *Boil water*
+3. *Add tea powder*
+4. *Add sugar*
+5. *Pour into cup*
+  
+  *The robot will follow only the instructions you provide. Similarly, a computer follows instructions written by a programmer.*
+
+**Why do we need Programming?**
+
+- *Without programming:*
+ - *No websites*
+ - *No mobile apps*
+ - *No games*
+ - *No Instagram*
+ - *No YouTube*
+ - *No Whatsapp*
+ - *No ChatGPT*
+
+*Everything software-related is created through programming.*  
+
+
+
+
 ### **Introduction to Python**
 
 **What is Python?**
@@ -414,11 +455,19 @@ Hey everybody!!!
     - *IronPython is Python implemented for the .NET framework.*
     - *Allows Python to work with C#, .NET Libraries.* 
      
-  - **MicroPython:** *Used in IoT, Embedded Systems, Microcontrollers.*
+  - **MicroPython:** 
+    - *MicroPython is a lightweight implementation of Python designed for Microcontrollers, Embedded Systems, IoT devices.* 
+  
+    **Why was it created?**
+
+     - *Normal Python requires more memory, more processing power.*
+     - *Small devices don't have enough resources. Example: Sensors, Smart Watches, IoT Boards. Need a smaller Python. So MicroPython was created.*
    
   - **Anaconda:** *Very important for data science. Includes NumPy, Pandas, Jupyter Notebook.*
    
-  - **Stackless Python:** *Used for Concurrency, High-performance applications.*
+  - **Stackless Python:** 
+    - *Stackless Python is a modified version of Python designed for Concurrency, Parallel Tasks, High Performance Applications.*
+  
 
 --- 
 
