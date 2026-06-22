@@ -195,7 +195,7 @@ Hey everybody!!!
 **Characteristics of a Program**
 
 - **Set of instructions:** *A program contains multiple instructions.*
-    **Example:**
+     **Example:**
     ```python
      a=10
      b=10
