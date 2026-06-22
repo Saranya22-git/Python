@@ -195,6 +195,7 @@ Hey everybody!!!
 **Characteristics of a Program**
 
 - **Set of instructions:** *A program contains multiple instructions.*
+     
      **Example:**
     ```python
      a=10
@@ -202,12 +203,14 @@ Hey everybody!!!
      print(a+b)
     ```
 - **Performs a specific task:** 
+    
     **Examples:**
      - *Calculator program*
      - *Attendance program*
      - *Banking program*
      - *Payroll program* 
 - **Written in a Programming Language:**
+    
     **Examples:**
      - *Python*
      - *C*
