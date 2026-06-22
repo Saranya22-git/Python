@@ -182,6 +182,7 @@ Hey everybody!!!
   - *When to do it*
 
 **Example:** *Imagine a recipe for making biryani.*
+
 *The recipe contains steps:*
 1. *Wash rice*
 2. *Cook rice*
