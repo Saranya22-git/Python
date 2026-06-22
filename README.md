@@ -148,6 +148,7 @@ Hey everybody!!!
 **Applications of Programming**
 
 - **Web Development:** *Websites, E-commerce platforms.*
+    
     **Example:** *Amazon, Flipkart* 
 - **Mobile Apps:**
     **Example:** *WhatsApp, Instagram, Telegram.*  
