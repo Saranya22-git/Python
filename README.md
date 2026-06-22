@@ -162,8 +162,15 @@ Hey everybody!!!
      **Example:** *Minecraft, PUBG: Battlegrounds.* 
 - **Cybersecurity:** *Programming is used to detect attacks, create security tools, analyze malware.*
  
+**Characteristics of Programming**
 
+*Good programming should be:*
 
+- **Correct:** *Produces correct output.*
+- **Efficient:** *Uses less time and memory.*
+- **Readable:** *Easy for humans to understand.*
+- **Maintainable:** *Easy to modify later.*
+- **Reusable:** *Can be used again.*
 
 
 ### **Introduction to Python**
