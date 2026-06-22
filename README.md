@@ -149,14 +149,17 @@ Hey everybody!!!
 
 - **Web Development:** *Websites, E-commerce platforms.*
     
-    **Example:** *Amazon, Flipkart* 
+     **Example:** *Amazon, Flipkart* 
 - **Mobile Apps:**
-    **Example:** *WhatsApp, Instagram, Telegram.*  
+    
+     **Example:** *WhatsApp, Instagram, Telegram.*  
 - **Data Science:** *Used for Data Analysis, Machine Learning, AI.*
 - **Automation:**
-    **Example:** *Instead of manually renaming 1000 files, write a program. Computer does it automatically.* 
+    
+     **Example:** *Instead of manually renaming 1000 files, write a program. Computer does it automatically.* 
 - **Game Development:**
-    **Example:** *Minecraft, PUBG: Battlegrounds.* 
+    
+     **Example:** *Minecraft, PUBG: Battlegrounds.* 
 - **Cybersecurity:** *Programming is used to detect attacks, create security tools, analyze malware.*
  
 
