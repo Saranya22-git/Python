@@ -220,6 +220,20 @@ Hey everybody!!!
 - **Executed by Computer:** *Computer reads instructions one by one and executes them.*
    
 
+**Types of Programs**
+
+- **System Programs:** *Used to manage the computer.*
+
+   **Example:** 
+    - *Operating Systems*
+    - *Device Drivers* 
+- **Application Programs:** *Used by users.*
+     
+   **Examples:**
+    - *Calculator*
+    - *Browser*
+    - *Music Player*
+     
 ### **Introduction to Python**
 
 **What is Python?**
