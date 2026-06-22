@@ -233,7 +233,23 @@ Hey everybody!!!
     - *Calculator*
     - *Browser*
     - *Music Player*
-     
+
+**Real-life examples of Programs**
+
+- **ATM Software**
+   - *Checks Balance*
+   - *Withdraw Money*
+   - *Deposit Money*
+- **Instagram**
+   - *Upload Photos*
+   - *Like Posts*
+   - *Send Messages* 
+- **YouTube**
+   - *Play Videos*
+   - *Search Videos*
+   - *Subscribe Channels* 
+
+
 ### **Introduction to Python**
 
 **What is Python?**
