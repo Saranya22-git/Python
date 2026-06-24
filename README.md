@@ -135,13 +135,13 @@ Hey everybody!!!
 **Why do we need Programming?**
 
 - *Without programming:*
- - *No websites*
- - *No mobile apps*
- - *No games*
- - *No Instagram*
- - *No YouTube*
- - *No Whatsapp*
- - *No ChatGPT*
+   - *No websites*
+   - *No mobile apps*
+   - *No games*
+   - *No Instagram*
+   - *No YouTube*
+   - *No Whatsapp*
+   - *No ChatGPT*
 
 *Everything software-related is created through programming.* 
 
