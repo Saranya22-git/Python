@@ -341,13 +341,13 @@ Hey everybody!!!
 **Software:** *Software is a collection of programs and instructions that tell hardware what to do.*
 
 **Examples of Software:**
- - *Windows*
- - *Android*
- - *Instagram*
- - *YouTune*
- - *WhatsApp*
- - *Microsoft Excel*
- - *Google Chrome*
+  - *Windows*
+  - *Android*
+  - *Instagram*
+  - *YouTune*
+  - *WhatsApp*
+  - *Microsoft Excel*
+  - *Google Chrome*
 
 - *Without software, hardware is useless.*
 - *Without hardware, software cannot run.*
