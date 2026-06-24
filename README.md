@@ -349,8 +349,8 @@ Hey everybody!!!
   - *Microsoft Excel*
   - *Google Chrome*
 
-- *Without software, hardware is useless.*
-- *Without hardware, software cannot run.*
+*Without software, hardware is useless.*
+*Without hardware, software cannot run.*
 
 ---
 
