@@ -132,6 +132,8 @@ Hey everybody!!!
   
   *The robot will follow only the instructions you provide. Similarly, a computer follows instructions written by a programmer.*
 
+---
+
 **Why do we need Programming?**
 
 - *Without programming:*
@@ -144,6 +146,8 @@ Hey everybody!!!
    - *No ChatGPT*
 
 *Everything software-related is created through programming.* 
+
+---
 
 **Applications of Programming**
 
@@ -161,7 +165,9 @@ Hey everybody!!!
     
      **Example:** *Minecraft, PUBG: Battlegrounds.* 
 - **Cybersecurity:** *Programming is used to detect attacks, create security tools, analyze malware.*
- 
+
+---
+
 **Characteristics of Programming**
 
 *Good programming should be:*
@@ -172,6 +178,7 @@ Hey everybody!!!
 - **Maintainable:** *Easy to modify later.*
 - **Reusable:** *Can be used again.*
 
+---
 
 **What is a Program?**
 
@@ -191,6 +198,8 @@ Hey everybody!!!
 5. *Serve*
 
 *The recipe is a set of instructions.*
+
+---
 
 **Characteristics of a Program**
 
@@ -219,6 +228,7 @@ Hey everybody!!!
      - *JavaScript* 
 - **Executed by Computer:** *Computer reads instructions one by one and executes them.*
    
+---
 
 **Types of Programs**
 
@@ -233,6 +243,8 @@ Hey everybody!!!
     - *Calculator*
     - *Browser*
     - *Music Player*
+
+---
 
 **Real-life examples of Programs**
 
@@ -249,6 +261,55 @@ Hey everybody!!!
    - *Search Videos*
    - *Subscribe Channels* 
 
+---
+
+**What is Coding**
+
+- *Coding is the process of converting logic, algorithms, or solutions into a programming language that a computer can understand and execute.*
+  
+**Example:** *Imagine your teacher asks **Find the sum of two numbers**.*
+
+**Step-1:** *Think of the logic*
+- *Take first number*
+- *Take second number*
+- *Add them*
+- *Display result*
+
+*This is Logic.*
+
+**Step-2:** *Convert Logic into Python*
+ ```python
+ a=10
+ b=20
+ print(a+b)
+ ```
+
+*This conversion of logic into Python code is called Coding.*
+
+---
+
+**Coding vs Programming**
+
+| Coding                   | Programming                                       |
+| ------------------------ | ------------------------------------------------- |
+| Writing code             | Complete software development process             |
+| Converts logic into code | Includes logic design, coding, testing, debugging |
+| Smaller activity         | Bigger activity                                   |
+| Part of programming      | Entire process                                    |
+
+---
+
+**Why Coding is important?**
+
+*Coding helps us:*
+- *Create software*
+- *Build websites*
+- *Develop apps*
+- *Automate tasks*
+- *Analyze data*
+- *Build AI systems*
+
+---
 
 ### **Introduction to Python**
 
