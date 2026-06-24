@@ -311,6 +311,69 @@ Hey everybody!!!
 
 ---
 
+**Software vs Hardware**
+
+**Hardware:** *Hardware refers to the physical components of a computer that you can see and touch.*
+
+**Examples of Hardware:**
+
+**Input devices**
+- *Keyboard*
+- *Mouse*
+- *Webcam*
+- *Scanner*
+
+**Output devices**
+- *Monitor*
+- *Printer*
+- *Speakers*
+
+**Processing Devices**
+- *CPU*
+- *GPU*
+
+**Storage Devices**
+- *Hard Disk (HDD)*
+- *SSD*
+- *Pen Drive*
+- *Memory Card*
+
+**Software:** *Software is a collection of programs and instructions that tell hardware what to do.*
+
+**Examples of Software:**
+ - *Windows*
+ - *Android*
+ - *Instagram*
+ - *YouTune*
+ - *WhatsApp*
+ - *Microsoft Excel*
+ - *Google Chrome*
+
+- *Without software, hardware is useless.*
+- *Without hardware, software cannot run.*
+
+---
+
+**Relationship between Hardware and Software**
+
+*Harware and Software work together.*
+
+**Example:** *You click Instagram.*
+
+**Hardware:**
+- *Finger touches screen*
+- *CPU processes action*
+- *RAM stores data*
+
+**Software:**
+- *Instagram app opens*
+- *Displays feed*
+- *Loads messages*
+
+*Both are required.*
+
+---
+
 ### **Introduction to Python**
 
 **What is Python?**
