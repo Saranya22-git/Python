@@ -399,6 +399,23 @@ Hey everybody!!!
 
 ##### **Compiler**
 
+**Problem:** *Computers understand only 0 and 1. This is called Machine Learning and Machine Code.*
+
+**Example:** 
+
+10110011
+01010101
+11100010
+
+- *Humans cannot easily write programs in this form. So we use languages like Python, Java, C, C++. These are easier for humans.*
+- *But the computer still understands only 0s and 1s. So we need a translator.*
+- *That translator is called a **Compiler.***
+
+**Compiler:** *A compiler is a software program that translates the entire source code into machine code before execution.*
+
+**Example:** *Imagine you speak Telugu and your friend speaks Japanese. Neither of you understands the other's language. A translator converts Telugu-Japanese. Similarly Python/C code - Machine code. Compiler acts as the translator.*
+
+---
 
 ### **Introduction to Python**
 
