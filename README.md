@@ -6,6 +6,11 @@ Hey everybody!!!
 - [**Table of Contents**](#table-of-contents)
 - [**Programming Fundamentals**](#programming-fundamentals)
   - [**Introduction to Programming**](#introduction-to-programming)
+    - [**Programming**](#programming)
+    - [**Program**](#program)
+    - [**Coding**](#coding)
+    - [**Software vs Hardware**](#software-vs-hardware)
+    - [**Compiler**](#compiler)
 - [**Introduction to Python**](#introduction-to-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -114,6 +119,8 @@ Hey everybody!!!
 
 #### **Introduction to Programming**
 
+##### **Programming**
+
 **What is Programming?**
 
 - *Programming is the process of giving instructions to a computer to perform a specific task.*
@@ -179,6 +186,8 @@ Hey everybody!!!
 - **Reusable:** *Can be used again.*
 
 ---
+
+##### **Program**
 
 **What is a Program?**
 
@@ -263,6 +272,8 @@ Hey everybody!!!
 
 ---
 
+##### **Coding**
+
 **What is Coding**
 
 - *Coding is the process of converting logic, algorithms, or solutions into a programming language that a computer can understand and execute.*
@@ -311,7 +322,7 @@ Hey everybody!!!
 
 ---
 
-**Software vs Hardware**
+##### **Software vs Hardware**
 
 **Hardware:** *Hardware refers to the physical components of a computer that you can see and touch.*
 
@@ -373,6 +384,21 @@ Hey everybody!!!
 *Both are required.*
 
 ---
+
+**Difference between Hardware and Software**
+
+| Hardware                | Software                          |
+| ----------------------- | --------------------------------- |
+| Physical components     | Programs and instructions         |
+| Can be touched          | Cannot be touched                 |
+| Manufactured            | Developed                         |
+| Can wear out physically | Does not wear out physically      |
+| Examples: CPU, Keyboard | Examples: Windows, Python, Chrome |
+
+---
+
+##### **Compiler**
+
 
 ### **Introduction to Python**
 
