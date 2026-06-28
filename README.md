@@ -417,6 +417,41 @@ Hey everybody!!!
 
 ---
 
+**How compiler works**
+
+**Step-1:** *Programmer writes code.*
+**Step-2:** *Compiler reads entire code.*
+**Step-3:** *Compiler converts code into machine machine language.*
+**Step-4:** *Computer executes machine language.*
+
+**NOTE:** *Compiler translates the whole program at once. Only after successful translation does execution start.*
+
+---
+
+**Compiler Languages**
+
+**Examples:**
+- *C*
+- *C++*
+- *Go*
+- *Rust*
+
+*These languages mainly use compilers.*
+
+---
+
+**Advantages of Compiler**
+
+- **Faster Execution:** *Code is already translated. So execution is fast.*
+- **Error Checking:** *Compiler checks many errors before execution.*
+- **Optimized Code:** *Compiler can improve performance.*
+
+**Disadvantages of Compiler**
+
+- **Compilation Time:** *Large programs take time to compile.*
+- **Recompile Needed:** *Every change requires recompilation.*
+
+
 ### **Introduction to Python**
 
 **What is Python?**
