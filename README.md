@@ -529,6 +529,7 @@ print(a+b)
 **Example:** *Imagine you want to tell your friend to open the door.*
 - **Human Language:** *Please open the door. Easy to understand.*
 - **Machine Language:** *Imagine saying 101010 10101 1010101 010101. Nobody would understand.*
+- *Similarly humans prefer High-Level languages. Computers understand machine language. So a compiler or interpreter acts as a translator.*
 
 ---
 
@@ -547,6 +548,48 @@ print(a+b)
 
 ---
 
+**Characteristics of High-Level Languages**
+
+- **Easy to read:** *`print("Hello")`. Even someone new to programming can understand this.*
+- **Easy to write:** *You don't need to write binary. Instead of 101010101. You write `print("Hello")`*
+- **Easy to debug:** *If there is an error. `print(name)`. Python shows a meaningful error message. This makes debugging easier.*
+- **Portable(Platform Independent):** *Many high-level langauges can run on different operating systems. The same python program can run on Windows, Linux, macOS without changing the code(provided python is installed).*
+- **Faster Development:** *Because the syntax is simple, developers can write programs quickly. Example: Building a calculator in python requires much less code than in machine language.*
+- **Easier Maintenance:** *Programs written in high-level languages are easier to update and modify. Example: If a company wants to add a new feature to its application, developers can understand and modify the code more easily.*
+
+---
+
+**Advantages of High-level language**
+
+- *Easy to learn*
+- *Easy to write*
+- *Easy to debug*
+- *Easy to read*
+- *Faster development*
+- *More productive*
+- *Easy to maintain*
+- *Portable across platforms*
+
+**Disadvantages of High-level languages**
+
+- **Slower than low-level languages:** *Because the code must first be translated into machine language.*
+- **Uses more memory:** *High-level languages often require more memory than low-level languages.*
+- **Less hardware control:** *You cannot directly control hardware as easily as with low-level languages. Example: Writing an operating system is generally done in languages like C rather than Python because they provide lower-level access to hardware.*
+
+---
+
+**Applications**
+
+*High-level languages are used to build:*
+- *Websites*
+- *Mobile applications*
+- *Desktop software*
+- *Games*
+- *AI applications*
+- *Data analysis tools*
+- *Automation scripts*
+
+---
 
 ### **Introduction to Python**
 
