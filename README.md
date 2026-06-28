@@ -12,6 +12,7 @@ Hey everybody!!!
     - [**Software vs Hardware**](#software-vs-hardware)
     - [**Compiler**](#compiler)
     - [**Interpreter**](#interpreter)
+    - [**High-Level Languages**](#high-level-languages)
 - [**Introduction to Python**](#introduction-to-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -513,6 +514,39 @@ print(a+b)
 - **Stops at first error:** *If an error occurs, execution stops.*
 
 ---
+
+##### **High-Level Languages**
+
+**High-Level Language:** *A High-Level Language(HLL) is a programming language that is easy for humans to read, write and understand. It uses english-like words and symbols instead of binary (0s and 1s).*
+
+---
+
+**Why do we need high-level languages?**
+
+- *Imagine writing this every time you wanted to display "Hello": 0101010 010101 010101 0101010000. This is machine language.*
+- *It's difficult for humans to read, write, debug and remember. Instead we write `print("Hello")`. This is much easier.*
+
+**Example:** *Imagine you want to tell your friend to open the door.*
+- **Human Language:** *Please open the door. Easy to understand.*
+- **Machine Language:** *Imagine saying 101010 10101 1010101 010101. Nobody would understand.*
+
+---
+
+**Examples of High-Level Languages:**
+
+- *Python*
+- *Java*
+- *C#*
+- *Ruby*
+- *PHP*
+- *JavaScript*
+- *Swift*
+- *Kotlin*
+
+*These languages are designed to be easy for programmers.*
+
+---
+
 
 ### **Introduction to Python**
 
