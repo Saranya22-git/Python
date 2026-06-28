@@ -420,8 +420,11 @@ Hey everybody!!!
 **How compiler works**
 
 **Step-1:** *Programmer writes code.*
+
 **Step-2:** *Compiler reads entire code.*
-**Step-3:** *Compiler converts code into machine machine language.*
+
+**Step-3:** *Compiler converts code into machine language.*
+
 **Step-4:** *Computer executes machine language.*
 
 **NOTE:** *Compiler translates the whole program at once. Only after successful translation does execution start.*
