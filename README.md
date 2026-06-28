@@ -11,6 +11,7 @@ Hey everybody!!!
     - [**Coding**](#coding)
     - [**Software vs Hardware**](#software-vs-hardware)
     - [**Compiler**](#compiler)
+    - [**Interpreter**](#interpreter)
 - [**Introduction to Python**](#introduction-to-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -454,6 +455,64 @@ Hey everybody!!!
 - **Compilation Time:** *Large programs take time to compile.*
 - **Recompile Needed:** *Every change requires recompilation.*
 
+---
+
+##### **Interpreter**
+
+**Interpreter:** *An Interpreter is a software program that translates and executes source code one line at a time.*
+
+**Example:** *Imagine a translator helping two people talk.*
+
+**Compiler Style:**
+- *Person A speaks everything. Translator converts everything. Then Person B hears everything.*
+
+
+**Interpreter Style:**
+- *Person A speaks one sentence. Translator translates it. Person B hears it. Then next sentence. Then next sentence. This is how an interpreter works.*
+
+---
+
+**How Interpreter works:**
+
+```python
+a=10
+b=10
+print(a+b)
+```
+
+**Step-1:** *Reads a=10 and executes it.*
+
+**Step-2:** *Reads b=10 and executes it.*
+
+**Step-3:** *Reads print(a+b) and executes it.*
+
+**NOTE:** *Interpreter translates and executes code line by line.*
+
+---
+
+**Languages that use Interpreters:**
+
+**Example:**
+
+- *Python*
+- *JavaScript*
+- *Ruby*
+- *PHP*
+
+---
+
+**Advantages of Interpreter**
+
+- **Easy Debugging:** *Errors are reported immediately.*
+- **No compilation setup:** *Program runs directly.*
+- **Faster Development:** *Easy to test small changes.*
+  
+**Disadvantages of Interpreter:**
+
+- **Slower Execution:** *Because translation happens during execution.*
+- **Stops at first error:** *If an error occurs, execution stops.*
+
+---
 
 ### **Introduction to Python**
 
