@@ -692,6 +692,39 @@ print(a+b)
 
 ##### **Machine Language**
 
+- *Machine Language is the lowest-level programming language that consists only of binary digits (0 and 1).*
+- *It is the only language that a computer's CPU can directly understand and execute.*
+
+---
+
+**Why is it called Machine Language?**
+
+- *It is called Machine Language because it is the native language of the machine(computer).*
+- *Just as humans speak English, Telugu or Hindi computer speak only binary(0 and 1).*
+
+---
+
+**Why does a computer understand only 0 and 1?**
+
+- *Computers are built using electronic circuits.*
+- *These circuits have only two electrical states: ON and OFF*
+- *These are represented as: OFF-0 ON-1*
+- *Therefore, computers naturally process information using binary digits.*
+
+---
+
+**Examples of Machine Language**
+
+*A machine language instruction may look like this 1010101 10101 1010111. To us, this looks confusing. But the CPU can understand and execute it directly.*
+
+---
+
+**Example:** *Imagine you and your friend speak Telugu. You don't need a translator. Communication is direct. Similarly CPU - Machine language no compiler, interpreter or assembler is needed.*
+
+---
+
+**Characteristics of Machine Language**
+
 
 ### **Introduction to Python**
 
