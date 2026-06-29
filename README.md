@@ -13,6 +13,7 @@ Hey everybody!!!
     - [**Compiler**](#compiler)
     - [**Interpreter**](#interpreter)
     - [**High-Level Languages**](#high-level-languages)
+    - [**Low-Level Language**](#low-level-language)
 - [**Introduction to Python**](#introduction-to-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -588,6 +589,103 @@ print(a+b)
 - *AI applications*
 - *Data analysis tools*
 - *Automation scripts*
+
+---
+
+##### **Low-Level Language**
+
+**Low-Level Language:** *A Low-Level Language is a programming language that is very close to the computer's hardware and machine language. It is not easy for humans but it is easy for the computer to understand.*
+
+---
+
+**Why do we need low-level languages?**
+
+- *Imagine you want to control every small operation of a computer.*
+- *For example Access memory directly, Control CPU registers, Write an operating system, Create Device drivers.*
+- *High-Level languages hide these details.*
+- *Low-Level languages allow programmers to interact much more closely with the hardware.*
+
+---
+
+**Example:** *Think of driving a car.*
+- **Automatic Car:** *You only Start, Accelerate, Brake. The car automatically changes gears. This is like a High-Level Language.*
+- **Manual Car:** *You must Change gears, Control Clutch, Control engine speed. You have more control but it is harder. This is like a Low-Level Language.*
+
+---
+
+**Types of Low-Level Languages:** *There are two types of Low-Level Languages.*
+
+1. **Machine Language:** *Uses only 0 and 1.*
+
+   **Example:** *1010101010*
+    
+   *The computer understands this directly. Humans find it very difficult.*
+
+2. **Assembly Language:** 
+   - *Instead of binary 101010110. We write MOV A,B ADD A,C SUB A, D.*
+   - *Assembly language uses mnemonics(short english-like words) to represent machine instructions.*
+   - *An Assembler translates Assembly Language into Machine Language.*
+
+---
+
+**Characteristics of Low-Level Languages**
+
+- **Close to hardware:** *Programs interact directly with hardware.*
+  **Example:** *CPU, Memory, Registers*
+- **Faster Execution:** *Since the instructions are very close to machine code, execution is very fast.*
+- **Efficient memory usage:** *Programs often use less memory.*
+- **Difficult to learn:** *Binary numbers and Assembly instructions are harder than Python.*
+- **Machine Dependent:** *A program written for one processor architecture may not work on another. For example, Assembly code written for one CPU may need changes for another CPU.*
+
+---
+
+**Advantages of Low-Level languages**
+
+- **Very fast:** *Programs execute quickly.*
+- **Higher Performance:** *Suitable for performance-critical applications.*
+- **Direct Hardware Control:** *Programmers can directly access hardware resources.*
+- **Less memory usage:** *Efficient use of memory.*
+
+**Disadvantages of Low-Level languages**
+
+- **Difficult to read:** *Binary and Assembly are harder for humans.*
+- **Difficult to write:** *Writing programs takes more effort.*
+- **Difficult to debug:** *Finding and fixing errors is more challenging.*
+- **Less portable:** *Programs are often specific to a particular processor.*
+
+---
+
+**Applications of Low-Level languages**
+
+*Low-Level langauges are used in:*
+- *Operating Systems*
+- *Device Drivers*
+- *Embedded Systems*
+- *Firmware*
+- *Robotics*
+- *Microcontrollers*
+- *Game Engines(performance-critical parts)*
+
+---
+
+**High-Level vs Low-Level languages**
+
+| High-Level Language      | Low-Level Language                            |
+| ------------------------ | --------------------------------------------- |
+| Easy for humans          | Difficult for humans                          |
+| Uses English-like syntax | Close to machine code                         |
+| Easier to debug          | Harder to debug                               |
+| Portable                 | Often machine dependent                       |
+| Slower than low-level    | Faster execution                              |
+| Examples: Python, Java   | Examples: Machine Language, Assembly Language |
+
+---
+
+**Examples:**
+
+- **Windows Operating System:** *Parts of the operating system are written in low-level languages to communicate efficiently with hardware.*
+- **Device Drivers:** *Drivers for keyboards, printers, graphics cards and network adapters often use low-level programming.*
+- **Embedded Systems:** *Devices like washing machines, microwave ovens, and smart watches use low-level programming to interact directly with hardware.*
 
 ---
 
