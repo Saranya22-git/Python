@@ -14,6 +14,7 @@ Hey everybody!!!
     - [**Interpreter**](#interpreter)
     - [**High-Level Languages**](#high-level-languages)
     - [**Low-Level Language**](#low-level-language)
+    - [**Machine Language**](#machine-language)
 - [**Introduction to Python**](#introduction-to-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -688,6 +689,9 @@ print(a+b)
 - **Embedded Systems:** *Devices like washing machines, microwave ovens, and smart watches use low-level programming to interact directly with hardware.*
 
 ---
+
+##### **Machine Language**
+
 
 ### **Introduction to Python**
 
