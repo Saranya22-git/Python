@@ -725,6 +725,52 @@ print(a+b)
 
 **Characteristics of Machine Language**
 
+- **Uses only binary numbers:** *Machine language contains only 0 and 1. No english words.*
+- **Directly Understand by CPU:** *The CPU executes machine language directly. No translation is required.*
+- **Very fast:** *Since there is no translation step, execution is extremely fast.*
+- **Difficult for humans:** *Humans cannot easily read, write, remember, debug machine language programs.*
+- **Machine dependent:** *Machine language is specific to a processor architecture. A program written for one processor may not work on another.*
+
+---
+
+**Advantages of Machine Language**
+
+- **Faster Execution:** *No translation is needed.*
+- **Direct CPU Execution:** *The CPU executes instructions immediately.*
+- **Efficient Memory usage:** *Machine language programs use memory efficiently.*
+
+**Disadvantages of Machine Language:**
+
+- **Very difficult to learn:** *Writing binary instructions is extremely hard.*
+- **Difficult to debug:** *Finding errors in binary is challenging.*
+- **Difficult to modify:** *Changing a program is time-consuming.*
+- **Machine Dependent:** *Programs cannot easily be moved between different processor architectures.*
+
+---
+
+**Machine Language vs High-Level Language**
+
+| Machine Language          | High-Level Language                |
+| ------------------------- | ---------------------------------- |
+| Uses 0s and 1s            | Uses English-like syntax           |
+| Easy for CPU              | Easy for humans                    |
+| Very difficult for humans | Easy to learn                      |
+| No translator required    | Needs compiler/interpreter         |
+| Fast execution            | Slightly slower due to translation |
+
+---
+
+**Machine Language vs Assembly Language**
+
+| Machine Language      | Assembly Language                       |
+| --------------------- | --------------------------------------- |
+| Binary (0s and 1s)    | Mnemonics like MOV, ADD                 |
+| Directly executed     | Needs an assembler                      |
+| Hard to read          | Easier than binary                      |
+| Lowest-level language | Also low-level, but more human-readable |
+
+---
+
 
 ### **Introduction to Python**
 
