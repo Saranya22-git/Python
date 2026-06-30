@@ -15,6 +15,7 @@ Hey everybody!!!
     - [**High-Level Languages**](#high-level-languages)
     - [**Low-Level Language**](#low-level-language)
     - [**Machine Language**](#machine-language)
+    - [**Assembly Language**](#assembly-language)
 - [**Introduction to Python**](#introduction-to-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -768,6 +769,112 @@ print(a+b)
 | Directly executed     | Needs an assembler                      |
 | Hard to read          | Easier than binary                      |
 | Lowest-level language | Also low-level, but more human-readable |
+
+---
+
+##### **Assembly Language**
+
+**What is Assembly Language?**
+
+- *Assembly Language is a low-level programming language that uses mnemonics(short english-like words) instead of binary numbers to represent machine instructions.*
+- *It is easier for humans than machine language but still close to the hardware.*
+
+---
+
+**Why was Assembly language created?**
+
+- *Imagine writing this 110011110 every instruction must be written in binary. Problems are very difficult to read, Easy to make mistakes, Difficult to debug, Difficult to remember. So programmers created Assembly language.*
+- *Instead of writing 110011110 they write MOV A,B much easier.*
+
+---
+
+**What are Mnemonics?**
+
+- *A Mnemonics is a short english-like word that represents a machine instruction.*
+
+| Mnemonic | Meaning                     |
+| -------- | --------------------------- |
+| MOV      | Move data                   |
+| ADD      | Add two values              |
+| SUB      | Subtract                    |
+| MUL      | Multiply                    |
+| DIV      | Divide                      |
+| JMP      | Jump to another instruction |
+| CMP      | Compare values              |
+
+---
+
+**What is an Assembler?**
+
+*An Assembler is a software program that converts Assembly Language into Machine Language.*
+
+---
+
+**Characteristics of Assembly Language**
+
+- **Uses Mnemonics:** *Instead of binary 1010101010 Use MOV A,B*
+- **Machine Dependent:** *Assembly code written for one processor may not work on another.*
+- **Faster Execution:** *After being assembled into machine code, programs execute very quickly.*
+- **More Hardware control:** *Assembly allows programmers to work closely with CPU registers and memory.*
+- **Easier than Machine Language:** *Assembly is still difficult compared to Python, but much easier than binary.*
+
+---
+
+**Advantages of Assembly Language**
+
+- **Easier than machine language:** *Uses readable mnemonics.*
+- **Higher Performance:** *Program execute efficiently.*
+- **Direct Hardware Access:** *Useful for system programming.*
+
+**Disadvantages of Assembly Language**
+
+- **Difficult to learn:** *Still much harder than Python or Java.*
+- **Machine Dependent:** *Different processors use different Assembly Language.*
+- **Difficult to Debug:** *Finding errors can be challenging.*
+- **Longer Development time:** *Writing Assembly programs takes more time than writing python programs.*
+
+---
+
+**Applications**
+
+*Assembly Language is used in:*
+- *Operating Systems*
+- *Device Drivers*
+- *Embedded Systems*
+- *Firmware*
+- *Boot Loaders*
+- *BIOS/UEFI*
+- *Performance-critical routines*
+
+---
+
+**Assembly Language vs Machine Language**
+
+| Machine Language           | Assembly Language            |
+| -------------------------- | ---------------------------- |
+| Uses 0s and 1s             | Uses mnemonics               |
+| Directly understood by CPU | Needs an assembler           |
+| Very difficult for humans  | Easier than machine language |
+| Fastest execution          | Also fast after assembly     |
+
+---
+
+**Assembly Language vs High-Level Language**
+
+| Assembly Language  | High-Level Language          |
+| ------------------ | ---------------------------- |
+| Low-Level          | High-Level                   |
+| Uses mnemonics     | Uses English-like syntax     |
+| Needs an assembler | Needs a compiler/interpreter |
+| Machine dependent  | Usually portable             |
+| Hard to learn      | Easy to learn                |
+
+---
+
+**NOTE:** 
+- *High-Level Language → Human-friendly*
+- *Assembly Language → Low-Level (uses mnemonics)*
+- *Machine Language → Lowest-Level (uses binary)*
 
 ---
 
