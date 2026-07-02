@@ -16,6 +16,7 @@ Hey everybody!!!
     - [**Low-Level Language**](#low-level-language)
     - [**Machine Language**](#machine-language)
     - [**Assembly Language**](#assembly-language)
+    - [**Procedural Programming**](#procedural-programming)
 - [**Introduction to Python**](#introduction-to-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -875,6 +876,199 @@ print(a+b)
 - *High-Level Language → Human-friendly*
 - *Assembly Language → Low-Level (uses mnemonics)*
 - *Machine Language → Lowest-Level (uses binary)*
+
+---
+
+##### **Procedural Programming**
+
+**What is a Programming Paradigm?**
+
+- *A Programming Paradigm is a style or method of writing programs.*
+- *Think of it as a way of solving problems using programming.*
+- *Just like there are different ways to travel:*
+  - *Car*
+  - *Bike*
+  - *Train*
+- *All reach the destination but in different ways.*
+- *Similarly, there are different ways to write programs.*
+- *These are called Programming Paradigms.*
+
+---
+
+**Common Programming Paradigms**
+
+- *Procedural Programming*
+- *Object-Oriented Programming(OOP)*
+- *Functional Programming*
+- *Logical Programming*
+
+---
+
+**What is Procedural Programming?**
+
+- *Procedural Programming is a programming paradigm in which a program is written as a sequence of procedures(functions) that execute one after another.*
+- *A procedure is simply a function or a set of instructions that performs a specific task.*
+
+---
+
+**Why is it called Procedure?**
+
+*Because the program follows a procedure, meaning a sequence of steps.*
+
+**Example:** *Making Tea*
+- *Boil water*
+- *Add Tea powder*
+- *Add sugar*
+- *Pour into cup*
+
+*You must follow the steps in order.*
+
+*Similarly, a procedural program executes instructions in sequence.*
+
+**Example:** *Imagine an ATM. When you withdraw money, the ATM follows these steps.*
+- *Insert Card*
+- *Enter PIN*
+- *Verify PIN*
+- *Select Withdraw*
+- *Enter amount*
+- *Check Balance*
+- *Dispense Cash*
+- *Print receipt*
+
+*Each step happens in order. This is procedural thinking.*
+
+**Example:**
+```python
+def add(a,b):
+  return a+b
+
+result=add(10,20)
+print(result)
+```
+
+*Execution order:*
+- *Program starts*
+- *add() function is called*
+- *Addition is performed*
+- *Result is returned*
+- *Result is printed*
+
+*The program follows a sequence.*
+
+---
+
+**Characteristics of Procedural Programming**
+
+1. **Step-by-Step Execution:** *Instructions execute in order.*
+
+**Example:**
+```python                  
+print("Step 1")              # Step 1
+print("Step 2")              # Step 2
+print("Step 3")              # Step 3
+```
+
+2. **Uses Functions(Procedures):** *Programs are divided into smaller functions.*
+
+**Example:**
+```python
+def greet():                     # Welcome
+  print("Welcome")
+
+greet()
+```
+
+*Instead of writing the same code many times, we write it once inside a function.*
+
+3. **Top-to-Bottom Flow:** *Execution normally starts at the top and moves downward.*
+
+**Example:**
+```python
+a=10
+b=20
+print(a+b)                       # 30
+```
+
+4. **Reusability:** *Functions can be reused.*
+
+**Example:** 
+```python
+def square(x):
+  return x*x
+
+print(square(5))               # 25
+print(square(10))              # 100
+print(square(20))              # 400
+```
+
+*One function is used multiple times.*
+
+5. **Modularity:** *A large program is divided into smaller parts(functions).*
+
+**Example:** 
+
+*Instead of writing one huge problem:*
+- *Login*
+- *Payment*
+- *Search*
+- *Logout*
+
+*We create separate functions:*
+- *login()*
+- *search()*
+- *payment()*
+- *logout()*
+
+*This makes the program easier to understand and maintain.*
+
+---
+
+**Advantages of Procedural Programming**
+
+- **Easy to learn:** *Suitable for beginners.*
+- **Easy to read:** *Programs follow a clear sequence.*
+- **Code Reusability:** *Functions can be called many times.*
+- **Easier Debugging:** *Problems can often be found by checking individual functions.*
+- **Better Organization:** *Programs are divided into smaller modules.*
+
+**Disadvantages of Procedural Programming**
+
+- **Difficult for very large projects:** *Managing thousands of functions becomes difficult.*
+- **Data is less secure:** *Functions can access shared data more easily, making it harder to protect.*
+- **Harder to maintain large applications:** *As programs grow, managing dependencies between functions becomes more complex.*
+
+---
+
+**Applications:**
+*Procedural programming is commonly used in:*
+- *Calculator programs*
+- *Banking calculations*
+- *Billing systems*
+- *Automation scripts*
+- *Mathematical programs*
+- *Scientific calculations*
+
+---
+
+**Languages that support procedural programming**
+
+**Examples:**
+- *C*
+- *Pascal*
+- *BASIC*
+
+*Python also supports procedural programming, even though it also supports Object-Oriented Programming and Functional Programming.*
+
+---
+
+**Procedural Programming vs Object-Oriented Programming**
+
+| Procedural Programming          | Object-Oriented Programming           |
+| ------------------------------- | ------------------------------------- |
+| Focuses on functions            | Focuses on objects                    |
+| Data and functions are separate | Data and methods are grouped together |
+| Best for smaller programs       | Better for large applications         |
+| Easier to learn                 | More concepts to learn                |
 
 ---
 
