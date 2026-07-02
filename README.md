@@ -17,6 +17,7 @@ Hey everybody!!!
     - [**Machine Language**](#machine-language)
     - [**Assembly Language**](#assembly-language)
     - [**Procedural Programming**](#procedural-programming)
+    - [**Object-Oriented Programming (OOP)**](#object-oriented-programming-oop)
 - [**Introduction to Python**](#introduction-to-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -1069,6 +1070,145 @@ print(square(20))              # 400
 | Data and functions are separate | Data and methods are grouped together |
 | Best for smaller programs       | Better for large applications         |
 | Easier to learn                 | More concepts to learn                |
+
+---
+
+##### **Object-Oriented Programming (OOP)**
+
+**What is Object-Oriented Programming?**
+
+- *Object-Oriented Programming (OOP) is a programming paradign in which a program is organized around objects instead of only functions.*
+- *Objects contain both:*
+  - *Data (Variables)*
+  - *Behavior (Functions/Methods)*
+
+---
+
+**What is an Object?**
+
+- *An Object is a real-world entity that has:*
+  - *Properties (Data)*
+  - *Behaviors (Actions)*
+
+**Example:** 
+
+*Car*
+
+**Properties:**
+- *Color*
+- *Speed*
+- *Brand*
+
+**Behaviors:**
+- *Start*
+- *Stop*
+- *Accelerate*
+- *Brake*
+
+*So, Car=Object*
+
+---
+
+**What is a Class?**
+
+- *A Class is a blueprint or template used to create objects.*
+- *Think about building houses. Architect creates one blueprint.*
+- *From that blueprint:*
+  - *House 1*
+  - *House 2*
+  - *House 3 are built*
+- *The blueprint is Class*
+- *The houses are Objects.*
+
+---
+
+**Why do we need OOP?**
+
+*Imagine a college management system. Without OOP:*
+- *student1_name*
+- *student2_name*
+- *student3_name*
+- *student4_name*
+- *teacher1_name*
+- *teacher2_name*
+- *course1*
+- *course2*
+
+*Everything becomes messy.*
+
+*Using OOP:*
+- *Student Object*
+- *Teacher Object*
+- *Course Object*
+- *Library Object*
+
+*Everything is organized.*
+
+---
+
+**Characteristics(Features) of OOP**
+
+*There are four main pillars in OOP.*
+
+1. **Encapsulation:** *Combining data and methods into one object.*
+
+**Example:**
+- *Bank Account*
+- *Balance*
+- *Deposit()*
+- *Withdraw()*
+
+2. **Inheritance:** *One class can inherit properties from another.*
+
+**Example:** *Animal -> Dog -> German Shepherd*
+
+*The child class gets features from the parent.*
+
+3. **Polymorphism:** *One action can behave differently.*
+
+**Example:** *Animal Sound()*
+- *Dog -> Bark*
+- *Cat -> Meow*
+
+*Same method name but different behavior.*
+
+4. **Abstraction:** *Showing only important details while hiding internal complexity.*
+
+**Example:** *You drive a car.You use:*
+- *Steering*
+- *Brake*
+- *Accelerator*
+
+*You don't need to know how the engine works internally.*
+
+---
+
+**Advantages of OOP**
+
+- **Code Reusability:** *Reuse existing classes.*
+- **Better Organization:** *Large projects become easier to manage.*
+- **Easier maintenance:** *Updating one class doesn't require changing the whole program.*
+- **Better Security:** *Encapsulation protects data.*
+- **Real-Worl Modeling:** *Objects represent real-world entities naturally.*
+
+**Disadvantages of OOP**
+
+- **Difficult for Beginners:** *Many new concepts.*
+- **More memory usage:** *Objects require additional memory.*
+- **More complex:** *Small programs don't always need OOP.*
+
+---
+
+**Applications**
+
+*OOP is used in:*
+- *Banking Systems*
+- *Hospital Management Systems*
+- *School Management Systems*
+- *E-commerce Applications*
+- *Mobile Apps*
+- *Games*
+- *Social Media Platforms*
 
 ---
 
