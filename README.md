@@ -21,6 +21,8 @@ Hey everybody!!!
     - [**Why Python?**](#why-python)
   - [**Algorithm Fundamentals**](#algorithm-fundamentals)
     - [**Algorithm**](#algorithm)
+    - [**Characteristics of a good algorithm**](#characteristics-of-a-good-algorithm)
+    - [**Writing Algorithms**](#writing-algorithms)
 - [**Introduction to Python**](#introduction-to-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -1405,7 +1407,7 @@ print("Hello")
 
 1. **Easy to understand:** *Logic is clear before coding.*
 2. **Easy to debug:** *Mistakes can be found in the logic before writing code.*
-3. **Language Dependent:** *The same algorithm can be implemented as Python, Java, C++, JavaScript.*
+3. **Language Independent:** *The same algorithm can be implemented as Python, Java, C++, JavaScript.*
 4. **Better Problem Solving:** *Algorithms train you to think logically.*
 
 **Disadvantages of Algorithms**
@@ -1430,6 +1432,131 @@ print("Hello")
 *Every software application you use runs on algorithms.*
 
 ---
+
+##### **Characteristics of a good algorithm**
+
+*A good algorithm should have 5 characteristics:*
+
+1. **Input:** *An algorithm should accept zero or more inputs. Input means the data given to solve a problem.*
+
+**Example:** *ATM Machine*
+**Input:** *ATM Card, PIN, Amount. Without these inputs the ATM cannot continue.*
+
+*An algorithm may have zero inputs.*
+**Example:** *Display 'Welcome' no input is required. So, Zero or more inputs.*
+
+2. **Output:** *Every algorithm should produce at least one output. Without an output, there is no result.*
+
+**Example:** *Calculator*
+**Input:** *15+25*
+**Output:** *40*
+
+3. **Definiteness:** *Every step in the algorithm should be clear, precise and unambiguous. There should be only one meaning.*
+
+**Example:**
+- *Read Number A*
+- *Read Number B*
+- *Add A and B*
+- *Display the sum*
+
+4. **Finiteness:** *An algorithm must terminate after a finite number of steps. It should not continue forever.*
+
+**Example:**
+- *Read two numbers*
+- *Add them*
+- *Display the answer*
+- *Stop*
+
+5. **Effectiveness:** *Every step of an algorithm should be simple, practical, and executable. The computer should actually be able to perform it.*
+
+**Example:** *Compare 2 numbers. Computer can do this.*
+
+---
+
+##### **Writing Algorithms**
+
+**What is Writing an Algorithm?**
+
+*Writing an algorithm means describing the logical steps required to solve a problem in a clear, finite, and well-defined sequence before implementing it in a programming language.*
+
+---
+
+**Rules for writing an Algorithm**
+
+- **Rule-1:** *Start*
+
+*Every algorithm should begin with Start. This tells where execution begins.*
+
+- **Rule-2:** *Input*
+
+*Reads the required inputs.*
+
+**Example:** *Read Number A. Read Number B.*
+
+- **Rule-3:** *Processing*
+
+*Perform the required calculations.*
+
+**Example:** *Sum=A+B*
+
+- **Rule-4:** *Output*
+
+*Display the result*
+
+**Example:** *Display Sum*
+
+- **Rule-5:** *Stop*
+
+*Every algorithm should end with Stop.*
+
+---
+
+**General Structure of an Algorithm**
+
+Start
+
+↓
+
+Input
+
+↓
+
+Process
+
+↓
+
+Output
+
+↓
+
+Stop
+
+---
+
+**Example:** *Addition of two numbers*
+
+**Problem:** *Add two numbers.*
+**Algorithm:**
+- **Step-1:** *Start*
+- **Step-2:** *Read number A*
+- **Step-3:** *Read number B*
+- **Step-4:** *Sum=A+B*
+- **Step-5:** *Display Sum*
+- **Step-6:** *Stop*
+
+---
+
+**Difference between Algorithm and Program**
+
+| Algorithm            | Program                  |
+| -------------------- | ------------------------ |
+| Step-by-step logic   | Actual code              |
+| Language independent | Language dependent       |
+| Planning stage       | Implementation stage     |
+| Easy to understand   | Executed by the computer |
+
+---
+
 
 
 ### **Introduction to Python**
