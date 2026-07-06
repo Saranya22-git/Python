@@ -19,6 +19,8 @@ Hey everybody!!!
     - [**Procedural Programming**](#procedural-programming)
     - [**Object-Oriented Programming (OOP)**](#object-oriented-programming-oop)
     - [**Why Python?**](#why-python)
+  - [**Algorithm Fundamentals**](#algorithm-fundamentals)
+    - [**Algorithm**](#algorithm)
 - [**Introduction to Python**](#introduction-to-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -1351,6 +1353,84 @@ print("Hello")
 | Great for beginners | Greater hardware control |
 
 ---
+
+#### **Algorithm Fundamentals**
+
+##### **Algorithm**
+
+**What is an Algorithm?**
+
+*An Algorithm is a finite sequence of well-defined steps used to solve a specific problem or perform a particular task.*
+
+---
+
+**Why do we need an Algorithm?**
+
+*An Algorithm acts like a blueprint before constructing a building.*
+
+**Example:** *Login to Instagram*
+1. *Open Instagram*
+2. *Enter Username*
+3. *Enter Password*
+4. *Click Login*
+5. *Verify Credentials*
+6. *If correct -> Home Page*
+7. *Otherwise -> Show error*
+
+---
+
+**Characteristics of a good algorithm**
+
+*A good algorithm has five important characteristics.*
+1. **Input:** *An Algorithm can take zero or more inputs.*
+2. **Output:** *An Algorithm should produce at least one output.*
+3. **Definiteness:** *Every step must be clear and unambiguous.*
+4. **Finiteness:** *An algorithm must end after a finite number of steps.*
+5. **Effectiveness:** *Each step should be simple and executable.*
+
+---
+
+**Why Algorithms are important?**
+
+*Algorithms help us:*
+- *Solve problems logically*
+- *Reduce mistakes*
+- *Write cleaner code*
+- *Improve efficiency*
+- *Make debugging easier*
+
+---
+
+**Advantages of Algorithms**
+
+1. **Easy to understand:** *Logic is clear before coding.*
+2. **Easy to debug:** *Mistakes can be found in the logic before writing code.*
+3. **Language Dependent:** *The same algorithm can be implemented as Python, Java, C++, JavaScript.*
+4. **Better Problem Solving:** *Algorithms train you to think logically.*
+
+**Disadvantages of Algorithms**
+
+1. **Time Required:** *Designing a good algorithm takes planning.*
+2. **Not suitable for very complex systems:** *Very large systems may require multiple algorithms working together.*
+
+---
+
+**Applications**
+
+*Algorithms are used in:*
+- *Google Search*
+- *Instagram feed*
+- *YouTube Recommendations*
+- *GPS Navigation*
+- *Banking Systems*
+- *Online Shopping*
+- *AI Systems*
+- *Data Analysis*
+
+*Every software application you use runs on algorithms.*
+
+---
+
 
 ### **Introduction to Python**
 
