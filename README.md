@@ -23,6 +23,10 @@ Hey everybody!!!
     - [**Algorithm**](#algorithm)
     - [**Characteristics of a good algorithm**](#characteristics-of-a-good-algorithm)
     - [**Writing Algorithms**](#writing-algorithms)
+  - [**Flowcharts**](#flowcharts)
+    - [**Flowchart Basics**](#flowchart-basics)
+    - [**Flowchart Symbols**](#flowchart-symbols)
+    - [**Loops in Flowcharts**](#loops-in-flowcharts)
 - [**Introduction to Python**](#introduction-to-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -367,7 +371,7 @@ Hey everybody!!!
   - *Windows*
   - *Android*
   - *Instagram*
-  - *YouTune*
+  - *YouTube*
   - *WhatsApp*
   - *Microsoft Excel*
   - *Google Chrome*
@@ -1557,6 +1561,217 @@ Stop
 
 ---
 
+#### **Flowcharts**
+
+##### **Flowchart Basics**
+
+**What is a Flowchart?**
+
+*A Flowchart is a graphical representation of an algorithm that uses standard symbols to show the sequence of steps required to solve a problem.*
+
+---
+
+**Why do we use flowcharts?**
+
+- *Instead of reading Start -> Read A -> Read B -> Add A and B -> Display Sum -> Stop.*
+- *We can draw it as a diagram which is easier to understand.*
+- **Example:** *Think about Google Maps. Instead of giving directions as a long paragraph, it shows you a visual route. A flowchart does the same thing it shows the logic visually.*
+
+---
+
+**Advantages**
+
+- *Easy to understand*
+- *Easy to communicate*
+- *Helps find logical errors*
+- *Makes programming easier*
+
+**Disadvantages**
+
+- *Time-consuming for very large problems*
+- *Difficult to modify complex flowcharts*
+
+---
+
+**Difference between Algorithm vs Flowchart**
+
+| Algorithm                 | Flowchart                      |
+| ------------------------- | ------------------------------ |
+| Written in text           | Drawn using symbols            |
+| Step-by-step instructions | Visual representation of steps |
+| Easier to write           | Easier to understand visually  |
+
+---
+
+##### **Flowchart Symbols**
+
+**What are Flowchart Symbols?**
+
+- *Flowchart Symbols are standard shapes used to represent different operations in a flowchart.*
+- *Think of them like Traffic Signs. Just as every traffic sign has a specific meaning, every flowchart symbol has a specific purpose.*
+
+---
+
+1. **Terminator (Start\Stop)**
+
+**Symbol:** *Oval shape*
+  __________
+ /          \
+|   Start    |
+ \__________/
+
+**Purpose:** *Used to represent Start, Stop(End). Every flowchart must begin with Start and must end with Stop.*
+
+2. **Process Symbol**
+
+**Symbol:** *Rectangle*
+
++----------------+
+|    Process     |
++----------------+
+
+**Purpose:** *Represents Calculation, Assignment, Processing.*
+
+**Example:** *Sum=A+B, Area=Length × Breadth*
+
+3. **Input/Output Symbol**
+
+**Symbol:** *Parallelogram*
+
+  /-------------/
+ / Input/Output/
+/-------------/
+
+**Purpose:** *Used to Read input, Display output.*
+
+**Example for Input:** *Read A*
+
+**Example for Output:** *Display Sum*
+
+4. **Decision Symbol**
+
+**Symbol:** *Diamond*
+     /\
+    /  \
+   / A>B\
+   \    /
+    \  /
+     \/
+
+**Purpose:** *Used for Yes/No, True/False, Conditions.*
+
+**Example:** 
+
+Is A > B?
+
+↓
+
+Yes → Display A
+
+No → Display B
+
+*Whenever you use if, if-else you'll use the Decision Symbol.*
+
+5. **Flow Line**
+
+**Symbol:**
+
+↓
+
+or
+
+─►
+
+**Purpose:** *Shows the direction of execution. It connects all symbols together.*
+
+6. **Connector**
+
+**Symbol:** 
+
+○
+
+**Purpose:** *Used to connect different parts of a flowchart. Useful when a flowchart becomes large. Instead of drawing a long arrow, we use connectors.*
+
+---
+
+| Symbol         | Shape         | Purpose                  |
+| -------------- | ------------- | ------------------------ |
+| Terminator     | Oval          | Start / Stop             |
+| Process        | Rectangle     | Calculation / Processing |
+| Input / Output | Parallelogram | Read or Display Data     |
+| Decision       | Diamond       | Yes / No, True / False   |
+| Flow Line      | Arrow         | Direction of Flow        |
+| Connector      | Circle        | Connect Different Parts  |
+
+---
+
+##### **Loops in Flowcharts**
+
+**What is a Loop?**
+
+*A Loop is a programming construct used to execute a block of instructions repeatedly until a given condition becomes false or a specified number of iterations is completed.*
+
+---
+
+**Why do we need Loops?**
+
+*Without Loops:*
+
+```python
+print ('Hello')
+print ('Hello')
+print ('Hello')
+print ('Hello')
+print ('Hello')
+```
+
+*With Loops Repeat 5 times print('Hello') less work and cleaner logic.*
+
+---
+
+**Loop in a flowchart**
+
+*A Loop is created using:*
+- *Decision Symbol (Diamond) to check the condition.*
+- *Flow Line (Arrow) to go back and repeat the process.*
+
+**Simple Flow:**
+
+Start
+   ↓
+Initialize Counter
+   ↓
+Condition?
+  /     \
+Yes      No
+ |        |
+Process   Stop
+ |
+ └────────┘
+
+*If the condition is True, repeat. If False, stop.*
+
+---
+
+**Advantages of Loops**
+
+- *Reduces repeated work*
+- *Makes algorithms shorter*
+- *Easier to maintain*
+- *Saves time*
+
+**Disadvantages of Loops**
+
+- *Wrong conditions can create infinite loops.*
+- *Can become difficult to understand if overused.*
+
+---
+
+**What is an Infinite Loop?**
+
+*An Infinite Loop is a loop that never stops because its condition never becomes false.*
+
+---
 
 
 ### **Introduction to Python**
