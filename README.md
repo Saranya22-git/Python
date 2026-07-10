@@ -1627,7 +1627,9 @@ Stop
 **Symbol:** *Rectangle*
 
 +----------------+
+
 |    Process     |
+
 +----------------+
 
 **Purpose:** *Represents Calculation, Assignment, Processing.*
