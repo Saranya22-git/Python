@@ -1716,29 +1716,6 @@ print ('Hello')
 - *Decision Symbol (Diamond) to check the condition.*
 - *Flow Line (Arrow) to go back and repeat the process.*
 
-**Simple Flow:**
-
-Start
-
-   ↓
-
-Initialize Counter
-
-   ↓
-
-Condition?
-
-  /     \
-
-Yes      No
-
- |        |
-
-Process   Stop
-
- |
- └────────┘
-
 *If the condition is True, repeat. If False, stop.*
 
 ---
