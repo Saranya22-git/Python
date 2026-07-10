@@ -28,7 +28,10 @@ Hey everybody!!!
     - [**Flowchart Symbols**](#flowchart-symbols)
     - [**Loops in Flowcharts**](#loops-in-flowcharts)
   - [**Pseudocode**](#pseudocode)
-- [**Introduction to Python**](#introduction-to-python)
+- [**Python Fundamentals**](#python-fundamentals)
+  - [**Introduction to Python**](#introduction-to-python)
+- [**What is Python?**](#what-is-python)
+- [**Introduction to Python**](#introduction-to-python-1)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
   - [**Versions of Python**](#versions-of-python)
@@ -1780,7 +1783,9 @@ print ('Hello')
 
 ---
 
-**Examples:** *Add two numbers*
+**Example:** 
+
+**Add two numbers**
 
 ```pseudocode
 BEGIN
@@ -1790,6 +1795,70 @@ SUM=A+B
 PRINT SUM
 END
 ```
+
+**Even or Odd**
+
+```pseudocode
+BEGIN
+INPUT N
+IF N IS DIVISIBLE BY 2
+PRINT "EVEN"
+ELSE
+PRINT "ODD"
+END
+```
+
+**Largest Number**
+
+```pseudocode
+BEGIN
+INPUT A
+INPUT B
+IF A>B 
+PRINT "A IS LARGEST NUMBER"
+ELSE 
+PRINT "B IS LARGEST NUMBER"
+END
+```
+
+---
+
+**Algorithm vs Flowchart vs Pseudocode**
+
+| Algorithm            | Flowchart            | Pseudocode                 |
+| -------------------- | -------------------- | -------------------------- |
+| Written steps        | Visual diagram       | English-like program logic |
+| Text                 | Symbols              | Simple statements          |
+| Easy to write        | Easy to visualize    | Easy to convert into code  |
+| Language independent | Language independent | Language independent       |
+
+---
+
+**Advantages**
+
+- *Easy to understand*
+- *Language independent*
+- *Easy to convert into code*
+- *Improves logical thinking*
+- *Helps before coding*
+
+**Disadvantages**
+
+- *No fixed standard*
+- *Cannot be executed by a computer*
+- *Different people may write it differently*
+
+---
+
+### **Python Fundamentals**
+
+#### **Introduction to Python**
+
+### **What is Python?**
+
+**What is Python?**
+
+
 
 
 ### **Introduction to Python**
