@@ -27,6 +27,7 @@ Hey everybody!!!
     - [**Flowchart Basics**](#flowchart-basics)
     - [**Flowchart Symbols**](#flowchart-symbols)
     - [**Loops in Flowcharts**](#loops-in-flowcharts)
+  - [**Pseudocode**](#pseudocode)
 - [**Introduction to Python**](#introduction-to-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -1740,6 +1741,55 @@ print ('Hello')
 *An Infinite Loop is a loop that never stops because its condition never becomes false.*
 
 ---
+
+#### **Pseudocode**
+
+**What is Pseudocode?**
+
+*Pseudocode is a language-independent representation of an algorithm written in simple English-like statements to describe the program logic without using the syntax of a specific programming language.*
+
+---
+
+**Why do we need Pseudocode?**
+
+*Imagine your team has:*
+- *Python Developer*
+- *Java Developer*
+- *C++ Developer*
+
+*Instead of writing logic in Python, you write it in pseudocode. Everyone understands it. Then each developer converts it into their own programming language.*
+
+---
+
+**Characteristics of Pseudocode**
+
+*A good pseudocode should be:*
+- *Simple*
+- *Easy to read*
+- *Language independent*
+- *Focused on logic*
+- *Easy to convert into code*
+
+---
+
+**Common Keywords**
+
+*BEGIN, END, INPUT, OUTPUT, IF, ELSE, WHILE, FOR, PRINT.*
+
+*These are not tied to any one programming language.*
+
+---
+
+**Examples:** *Add two numbers*
+
+```pseudocode
+BEGIN
+INPUT A 
+INPUT B
+SUM=A+B
+PRINT SUM
+END
+```
 
 
 ### **Introduction to Python**
