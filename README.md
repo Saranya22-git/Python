@@ -1615,22 +1615,12 @@ Stop
 1. **Terminator (Start\Stop)**
 
 **Symbol:** *Oval shape*
-  __________
- /          \
-|   Start    |
- \__________/
 
 **Purpose:** *Used to represent Start, Stop(End). Every flowchart must begin with Start and must end with Stop.*
 
 2. **Process Symbol**
 
 **Symbol:** *Rectangle*
-
-+----------------+
-
-|    Process     |
-
-+----------------+
 
 **Purpose:** *Represents Calculation, Assignment, Processing.*
 
@@ -1639,10 +1629,6 @@ Stop
 3. **Input/Output Symbol**
 
 **Symbol:** *Parallelogram*
-
-  /-------------/
- / Input/Output/
-/-------------/
 
 **Purpose:** *Used to Read input, Display output.*
 
@@ -1653,12 +1639,6 @@ Stop
 4. **Decision Symbol**
 
 **Symbol:** *Diamond*
-     /\
-    /  \
-   / A>B\
-   \    /
-    \  /
-     \/
 
 **Purpose:** *Used for Yes/No, True/False, Conditions.*
 
@@ -1673,7 +1653,6 @@ Yes → Display A
 No → Display B
 
 *Whenever you use if, if-else you'll use the Decision Symbol.*
-
 5. **Flow Line**
 
 **Symbol:**
@@ -1740,14 +1719,23 @@ print ('Hello')
 **Simple Flow:**
 
 Start
+
    ↓
+
 Initialize Counter
+
    ↓
+
 Condition?
+
   /     \
+
 Yes      No
+
  |        |
+
 Process   Stop
+
  |
  └────────┘
 
