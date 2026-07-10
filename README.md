@@ -30,7 +30,7 @@ Hey everybody!!!
   - [**Pseudocode**](#pseudocode)
 - [**Python Fundamentals**](#python-fundamentals)
   - [**Introduction to Python**](#introduction-to-python)
-- [**What is Python?**](#what-is-python)
+    - [**What is Python?**](#what-is-python)
 - [**Introduction to Python**](#introduction-to-python-1)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**History of Python**](#history-of-python)
@@ -1854,7 +1854,7 @@ END
 
 #### **Introduction to Python**
 
-### **What is Python?**
+##### **What is Python?**
 
 **What is Python?**
 
