@@ -1653,6 +1653,7 @@ Yes → Display A
 No → Display B
 
 *Whenever you use if, if-else you'll use the Decision Symbol.*
+
 5. **Flow Line**
 
 **Symbol:**
