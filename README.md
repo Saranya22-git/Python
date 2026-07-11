@@ -1618,65 +1618,65 @@ Stop
 
 1. **Terminator (Start\Stop)**
 
-**Symbol:** *Oval shape*
+    **Symbol:** *Oval shape*
 
-**Purpose:** *Used to represent Start, Stop(End). Every flowchart must begin with Start and must end with Stop.*
+    **Purpose:** *Used to represent Start, Stop(End). Every flowchart must begin with Start and must end with Stop.*
 
 2. **Process Symbol**
 
-**Symbol:** *Rectangle*
+    **Symbol:** *Rectangle*
 
-**Purpose:** *Represents Calculation, Assignment, Processing.*
+    **Purpose:** *Represents Calculation, Assignment, Processing.*
 
-**Example:** *Sum=A+B, Area=Length × Breadth*
+    **Example:** *Sum=A+B, Area=Length × Breadth*
 
 3. **Input/Output Symbol**
 
-**Symbol:** *Parallelogram*
+    **Symbol:** *Parallelogram*
 
-**Purpose:** *Used to Read input, Display output.*
+    **Purpose:** *Used to Read input, Display output.*
 
-**Example for Input:** *Read A*
+    **Example for Input:** *Read A*
 
-**Example for Output:** *Display Sum*
+    **Example for Output:** *Display Sum*
 
 4. **Decision Symbol**
 
-**Symbol:** *Diamond*
+    **Symbol:** *Diamond*
 
-**Purpose:** *Used for Yes/No, True/False, Conditions.*
+    **Purpose:** *Used for Yes/No, True/False, Conditions.*
 
-**Example:** 
+    **Example:** 
 
-Is A > B?
+    Is A > B?
 
-↓
+    ↓
 
-Yes → Display A
+    Yes → Display A
 
-No → Display B
+    No → Display B
 
-*Whenever you use if, if-else you'll use the Decision Symbol.*
+    *Whenever you use if, if-else you'll use the Decision Symbol.*
 
 5. **Flow Line**
 
-**Symbol:**
+    **Symbol:**
 
-↓
+    ↓
 
-or
+    or
 
-─►
+    ─►
 
-**Purpose:** *Shows the direction of execution. It connects all symbols together.*
+    **Purpose:** *Shows the direction of execution. It connects all symbols together.*
 
 6. **Connector**
 
-**Symbol:** 
+    **Symbol:** 
 
-○
+    ○
 
-**Purpose:** *Used to connect different parts of a flowchart. Useful when a flowchart becomes large. Instead of drawing a long arrow, we use connectors.*
+    **Purpose:** *Used to connect different parts of a flowchart. Useful when a flowchart becomes large. Instead of drawing a long arrow, we use connectors.*
 
 ---
 
