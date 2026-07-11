@@ -1957,6 +1957,10 @@ END
       ```
 
 5. **Interpreted Language**
+
+    - *Python is generally known as an Interpreted programming language.*
+    - *Python programs are executed using the Python Interpreter.*
+ 
 6. **High-Level Language**
 7. **Robust**
 8. **Supports Multiple Programming Paradigms**
