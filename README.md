@@ -1619,7 +1619,6 @@ Stop
 1. **Terminator (Start\Stop)**
 
     **Symbol:** *Oval shape*
-
     **Purpose:** *Used to represent Start, Stop(End). Every flowchart must begin with Start and must end with Stop.*
 
 2. **Process Symbol**
