@@ -32,9 +32,10 @@ Hey everybody!!!
   - [**Introduction to Python**](#introduction-to-python)
     - [**What is Python?**](#what-is-python)
     - [**History of Python**](#history-of-python)
+    - [**Features of Python**](#features-of-python)
   - [**Real-Time Applications developed by Python Programming**](#real-time-applications-developed-by-python-programming)
   - [**Versions of Python**](#versions-of-python)
-  - [**Features of Python**](#features-of-python)
+  - [**Features of Python**](#features-of-python-1)
 - [**Python Distributions**](#python-distributions)
 - [**Python Program Structure**](#python-program-structure)
   - [**Keywords**](#keywords)
@@ -1903,6 +1904,48 @@ END
 - *Official website www.pythom.org*
 
 ---
+
+##### **Features of Python**
+
+**What are Features?**
+
+- *Features are the characteristics or qualities of a programming language that make it useful and explain why developers choose it.*
+- *Python provides many useful features that make it one of the most popular programming languages.*
+
+---
+
+1. **Simple and Easy to Learn**
+
+*Python is one of the simplest programming languages because:*
+- *It has simple and readable syntax.*
+- *It requires fewer lines of code.*
+- *It has a rich standard library that provides many built-in modules and functions.*
+- **Example:**
+ ```python
+ print("Hello, World!")
+ ```
+
+ ```C
+ #include <stdio.h>
+ int main()
+ {
+  printf("Hello, World!");
+  return 0;
+ }
+ ```
+- *Python code is shorter and easier to understand.*
+
+2. **Free and Open Source**
+3. **Platform Independent (Cross-Platform)**
+4. **Dynamically Typed**
+5. **Interpreted Language**
+6. **High-Level Language**
+7. **Robust**
+8. **Supports Multiple Programming Paradigms**
+9.  **Extensible**
+10. **Embeddedable**
+11. **Rich Standard Library & Third-Party Library Support**
+
 
 #### **Real-Time Applications developed by Python Programming**
 
