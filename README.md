@@ -1618,65 +1618,65 @@ Stop
 
 1. **Terminator (Start\Stop)**
 
-      **Symbol:** *Oval shape*
-      
-      **Purpose:** *Used to represent Start, Stop(End). Every flowchart must begin with Start and must end with Stop.*
+    **Symbol:** *Oval shape*
+    
+    **Purpose:** *Used to represent Start, Stop(End). Every flowchart must begin with Start and must end with Stop.*
 
 2. **Process Symbol**
 
-      **Symbol:** *Rectangle*
+    **Symbol:** *Rectangle*
 
-      **Purpose:** *Represents Calculation, Assignment, Processing.*
+    **Purpose:** *Represents Calculation, Assignment, Processing.*
 
-      **Example:** *Sum=A+B, Area=Length × Breadth*
+    **Example:** *Sum=A+B, Area=Length × Breadth*
 
 3. **Input/Output Symbol**
 
-      **Symbol:** *Parallelogram*
+    **Symbol:** *Parallelogram*
 
-      **Purpose:** *Used to Read input, Display output.*
+    **Purpose:** *Used to Read input, Display output.*
 
-      **Example for Input:** *Read A*
+    **Example for Input:** *Read A*
 
-      **Example for Output:** *Display Sum*
+    **Example for Output:** *Display Sum*
 
 4. **Decision Symbol**
 
-      **Symbol:** *Diamond*
+    **Symbol:** *Diamond*
 
-      **Purpose:** *Used for Yes/No, True/False, Conditions.*
+    **Purpose:** *Used for Yes/No, True/False, Conditions.*
 
-      **Example:** 
+    **Example:** 
 
-      Is A > B?
+    Is A > B?
 
-      ↓
+    ↓
 
-      Yes → Display A
+    Yes → Display A
 
-      No → Display B
+    No → Display B
 
-      *Whenever you use if, if-else you'll use the Decision Symbol.*
+    *Whenever you use if, if-else you'll use the Decision Symbol.*
 
 5. **Flow Line**
 
-      **Symbol:**
+    **Symbol:**
 
-      ↓
+    ↓
 
-      or
+    or
 
-      ─►
+    ─►
 
-      **Purpose:** *Shows the direction of execution. It connects all symbols together.*
+    **Purpose:** *Shows the direction of execution. It connects all symbols together.*
 
 6. **Connector**
 
-      **Symbol:** 
+    **Symbol:** 
 
-      ○
+    ○
 
-      **Purpose:** *Used to connect different parts of a flowchart. Useful when a flowchart becomes large. Instead of drawing a long arrow, we use connectors.*
+    **Purpose:** *Used to connect different parts of a flowchart. Useful when a flowchart becomes large. Instead of drawing a long arrow, we use connectors.*
 
 ---
 
@@ -1856,8 +1856,6 @@ END
 
 ##### **What is Python?**
 
-**What is Python?**
-
 *Python is a high-level, interpreted, object-oriented, and general-purpose programming language known for its simple syntax, readability, and versatility. It is widely used in web development, automation, data analysis, artificial intelligence, machine learning and many other fields.*
 
 ---
@@ -1936,8 +1934,28 @@ END
     - *Python code is shorter and easier to understand.*
 
 2. **Free and Open Source**
+
+    **Freeware:** *Python can be downloaded and used free of cost.*
+
+    **Open Source:** *Python's source code is publicly available.*
+
+    *Anyone can View the source code, modify it, improve it, distribute it.*
+
 3. **Platform Independent (Cross-Platform)**
+
+    - *A Python program written on one operating system can also run on other operating systems with the appropriate python installation.*
+    - **Examples:** *Windows, Linux, macOS. This is called Platform Independence.*
+
 4. **Dynamically Typed**
+
+    - *In Python, you do not need to declare the data type of a variable.*
+    - *Python automatically determines the data type based on the value assigned.*
+    - **Example:**
+      ```python
+       age=10
+       name="Saranya" 
+      ```
+
 5. **Interpreted Language**
 6. **High-Level Language**
 7. **Robust**
