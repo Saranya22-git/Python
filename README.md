@@ -1916,24 +1916,24 @@ END
 
 1. **Simple and Easy to Learn**
 
-*Python is one of the simplest programming languages because:*
-- *It has simple and readable syntax.*
-- *It requires fewer lines of code.*
-- *It has a rich standard library that provides many built-in modules and functions.*
-- **Example:**
- ```python
- print("Hello, World!")
- ```
+ *Python is one of the simplest programming languages because:*
+ - *It has simple and readable syntax.*
+ - *It requires fewer lines of code.*
+ - *It has a rich standard library that provides many built-in modules and functions.*
+ - **Example:**
+  ```python
+  print("Hello, World!")
+  ```
 
- ```C
- #include <stdio.h>
- int main()
- {
-  printf("Hello, World!");
-  return 0;
- }
- ```
-- *Python code is shorter and easier to understand.*
+  ```C
+  #include <stdio.h>
+  int main()
+  {
+   printf("Hello, World!");
+   return 0;
+  }
+  ```
+ - *Python code is shorter and easier to understand.*
 
 2. **Free and Open Source**
 3. **Platform Independent (Cross-Platform)**
