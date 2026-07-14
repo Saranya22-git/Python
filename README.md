@@ -2085,9 +2085,9 @@ END
 
 1. **Python 1.x**
 
-  - *First major version of Python*
-  - *Released in 1994*
-  - *Outdated and no longer used for modern development*
+   - *First major version of Python*
+   - *Released in 1994*
+   - *Outdated and no longer used for modern development*
 
 2. **Python 2.x**
 3. **Python 3.x**
