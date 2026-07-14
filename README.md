@@ -34,7 +34,7 @@ Hey everybody!!!
     - [**History of Python**](#history-of-python)
     - [**Features of Python**](#features-of-python)
     - [**Applications of Python**](#applications-of-python)
-    - [**Versions of Python**](#versions-of-python)
+    - [**Python Versions**](#python-versions)
     - [**Python Distributions**](#python-distributions)
 - [**Python Program Structure**](#python-program-structure)
   - [**Keywords**](#keywords)
@@ -2073,7 +2073,24 @@ END
 
 ---
 
-##### **Versions of Python**
+##### **Python Versions**
+
+**What is a Version?**
+
+*A Version is a numbered release of software used to identify different releases, updates, improvements, bug fixes, and new features.*
+
+---
+
+**Major Python Versions:** *Python has 3 major versions:*
+
+1. **Python 1.x**
+
+  - *First major version of Python*
+  - *Released in 1994*
+  - *Outdated and no longer used for modern development*
+
+2. **Python 2.x**
+3. **Python 3.x**
 
 ***Version** is a numerical value(integer values) they are using for identification purpose.*
 *Python Programming Language contains **3 types of versions**. They are*
