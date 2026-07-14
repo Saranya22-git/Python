@@ -2132,17 +2132,18 @@ END
 ##### **Python Distributions**
 
 
-**Distribution:** *A distribution is a customized version of python created to serve a specific need. Because Python is open source, developers can modify it and create their own distributions.*
+**Python Distribution:** *A Python Distribution is a customized version of python created to serve a specific need. Because Python is open source, developers can modify it and create their own distributions.*
 
-  - **CPython:**
-    - *CPython is the standard and most widely used implementation of Python.*
-    - *When you download Python from python.org you are usually downloading CPython.* 
+1. **CPython:**
+  - *CPython is the official and most widely used implementation of Python.*
+  - *It is developed*
+  - *When you download Python from python.org you are usually downloading CPython.* 
      
-  - **Jython:** 
+2. **Jython:** 
     - *Jython is Python implemented on the Java platform.*
     - *Allows Python code to work with Java libraries.*
     
-  - **IronPython:** 
+3. **IronPython:** 
     - *IronPython is Python implemented for the .NET framework.*
     - *Allows Python to work with C#, .NET Libraries.* 
      
