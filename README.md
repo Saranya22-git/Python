@@ -2090,15 +2090,42 @@ END
    - *Outdated and no longer used for modern development*
 
 2. **Python 2.x**
+
+   - *Released in 2000*
+   - *Widely used for many years*
+   - *Official support ended on January 1, 2020*
+   - *Not recommended for new projects*
+    
 3. **Python 3.x**
 
-***Version** is a numerical value(integer values) they are using for identification purpose.*
-*Python Programming Language contains **3 types of versions**. They are*
-1. **Python 1.x(outdated)** - *Here 1 is called major version. Here x represents 0 1 2 3 4 5 6 7 etc..., called Minor Version.*
-2. **Python 2.x(outdated)** - *Python 2.x does not support Backward Compatability.*
-   
-   ***Backward Compatability** means New Versions of Software can still work with stuff made for older versions.*
-3. **Python 3.x** - Here 3 is called Major Version. Here x represents 0 1 2 3 4 5 6 7 8 9 (7, 8, 9 are secured) 10 11(10,11 are bug fix) 12(Future release)
+   - *Released in 2008*
+   - *Current major version*
+   - *Actively maintained*
+   - *Recommended for all new projects*
+   - *Used in Web Development, Data Analysis, AI, Machine Learning, Automation, and many other fields.*
+
+---
+
+**What is Backward Compatibility?**
+
+*Backward Compatibility means a newer version of software can run or support programs developed for an older version.*
+
+**Python and Backward Compatibility**
+
+- *Python 3 is not fully backward compatible with Python 2.*
+- *Some programs written in Python 2 need modifications before they can run in Python 3.*
+
+---
+
+**Which Python Version should you learn?**
+
+*Python 3.x because it is Current Version, Actively maintained, More secure, Better performance, Recommended for all new projects.*
+
+---
+
+**How to check Python Version?**
+
+*Open Command Prompt or Terminal and type "python --version"*
 
 ---
 
