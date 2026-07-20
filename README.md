@@ -38,6 +38,7 @@ Hey everybody!!!
     - [**Python Distributions**](#python-distributions)
     - [**Python Execution Environment**](#python-execution-environment)
     - [**Python Interpreter**](#python-interpreter)
+    - [**Compiler**](#compiler-1)
 - [**Python Program Structure**](#python-program-structure)
   - [**Keywords**](#keywords)
   - [**Identifiers**](#identifiers)
@@ -2241,21 +2242,37 @@ END
 
 **Interpreter Flow**
 
-Python Source Code (.py)
-          │
-          ▼
-Python Interpreter
-          │
-          ▼
-Bytecode
-          │
-          ▼
-Python Virtual Machine (PVM)
-          │
-          ▼
-Output
+*Python Source code →  Python Interpreter → Bytecode → Python Virtual Machine (PVM) → Output*
 
+---
 
+**Advantages of an Interpreter**
+
+- *Easy to debug because errors are reported as execution proceeds.*
+- *No separate compilation step for the user*
+- *Portable across operating systems (with the appropriate Python installation)*
+- *Suitable for rapid development and testing*
+
+---
+
+**Disadvantages of Interpreter**
+
+- *Generally slower than fully compiled languages such as C or C++*
+- *Programs are translated during execution, which can increase execution time*
+
+---
+
+##### **Compiler**
+
+*A Python Compiler is a component of the Python Interpreter that converts Python source code (.py) into Bytecode (.pyc) before execution.*
+
+---
+
+**Why do we need a Compiler?**
+
+*The computer cannot execute Python source code directly. Python first converts the source code into Bytecode. This Bytecode is then executed by the Python Virtual Machine (PVM). Without the compiler, Python cannot generate Bytecode.*
+
+---
 ### **Python Program Structure**
 
 #### **Keywords**
