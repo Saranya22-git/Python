@@ -37,8 +37,8 @@ Hey everybody!!!
     - [**Python Versions**](#python-versions)
     - [**Python Distributions**](#python-distributions)
     - [**Python Execution Environment**](#python-execution-environment)
+    - [**Python Compiler**](#python-compiler)
     - [**Python Interpreter**](#python-interpreter)
-    - [**Compiler**](#compiler-1)
 - [**Python Program Structure**](#python-program-structure)
   - [**Keywords**](#keywords)
   - [**Identifiers**](#identifiers)
@@ -1954,8 +1954,8 @@ END
     - *Python automatically determines the data type based on the value assigned.*
     - **Example:**
       ```python
-       age=10
-       name="Saranya" 
+        age=10
+        name="Saranya" 
       ```
 
 5. **Interpreted Language**
@@ -2214,68 +2214,94 @@ END
 
 ---
 
+##### **Python Compiler**
+
+**What is the Python Compiler?**
+
+*A Python Compiler is a component of the Python execution system that converts Python source code (.py) into Bytecode (.pyc) before execution.*
+
+---
+
+**What does the Python Compiler do?**
+
+*The Python Compiler has three main jobs.*
+
+1. **Reads the Python Source Code:** *It reads the .py file written by the programmer.*
+2. **Checks for Syntax Errors:** *It checks whether the program follows Python's grammar rules.*
+3. **Converts the Code into Bytecode:** *If there are no syntax errors, the compiler converts the source code into Bytecode. This Bytecode is not executed yet. It is simply prepared for the next stage.*
+
+---
+
+**Compiler Flow**
+
+*Python Source Code (.py) → Python Compiler → Bytecode (.pyc)*
+
+---
+
+**Advantages of the Python Compiler**
+
+- *Converts Python Source Code into Bytecode*
+- *Detects syntax errors before execution*
+- *Prepares the program for execution*
+- *Improves efficiency because compiled Bytecode can be reused in some cases*
+
+---
+
 ##### **Python Interpreter**
 
-**What is an Interpreter?**
+**What is a Python Interpreter?**
 
-*A Python Interpreter is a software program that reads, translates, and executes python programs. It allows the computer to run Python code by converting it into instructions that the system can execute.*
-
----
-
-**Why do we need an Interpreter?**
-
-- *The computer understands only machine language. Python programs are written in high-level language.*
-- *The interpreter helps convert Python code into a form the computer can execute. Without the interpreter, Python programs cannot run.*
+*A Python Interpreter is a software program that executes the compiled Bytecode using the Python Virtual Machine (PVM) and produces the program's output.*
 
 ---
 
-**How does the Python Interpreter work?**
+**Why does the Python Interpreter do?**
 
-*Suppose you write print("Hello"). The interpreter:*
+*The interpreter has three main jobs.*
 
-**Step-1:** *Reads your python program.*
-
-**Step-2:** *Checks whether the syntax is correct*
-
-**Step-3:** *Converts the program into Bytecode*
-
-**Step-4:** *The Python Virtual Machine (PVM) executes the bytecode*
+1. **Reads the Bytecode:** *It takes the Bytecode created by the compiler.*
+2. **Executes the Bytecode:** *It processes the Bytecode instruction by instruction.*
+3. **Produces the Output:** *Display the output*
 
 ---
 
 **Interpreter Flow**
 
-*Python Source code →  Python Interpreter → Bytecode → Python Virtual Machine (PVM) → Output*
+*Bytecode (.pyc) → Python Interpreter (PVM) → Output*
 
 ---
 
-**Advantages of an Interpreter**
+**Advantages of the Python Interpreter**
 
-- *Easy to debug because errors are reported as execution proceeds.*
-- *No separate compilation step for the user*
-- *Portable across operating systems (with the appropriate Python installation)*
-- *Suitable for rapid development and testing*
+- *Executes the program*
+- *Makes Python programs portable across operating systems*
+- *Reports runtime errors when they occur*
+- *Supports interactive execution (Python Shell/REPL)*
 
----
+**Disadvantages of the Python Interpreter**
 
-**Disadvantages of Interpreter**
-
-- *Generally slower than fully compiled languages such as C or C++*
-- *Programs are translated during execution, which can increase execution time*
+- *Execution is generally slower than fully compiled languages because Bytecode is interpreted by the PVM.*
+- *Runtime errors may only appear when the relevant code is executed.*
 
 ---
 
-##### **Compiler**
+**Compiler vs Interpreter**
 
-*A Python Compiler is a component of the Python Interpreter that converts Python source code (.py) into Bytecode (.pyc) before execution.*
+| Compiler                           | Interpreter             |
+| ---------------------------------- | ----------------------- |
+| Reads Python source code           | Reads Bytecode          |
+| Converts source code into Bytecode | Executes Bytecode       |
+| Produces `.pyc` files              | Produces program output |
+| Works before execution             | Works during execution  |
 
 ---
 
-**Why do we need a Compiler?**
 
-*The computer cannot execute Python source code directly. Python first converts the source code into Bytecode. This Bytecode is then executed by the Python Virtual Machine (PVM). Without the compiler, Python cannot generate Bytecode.*
 
----
+
+
+
+
 ### **Python Program Structure**
 
 #### **Keywords**
