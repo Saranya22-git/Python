@@ -2234,8 +2234,11 @@ END
 *Suppose you write print("Hello"). The interpreter:*
 
 **Step-1:** *Reads your python program.*
+
 **Step-2:** *Checks whether the syntax is correct*
+
 **Step-3:** *Converts the program into Bytecode*
+
 **Step-4:** *The Python Virtual Machine (PVM) executes the bytecode*
 
 ---
