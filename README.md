@@ -47,6 +47,7 @@ Hey everybody!!!
     - [**Interactive Mode vs Script Mode**](#interactive-mode-vs-script-mode)
     - [**Python Shell (REPL)**](#python-shell-repl)
     - [**Installing Python and IDLE**](#installing-python-and-idle)
+    - [**IDLE**](#idle)
   - [**Python Program Structure**](#python-program-structure)
     - [**Keywords**](#keywords)
       - [**Keywords (Reserved Words)**](#keywords-reserved-words)
@@ -2417,7 +2418,7 @@ print(sum)
 
 - *Immediate Output*
 - *Good for beginners*
-- *useful for testing small pieces of code*
+- *Useful for testing small pieces of code*
 - *No need to create a .py file*
 
 **Disadvantages of Interactive Mode**
@@ -2587,6 +2588,8 @@ python --version
 - *pip (Python Package Installer)*
 
 ---
+
+### **IDLE**
 
 **What is IDLE?**
 
