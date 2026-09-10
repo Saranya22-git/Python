@@ -2661,7 +2661,7 @@ global  nonlocal
 
 *Keywords have the following properties*
 
-1. **Reserved by Python:** *They are reserved fpr specific purposes*
+1. **Reserved by Python:** *They are reserved for specific purposes*
 
     **Example:** *```if``` always represents a conditional statement.*
 
@@ -2675,7 +2675,7 @@ global  nonlocal
 
 4. **Case-Sensitive:** *Keywords must be written exactly as defined.*
 
-    **Example:** *```if``` is a Keyword but If is not a keyword. Similarly, ```True``` is a Keyword true is not.*
+    **Example:** *```if``` is a Keyword but ```If``` is not a keyword. Similarly, ```True``` is a Keyword ```true``` is not.*
 
 ---
 
@@ -2765,7 +2765,7 @@ print(keyword.iskeyword("if"))      # True
 **Variable:** *Identifier age*
 
 ```python
-age=21              
+age = 21              
 ```
 
 **Function:** *Identifier greet*
@@ -2836,7 +2836,7 @@ import math
   price$
   ```
 
-  *Allowed Special Character **_** Only the underscore _ is allowed.*
+  *Allowed Special Character``` **_**``` Only the underscore ``` _``` is allowed.*
 
 **Rule-5:** *Cannot be a Keyword*
 
