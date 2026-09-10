@@ -2836,7 +2836,7 @@ import math
   price$
   ```
 
-  *Allowed Special Character``` **_**``` Only the underscore ``` _``` is allowed.*
+  *Allowed Special Character ```_``` Only the underscore ``` _``` is allowed.*
 
 **Rule-5:** *Cannot be a Keyword*
 
