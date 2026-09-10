@@ -3177,7 +3177,7 @@ print(x)              # 30
 
 #### **Docstrings**
 
-*A Docstring isa a string literal used to document modules, functions, classes, and methods.*
+*A Docstring is a string literal used to document modules, functions, classes, and methods.*
 
 **Syntax:** *A Docstring is written using triple double quotes ```(""" """)``` or triple single quotes ```(''' ''')```*
 
