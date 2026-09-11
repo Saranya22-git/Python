@@ -4000,7 +4000,7 @@ string[start:stop]
 ```python
 name = "Saranya"
 
-print(name[2:5])          # rany
+print(name[2:5])          # ran
 ```
 
 *Indexes*
@@ -4126,7 +4126,7 @@ print(name[-4:-1])      # any
 ### **Step Slicing**
 
 - *Step slicing allows us to specify how many positions python should move while extracting elements from a sequence.*
-- *Step slicing ```string[start:stop:step]*
+- *Step slicing ```string[start:stop:step]```*
 - *The third value ```step``` controls the movement between characters*
 
 ---
