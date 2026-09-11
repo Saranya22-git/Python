@@ -7060,6 +7060,147 @@ print(result)
 
 ## **Lists**
 
+*A ```List``` is an ordered, mutable collection in Python that can store multiple values, including values of different data types.*
+
+**Example:**
+
+```python
+numbers = [10, 20, 30, 40]
+```
+
+*Here ```numbers``` is a list containing four elements.*
+
+---
+
+**Why do we need Lists?**
+
+*Suppose you want to store several student marks.*
+
+**Without a list:**
+
+```python
+mark1 = 85
+mark2 = 90
+mark3 = 78
+mark4 = 92
+```
+
+*This becomes difficult to manage.*
+
+**With a list:**
+
+```python
+marks = [85, 90, 78, 92]
+```
+
+*Now all the marks are stored together.*
+
+---
+
+**Creating a list**
+
+```python
+list_name = [element1, element2, element3]
+```
+
+**Example:**
+
+```python
+numbers = [10, 20, 30, 40]
+```
+
+```python
+names = ["Saranya", "Sai", "Adnan", "Tej"]
+```
+
+---
+
+**Empty List**
+
+*You can create a list with no elements.*
+
+```python
+list = []
+
+print(list, type(list))                   # [] <class 'list'>
+```
+
+*This is called an empty list. Empty lists are commonly used when you plan to add elements later.*
+
+---
+
+**Lists can store different data types**
+
+*Python lists can contain different types of values.*
+
+```python
+data = [10, "Python", 3.14, True]
+```
+
+*Here*
+
+```txt
+10       → int
+"Python" → str
+3.14     → float
+True     → bool
+```
+
+*All of them can exist inside the same list.*
+
+---
+
+**List can store duplicate values**
+
+*List allow duplicates*
+
+```python 
+numbers = [10, 20, 10, 30, 20]
+```
+
+*The list contains ```10 20 10 30 20```*
+
+*Unlike a set, a list does not automatically remove duplicates.*
+
+---
+
+**List is Ordered**
+
+*Lists maintain the order in which elements are inserted.*
+
+```python
+skills = ["Python", "SQL", "Excel"]
+```
+
+*The order is ```Python SQL Excel```. Python doesn't automatically rearrange them. So a list is an Ordered collection.*
+
+---
+
+**Creating a list using ```list()```**
+
+*Create a list using the built-in ```list()``` constructor.*
+
+```python
+numbers = list()
+```
+
+*This creates ```[]```*
+
+*You can also convert an iterable into a list.*
+
+```python
+text = "Python"
+
+letters = list(text)
+
+print(letters)                  # ['P', 'y', 't', 'h', 'o', 'n']
+```
+
+---
+
+
+
+
 
 
 
