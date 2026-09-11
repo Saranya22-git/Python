@@ -4244,7 +4244,7 @@ name = 'J' + name[1:]
 print(name)                 # Jython
 ```
 
-*Python did not not modify ```Python```. It created a new string ```Jython``` and then assigned it to name.*
+*Python did not modify ```Python```. It created a new string ```Jython``` and then assigned it to name.*
 
 ---
 
