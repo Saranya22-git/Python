@@ -106,6 +106,8 @@ Hey everybody!!!
       - [**```ljust()```**](#ljust)
       - [**```rjust```**](#rjust)
       - [**```center()```**](#center)
+      - [**```zfill()```**](#zfill)
+  - [**Lists**](#lists)
 
 
 ---
@@ -6876,6 +6878,194 @@ print(text.center(10, "-"))               # --Python--
 *The ```-``` characters fill the remaining space.*
 
 ---
+
+**What if width is smaller?**
+
+```python
+text = "Python"
+
+print(text.ljust(3))                    # Python
+```
+
+*The string already has length 6. Since the requested width is smaller than the string length, Python does not truncate the string.*
+
+---
+
+**What if width equals string length?**
+
+```python
+text = "Python"
+
+print(text.ljust(6))                      # Python
+print(text.rjust(6))                      # Python
+print(text.center(6))                     # Python
+```
+
+*No padding is needed. The string remains ```Python```.*
+
+---
+
+**```center()``` with Odd Padding**
+
+```python
+text = "Python"
+
+print(text.center(11, "-"))                 # ---Python--
+```
+
+*Python has length 6. Required padding ```11 - 6 = 5``` There are 5 padding characters. Python distributes them as evenly as possible.*
+
+---
+
+#### **```zfill()```**
+
+*```zfill()``` means zero fill. It pads a string with zeros on the left until it reaches the specified width.*
+
+**Syntax:**
+
+```python
+string.zfill(width)
+```
+
+**Example:**
+
+```python
+text = "Sara"
+
+print(text.zfill(5))                    # 0Sara
+```
+
+```txt
+Original length = 4
+Requested width = 5
+Zeros needed = 1
+```
+
+---
+
+**```zfill()``` is a String Method**
+
+```python
+number = "56"
+
+result = number.zfill(4)
+
+print(type(number))                       # <class 'str'>
+print(type(result))                       # <class 'str'>
+```
+
+---
+
+**```zfill()``` with Numbers**
+
+```python
+number = 34
+
+print(number.zfill(7))                # AttributeError: 'int' object has no attribute 'zfill'
+```
+
+*Convert it*
+
+```python
+number = 34
+
+print(str(number).zfill(7))             # 0000034
+```
+
+---
+
+**```zfill() and Negative Numbers**
+
+```python
+number = "-78"
+
+print(number.zfill(5))                  # -0078
+```
+
+*Notice the zeros are placed after the sign. Not ```00-42``` but ```-0042```. Python treats ```+``` and ```-``` as signs when using ```zfill()```.*
+
+*Same as for Positive Numbers.*
+
+---
+
+**Fill Character must be One Character**
+
+```python
+"Python".ljust(10, "-")                 # 'Python----'
+```
+
+*But the fill character must be exactly one character.*
+
+*For example*
+
+```python
+"Python".rjust(10, "--")                      # TypeError: The fill character must be exactly one character long
+```
+
+---
+
+**```Alignment``` vs ```format()```**
+
+```python
+print("{:<10}".format("Python"))            # Python 
+print("{:>10}".format("Python"))            #     Python
+print("{:^10}".format("Python"))            #   Python 
+```
+
+```txt
+String methods
+    ↓
+ljust()
+rjust()
+center()
+
+String formatting
+    ↓
+format()
+f-string
+```
+
+---
+
+**Alignment with f-strings**
+
+```python
+name = "Python"
+
+print(f"{name:>10}")                  #     Python
+print(f"{name:<10}")                  # Python   
+print(f"{name:^10}")                  #   Python 
+```
+
+---
+
+| Method     | Purpose            |
+| ---------- | ------------------ |
+| `ljust()`  | Left-align         |
+| `rjust()`  | Right-align        |
+| `center()` | Center-align       |
+| `zfill()`  | Zero-pad from left |
+
+---
+
+```python
+employee_id = "125"
+
+result = "EMP" + employee_id.zfill(5)
+
+print(result)
+```
+
+---
+
+## **Lists**
+
+
+
+
+
+
+
 
 
 
