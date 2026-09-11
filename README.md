@@ -103,6 +103,9 @@ Hey everybody!!!
     - [**Split**](#split)
     - [**Join**](#join)
     - [**Alignment**](#alignment)
+      - [**```ljust()```**](#ljust)
+      - [**```rjust```**](#rjust)
+      - [**```center()```**](#center)
 
 
 ---
@@ -6752,7 +6755,7 @@ zfill()   → pad with zeros
 
 ---
 
-**```ljust()```**
+#### **```ljust()```**
 
 *```ljust()``` means left justify. It places the string on the left side and adds spaces on the right.*
 
@@ -6771,6 +6774,8 @@ print(text.ljust(20))                         # Python
 ```
 
 *The total width is 10, so Python adds ```10 - 6 = 4``` spaces.*
+
+---
 
 **Visualizing ```ljust()```**
 
@@ -6803,7 +6808,79 @@ print(text.ljust(10, "-"))                    # Python----
 
 ---
 
-****
+#### **```rjust```**
+
+*```rjust()``` means right justify. It places the string on the right side and adds padding on the left.*
+
+```python
+text = "Python"
+
+print(text.rjust(30))                         #                         Python
+```
+
+*There are 24 spaces before ```Python```.*
+
+---
+
+**Visualizing ```rjust()```**
+
+```txt
+Width = 30
+
+|    Python|
+|←24 spaces→←6 chars→|
+```
+
+---
+
+**Custom Fill Character with ```rjust()```**
+
+```python
+text = "Python"
+
+print(text.rjust(10, "-"))                # ----Python
+```
+
+---
+
+#### **```center()```**
+
+*```center()``` places the string in the middle of the specified width.*
+
+**Syntax:**
+
+```python
+string.center(width)
+```
+
+**Example:**
+
+```python
+text = "Python"
+
+print(text.center(10))              #   Python  
+```
+
+*The string is centered within a width of 10.*
+
+---
+
+**Custom Fill Character with ```center()```**
+
+```python
+text = "Python"
+
+print(text.center(10, "-"))               # --Python--
+```
+
+*The ```-``` characters fill the remaining space.*
+
+---
+
+
+
+
+
 
 
 
