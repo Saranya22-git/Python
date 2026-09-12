@@ -97,7 +97,20 @@ Hey everybody!!!
     - [**%**](#)
   - [**String Methods**](#string-methods)
     - [**Case Methods**](#case-methods)
+      - [**```upper()```**](#upper)
+      - [**```lower()```**](#lower)
+      - [**```capitalize()```**](#capitalize)
+      - [**```title()```**](#title)
+      - [**```swapcase()```**](#swapcase)
+      - [**```casefold()```**](#casefold)
     - [**Search Methods**](#search-methods)
+      - [**```find()```**](#find)
+      - [**```rfind()```**](#rfind)
+      - [**```index()```**](#index)
+      - [**```rindex()```**](#rindex)
+      - [**```count()```**](#count)
+      - [**```startswith()```**](#startswith)
+      - [**```endswith()```**](#endswith)
     - [**Validation Methods**](#validation-methods)
     - [**Replace Methods**](#replace-methods)
     - [**Split**](#split)
@@ -5282,7 +5295,7 @@ casefold()
 
 ---
 
-**```upper()```**
+#### **```upper()```**
 
 *Converts all alphabetic characters to uppercase.*
 
@@ -5300,7 +5313,7 @@ print(name.upper())             # SARANYA
 
 ---
 
-**```lower()```**
+#### **```lower()```**
 
 *Converts all alphabetic characters to lowercase.*
 
@@ -5318,7 +5331,7 @@ print(name.lower())               # saranya
 
 ---
 
-**```capitalize()```**
+#### **```capitalize()```**
 
 *```capitalize()``` makes the first character uppercase and remaining characters lowercase.*
 
@@ -5331,7 +5344,7 @@ print(text.capitalize())            # Hello world
 
 ---
 
-**```title()```**
+#### **```title()```**
 
 *```title()``` converts the first character of each word to uppercase and the remaining characters of those words to lowercase.*
 
@@ -5344,7 +5357,7 @@ print(text.title())                 # Hello World!!!
 
 ---
 
-**```swapcase()```**
+#### **```swapcase()```**
 
 *```swapcase()``` reverses the case of each alphabetic character.*
 
@@ -5357,7 +5370,7 @@ print(name.swapcase())                # sArANYA
 
 ---
 
-**```casefold()```**
+#### **```casefold()```**
 
 - *```casefold()``` is used for case-insensitive comparisons*
 - *It is similar to lower() but more aggressive and designed for Unicode-aware case-insensitive matching.*
@@ -5418,7 +5431,7 @@ endswith()
 
 ---
 
-**```find()```**
+#### **```find()```**
 
 *```find()``` searches for a substring and returns its first position (index).*
 
@@ -5474,7 +5487,7 @@ print(text.find("Python", 1))           # 7
 
 ---
 
-**```rfind()```**
+#### **```rfind()```**
 
 *```rfind()``` searches from the right side and returns the position of the last occurrence.*
 
@@ -5503,7 +5516,7 @@ print(fruit.rfind("a"))                   # 5
 
 ---
 
-**```index()```**
+#### **```index()```**
 
 *```index()``` is similar to ```find()```*
 
@@ -5530,7 +5543,7 @@ print(text.index("s"))                    # ValueError: substring not found
 
 ---
 
-**```rindex()```**
+#### **```rindex()```**
 
 *```rindex()``` is the right-to-left version of index()*
 
@@ -5542,7 +5555,7 @@ print(text.rindex("a"))                     # 5
 
 ---
 
-**```count()```**
+#### **```count()```**
 
 *```count()``` tells you how many times a substring occurs.*
 
@@ -5585,7 +5598,7 @@ print(text.count("s"))                        # 0
 
 ---
 
-**```startswith()```**
+#### **```startswith()```**
 
 - *```startswith()``` checks whether a string begins with a particular substring.*
 - *It returns a Boolean ```True False```*
@@ -5601,7 +5614,7 @@ print(text.startswith("ban"))                 # True
 
 ---
 
-**```endswith()```**
+#### **```endswith()```**
 
 - *```endswith()``` checks whether a string ends with a particular substring.*
 
