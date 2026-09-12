@@ -5581,7 +5581,7 @@ text = "Python Python"
 print(text.count("Python"))                   # 2
 print(text.count(" "))                        # 1
 print(text.count(""))                         # 14
-print(text.count("a",2))                      # 2
+print(text.count("a",2))                      # 0
 ```
 
 ---
