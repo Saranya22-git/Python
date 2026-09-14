@@ -134,6 +134,8 @@ Hey everybody!!!
       - [**```zfill()```**](#zfill)
   - [**Lists**](#lists)
     - [**Creating a list**](#creating-a-list)
+    - [**Indexing**](#indexing-1)
+    - [**Slicing**](#slicing)
 
 
 ---
@@ -7386,6 +7388,138 @@ print(numbers)                      # [10, 20, 30]
 5. **Supports Indexing:** *You can access elements using indexes.*
 
 ---
+
+### **Indexing**
+
+- *List Indexing is the process of accessing an individual element of a list using its position (index)*
+- *In Python, List indexing starts from ```0``` for the first element*
+
+**Example:**
+
+```python
+numbers = [10, 20, 30, 40]
+
+print(numbers[0])                     # 10
+print(numbers[2])                     # 30
+print(numbers[3])                     # 40
+print(numbers[1])                     # 20
+```
+
+*The indexes are*
+
+```txt
+Value:    10    20    30    40
+Index:     0     1     2     3
+```
+
+---
+
+**Syntax:**
+
+```python
+list_name[index]
+```
+
+**Example:**
+
+```python
+fruits = ["Apple", "Banana", "Mango"]
+
+print(fruits[1])                        # Banana
+```
+
+---
+
+**How does indexing work internally?**
+
+*Consider*
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+numbers[2]
+```
+
+*Python's list stores references to objects. Python uses the index to locate the element at position 2.*
+
+**IMPORTANT POINT**
+
+*For a python list, accessing an element by index is generally ```O(1) - constant time``` because Python can directly locate the indexed position.*
+
+---
+
+**Negative Indexing**
+
+*Python also supports negative indexes. Negative indexing starts from the end of the list.*
+
+```python
+numbers = [10, 20, 30, 40]
+
+numbers[-1]                             # 40
+```
+
+**Positions**
+
+```txt
+Positive:    0     1     2     3
+             ↓     ↓     ↓     ↓
+Values:     10    20    30    40
+             ↑     ↑     ↑     ↑
+Negative:   -4    -3    -2    -1
+```
+
+---
+
+**Indexing with Variables**
+
+*The index doesn't have to be a fixed number*
+
+```python
+numbers = [10, 20, 30, 40]
+
+index = 2
+
+print(numbers[index])                     # 30
+```
+
+---
+
+**IndexError**
+
+*What happens if we access an index that doesn't exist?*
+
+```python
+numbers = [10, 20, 30, 40]
+
+print(numbers[5])                         # IndexError: list index out of range
+```
+
+*IndexError occurs when we try to access a list position that is outside the valid index range*
+
+---
+
+### **Slicing**
+
+- *List slicing is the process of extracting a portion of a list using a range of indexes without modifying the original list.*
+- *Slicing allows us to get multiple elements at once*
+
+**Example:**
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[1:4])                       # [20, 30, 40]
+```
+
+---
+
+
+
+
+
+
+
+
 
 
 
