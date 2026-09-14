@@ -7513,6 +7513,76 @@ print(numbers[1:4])                       # [20, 30, 40]
 
 ---
 
+**Syntax:**
+
+```python
+list[start:stop]
+```
+
+**Rule:**
+
+- *Start is included*
+- *Stop is excluded*
+
+*For example*
+
+```python
+numbers[1:4]
+```
+
+```txt
+index 1 → included
+index 2 → included
+index 3 → included
+index 4 → excluded
+```
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[1:4])                       # [20, 30, 40]
+```
+
+---
+
+**How slicing works internally**
+
+*Suppose*
+
+```python
+numbers = [10, 20, 30, 40, 50]
+```
+
+*Indexes*
+
+```txt
+Index:      0     1     2     3     4
+Value:     10    20    30    40    50
+```
+
+*When we write*
+
+```python
+numbers[1:4]
+```
+
+*Python starts at index 1 and moves toward index 4 but doesn't include index 4*
+
+```txt
+       included
+          ↓
+[10, 20, 30, 40, 50]
+      ↑         ↑
+    start      stop
+     1          4
+```
+
+*Result*
+
+```txt
+[20, 30, 40]
+```
+
 
 
 
