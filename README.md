@@ -7276,10 +7276,115 @@ print(numbers)                    # [40, 10, 20, 30]
 
 ---
 
+**Creating a List from ```range()```**
 
+```python
+numbers = list(range(5))
 
+print(numbers)                    # [0, 1, 2, 3, 4]
+```
 
+---
 
+**List with One Element**
+
+*A list containing one element is written*
+
+```python
+numbers = [10]
+
+print(numbers, type(numbers))               # [10] <class 'list'>
+```
+
+*This is a list containing one element.*
+
+*Compare this tuples, where*
+
+```python
+(10)
+```
+
+*is not a one-element tuple*
+
+*A one-element tuple requires*
+
+```python
+(10,)
+```
+
+---
+
+**List with Strings**
+
+```python
+languages = ["Python", "Java", "C++"]
+```
+
+*The elements are strings. You can also use either single or double quotes.*
+
+```python
+languages = ['Python', 'Java']
+```
+
+*Both are valid*
+
+---
+
+**Nested List**
+
+*A list can contain another list*
+
+```python
+matrix = [[1, 2], [3, 4]]
+```
+
+*This is called a Nested List*
+
+---
+
+**List creation with Variables**
+
+*You can use variables as elements*
+
+```python
+name = "Saranya"
+age = 10
+
+student = [name, age]
+
+print(student)                          # ['Saranya', 10]
+```
+
+*The list stores references to the corresponding objects*
+
+---
+
+**List can contain Expressions**
+
+*You can also create a list using expressions*
+
+```python
+a = 10
+b = 20
+
+numbers = [a, b, a+b]
+
+print(numbers)                      # [10, 20, 30]
+```
+
+*The expressions are evaluated when the list is created.*
+
+---
+
+**Properties of Lists**
+
+1. **Ordered:** *Maintains element order*
+2. **Mutable:** *Elements can be changed after creation*
+3. **Allows duplicates:** *```[10, 10, 20]``` is valid*
+4. **Allows different data types:** *```[10, "Python", 3.14, True]``` is valid*
+5. **Supports Indexing:** *You can access elements using indexes.*
+
+---
 
 
 
