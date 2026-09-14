@@ -112,6 +112,18 @@ Hey everybody!!!
       - [**```startswith()```**](#startswith)
       - [**```endswith()```**](#endswith)
     - [**Validation Methods**](#validation-methods)
+      - [**```isalpha()```**](#isalpha)
+      - [**```isdigit()```**](#isdigit)
+      - [**```isdecimal()```**](#isdecimal)
+      - [**```isnumeric()```**](#isnumeric)
+      - [**```isalnum()```**](#isalnum)
+      - [**```isspace()```**](#isspace)
+      - [**```islower()```**](#islower)
+      - [**```isupper()```**](#isupper)
+      - [**```istitle()```**](#istitle)
+      - [**```isidentifier()```**](#isidentifier)
+      - [**```isascii()```**](#isascii)
+      - [**```isprintable()```**](#isprintable)
     - [**Replace Methods**](#replace-methods)
     - [**Split**](#split)
     - [**Join**](#join)
@@ -5700,7 +5712,7 @@ isprintable()
 
 ---
 
-**```isalpha()```**
+#### **```isalpha()```**
 
 *Checks whether all characters are alphabetic.*
 
@@ -5724,7 +5736,7 @@ print(text.isalpha())                     # False
 
 ---
 
-**```isdigit()```**
+#### **```isdigit()```**
 
 *Checks whether all characters are digits.*
 
@@ -5746,7 +5758,7 @@ print(text.isdigit())                      # False
 
 ---
 
-**```isdecimal()```**
+#### **```isdecimal()```**
 
 *Checks whether all characters are decimal characters*
 
@@ -5759,7 +5771,7 @@ print("1234".isdecimal())                   # True
 
 ---
 
-**```isnumeric()```**
+#### **```isnumeric()```**
 
 *```isnumeric()``` is broader than ```isdigit()```. It checks whether all characters are numeric characters.*
 
@@ -5779,7 +5791,7 @@ isnumeric()
 
 ---
 
-**```isalnum()```**
+#### **```isalnum()```**
 
 *```isalnum()``` means Alphabetic or Numeric.*
 
@@ -5801,7 +5813,7 @@ print(text.isalnum())                         # False
 
 ---
 
-**```isspace()```**
+#### **```isspace()```**
 
 *Checks whether all characters are whitespace characters.*
 
@@ -5826,7 +5838,7 @@ print(text.isspace())                         # False
 
 ---
 
-**```islower()```**
+#### **```islower()```**
 
 *Checks whether the string contains cased characters and all of those cased characters are lowercase.*
 
@@ -5851,7 +5863,7 @@ print("Python123".islower())                  # False
 
 ---
 
-**```isupper()```**
+#### **```isupper()```**
 
 *Checks whether the string contains cased characters and all of them are uppercase.*
 
@@ -5876,7 +5888,7 @@ print("Python123".isupper())                    # False
 
 ---
 
-**```istitle()```**
+#### **```istitle()```**
 
 *Checks whether the string follows title-case rules.*
 
@@ -5894,7 +5906,7 @@ print(text.istitle())                           # False
 
 ---
 
-**```isidentifier()```**
+#### **```isidentifier()```**
 
 *Checks whether a string is a valid Python Identifier.*
 
@@ -5917,7 +5929,7 @@ print("class".isidentifier())                   # True
 
 ---
 
-**```isascii()```**
+#### **```isascii()```**
 
 *Checks whether all characters are ASCII characters.*
 
@@ -5936,7 +5948,7 @@ print("😀".isascii())                           # False
 
 ---
 
-**```isprintable()```**
+#### **```isprintable()```**
 
 *Checks whether all characters are printable.*
 
@@ -7209,7 +7221,64 @@ letters = list(text)
 print(letters)                  # ['P', 'y', 't', 'h', 'o', 'n']
 ```
 
+*Because a string is iterable, so ```list()``` takes its characters and creates a list.*
+
 ---
+
+**```[]``` vs ```list()```**
+
+*Both can create an empty list*
+
+```python
+a = []
+b = list()
+
+print(a)                      # []
+print(b)                      # []
+```
+
+- *For simply creating an empty list, ```[]``` is generally the more common and concise syntax.*
+- *Use ```list[]``` especially when you want to convert an iterable into a list.*
+
+**Examples:**
+
+```python
+list("ABC")                         # ['A', 'B', 'C']
+```
+
+---
+
+**Creating a List from a Tuple**
+
+```python
+data = (10, 20, 30, 40)
+
+numbers = list(data)
+
+print(numbers)                      # [10, 20, 30, 40]
+```
+
+*The tuple is converted into a list*
+
+---
+
+**Creating a list from a Set**
+
+```python
+data = {10, 20, 30, 40}
+
+numbers = list(data)
+
+print(numbers)                    # [40, 10, 20, 30]
+```
+
+*However, remember that a set is unordered, so you should not rely on a particular order when converting a set to a list.*
+
+---
+
+
+
+
 
 
 
