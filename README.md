@@ -133,6 +133,7 @@ Hey everybody!!!
       - [**```center()```**](#center)
       - [**```zfill()```**](#zfill)
   - [**Lists**](#lists)
+    - [**Creating a list**](#creating-a-list)
 
 
 ---
@@ -7122,7 +7123,7 @@ marks = [85, 90, 78, 92]
 
 ---
 
-**Creating a list**
+### **Creating a list**
 
 ```python
 list_name = [element1, element2, element3]
@@ -7385,6 +7386,8 @@ print(numbers)                      # [10, 20, 30]
 5. **Supports Indexing:** *You can access elements using indexes.*
 
 ---
+
+
 
 
 
