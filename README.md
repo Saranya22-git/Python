@@ -7727,6 +7727,30 @@ print(numbers[::-1])                    # [50, 40, 30, 20, 10]
 
 ### **Nested Lists**
 
+*A nested list is a list in which one or more elements are themselves lists. It is commonly used to represent 2D or multi-dimensional data.*
+
+**Example:**
+
+```python
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+```
+
+*Here*
+- *```matrix``` → Outer list*
+- *```[1, 2, 3]``` → Inner list*
+- *```[4, 5, 6]``` → Inner list*
+- *```[7, 8, 9]``` → Inner list*
+
+```txt
+matrix
+   │
+   ├── [1, 2, 3]
+   ├── [4, 5, 6]
+   └── [7, 8, 9]
+```
+
+---
+
 
 
 
