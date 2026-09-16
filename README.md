@@ -136,6 +136,7 @@ Hey everybody!!!
     - [**Creating a list**](#creating-a-list)
     - [**Indexing**](#indexing-1)
     - [**Slicing**](#slicing)
+    - [**Nested Lists**](#nested-lists)
 
 
 ---
@@ -7711,6 +7712,20 @@ print(numbers[:-2])                     # [10, 20, 30]
 *It means take everything except the last two elements*
 
 ---
+
+**Reversing a List using Slicing**
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[::-1])                    # [50, 40, 30, 20, 10]
+```
+
+*The step is -1 So python moves backward*
+
+---
+
+### **Nested Lists**
 
 
 
