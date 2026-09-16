@@ -7583,6 +7583,136 @@ numbers[1:4]
 [20, 30, 40]
 ```
 
+*Slicing creates a new list containing the selected elements. It does not remove those elements from the original list.*
+
+---
+
+**Simple Examples**
+
+**Example-1:** *Basic Slicing*
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[1:4])                       # [20, 30, 40]
+```
+
+**Example-2:** *First three elements*
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[0:3])                       # [10, 20, 30]
+```
+
+**Example-3:** *First elements without start*
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[:3])                        # [10, 20, 30]
+```
+
+*This means ```start from beginning stop before index 3```*
+
+**Example-4:** *From an index to the end*
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[2:])                        # [30, 40, 50]
+```
+
+*Start at index 2 and continue until the end*
+
+**Example-5:** *Copy the whole list*
+
+```python
+numbers = [10, 20, 30]
+
+copy = numbers[:]
+
+print(copy)                               # [10, 20, 30]
+```
+
+*```[:]`` means Take the entire list. This creates a new list*
+
+---
+
+**Slicing with a Step**
+
+```python
+list[start:stop:step]
+```
+
+**Example:**
+
+```python
+numbers = [10, 20, 30, 40, 50, 60]
+
+print(numbers[0:6:2])                     # [10, 30, 50]
+```
+
+*The step is 2, so Python moves two positions at a time*
+
+**Step = 1**
+
+```python
+numbers = [10, 20, 30, 40, 50, 60]
+
+print(numbers[0:5:1])                     # [10, 20, 30, 40, 50]
+```
+
+**Step = 2**
+
+```python
+numbers = [10, 20, 30, 40, 50, 60]
+
+print(numbers[0:6:2])                     # [10, 30, 50]
+```
+
+**Step = 3**
+
+```python
+numbers = [10, 20, 30, 40, 50, 60]
+
+print(numbers[0:6:3])                     # [10, 40]
+```
+
+---
+
+**Negative Indexing with Slicing**
+
+*Slicing also supports negative indexes*
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[-3:])                       # [30, 40, 50]
+```
+
+```txt
+Positive:   0    1    2    3    4
+            10   20   30   40   50
+
+Negative:  -5   -4   -3   -2   -1
+```
+
+*Start at the third element from the end and go to the end*
+
+---
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[:-2])                     # [10, 20, 30]
+```
+
+*It means take everything except the last two elements*
+
+---
+
+
 
 
 
