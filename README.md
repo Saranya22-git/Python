@@ -7751,6 +7751,153 @@ matrix
 
 ---
 
+**Why do we need Nested Lists?**
+
+*Normal list*
+
+```python
+marks = [85, 90, 78, 92]
+```
+
+*This represents one collection. But suppose we want to represent marks of nultiple students*
+
+```txt
+Student 1 → 85, 90, 78
+Student 2 → 88, 92, 95
+Student 3 → 75, 80, 84
+```
+
+*A nested list is useful*
+
+```python
+marks = [
+  [85. 90, 78],
+  [88, 92, 95],
+  [75, 80, 84]
+]
+```
+
+*Each inner list can represent one student's marks*
+
+---
+
+**Syntax:**
+
+```python
+nested_list = [
+  [element1, element2],
+  [element3, element4]
+]
+```
+
+**Example:**
+
+```python
+numbers = [
+  [1, 2],
+  [3, 4]
+]
+```
+
+---
+
+**How does Nested List indexing work internally?**
+
+*Consider*
+
+```python
+matrix = [
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+]
+```
+
+*Think of it as*
+
+```txt
+             Column
+             0    1    2
+
+Row 0       10   20   30
+Row 1       40   50   60
+Row 2       70   80   90
+```
+
+*The first index selects the inner list. The second index selects an element inside that inner list.*
+
+*So*
+
+```python
+nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+nested_list[1]                            # [4, 5, 6]
+```
+
+```python
+nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+nested_list[1][-1]                        # [6]
+```
+
+```python
+matrix[row][column]
+```
+
+*First select the row then select the column*
+
+---
+
+**Example:**
+
+```python
+numbers = [
+  [10, 20],
+  [30, 40]
+]
+
+print(numbers[0])                     # [10, 20]
+print(numbers[1])                     # [30, 40]
+```
+
+*Now access individual values*
+
+```python
+print(numbers[0][0])                  # 10
+print(numbers[0][1])                  # 20
+print(numbers[1][0])                  # 30
+print(numbers[1][1])                  # 40
+```
+
+---
+
+**Nested Lists can have different Sizes**
+
+*Python does not require every inner list to have the same number of elements*
+
+*For example*
+
+```python
+data = [
+  [10, 20],
+  [30, 40, 50],
+  [60]
+]
+```
+
+*This is valid Python. The inner lists have different lengths.*
+
+```txt
+[10, 20]       → 2 elements
+[30, 40, 50]   → 3 elements
+[60]           → 1 element
+```
+
+*This is sometimes called a jagged/irregular nested list*
+
+---
+
+
 
 
 
