@@ -7846,6 +7846,9 @@ matrix[row][column]
 
 *First select the row then select the column*
 
+- *First index → inner list*
+- *Second index → element inside that list*
+
 ---
 
 **Example:**
@@ -7896,6 +7899,38 @@ data = [
 *This is sometimes called a jagged/irregular nested list*
 
 ---
+
+**Nested Lists as a Matrix**
+
+*Nested lists are frequently used to represent matrices*
+
+```python
+matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]
+```
+
+```txt
+1  2  3
+4  5  6
+7  8  9
+```
+
+*For example*
+
+```python
+print(matrix[0][2])                   # 3
+```
+
+```txt
+row 0 → [1, 2, 3]
+column 2 → 3
+```
+
+---
+
 
 
 
