@@ -137,6 +137,9 @@ Hey everybody!!!
     - [**Indexing**](#indexing-1)
     - [**Slicing**](#slicing)
     - [**Nested Lists**](#nested-lists)
+    - [**Mutability**](#mutability)
+    - [**Methods**](#methods)
+      - [**```append()```**](#append)
 
 
 ---
@@ -7930,6 +7933,168 @@ column 2 → 3
 ```
 
 ---
+
+### **Mutability**
+
+*A list is mutable, which means its elements can be changed, added, or removed after the list has been created.*
+
+**Example:**
+
+```python
+numbers = [10, 20, 30]
+
+numbers[1] = 200
+
+print(numbers)                          # [10, 200, 30]
+```
+
+*The original list was changed*
+
+---
+
+**Syntax:**
+
+*To modify an existing element*
+
+```python
+list_name[index] = new_value
+```
+
+**Example:**
+
+```python
+numbers = [10, 20, 30]
+
+numbers[1] = 200
+
+print(numbers)                          # [10, 200, 30]
+```
+
+---
+
+**How does it work internally?**
+
+```python
+numbers = [10, 20, 30]
+```
+
+```txt
+numbers
+   ↓
++------+------+------+
+|  10  |  20  |  30  |
++------+------+------+
+   0      1      2
+```
+
+*Now*
+
+```python
+numbers[1] = 200
+```
+
+*Python changes the reference stored at index 1*
+
+```txt
+numbers
+   ↓
++------+------+------+
+|  10  | 200  |  30  |
++------+------+------+
+   0      1      2
+```
+
+*So the list object itself can be modified*
+
+---
+
+**Changing Multiple Elements**
+
+*You can also modify multiple elements using slicing*
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+numbers[1:4] = [200, 300, 400]
+
+print(numbers)                      # [10, 200, 300, 400, 50]
+```
+
+---
+
+**Mutability can change List Length**
+
+```python
+numbers = [10, 20, 30, 40]
+
+numbers[1:3] = [10, 200, 300, 400, 500]
+
+print(numbers)                      # [10, 10, 200, 300, 400, 500, 40]
+```
+
+*We replaced 2 elements ```20, 30``` with ```200, 300, 400, 500``` Therefore the list became longer*
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+numbers[1:3] = [99]
+
+print(numbers)                        # [10, 99, 40, 50]
+```
+
+*Two elements were replaced by one*
+
+---
+
+**Mutability and References**
+
+```python
+a = [10, 20, 30]
+b = a
+
+print(a, type(a), id(a))              # [10, 20, 30] <class 'list'> 2043555428544
+print(b, type(b), id(b))              # [10, 20, 30] <class 'list'> 2043555428544
+```
+
+*Now both variables refer to the same list object.*
+
+*If we modify the list through ```b```*
+
+```python
+b[0] = 100
+```
+
+```python
+print(a)                              # [100, 20, 30]
+```
+
+*Because ```a``` and ```b``` refer to the same list*
+
+```txt
+a ─────┐
+       ↓
+    [10, 20, 30]
+       ↑
+b ─────┘
+```
+
+*After*
+
+```python
+b[0] = 100
+```
+
+*Both see ```[100, 20, 30]```*
+
+*When two variables refer to the same mutable list, modifying the list through one reference can be observed through the other.*
+
+---
+
+### **Methods**
+
+#### **```append()```**
+
+
 
 
 
