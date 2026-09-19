@@ -8094,6 +8094,203 @@ b[0] = 100
 
 #### **```append()```**
 
+*```append()``` is a list method used to add exactly one element to the end of an existing list.*
+
+**Example:**
+
+```python
+numbers = [10, 20, 30]
+
+numbers.append(40)
+
+print(numbers)                        # [10, 20, 30, 40]
+```
+
+---
+
+**Syntax:**
+
+```python
+list_name.append(element)
+```
+
+**Example:**
+
+```python
+numbers = [10, 20, 30]
+
+numbers.append(40)
+
+print(numbers)                        # [10, 20, 30, 40]
+```
+
+---
+
+**How does ```append()``` work internally?**
+
+*Consider*
+
+```python
+numbers = [10, 20, 30]
+```
+
+```txt
+Index:     0    1    2
+          ↓    ↓    ↓
+        +----+----+----+
+        | 10 | 20 | 30 |
+        +----+----+----+
+```
+
+```python
+numbers.append(40)
+```
+
+*Python adds 40 at the end*
+
+```txt
+Index:     0    1    2    3
+          ↓    ↓    ↓    ↓
+        +----+----+----+----+
+        | 10 | 20 | 30 | 40 |
+        +----+----+----+----+
+```
+
+*So ```numbers``` become ```[10, 20, 30, 40]```*
+
+*```append()``` modifies the existing list because lists are mutable*
+
+---
+
+**Examples:**
+
+**Add a number**
+
+```python
+numbers = [10, 20]
+
+numbers.append(30)
+
+print(numbers)                          # [10, 20, 30]
+```
+
+**Add a string**
+
+```python
+names = ["Asha", "Ravi"]
+
+names.append("Kiran")
+
+print(names)                            # ['Asha', 'Ravi', 'Kiran']
+```
+
+**Add a Boolean**
+
+```python
+values = [10, 20]
+
+values.append(True)
+
+print(values)                           # [10, 20, True]
+```
+
+*A list can contain different data types*
+
+---
+
+**What happens when we append a list?**
+
+```python
+numbers = [1, 2, 3]
+
+numbers.append([4, 5])
+
+print(numbers)                          # [1, 2, 3, [4, 5]]
+```
+
+*```[4, 5]``` became one element of the outer list*
+
+*The structure is*
+
+```txt
+numbers
+├── 1
+├── 2
+├── 3
+└── [4, 5]
+```
+
+*So the length is ```4``` not ```5```. ```append()``` adds its argument as ONE element*
+
+---
+
+**```append()``` with Variables**
+
+*You don't have to directly provide the value*
+
+```python
+name = "Saranya"
+
+student_details = ["AI&DS", 7.04]
+
+student_details.append(name)
+
+print(student_details)                      # ['AI&DS', 7.04, 'Saranya']
+```
+
+*Python evaluate ```name``` first and then adds its value*
+
+---
+
+**```append()``` inside a loop**
+
+```python
+numbers = []
+
+for i in range(1, 6):
+  numbers.append(i)
+
+print(numbers)                          # [1, 2, 3, 4, 5]
+```
+
+*The process is*
+
+```txt
+Start → []
+
+append(1) → [1]
+append(2) → [1, 2]
+append(3) → [1, 2, 3]
+append(4) → [1, 2, 3, 4]
+append(5) → [1, 2, 3, 4, 5]
+```
+
+---
+
+**```append()``` returns ```None```**
+
+```python
+numbers = [10, 20, 30]
+
+result = numbers.append(40)
+
+print(result)                               # None
+```
+
+---
+
+**Calling ```append()``` without an argument**
+
+```python
+numbers = [10, 20]
+
+print(numbers.append())                 # TypeError
+```
+
+*```append()``` requires exactly one argument*
+
+---
+
 
 
 
