@@ -8900,6 +8900,32 @@ print(numbers)                            # [10, 30]
 | `remove(value)` | Value | ❌ No → `None`          |
 | `pop(index)`    | Index | ✅ Yes                  |
 
+---
+
+**What happens with an Empty List?**
+
+```python
+numbers = []
+
+numbers.pop()                       # IndexError: pop from empty list
+```
+
+*There is nothing to remove. So calling ```pop()``` on an empty list raises ```IndexError```*
+
+---
+
+**What happens with an Invalid Index?**
+
+```python
+numbers = [10, 20, 30]
+
+numbers.pop(6)                      # IndexError: pop index out of range
+```
+
+*Valid Indexes are ```0 1 2``` So index ```6``` doesn't exist. Python raises ```IndexError```*
+
+---
+
 
 
 
