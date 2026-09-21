@@ -143,6 +143,7 @@ Hey everybody!!!
       - [**```extend()```**](#extend)
       - [**```insert()```**](#insert)
       - [**```remove()```**](#remove)
+      - [**```pop()```**](#pop)
 
 
 ---
@@ -8747,6 +8748,162 @@ print(numbers)                      # [20, 30]
 *So ```result = numbers.remove(10)``` does not store the modified list. ```remove()``` modifies the list in place and returns ```None```*
 
 ---
+
+#### **```pop()```**
+
+*```pop()`` is a list method used to remove and returns an element from a list using its index.*
+
+**Example:**
+
+```python
+numbers = [10, 20, 30, 40]
+
+result = numbers.pop(1)
+
+print(numbers)                        # [10, 30, 40]
+print(result)                         # 20
+```
+
+- *```pop()``` removes the element*
+- *```pop()``` returns the removed element*
+
+---
+
+**Syntax:**
+
+*There are two forms*
+
+**Without an index:** *Removes the last element*
+
+```python
+list_name.pop()
+```
+
+*and*
+
+**With an index:** *Removes the element at specified index*
+
+```python
+list_name.pop(index)
+```
+
+---
+
+**How does ```pop()``` work internally?**
+
+*Consider*
+
+```python
+numbers = [10, 20, 30, 40]
+```
+
+*Indexes*
+
+```txt
+Index:    0    1    2    3
+Value:   10   20   30   40
+```
+
+*Now*
+
+```python
+removed = numbers.pop(1)
+```
+
+*Python*
+- *Finds index ```1```*
+- *Gets the value ```20```*
+- *Removes it from the list*
+- *Returns ```20```*
+
+*The list becomes ```[10, 30, 40]``` and ```removed``` contains ```20``` So there are two results*
+
+```txt
+List after removal → [10, 30, 40]
+Returned value     → 20
+```
+
+---
+
+**Simple Examples**
+
+**```pop()``` without index**
+
+```python
+numbers = [10, 20, 30, 40]
+
+removed = numbers.pop()
+
+print(removed)                          # 40
+print(numbers)                          # [10, 20, 30]
+```
+
+*```pop()``` without an index removes and returns the last element.*
+
+---
+
+**```pop(index)```**
+
+```python
+numbers = [10, 20, 30, 40]
+
+removed = numbers.pop(2)
+
+print(removed)                          # 30
+print(numbers)                          # [10, 20, 40]
+```
+
+*Removes the element at index ```2```*
+
+---
+
+**Negative Index with ```pop()```**
+
+*```pop()``` also supports negative indexes*
+
+```python
+numbers = [10, 20, 30, 40]
+
+removed = numbers.pop(-1)
+
+print(numbers)                        # [10, 20, 30]
+print(removed)                        # 40
+```
+
+---
+
+**```pop()```` vs ```remove()```**
+
+**```remove()```:** *Works using a value*
+
+```python
+numbers = [10, 20, 30]
+
+numbers.remove(20)
+
+print(numbers)                        # [10, 30]
+```
+
+**```pop()```:** *Works using an index*
+
+```python
+numbers = [10, 20, 30]
+
+print(numbers.pop(1))                     # 20
+print(numbers)                            # [10, 30]
+```
+
+**Main difference**
+
+| Method          | Uses  | Returns removed value? |
+| --------------- | ----- | ---------------------- |
+| `remove(value)` | Value | ❌ No → `None`          |
+| `pop(index)`    | Index | ✅ Yes                  |
+
+
+
+
+
 
 
 
