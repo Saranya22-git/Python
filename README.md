@@ -141,6 +141,8 @@ Hey everybody!!!
     - [**Methods**](#methods)
       - [**```append()```**](#append)
       - [**```extend()```**](#extend)
+      - [**```insert()```**](#insert)
+      - [**```remove()```**](#remove)
 
 
 ---
@@ -8418,7 +8420,243 @@ print(result)                     # None
 
 ---
 
+#### **```insert()```**
 
+*```insert()``` is a list method used to add an element at a specific position (index) in a list.*
+
+**Example:**
+
+```python
+numbers = [10, 20, 25]
+
+numbers.insert(1, 15)
+
+print(numbers)                    # [10, 15, 20, 25]
+```
+
+*Here Insert ```15``` at index ```1```. The existing elements are shifted to the right.*
+
+---
+
+**Syntax:**
+
+```python
+list_name.insert(index, value)
+```
+
+**Example:**
+
+```python
+numbers = [10, 20, 25]
+
+numbers.insert(1, 15)
+
+print(numbers)                    # [10, 15, 20, 25]
+```
+
+*There are two arguments*
+
+```txt
+index → where to insert
+value → what to insert
+```
+
+---
+
+**How does ```insert()``` work internally?**
+
+*Consider*
+
+```python
+numbers = [10, 20, 30, 40]
+
+numbers.insert(2, 99)
+```
+
+*Indexes*
+
+```txt
+Index:    0    1    2    3
+Value:   10   20   30   40
+```
+
+*Python places ```99``` at index ```2```. The existing elements from that position are shifted right.*
+
+*Before*
+
+```txt
+Before:
+
+[10, 20, 30, 40]
+          ↑
+        index 2
+```
+
+*After ```[10, 20, 99, 30, 40]```*
+
+*New indexes*
+
+```txt
+Index:    0    1    2    3    4
+Value:   10   20   99   30   40
+```
+
+*```insert()``` changes the existing list and shifts elements to make room for the new element.*
+
+---
+
+**Simple Examples**
+
+**Insert at beginning**
+
+```python
+numbers = [20, 30, 40]
+
+numbers.insert(0, 10)
+
+print(numbers)                        # [10, 20, 30, 40]
+```
+
+**Insert in the middle**
+
+```python
+numbers = [10, 20, 40]
+
+numbers.insert(2, 30)
+
+print(numbers)                    # [10, 20, 30, 40]
+```
+
+**Insert at the end**
+
+```python
+numbers = [10, 20, 30]
+
+numbers.insert(3, 40)
+
+print(numbers)                      # [10, 20, 30, 40]
+```
+
+*However, if you're simply adding to the end, ```append()``` is normally the straightforward choice*
+
+---
+
+**Inserting at a Negative Index**
+
+*```insert()``` also accepts negative indexes*
+
+```python
+numbers = [10, 20, 30]
+
+numbers.insert(-1, 99)
+
+print(numbers)                      # [10, 20, 99, 30]
+```
+
+*Here ```-1``` refers to the position before the current last element for insertion purposes.*
+
+*Don't assume*
+
+```python
+numbers.insert(-1, 99)
+```
+
+*means replace the last element. It doesn't. It inserts an element*
+
+---
+
+**Insert Beyond the List Length**
+
+```python
+numbers = [10, 20, 30]
+
+numbers.insert(100, 40)
+
+print(numbers)                    # [10, 20, 30, 40]
+```
+
+*If the index is greater than the list's length, Python effectively inserts the element at the end.*
+
+---
+
+**Insert with a Negative Index beyond the Beginning**
+
+```python
+numbers = [10, 20, 30]
+
+numbers.insert(-4, 0)
+
+print(numbers)                      # [0, 10, 20, 30]
+```
+
+*An excessively negative insertion position results in insertion at the beginning.*
+
+---
+
+**```insert()``` can insert any object**
+
+*A list can contain different types*
+
+```python
+data = [10, 20, 30]
+
+data.insert(1, "Python")
+
+print(data)                         # [10, 'Python', 20, 30]
+```
+
+*You can even insert another list*
+
+```python
+data = [1, 2, 3]
+
+data.insert(1, [10, 20])
+
+print(data)                       # [1, [10, 20], 2, 3]
+```
+
+*The inserted list becomes one element*
+
+---
+
+**```insert()``` returns ```None```**
+
+*Just like ```append()``` and ```extend()```, ```insert()``` modifies the existing list and returns ```None```*
+
+```python
+numbers = [10, 20, 30]
+
+result = numbers.insert(1, 15)
+
+print(numbers)                      # [10, 15, 20, 30]
+print(result)                       # None
+```
+
+---
+
+**Difference between ```insert()``` and indexing assignment**
+
+```python
+numbers = [1, 1, 2]
+
+numbers[0] = 0
+
+print(numbers)                        # [0, 1, 2]
+```
+
+*It replaces an existing element*
+
+```python
+numbers = [10, 30, 40]
+
+numbers.insert(1, 20)
+
+print(numbers)                  [10, 20, 30, 40]
+```
+
+---
+
+#### **```remove()```**
 
 
 
