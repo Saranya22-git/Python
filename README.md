@@ -140,6 +140,7 @@ Hey everybody!!!
     - [**Mutability**](#mutability)
     - [**Methods**](#methods)
       - [**```append()```**](#append)
+      - [**```extend()```**](#extend)
 
 
 ---
@@ -8291,6 +8292,131 @@ print(numbers.append())                 # TypeError
 
 ---
 
+#### **```extend()```**
+
+*```extend()``` is a list method used to add all elements from an iterable to the end of an existing list.*
+
+*The key difference from ```append()``` is*
+- *```append()``` → adds one element*
+- *```extend()``` → adds each element individually*
+
+**Example:**
+
+```python
+numbers = [1, 2, 3]
+
+numbers.extend([4, 5, 6])
+
+print(numbers)                      # [1, 2, 3, 4, 5, 6]
+```
+
+---
+
+**Syntax:**
+
+```python
+list_name.extend(iterable)
+```
+
+**Example:**
+
+```python
+numbers = [1, 2, 3]
+
+numbers.extend([4, 5, 6])
+
+print(numbers)                      # [1, 2, 3, 4, 5, 6]
+```
+
+*The important word here is **iterable***
+
+*For now, think of an iterable as something Python can go through element by element, such as*
+- *list*
+- *tuple*
+- *string*
+- *set*
+
+---
+
+**How does ```extend()``` work internally**
+
+*Consider*
+
+```python
+numbers = [1, 2, 3]
+
+numbers.extend([4, 5, 6])
+```
+
+*Python takes the iterable ```[4, 5]``` and adds its elements one by one*
+
+```txt
+Start: [1, 2, 3]
+
+Add 4: [1, 2, 3, 4]
+
+Add 5: [1, 2, 3, 4, 5]
+```
+
+*Final result ```[1, 2, 3, 4, 5]```*
+
+*```append()``` adds the argument as one element. ```extend()``` adds the elements of the argument individually*
+
+---
+
+**Extending with a Tuple**
+
+*```extend()``` accepts other iterables too*
+
+```python
+numbers = [1, 2, 3]
+
+numbers.extend((4, 5))
+
+print(numbers)                        # [1, 2, 3, 4, 5]
+```
+
+*The tuple ```(4, 5)``` is iterated through, and its elements are added*
+
+---
+
+**Extending with a String**
+
+```python
+letters = ["a", 'b']
+
+letters.extend("cd")
+
+print(letters)                    # ['a', 'b', 'c', 'd']
+```
+
+*Because a string is iterable character by character*
+
+```txt
+"cd"
+ ↓
+"c"
+"d"
+```
+
+*So ```extend()``` adds ```c``` ```d``` separately*
+
+---
+
+**```extend()``` returns ```None```**
+
+*Just like ```append()```, ```extend()``` modifies the existing list and returns ```None```*
+
+```python
+numbers = [1, 2, 3]
+
+result = numbers.extend([4, 5])
+
+print(numbers)                    # [1, 2, 3, 4, 5]
+print(result)                     # None
+```
+
+---
 
 
 
