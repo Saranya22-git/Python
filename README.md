@@ -8658,6 +8658,96 @@ print(numbers)                  [10, 20, 30, 40]
 
 #### **```remove()```**
 
+*```remove()``` is a list method used to remove the first occurrence of a specified value from a list*
+
+**Example:**
+
+```python
+numbers = [10, 20, 30, 20]
+
+numbers.remove(20)
+
+print(numbers)                    # [10, 30, 20]
+```
+
+*There were two ```20```s, but ```remove(20)``` removed only the first occurrence*
+
+---
+
+**Syntax:**
+
+```python
+list_name.remove(value)
+```
+
+**Example:**
+
+```python
+numbers = [10, 20, 30, 20]
+
+numbers.remove(20)
+
+print(numbers)                    # [10, 30, 20]
+```
+
+*The argument is the value, not the index.*
+
+---
+
+**How does ```remove()``` work internally?**
+
+*Consider*
+
+```python
+numbers = [10, 20, 30, 20, 40]
+```
+
+*Now*
+
+```python
+numbers.remove(20)
+```
+
+*Python searches the list from the beginning*
+
+```txt
+10 → not 20
+20 → FOUND
+```
+
+*It removes that first matching element and the result ```[10, 30, 20, 40]```*
+
+---
+
+**What happens if the value doesn't exist?**
+
+```python
+numbers = [10, 20, 30]
+
+numbers.remove(50)                # ValueError: list.remove(x): x not in list
+```
+
+*If the specified value is not present in the list, ```remove()``` raises a ```ValueError```*
+
+---
+
+**```remove()``` returns ```None```**
+
+*Just like the previous list methods*
+
+```python
+numbers = [10, 20, 30]
+
+result = numbers.remove(10)
+
+print(result)                       # None
+print(numbers)                      # [20, 30]
+```
+
+*So ```result = numbers.remove(10)``` does not store the modified list. ```remove()``` modifies the list in place and returns ```None```*
+
+---
+
 
 
 
