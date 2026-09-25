@@ -147,6 +147,8 @@ Hey everybody!!!
       - [**```clear()```**](#clear)
       - [**```sort()```**](#sort)
       - [**```reverse()```**](#reverse)
+    - [**Copying**](#copying)
+      - [**Shallow Copy**](#shallow-copy)
 
 
 ---
@@ -9351,8 +9353,39 @@ result = numbers[::-1]
 
 *creates a reversed list and leaves the original unchanged*
 
+---
 
+### **Copying**
 
+#### **Shallow Copy**
+
+*A shallow copy creates a new list object but the elements inside it are not recursively copied*
+
+*In simple words The outer list is copied but nested  objects inside it are still shared*
+
+---
+
+**Syntax:** 
+
+*There are several ways to make a shallow copy of a list*
+
+**Method-1:** *```copy()```*
+
+```python
+new_list = old_list.copy()
+```
+
+**Method-2:** *Slicing*
+
+```python
+new_list = old_list[:]
+```
+
+**Method-3:** *```list()```*
+
+```python
+new_list = list(old_list)
+```
 
 
 
