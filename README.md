@@ -144,6 +144,7 @@ Hey everybody!!!
       - [**```insert()```**](#insert)
       - [**```remove()```**](#remove)
       - [**```pop()```**](#pop)
+      - [**```clear()```**](#clear)
 
 
 ---
@@ -8925,6 +8926,155 @@ numbers.pop(6)                      # IndexError: pop index out of range
 *Valid Indexes are ```0 1 2``` So index ```6``` doesn't exist. Python raises ```IndexError```*
 
 ---
+
+#### **```clear()```**
+
+*```clear()``` is a list method that removes all elements from an existing list, leaving it empty.*
+
+**Example:**
+
+```python
+numbers = [10, 20, 30, 40]
+
+numbers.clear()
+
+print(numbers)                      # []
+```
+
+*The list still exists, but it contains zero elements*
+
+---
+
+**Syntax:**
+
+```python
+list_name.clear()
+```
+
+**Example:**
+
+```python
+numbers.clear()
+```
+
+*It doesn't require any argument*
+
+---
+
+**```clear()``` does not delete the list Variable**
+
+```python
+numbers = [10, 20, 30]
+
+numbers.clear()
+
+print(numbers)                        # []
+```
+
+*The variable ```numbers``` still exists. You can use it again*
+
+```python
+numbers.append(10)
+
+print(numbers)                        # [10]
+```
+
+```txt
+clear()
+   ↓
+removes the elements
+   ↓
+but the list remains available
+```
+
+---
+
+**```clear()``` vs Reassignment**
+
+```python
+numbers = [10, 20, 30]
+
+numbers.clear()
+```
+
+*The existing list is emptied*
+
+```python
+numbers = [10, 20, 30]
+
+numbers = []
+```
+
+*creats/assigns an empty list to ```numbers```. They may look similar when you print ```nunbers```*
+
+```python
+[]
+```
+
+*But their behavior can differ when another variable refers to the original list.*
+
+---
+
+**Example with Two References**
+
+```python
+a = [10, 20, 30]
+b = a
+```
+
+*Both refer to the same list*
+
+```python
+a.clear()
+```
+
+```python
+print(a)                              # []
+print(b)                              # []
+```
+
+*Because ```clear()``` modified the same list object that both variables refer to*
+
+```txt
+a ─────┐
+       ↓
+   [10, 20, 30]
+       ↑
+b ─────┘
+```
+
+*After ```a.clear()```*
+
+```txt
+a ─────┐
+       ↓
+      []
+       ↑
+b ─────┘
+```
+
+---
+
+**```clear()``` vs Reassignment with References**
+
+```python
+a = [10, 20, 30]
+b = a
+
+a = []
+```
+
+```python
+print(a)                            # []
+print(b)                            # [10, 20, 30]
+```
+
+*Because a = [] makes ```a``` refer to a new empty list. It does not modify the original list that ```b``` still reference*
+
+*```a.clear()``` modifies the existing list. ```a = []``` reassigns ```a``` to another list*
+
+---
+
 
 
 
