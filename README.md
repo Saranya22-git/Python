@@ -145,6 +145,7 @@ Hey everybody!!!
       - [**```remove()```**](#remove)
       - [**```pop()```**](#pop)
       - [**```clear()```**](#clear)
+      - [**```sort()```**](#sort)
 
 
 ---
@@ -9074,6 +9075,177 @@ print(b)                            # [10, 20, 30]
 *```a.clear()``` modifies the existing list. ```a = []``` reassigns ```a``` to another list*
 
 ---
+
+**Example:**
+
+```python
+tasks = ["Study Python", "Study SQL", "Practice DSA"]
+
+print(tasks)                        # ['Study Python', 'Study SQL', 'Practice DSA']
+
+tasks.clear()
+
+print(tasks)                        # []
+```
+
+---
+
+**```clear()``` on an already empty list**
+
+```python
+numbers = []
+
+numbers.clear()
+
+print(numbers)                        # []
+```
+
+*No error occurs ```clear()``` is safe to call on an empty list*
+
+---
+
+**```clear()``` Returns ```None```**
+
+*Just like ```append()```, ```extend()```, ```insert()```, ```remove```*
+
+*```clear()``` modifies the list and returns ```None```*
+
+```python
+numbers = [10, 20, 30]
+
+result = numbers.clear()
+
+print(numbers)                          # []
+print(result)                           # None
+```
+
+---
+
+#### **```sort()```**
+
+*```sort()``` is a list method used to sort the elements of a list in ascending or descending order.*
+
+*It modifies the original list and returns ```None```*
+
+**Example:**
+
+```python
+numbers = [5, 2, 8, 1, 3]
+
+numbers.sort()
+
+print(numbers)                          # [1, 2, 3, 5, 8]
+```
+
+*```sort()``` sorts a list in place and modifies the original list. By default, it sorts in ascending order.*
+
+---
+
+**Syntax:**
+
+```python
+list.sort()
+```
+
+*For descending order*
+
+```python
+list.sort(reverse = True)
+```
+
+*For customer sorting*
+
+```python
+list.sort(key = some_function)
+```
+
+---
+
+**```sort()``` changes the original list**
+
+```python
+numbers = [5, 2, 8, 1, 3]
+
+numbers.sort()
+
+print(numbers)                        # [1, 2, 3, 5, 8]
+```
+
+*It does not create the result as the return value*
+
+```python
+result = numbers.sort()
+print(result)                         # None
+```
+
+*Because ```sort()``` modifies the list in place.*
+
+**What sorting algorithm does Python use?**
+
+*Python's list sorting is based on Timsort, a hybrid sorting algorithm designed to perform efficiently on real-world data.*
+
+---
+
+**Simple Example**
+
+**Ascending order**
+
+```python
+numbers = [40, 10, 30, 20]
+
+numbers.sort()
+
+print(numbers)                      # [10, 20, 30, 40]
+```
+
+**Descending order**
+
+```python
+numbers = [40, 10, 30, 20]
+
+numbers.sort(reverse = True)
+
+print(numbers)                      # [40, 30, 20, 10]
+```
+
+---
+
+**Sorting strings**
+
+```python
+names = ["Ravi", "Anu", "Kiran", "Bhanu"]
+
+names.sort()
+
+print(names)                      # ['Anu', 'Bhanu', 'Kiran', 'Ravi']
+```
+
+*Python sorts the strings according to their ordering rules*
+
+**Sorting negative and positive numbers**
+
+```python
+numbers = [10, -5, 3, -20, 8]
+
+numbers.sort()
+
+print(numbers)                  # [-20, -5, 3, 8, 10]
+```
+
+**Sorting in descending order**
+
+```python
+numbers = [10, -5, 3, -20, 8]
+
+numbers.sort(reverse = True)
+
+print(numbers)                    # [10, 8, 3, -5, -20]
+```
+
+---
+
+
+
 
 
 
