@@ -146,6 +146,7 @@ Hey everybody!!!
       - [**```pop()```**](#pop)
       - [**```clear()```**](#clear)
       - [**```sort()```**](#sort)
+      - [**```reverse()```**](#reverse)
 
 
 ---
@@ -9243,6 +9244,116 @@ print(numbers)                    # [10, 8, 3, -5, -20]
 ```
 
 ---
+
+**Using ```sort()``` on something that isn't a list**
+
+```python
+name = "Python"
+
+name.sort()                       # AttributeError: 'str' object has no attribute 'sort'
+```
+
+*```sort()``` is a list method*
+
+---
+
+**Difference between ```sort()``` and ```sorted()```?**
+
+**```sort()```:**
+
+```python
+numbers.sort()
+```
+
+- *List method*
+- *Modifies original list*
+- *Returns ```None```*
+
+**```sorted()```:**
+
+```python
+result = sorted(numbers)
+```
+
+- *Built-in function*
+- *Returns a new sorted list*
+- *Original list remains unchanged*
+
+**Examples:**
+
+```python
+numbers = [3, 1, 2]
+
+result = sorted(numbers)
+
+print(numbers)                        # [3, 1, 2]
+print(result)                         # [1, 2, 3]
+```
+
+| `sort()` | `sorted()` |
+|---|---|
+| List method | Built-in function |
+| Modifies original list | Creates/returns a new sorted list |
+| Returns `None` | Returns sorted list |
+| Used as `list.sort()` | Used as `sorted(list)` |
+
+---
+
+#### **```reverse()```**
+
+*```reverse()``` is a list method used to reverse the order of elements in the original list.*
+
+*It modifies the list in place and returns ```None```*
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+numbers.reverse()
+
+print(numbers)                        # [5, 4, 3, 2, 1]
+```
+
+---
+
+**Syntax:**
+
+```python
+list.reverse()
+```
+
+---
+
+**Strings in a list**
+
+```python
+names = ["Anu", "Ravi", "Kiran", "Sita"]
+
+names.reverse()
+
+print(names)                    # ['Sita', 'Kiran', 'Ravi', 'Anu']
+```
+
+---
+
+**Confusing ```reverse()``` with slicing**
+
+*These can both produce reversed sequences, but they behave differently*
+
+```python
+numbers.reverse()
+```
+
+*modifies the original list*
+
+```python
+result = numbers[::-1]
+```
+
+*creates a reversed list and leaves the original unchanged*
+
+
+
+
 
 
 
