@@ -151,6 +151,7 @@ Hey everybody!!!
       - [**Shallow Copy**](#shallow-copy)
       - [**Deep Copy**](#deep-copy)
     - [List Comprehension](#list-comprehension)
+  - [**Tuples**](#tuples)
 
 
 ---
@@ -9675,6 +9676,202 @@ print(b)                  # [[100, 2], [3, 4]]
 ---
 
 ### List Comprehension
+
+*List comprehension is a concise way to create a new list by applying an expression to each item of an iterable. Instead of writing multiple lines with a loop, we can often create the list in one line.*
+
+**Normal approach**
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+squares = []
+
+for n in numbers:
+  squares.append(n*n)
+
+print(squares)                # [1, 4, 9, 16, 25]
+```
+
+**Using list comprehension**
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+squares = [n*n for n in numbers]
+
+print(squares)                    # [1, 4, 9, 16, 25]
+```
+
+*List comprehension is a concise Python syntax used to create a new list by applying an expression to each element of an iterable, optionally with a condition.*
+
+---
+
+**Syntax:**
+
+```python
+[expression for item in iterable]
+```
+
+```txt
+[WHAT TO STORE    FOR EACH ITEM    FROM WHERE]
+```
+
+**Example:**
+
+```python
+[x*2 for x in numbers]
+```
+
+```txt
+x * 2       → expression
+for x       → item
+in numbers  → iterable
+```
+
+**With a condition**
+
+```python
+[expression for item in iterable if condition]
+```
+
+**Example:**
+
+```python
+[x for x in numbers if x%2 == 0]
+```
+
+*This means "Take ```x``` from ```numbers``` but include it only if ```x``` is even"*
+
+---
+
+**Important Point**
+
+*A list comprehension creates a new list*
+
+```python
+numbers = [1, 2, 3]
+
+squares = [x * x for x in numbers]
+```
+
+- *```numbers``` remain ```[1, 2, 3]```*
+- *and ```squares``` becomes ```[1, 4, 9]```*
+
+---
+
+**Simple Example**
+
+**Example-1:** *Double every number*
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+result = [x*2 for x in numbers]
+
+print(result)                     # [2, 4, 6, 8, 10]
+```
+
+**Example-2:** *Convert strings to uppercase*
+
+```python
+names = ["apple", "banana", "mango"]
+
+result = [name.upper() for name in names]
+
+print(result)                   # ['APPLE', 'BANANA', 'MANGO']
+```
+
+**Example-3:** *Create numbers from 1 to 5*
+
+```python
+numbers = [x for x in range(1, 6)]
+
+print(numbers)                        # [1, 2, 3, 4, 5]
+```
+
+---
+
+**List comprehension with ```if```**
+
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+result = [x for x in numbers if x % 2 == 0]
+
+print(result)                           # [2, 4, 6, 8, 10]
+```
+
+---
+
+**Create squares only for even numbers**
+
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+squares = [x*x for x in numbers if x % 2 == 0]
+
+print(squares)                          # [4, 16, 36, 64, 100]
+```
+
+---
+
+```python
+salaries = [25000, 45000, 30000, 60000, 35000]
+
+result = [salary for salary in salaries if salary > 40000]
+
+print(result)                       # [45000, 60000]
+```
+
+---
+
+```python
+prices = [1000, 2000, 3000]
+
+result = [price * 0.9 for price in prices]
+
+print(result)                   # [900.0, 1800.0, 2700.0]
+```
+
+---
+
+```python
+words = ["Python", "SQL", "Excel", "PowerBI"]
+
+lengths = [len(word) for word in words]
+
+print(lengths)                    # [6, 3, 5, 7]
+```
+
+---
+
+**Filtering with transformation**
+
+```python
+[x for x in numbers if x > 5]
+```
+
+*This filters*
+
+```python
+[x*2 for x in numbers]
+```
+
+*This transforms*
+
+```python
+[x*2 for x in numbers if x>5]
+```
+
+*Does both flters values greater than 5 and doubles them*
+
+---
+
+## **Tuples**
+
+
+
+
 
 
 
