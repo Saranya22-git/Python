@@ -149,6 +149,7 @@ Hey everybody!!!
       - [**```reverse()```**](#reverse)
     - [**Copying**](#copying)
       - [**Shallow Copy**](#shallow-copy)
+      - [**Deep Copy**](#deep-copy)
 
 
 ---
@@ -9386,6 +9387,163 @@ new_list = old_list[:]
 ```python
 new_list = list(old_list)
 ```
+
+*```list.copy()``` is the clearest way to explicitly say "make a shallow copy".*
+
+---
+
+**How does it work internally?**
+
+*Consider*
+
+```python
+a = [10, 20, 30]
+
+b = a.copy()
+```
+
+*We now have*
+
+```txt
+a ─────────→ [10, 20, 30]
+                 ↑
+b ─────────→ [10, 20, 30]
+```
+
+*The two lists are different list objects*
+
+```python
+print(a is b)                           # False
+```
+
+*But the elements are copied into the new outer list*
+
+*So*
+
+```python
+b[0] = 100
+```
+
+*produces*
+
+```txt
+a → [10, 20, 30]
+b → [100, 20, 30]
+```
+
+*The original is safe*
+
+**But what happens with nested lists?**
+
+```python
+a = [[1, 2], [3, 4]]
+
+b = a.copy()
+```
+
+*The outer lists are different*
+
+```txt
+a ──→ [  ──→ [1, 2]
+         └──→ [3, 4] ]
+
+b ──→ [  ──→ [1, 2]
+         └──→ [3, 4] ]
+```
+
+```python
+print(a is b)                         # False
+```
+
+*But*
+
+```python
+print(a[0] is b[0])                   # True
+```
+
+---
+
+**Simple Example**
+
+```python
+a = [10, 20, 30]
+
+b = a.copy()
+
+b[0] = 100
+
+print(a)                          # [10, 20, 30]
+print(b)                          # [100, 20, 30]
+```
+
+*Because ```a``` and ```b``` are separate list objects*
+
+---
+
+**Compare with direct assignment**
+
+*This is not copying*
+
+```python
+a = [10, 20, 30]
+
+b = a
+
+b[0] = 100
+
+print(a)         # [100, 20, 30]                            
+print(b)         # [100, 20, 30]
+```
+
+*Because ```b = a``` makes both variables refer to the same list whereas ```b = a.copy()``` creates a new outer list.*
+
+---
+
+```python
+a = [[1, 2], [3, 4]]
+
+b = a.copy()
+
+b[0] = [100, 200]
+
+print(a)                      # [[1, 2], [3, 4]]
+print(b)                      # [[100, 200], [3, 4]]
+```
+
+*The original ```a``` is unaffected*
+
+```python
+a = [[1, 2], [3, 4]]
+
+b = a.copy()
+
+b[0][0] = 100
+
+print(a)                    # [[100, 2], [3, 4]]
+print(b)                    # [[100, 2], [3, 4]]
+```
+
+*Here ```b[0]``` and ```a[0]``` refer to the same inner list So ```b[0][0] = 100``` changes that shared inner list*
+
+---
+
+```python
+employees = [["Ravi", 50000], ["Anu", 60000]]
+
+backup = employees.copy()
+
+backup.append(["Kiran", 70000])
+
+print(employees)                # [['Ravi', 50000], ['Anu', 60000]]
+print(backup)                   # [['Ravi', 50000], ['Anu', 60000], ['Kiran', 70000]]
+```
+
+---
+
+#### **Deep Copy**
+
+**
+
 
 
 
