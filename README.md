@@ -150,6 +150,7 @@ Hey everybody!!!
     - [**Copying**](#copying)
       - [**Shallow Copy**](#shallow-copy)
       - [**Deep Copy**](#deep-copy)
+    - [List Comprehension](#list-comprehension)
 
 
 ---
@@ -9542,12 +9543,138 @@ print(backup)                   # [['Ravi', 50000], ['Anu', 60000], ['Kiran', 70
 
 #### **Deep Copy**
 
-**
+*A deep copy creates a completely independent copy of an object including the nested objects inside it.*
+
+- *Shallow copy → outer object is copied, inner objects are shared.*
+- *Deep copy → outer object and nested objects are copied independently.*
+
+---
+
+**Syntax:**
+
+*Deep copying is done using Python's ```copy``` module*
+
+```python
+import copy
+
+b = copy.deepcopy(a)
+```
+
+**Example:**
+
+```python
+import copy 
+
+a = [[1, 2], [3, 4]]
+
+b = copy.deepcopy(a)
+
+print(a)                        # [[1, 2], [3, 4]]
+print(b)                        # [[1, 2], [3, 4]]
+```
+
+*Now ```a``` and ```b```` including their nested lists are independent*
+
+---
+
+**How does it work internally?**
+
+**Shallow copy**
+
+```python
+a = [[1, 2], [3, 4]]
+b = a.copy()
+```
+
+```txt
+a ─────→ Outer List
+          ↓
+       [Inner List 1]
+       [Inner List 2]
+
+b ─────→ New Outer List
+          ↓
+       [Same Inner List 1]
+       [Same Inner List 2]
+```
+
+*The outer list is new, but the inner lists are shared*
+
+**Deep copy**
+
+```python
+import copy
+
+a = [[1, 2], [3, 4]]
+b = copy.deepcopy(a)
+```
+
+```txt
+a ─────→ Outer List
+          ↓
+       [Inner List 1]
+       [Inner List 2]
 
 
+b ─────→ New Outer List
+          ↓
+       [New Inner List 1]
+       [New Inner List 2]
+```
 
+*Everything relevant is independently copied*
 
+```python
+b[0][0] = 100
+```
 
+*doesn't affect ```a```*
+
+---
+
+**Simple Example**
+
+```python
+import copy
+
+a = [1, 2, 3]
+b = copy.deepcopy(a)
+
+b[0] = 100
+
+print(a)                      # [1, 2, 3]
+print(b)                      # [100, 2, 3]
+```
+
+*Both are independent*
+
+---
+
+```python
+import copy
+
+a = [[1, 2], [3, 4]]
+b = copy.deepcopy(a)
+
+b[0][0] = 100
+
+print(a)                  # [[1, 2], [3, 4]]
+print(b)                  # [[100, 2], [3, 4]]
+```
+
+*The original ```a``` is completely unaffected*
+
+---
+
+| Operation | New outer list? | Nested objects shared? |
+|---|----|----|
+| `b = a` | ❌ | Same object |
+| `b = a.copy()` | ✅ | ✅ Yes |
+| `b = copy.deepcopy(a)` | ✅ | ❌ No |
+
+---
+
+### List Comprehension
 
 
 
