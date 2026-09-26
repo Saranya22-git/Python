@@ -9869,6 +9869,115 @@ print(lengths)                    # [6, 3, 5, 7]
 
 ## **Tuples**
 
+*A tuple is an ordered, immutable collection of elements in Python*
+
+**Example:**
+
+```python
+numbers = (10, 20, 30, 40)
+```
+
+*Here*
+- *```10, 20, 30, 40``` are elements*
+- *Their order is maintained*
+- *We can access them using indexes*
+- *We cannot modify the tuple after it is created*
+
+*A tuple is an ordered and immutable collection in Python that can store multiple elements, including elements of different data types.*
+
+---
+
+**Why do we need tuples?**
+
+*Lists are mutable*
+
+```python
+numbers = [10, 20, 30]
+
+numbers[0] = 100
+
+print(numbers)                # [100, 20, 30]
+```
+
+*The list changes but sometimes we have data that should not be changed*
+
+```python
+coordinates = (17.3850, 78.4867)
+```
+
+*Coordinates can be represented as a tuple*
+
+```txt
+List   → can change
+Tuple  → cannot change
+```
+
+---
+
+**Syntax:**
+
+```python
+tuple_name = (value1, value2, value3)
+```
+
+**Example:**
+
+```python
+numbers = (10, 20, 30)
+```
+
+*You can also create a tuple without parameters*
+
+```python
+numbers = 10, 20, 30
+```
+
+*Both produce ```(10, 20, 30)```*
+
+**Empty tuple**
+
+```python
+empty = ()
+```
+
+---
+
+**How does it work internally?**
+
+*When we create*
+
+```python
+numbers = (10, 20, 30)
+```
+
+*Python creates a tuple object containing references to those elements*
+
+```txt
+numbers
+   ↓
+┌───────────────┐
+│ 10 │ 20 │ 30  │
+└───────────────┘
+```
+
+*The tuple maintains the order of its elements*
+
+```python
+numbers[0]                      # 10
+```
+
+**But the tuple itself cannot be changed**
+
+```python
+numbers[0] = 100
+```
+
+*Python raises ```TypeError``` because tuples are immutable*
+
+---
+
+**Simple Example**
+
 
 
 
