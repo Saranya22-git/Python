@@ -10586,6 +10586,249 @@ print(numbers)                      # TypeError: 'int' object is not iterabl
 
 ### **Set Methods**
 
+*Set Methods are built-in methods used to add, remove, update, or inspect elements of a Python set.*
+
+*Common set methods include*
+
+```python
+add()
+update()
+remove()
+discard()
+pop()
+clear()
+```
+
+---
+
+**Why do we need Set Methods?**
+
+*Because sets are mutable, we need methods to modify them.*
+
+*For example*
+
+```python
+skills = {"Python", "SQL"}
+
+skills.add("Excel")
+
+print(skills)                   # {'SQL', 'Python', 'Excel'}
+```
+
+*We can add, remove, or modify the contents of a set using these methods.*
+
+---
+
+**Syntax:**
+
+- **```add()```:** *Adds one element*
+
+  ```python
+  set_name.add(element)
+  ```
+
+- **```update()```:** *Adds multiple elements from an iterable*
+
+  ```python
+  set_name.update(iterable)
+  ```
+
+- **```remove()```:** *Removes a specified element*
+
+  ```python
+  set_name.remove(element)
+  ```
+
+- **```discard()```:** *Removes a specified element if it exists*
+
+  ```python
+  set_name.discard(element)
+  ```
+
+- **```pop()```:** *Removes and returns an arbitrary element*
+
+  ```python
+  set_name.pop()
+  ```
+
+- **```clear()```:** *Removes all elements*
+
+  ```python
+  set_name.clear()
+  ```
+
+---
+
+**How it works internally?**
+
+*Python sets are implemented using a hash-table based structure.*
+
+*When you add an element*
+
+```python
+s.add("Python")
+```
+
+*Python uses the element's hash value to determine where to store it.*
+
+---
+
+*Average-case time complexity*
+
+| Operation | Average |
+|---|----|
+| `add()` | O(1) |
+| `remove()` | O(1) |
+| `discard()` | O(1) |
+| `pop()` | O(1) |
+| Membership `in` | O(1) |
+
+*These are average-case complexities, not guaranteed worst-case*
+
+---
+
+**Simple Example**
+
+- **```add()``:** *Adds one element*
+
+  ```python
+  numbers = {10, 20, 30, 40}
+
+  numbers.add(40)
+
+  print(numbers)                # {40, 10, 20, 30}
+  ```
+
+  **Duplicate with ```add()```**
+
+  ```python
+  numbers = {10, 20, 30}
+
+  numbers.add(20)
+
+  print(numbers)                  # {10, 20, 30}
+  ```
+
+  *The set remains ```{10, 20, 30}``` because sets contain unique elements.*
+
+- **```update()```:** *Adds multiple elements from an iterable*
+
+  ```python
+  numbers = {10, 20}
+
+  numbers.update([30, 40, 50])
+
+  print(numbers)                  # {40, 10, 50, 20, 30}
+  ```
+
+  *You can pass different iterables*
+
+  ```python
+  numbers = {10, 20}
+
+  numbers.update((60, 70))
+
+  print(numbers)                  # {70, 10, 20, 60}
+
+  numbers.update({30, 40})
+
+  print(numbers)                  # {20, 70, 40, 10, 60, 30}
+  ```
+
+- **```remove()```**
+
+  ```python
+  numbers = {10, 20, 30}
+
+  numbers.remove(30)
+
+  print(numbers)                  # {10, 20}
+  ``` 
+
+  *If the element doesn't exist*
+
+  ```python
+  numbers = {10, 20, 30}
+
+  numbers.remove(100)
+
+  print(numbers)                  # KeyError: 100
+  ```
+
+- **```discard()```**
+
+  ```python
+  numbers = {10, 20, 30}
+
+  numbers.discard(20)
+
+  print(numbers)                    # {10, 30}
+  ```
+
+  *But*
+
+  ```python
+  numbers = {10, 20, 30}
+
+  numbers.discard(100)
+
+  print(numbers)                  # {10, 20, 30}
+  ```
+
+  *does not raise an error. Nothing happens*
+
+- **```pop()```**
+
+  ```python
+  numbers = {10, 20, 30}
+
+  x = numbers.pop()
+
+  print(x)                            # 10
+  print(numbers)                      # {20, 30}
+  ```
+
+  *The removed element can be any element*
+
+  *Don't assume ```pop()``` removes the first or last element. A set has no positional order that you should rely on.*
+
+- **```clear()```**
+
+  ```python
+  numbers = {10, 20, 30}
+
+  numbers.clear()
+
+  print(numbers)                # set()
+  ```
+
+  *The set still exists but it contains no elements*
+
+---
+
+**Example:**
+
+```python
+skills = {"Python", "SQL", "Excel"}
+
+skills.add("PowerBI")
+
+skills.update(["Statistics", "Machine Learning"])
+
+skills.remove("Excel")
+
+skills.discard("Machine Learning")
+
+skills.pop()
+
+skills.clear()
+
+print(skills)                       # set()
+```
+
+*The set now contains the updated collection of unique skills*
+
+---
 
 
 
