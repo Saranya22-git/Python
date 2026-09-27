@@ -155,6 +155,7 @@ Hey everybody!!!
     - [**Tuple Packing**](#tuple-packing)
     - [**Tuple Unpacking**](#tuple-unpacking)
     - [**Single Element Tuple**](#single-element-tuple)
+  - [**Sets**](#sets)
 
 
 ---
@@ -10334,6 +10335,50 @@ One tuple → Multiple variables
 ---
 
 ### **Single Element Tuple**
+
+*A single-element tuple is a tuple that contains exactly one element. A comma is required to create a single-element tuple*
+
+**Example:**
+
+```python
+a = (10,)
+
+print(a, type(a))               # (10,) <class 'tuple'>
+```
+
+---
+
+**Syntax:**
+
+```python
+(value,)
+```
+
+**Example:**
+
+```python
+x = (10,)
+```
+
+```python
+x = (10)
+
+print(type(x))                # <class 'int'>
+```
+
+*Because python uses the comma, not the parentheses to identify the tuple*
+
+---
+
+```python
+c = 10,
+
+print(c, type(c))               # (10,) <class 'tuple'>
+```
+
+---
+
+## **Sets**
 
 
 
