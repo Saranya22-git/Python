@@ -152,6 +152,7 @@ Hey everybody!!!
       - [**Deep Copy**](#deep-copy)
     - [List Comprehension](#list-comprehension)
   - [**Tuples**](#tuples)
+    - [**Tuple Packing**](#tuple-packing)
 
 
 ---
@@ -9978,7 +9979,86 @@ numbers[0] = 100
 
 **Simple Example**
 
+```python
+numbers = (10, 20, 30, 40)
 
+print(numbers)                      # (10, 20, 30, 40)
+print(numbers[0])                   # 10
+print(numbers[1])                   # 20
+print(numbers[2])                   # 30
+```
+
+*Tuples support indexing just like lists*
+
+**Negative Indexing**
+
+```python
+numbers = (10, 20, 30, 40)
+
+print(numbers[-1])                    # 40
+```
+
+---
+
+*A tuple can contain different data types*
+
+```python
+student = ("Saranya", 22, 8.9, True)
+
+print(student)                  # ('Saranya', 22, 8.9, True)
+```
+
+*It can contain ```str, int, bool, float``` and even other collections*
+
+*For example*
+
+```python
+data = (10, "Python", [1, 2, 3])
+
+print(data)                   # (10, 'Python', [1, 2, 3])
+```
+
+*The tuple itself is immutable, but there is an important detail here*
+
+*The list inside the tuple is mutable*
+
+```python
+data[2][0] = 100
+
+print(data)                       # (10, 'Python', [100, 2, 3])
+
+data[2].append(4)
+
+print(data)                       # (10, 'Python', [100, 2, 3, 4])
+```
+
+*So tuple immutability means the tuple's elements/references cannot be replaced not that every object contained inside it is automatically immutable*
+
+---
+
+**Thinking parentheses alone create a tuple**
+
+```python
+x = (10)
+
+print(x, type(x))                   # 10 <class 'int'>
+```
+
+*This is actually an integer*
+
+*The comma is important*
+
+```python
+x = (10,)
+
+print(x, type(x))                   # (10,) <class 'tuple'>
+```
+
+*Now it is a tuple*
+
+---
+
+### **Tuple Packing**
 
 
 
