@@ -156,6 +156,8 @@ Hey everybody!!!
     - [**Tuple Unpacking**](#tuple-unpacking)
     - [**Single Element Tuple**](#single-element-tuple)
   - [**Sets**](#sets)
+    - [**Set Creation**](#set-creation)
+    - [**Set Methods**](#set-methods)
 
 
 ---
@@ -10379,6 +10381,215 @@ print(c, type(c))               # (10,) <class 'tuple'>
 ---
 
 ## **Sets**
+
+*A set is an unordered, mutable collection of unique elements in Python.*
+
+**Example:**
+
+```python
+numbers = {10, 20, 30, 40}
+
+print(numbers)                # {40, 10, 20, 30}
+```
+
+*A set does not allow duplicate elements*
+
+```python
+numbers = {10, 20, 30, 10, 20}
+
+print(numbers)                  # {10, 20, 30}
+```
+
+*A set is an unordered, mutable collection of unique elements in Python. It does not allow duplicate elements and supports set operations such as union and intersection.*
+
+---
+
+**Why do we need Set?**
+
+*The biggest reason is uniqueness*
+
+```python
+numbers = [10, 20, 30, 10, 20, 30]
+
+print(numbers)                # [10, 20, 30, 10, 20, 30]
+```
+
+*There are duplicates. If we want only unique values*
+
+```python
+numbers = [10, 20, 30, 10, 20, 30]
+
+unique_numbers = set(numbers)
+
+print(unique_numbers)                       # {10, 20, 30}
+```
+
+---
+
+**Syntax:**
+
+*A set can be created using curly braces*
+
+```python
+numbers = {10, 20, 30}
+```
+
+**Empty Set:**
+
+```python
+x = {}
+
+print(x, type(x))             # {} <class 'dict'>
+```
+
+*This creates an empty dictionary, not an empty set*
+
+```python
+x = set()
+
+print(x, type(x))             # set() <class 'set'>
+```
+
+---
+
+**How does it work internally?**
+
+```python
+numbers = {10, 20, 30}
+```
+
+*Unlike a list, a set does not maintain elements according to a positional index*
+
+*So this is not valid*
+
+```python
+numbers[0]
+```
+
+*We cannot use normal indexing with a set. Sets are designed primarily around membership and uniqueness rather than position.*
+
+*For example*
+
+```python
+20 in numbers                 # True
+```
+
+*Python uses a hash-table-based structure for sets, which allows membership checks to be very efficient on average.*
+
+---
+
+**Creating a set from list**
+
+```python
+numbers = [1, 2, 2, 3, 3, 4, 4]
+
+result = set(numbers)
+
+print(result)                 # {1, 2, 3, 4}
+```
+
+---
+
+**Membership Checking**
+
+```python
+skills = {"Python", "SQL", "Excel"}
+
+print("Python" in skills)         # True
+
+print("Java" in skills)           # False
+```
+
+---
+
+### **Set Creation**
+
+*Set creation means creating a set object containing unique elements.*
+
+*The most common syntax is*
+
+```python
+numbers = {10, 20, 30}
+```
+
+*Python creates a set containing ```{10, 20, 30}```*
+
+*You can also create a set using the ```set()``` constructor*
+
+```python
+numbers = set([10, 20, 30, 10, 20])
+
+print(numbers)                    # {10, 20, 30}
+```
+
+---
+
+**Syntax:**
+
+**Method-1:** *Curly braces*
+
+```python
+my_set = {element1, element2, element3}
+```
+
+**Example:**
+
+```python
+colors = {"red", "green", "blue"}
+```
+
+**Method-2:** *```set()``` constructor*
+
+```python
+my_set = set(iterable)
+```
+
+**Example:**
+
+```python
+numbers = set([1, 2, 3, 4])
+```
+
+---
+
+**Empty set**
+
+```python
+empty_set = set()
+```
+
+---
+
+**Creating a set from a string**
+
+```python
+letters = "hello"
+
+result = set(letters)
+
+print(result)                   # {'o', 'h', 'l', 'e'}
+```
+
+*The string is an iterable, so ```set()``` processes its characters*
+
+---
+
+**Passing a single non-iterable value to ```set()```**
+
+```python
+numbers = set(10)
+
+print(numbers)                      # TypeError: 'int' object is not iterabl
+```
+
+---
+
+### **Set Methods**
+
+
+
+
+
 
 
 
