@@ -158,6 +158,7 @@ Hey everybody!!!
   - [**Sets**](#sets)
     - [**Set Creation**](#set-creation)
     - [**Set Methods**](#set-methods)
+    - [**Set Operations**](#set-operations)
 
 
 ---
@@ -10830,7 +10831,70 @@ print(skills)                       # set()
 
 ---
 
+**Expecting ```add()``` to return the set**
 
+```python
+s = {1, 2}
+
+result = s.add(3)
+
+print(result)                   # None
+```
+
+*```add()``` modifies the set in place*
+
+---
+
+**Using an unhashable object**
+
+*For example*
+
+```python
+s = {1, 2}
+
+s.add([3, 4])
+
+print(s)                        # TypeError: unhashable type: 'list'
+```
+
+---
+
+| Method | Purpose | If element absent |
+|---|---|---|
+| `add(x)` | Add one element | No error |
+| `update(iterable)` | Add multiple elements | No error |
+| `remove(x)` | Remove element | **KeyError** |
+| `discard(x)` | Remove element | No error |
+| `pop()` | Remove & return arbitrary element | **KeyError if empty** |
+| `clear()` | Remove everything | No error |
+
+---
+
+### **Set Operations**
+
+*Set operations are operations used to compare sets and find relationships between their elements.*
+
+*The main set operations are*
+
+1. **Union**
+2. **Intersection**
+3. **Difference**
+4. **Symmetric Difference**
+
+*Python provides operators and methods for these operations*
+
+---
+
+**Why do we need Set Operations?**
+
+*Set operations are useful when working with unique collections of data*
+
+*For example*
+
+```python
+python_students = {"A", "B", "C"}
+sql_students = {"B", "C", "D"}
+```
 
 
 
