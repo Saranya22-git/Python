@@ -153,6 +153,8 @@ Hey everybody!!!
     - [List Comprehension](#list-comprehension)
   - [**Tuples**](#tuples)
     - [**Tuple Packing**](#tuple-packing)
+    - [**Tuple Unpacking**](#tuple-unpacking)
+    - [**Single Element Tuple**](#single-element-tuple)
 
 
 ---
@@ -10086,6 +10088,252 @@ numbers = 10, 20, 30
 print(numbers)                    # (10, 20, 30)
 ```
 
+**Parentheses are optional**
+
+*These two are equivalent*
+
+```python
+numbers = (10, 20, 30)
+
+print(numbers)                    # (10, 20, 30)
+```
+
+*and*
+
+```python
+numbers = 10, 20, 30
+
+print(numbers)                    # (10, 20, 30)
+```
+
+*Both create a tuple*
+
+---
+
+**How does it work internally?**
+
+*Consider*
+
+```python
+data = 10, 20, 30
+
+print(data)
+```
+
+*Python sees the comma-separated values and packs them into one tuple object*
+
+```txt
+10     20     30
+ \      |      /
+  \     |     /
+    Tuple
+      ↓
+(10, 20, 30)
+```
+
+*The comma is what makes the tuple. Not the parentheses*
+
+---
+
+**Simple Example**
+
+```python
+numbers = 10, 20, 30
+
+print(numbers, type(numbers))         # (10, 20, 30) <class 'tuple'>
+```
+
+```python
+name = ("Saranya")
+
+print(name, type(name))               # Saranya <class 'str'>
+
+name = ("Saranya",)
+
+print(name, type(name))               # ('Saranya',) <class 'tuple'>
+```
+
+---
+
+### **Tuple Unpacking**
+
+*Tuple unpacking is the process of assigning the individual elements of a tuple to separate variables*
+
+**Example:**
+
+```python
+data = (10, 20, 30)
+
+a, b, c = data
+
+print(a)            # 10
+print(b)            # 20
+print(c)            # 30
+```
+
+*Tuple unpacking is the process of extracting the elements of a tuple and assigning them to multiple variable in a single statement.*
+
+---
+
+**Syntax:**
+
+```python
+variable1, variable2, variable3 = tuple
+```
+
+**Example:**
+
+```python
+student = ("Saranya", 10, "AI&DS")
+
+name, age, course = student
+
+print(name)               # Saranya
+print(age)                # 10
+print(course)             # AI&DS
+```
+
+*The number of variable normally needs to match the number of elements*
+
+---
+
+**How does it work internally?**
+
+```python
+data = ("Python", 10, 5.5)
+
+a, b, c = data
+```
+
+```txt
+Tuple:
+("Python", 10, 5.5)
+
+       ↓ unpack
+
+a ← "Python"
+b ← 10
+c ← 5.5
+```
+
+*So unpacking doesn't mean the tuple itself is destroyed. The tuple still exists*
+
+*The variables simply receive references to the corresponding elements*
+
+---
+
+**Unpacking without explicitly writing parentheses**
+
+*Because tuple packing uses commas*
+
+```python
+data = 10, 20, 30
+
+a, b, c = data
+
+print(a)                  # 10
+print(b)                  # 20
+print(c)                  # 30
+```
+
+---
+
+**Swapping Variables**
+
+*One of the most important practical uses of tuple unpacking is swapping values*
+
+*Instead of*
+
+```python
+a = 10
+b = 20
+
+temp = a
+a = b
+b = temp
+```
+
+*Python allows*
+
+```python
+a = 10
+b = 20
+
+a, b = b, a
+
+print(a)                      # 20
+print(b)                      # 10
+```
+
+```txt
+b, a
+ ↓  ↓
+20 10
+ ↓  ↓
+a   b
+```
+
+---
+
+**Extended unpacking**
+
+*Python also allows ```*``` during unpacking*
+
+```python
+numbers = (10, 20, 30, 40, 50)
+
+a, *b = numbers
+
+print(a)                  # 10
+print(b)                  # [20, 30, 40, 50]
+```
+
+*Here*
+
+```txt
+a → 10
+b → remaining elements
+```
+
+*Notice that ```b``` becomes a list*
+
+```python
+numbers = (10, 20, 30, 40, 50)
+
+a, *b, c = numbers
+
+print(a)                      # 10
+print(b)                      # [20, 30, 40]
+print(c)                      # 50
+```
+
+---
+
+**Packing and Unpacking**
+
+**Packing:**
+
+```python
+data = 10, 20, 30
+```
+
+```txt
+Multiple values → One tuple
+```
+
+**Unpacking:**
+
+```python
+a, b, c = data
+```
+
+```txt
+One tuple → Multiple variables
+```
+
+---
+
+### **Single Element Tuple**
 
 
 
