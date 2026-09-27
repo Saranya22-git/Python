@@ -10060,8 +10060,31 @@ print(x, type(x))                   # (10,) <class 'tuple'>
 
 ### **Tuple Packing**
 
+*Tuple packing means combining multiple values into a single tuple by separating the values with commas.*
 
+```python
+data = 10, 20, 30
+```
 
+*Python creates ```(10, 20, 30)```*
+
+---
+
+**Syntax:**
+
+**Basic Syntax**
+
+```python
+variable = value1, value2, value3
+```
+
+**Example:**
+
+```python
+numbers = 10, 20, 30
+
+print(numbers)                    # (10, 20, 30)
+```
 
 
 
