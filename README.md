@@ -11057,7 +11057,34 @@ sql = {"C", "D", "E", "F"}
 
 ---
 
+**Difference between ```A | B``` and ```A.union(B)```?**
 
+*They perform the same basic operation*
+
+```python
+A | B
+A.union(B)
+```
+
+*Both return a new set containing the union*
+
+---
+
+| Operation | Operator | Meaning |
+|---|---|---|
+| Union | `A \| B` | Everything from both |
+| Intersection | `A & B` | Common elements |
+| Difference | `A - B` | A but not B |
+| Symmetric Difference | `A ^ B` | In either, but not both |
+
+```txt
+|  → OR → everything
+&  → AND → common
+-  → remove B from A
+^  → exactly one
+```
+
+---
 
 
 
