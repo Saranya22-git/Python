@@ -159,6 +159,8 @@ Hey everybody!!!
     - [**Set Creation**](#set-creation)
     - [**Set Methods**](#set-methods)
     - [**Set Operations**](#set-operations)
+  - [**Frozenset**](#frozenset)
+  - [**Dictionary**](#dictionary)
 
 
 ---
@@ -11086,7 +11088,202 @@ A.union(B)
 
 ---
 
+## **Frozenset**
 
+*A frozenset is an immutanle version of a set. It contains unique elements like a normal set but once created its elements cannot be added, removed, or changed.*
+
+```python
+s = frozenset([1, 2, 3])
+```
+
+*Here*
+
+```txt
+1, 2, 3 → unique elements
+frozenset → immutable
+```
+
+*A frozenset is an immutable and hashable collection of unique elements in Python.*
+
+---
+
+**Why do we need it?**
+
+*Normal sets are mutable*
+
+```python
+s = {1, 2, 3}
+
+s.add(4)
+```
+
+*This is allowed. But sometimes we need a collection that must not change. That's where ```frozenset``` is useful.*
+
+```python
+s = frozenset([1, 2, 3])
+
+s.add(4)
+```
+
+*```s.add(4)``` is not allowed*
+
+---
+
+**Syntax:**
+
+**Using an iterable**
+
+```python
+frozenset(iterable)
+```
+
+**Example:**
+
+```python
+numbers = frozenset([1, 2, 3])
+
+print(numbers, type(numbers))           # frozenset({1, 2, 3}) <class 'frozenset'>
+```
+
+---
+
+**Empty frozenset**
+
+```python
+f = frozenset()
+```
+
+*This creates an empty frozenset*
+
+---
+
+**From a set**
+
+```python
+s = {10, 20, 30}
+
+f = frozenset(s)
+
+print(f, type(f))           # frozenset({10, 20, 30}) <class 'frozenset'>
+```
+
+---
+
+**From a list**
+
+```python
+f = frozenset([1, 2, 3, 2])
+
+print(f)                    # frozenset({1, 2, 3})
+```
+
+*Duplicates are removed*
+
+---
+
+**How it works internally?**
+
+*A frozenset uses a hash-table-based representation similar to set. The important difference is*
+
+```txt
+set       → mutable
+frozenset → immutable
+```
+
+*Because a frozenset cannot be modified after creation, it is hashable. This means a frozenset can be used in places where a normal set cannot.*
+
+*For example, a frozenset can be an element of another set*
+
+```python
+a = frozenset([1, 2])
+b = frozenset([3, 4])
+
+s = {a, b}
+
+print(s)                # {frozenset({3, 4}), frozenset({1, 2})}
+```
+
+*This is valid but*
+
+```python
+s = {{1, 2}, {3, 4}}
+```
+
+*is not valid because normal sets are mutable and therefore unhashable*
+
+---
+
+**Simple Example**
+
+```python
+numbers = frozenset([10, 20, 30])
+
+print(numbers, type(numbers))         # frozenset({10, 20, 30}) <class 'frozenset'>
+```
+
+*You can still check membership*
+
+```python
+print(20 in numbers)            # True
+```
+
+*You can also use indexing-like membership checks*
+
+```python
+20 in numbers               # True
+```
+
+*But you cannot use indexing*
+
+```python
+numbers[0]                  # TypeError: 'frozenset' object is not subscriptable
+```
+
+*because frozensets like sets do not support indexing*
+
+---
+
+```python
+skills = frozenset(["Python", "SQL", "Excel"])
+other = frozenset(["SQL", "Power BI"])
+```
+
+*You can perform set operations*
+
+**Union**
+
+```python
+print(skills | other)               # frozenset({'SQL', 'Excel', 'Python', 'Power BI'})
+print(skills & other)               # frozenset({'SQL'})
+```
+
+*Frozenset supports set operations, but it does not support methods that modify the collection.*
+
+---
+
+**What can't we do?**
+
+```python
+skills.add("Power BI")        # AttributeError
+skills.remove("Power BI")        # AttributeError
+skills.clear("Power BI")        # AttributeError
+```
+
+*Because those operations would modify the frozenset*
+
+---
+
+| Set | Frozenset |
+|---|---|
+| Mutable | Immutable |
+| Not hashable | Hashable |
+| Can use `add()` | Cannot use `add()` |
+| Can use `remove()` | Cannot use `remove()` |
+| Cannot be an element of another set | Can be an element of another set |
+
+---
+
+## **Dictionary**
 
 
 
