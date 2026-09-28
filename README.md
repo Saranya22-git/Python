@@ -161,6 +161,7 @@ Hey everybody!!!
     - [**Set Operations**](#set-operations)
   - [**Frozenset**](#frozenset)
   - [**Dictionary**](#dictionary)
+    - [**Key-Value pairs**](#key-value-pairs)
 
 
 ---
@@ -11285,12 +11286,250 @@ skills.clear("Power BI")        # AttributeError
 
 ## **Dictionary**
 
+### **Key-Value pairs**
 
+*A dictionary is a mutable collection of key-value pairs in Python. Each key is used to identify and access its corresponding value.*
 
+```python
+student = {"name": "Saranya", "age": 22, "course": "AI & Data Science"}
+```
 
+```txt
+"name"   → key
+"Saranya" → value
 
+"age"    → key
+22       → value
+```
 
+*A dictionary is a mutable, ordered collection of key-value pairs where keys are unique and hashable.*
 
+---
+
+**Why do we need Dictionaries?**
+
+*Suppose we want to store a student's information*
+
+*Without a dictionary*
+
+```python
+name = "Saranya"
+age = 10
+course = "AI & Data Science"
+```
+
+*These are separate variables. A dictionary lets us group related information*
+
+```python
+student = {"name": "Saranya", "age": 10, "course": "AI & Data Science"}
+```
+
+*Now we can access information using meaningful keys*
+
+```python
+student["name"]                 # 'Saranya'
+```
+
+*instead of remembering positions such as*
+
+```python
+student[0]
+```
+
+*The main idea*
+
+```txt
+List → access mainly by position/index
+Dictionary → access by key
+```
+
+---
+
+**Syntax:**
+
+```python
+dictionary = {key1:value1, key2:value2, key3:value3}
+```
+
+**Example:**
+
+```python
+student = {"name": "Saranya", "age": 10, "course": "AI & Data Science"}
+```
+
+---
+
+**Empty Dictionary**
+
+```python
+student = {}
+```
+
+*or*
+
+```python
+student = dict()
+```
+
+*Both create an empty dictionary*
+
+*```{}``` creates an empty dictionary, not an empty set. For an empty set ```set()```*
+
+---
+
+**How it works internally?**
+
+*Dictionaries are implemented using a hash-table-based structure.*
+
+*When you write*
+
+```python
+student['name']
+```
+
+*Python uses the key ```"name"``` to calculate a hash and locate the corresponding value efficiently.*
+
+```txt
+"name"
+   ↓
+ hash
+   ↓
+dictionary storage
+   ↓
+"Saranya"
+```
+
+*This is why dictionary key lookup is usually very fast.*
+
+---
+
+**Average-case complexity**
+
+```txt
+Access by key  → O(1)
+Insert         → O(1)
+Update         → O(1)
+Delete         → O(1)
+```
+
+*These an average-case complexities*
+
+---
+
+**Simple Example**
+
+```python
+student = {"name": "Saranya", "age": 22, "marks": 89}
+```
+
+*Access the value using its key* 
+
+```python
+print(student["name"])        # Saranya
+```
+
+---
+
+**Keys and Values**
+
+```python
+student = {"name": "Rahul", "age": 21}
+```
+
+*We have*
+
+```txt
+Key       Value
+----------------
+name      Rahul
+age       21
+```
+
+*The key identifies the data*
+
+---
+
+**Keys must be unique**
+
+```python
+student = {"name": "Rahul", "name": "Arun"}
+
+print(student)                # Arun
+```
+
+*The later value replaces the earlier one*
+
+*So effectively*
+
+```python
+{
+  "name": "Arun"
+}
+```
+
+*Dictionary keys must be unique*
+
+---
+
+```python
+employee = {"id": 101, "name": "Priya", "department": "Data", "salary": 45000}
+
+print(employee)             # {'id': 101, 'name': 'Priya', 'department': 'Data', 'salary': 45000}
+```
+
+*Access information*
+
+```python
+print(employee["id"])                 # 101
+print(employee["name"])               # Priya
+print(employee["department"])         # Data
+print(employee["salary"])             # 45000
+```
+
+---
+
+**Updating a value**
+
+*Dictionaries are mutable*
+
+```python
+employee["salary"] = 50000
+```
+
+*Now*
+
+```python
+print(employee["salary"])
+```
+
+*We didn't create another dictionary. We changed the existing dictionary.*
+
+---
+
+**Adding a new key-value pair**
+
+```python
+employee["experience"] = 2
+```
+
+*Now the dictionary contains*
+
+```python
+{
+    "id": 101,
+    "name": "Priya",
+    "department": "Data",
+    "salary": 50000,
+    "experience": 2
+}
+```
+
+*So the same syntax can be used to*
+- *access an existing key*
+- *update an existing key*
+- *add a new key*
+
+---
 
 
 
