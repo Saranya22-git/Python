@@ -163,6 +163,7 @@ Hey everybody!!!
   - [**Dictionary**](#dictionary)
     - [**Key-Value pairs**](#key-value-pairs)
     - [**Nested Dictionary**](#nested-dictionary)
+    - [**Dictionary Methods**](#dictionary-methods)
 
 
 ---
@@ -11645,10 +11646,252 @@ print(data)           # {'a': 30, 'b': 20}
 
 ### **Nested Dictionary**
 
+*A nested dictionary is a dictionary that contains another dictionary as a value.*
+
+**Example:**
+
+```python
+student = {
+  "name": "Saranya",
+  "details": {
+    "age": 10,
+    "city": "Eluru"
+  }
+}
+```
+
+*Here ```details``` is a key whose value is another dictionary.*
+
+---
+
+**Why do we need it?**
+
+*A normal dictionary is useful for storing information about one entity*
+
+```python
+student = {
+  "name": "Saranya",
+  "age": 10
+}
+```
+
+*But real-world data is often more structured*
+
+*For example, a student may have*
+- *personal data*
+- *education details*
+- *skills*
+- *contact information*
+
+*A nested dictionary allows us to organize this information logically*
+
+```python
+student = {
+  "name": "Saranya",
+  "personal": {
+    "age": 10,
+    "city": "Eluru"
+  }
+  "education": {
+    "degree": "B.Tech", 
+    "branch": "AI & Data Science"
+    }
+}
+```
+
+*This makes complex data easier to organize*
+
+---
+
+**Syntax:**
+
+```python
+dictionary = {
+  "key1" : {
+    "nested_key1": "value1",
+    "nested_key2": "value2"
+  }
+}
+```
+
+**Example:**
+
+```python
+student = {
+    "name": "Saranya",
+    "details": {
+        "age": 22,
+        "city": "Eluru"
+    }
+}
+```
+
+---
+
+**How it works internally?**
+
+*A dictionary stores key → value relationships*
+
+*In a nested dictionary, the value associated with one key happens to be another dictionary object.*
+
+```txt
+student
+   │
+   ├── "name" → "Saranya"
+   │
+   └── "details" → another dictionary
+                         │
+                         ├── "age"  → 22
+                         └── "city" → "Eluru"
+```
+
+*So when we write*
+
+```python
+student["details"]              # {'age': 22, 'city': 'Eluru'}
+```
+
+*Python first finds the value associated with ```"details"``` That value is itself a dictionary*
+
+```python
+student["details"]["age"]             # 22
+```
+
+*access ```"age"``` from that inner dictionary*
+
+---
+
+**Simple Example**
+
+```python
+student = {
+  "name": "Rahul",
+  "details": {
+    "age": 21,
+    "city": "Hyderabad"
+      }
+}
+```
+
+```python
+print(student)                    # {'name': 'Rahul', 'details': {'age': 21, 'city': 'Hyderabad'}}
+
+print(student["name"])            # Rahul
+
+print(student["details"])         # {'age': 21, 'city': 'Hyderabad'}
+
+print(student["details"]["age"])  # 21
+```
+
+---
+
+```python
+employee = {
+    "id": 101,
+    "name": "Priya",
+
+    "personal": {
+        "age": 24,
+        "city": "Hyderabad"
+    },
+
+    "job": {
+        "department": "Data",
+        "salary": 50000
+    }
+}
+```
+
+```python
+print(employee["job"]["department"])        # Data
+
+print(employee["job"]["salary"])            # 50000
+
+print(employee["personal"]["city"])         # Hyderabad
+
+employee["job"]["salary"] = 55000
+
+print(employee["job"]["salary"])            # 55000
+
+employee["personal"]["email"] = "priya@example.com"
+
+print(employee["personal"]["email"])        # priya@example.com
+```
+
+---
+
+**Real-World Example**
+
+*Nested dictionaries are common when representing structured data such as API responses or records.*
+
+```python
+candidate = {
+    "name": "Saranya",
+
+    "education": {
+        "degree": "B.Tech",
+        "branch": "AI & Data Science",
+        "year": 2026
+    },
+
+    "skills": {
+        "programming": "Python",
+        "database": "SQL",
+        "visualization": "Power BI"
+    }
+}
+```
 
 
+```python
+print(candidate["education"]["degree"])         # B.Tech
 
+print(candidate["skills"]["programming"])       # Python
+```
 
+---
+
+```python
+student = {
+    "details": {
+        "age": 22
+    }
+}
+
+print(student["details"])         # {'age': 22}
+```
+
+*```student["details"]``` returns the inner dictionary*
+
+---
+
+**Using the wrong key**
+
+```python
+student = {
+    "details": {
+        "age": 22
+    }
+}
+
+print(student["age"])             # KeyError: 'age'
+```
+
+*Because ```"age"``` is not a key in the outer dictionary*
+
+---
+
+**Nested dictionaries can be modified**
+
+```python
+student["details"]["age"] = 23
+```
+
+---
+
+### **Dictionary Methods**
+
+**
 
 
 
