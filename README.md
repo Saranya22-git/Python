@@ -10896,6 +10896,168 @@ python_students = {"A", "B", "C"}
 sql_students = {"B", "C", "D"}
 ```
 
+---
+
+**Syntax:**
+
+1. **Union**
+
+  ```python
+  A | B
+  ```
+
+  *or*
+
+  ```python
+  A.union(B)
+  ```
+
+2. **Intersection**
+
+  ```python
+  A & B
+  ```
+
+  *or*
+
+  ```python
+  A.intersection(B)
+  ```
+
+3. **Difference**
+
+  ```python
+  A - B
+  ```
+
+  *or*
+
+  ```python
+  A.difference(B)
+  ```
+
+4. **Symmetric Difference**
+
+  ```python
+  A ^ B
+  ```
+
+  *or*
+
+  ```python
+  A.symmetric_difference(B)
+  ```
+
+---
+
+**How it works Internally?**
+
+*Sets are based on **hash-table-based storage**. Python compares the elements of the sets using their hash values and determines which elements belong to the required result.*
+
+*For example*
+
+```python
+A = {1, 2, 3}
+B = {4, 5, 6}
+
+print(A&B)
+```
+
+*For intersection*
+
+```python
+A & B
+```
+
+*Python finds the elements common to both sets ```{3}```*
+
+*The resulting set is a new set. The original sets are not changed by these operations.*
+
+---
+
+**Simple Examples**
+
+```python
+A = {1, 2, 3}
+B = {3, 4, 5}
+```
+
+- **Union ```|```:** *Union gives all unique elements from both sides*
+
+  ```python
+  print(A | B)                  # {1, 2, 3, 4, 5}
+  ```
+
+- **Intersection ```&```:** *Intersection gives elements common to both sides*
+
+  ```python
+  print(A & B)                  # {3}
+  ```
+
+- **Difference ```-```:** 
+
+  ```python
+  print(A - B)                  # {1, 2}
+  ``` 
+
+  *It means elements present in A but not in B. Now reverse it*
+
+  ```python
+  print(B - A)                  # {4, 5}
+  ```
+
+  *Difference is directional*
+
+  *```A - B ≠ B - A```*
+
+- **Symmetric Difference ```^```:** *Gives elements that are in either set, but not in both*
+
+  ```python
+  print(A ^ B)                     # {1, 2, 4, 5}
+  ```
+
+  *The common element ```3``` is removed ```Only A + Only B```*
+
+---
+
+```python
+python = {"A", "B", "C", "D"}
+sql = {"C", "D", "E", "F"}
+```
+
+- **Students learning either Python or SQL**
+
+  ```python
+  print(python | sql)           # {'C', 'B', 'A', 'E', 'F', 'D'}
+  ```
+
+- **Students learning both**
+
+  ```python
+  print(python & sql)           # {'C', 'D'}
+  ```
+
+- **Students learning Python but not SQL**
+
+  ```python
+  print(python - sql)           # {'A', 'B'}
+  ```
+
+- **Students learning SQL but not Python**
+
+  ```python     
+  print(sql - python)           # {'E', 'F'}
+  ```
+
+- **Students learning only one of the two**
+
+  ```python
+  print(python ^ sql)             # {'B', 'E', 'A', 'F'}
+  ```
+
+---
+
+
 
 
 
