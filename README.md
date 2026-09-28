@@ -11891,7 +11891,124 @@ student["details"]["age"] = 23
 
 ### **Dictionary Methods**
 
-**
+*Dictionary methods are built-in methods provided by Python to access, add, update, remove, and manage key-value pairs in a dictionary.*
+
+*The important methods are*
+
+```txt
+get()
+keys()
+values()
+items()
+update()
+setdefault()
+pop()
+popitem()
+clear()
+copy()
+```
+
+---
+
+**Why do we need Dictionary Methods?**
+
+*We can directly access values using*
+
+```python
+student["name"]
+```
+
+*But dictionary methods give us safer and more convenient ways to work with dictionary data*
+
+```python
+student.get("age")
+```
+
+*doesn't raise an error if ```"age"``` doesn't exist*
+
+*Methods also allow us to*
+- *get all keys*
+- *get all values*
+- *get key-value pairs*
+- *update dictionaries*
+- *remove entries*
+- *create copies*
+- *clear dictionaries*
+
+---
+
+**Syntax:**
+
+- **```get()```**
+
+  ```python
+  dictionary.get(key)
+  ```
+
+  *or*
+
+  ```python
+  dictionary.get(key, default_value)
+  ```
+
+- **```keys()```**
+
+  ```python
+  dictionary.keys()
+  ```
+
+- **```values()```**
+
+  ```python
+  dictionary.values()
+  ```
+
+- **```items()```**
+
+  ```python
+  dictionary.items()
+  ```
+
+- **```update()```**
+
+  ```python
+  dictionary.update(other_dictionary)
+  ```
+
+- **```setdefault()```**
+
+  ```python
+  dictionary.setdefault(key, default_value)
+  ```
+
+- **```pop()```**
+
+  ```python
+  dictionary.pop(key)
+  ```
+
+- **```popitem()```**
+
+  ```python
+  dictionary.popitem()
+  ```
+
+- **```clear()```**
+
+  ```python
+  dictionary.clear()
+  ```
+
+- **```copy()```**
+
+  ```python
+  dictionary.copy()
+  ```
+
+---
+
+
+
 
 
 
