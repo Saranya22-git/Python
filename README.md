@@ -162,6 +162,7 @@ Hey everybody!!!
   - [**Frozenset**](#frozenset)
   - [**Dictionary**](#dictionary)
     - [**Key-Value pairs**](#key-value-pairs)
+    - [**Nested Dictionary**](#nested-dictionary)
 
 
 ---
@@ -11530,6 +11531,123 @@ employee["experience"] = 2
 - *add a new key*
 
 ---
+
+**Real-World Example**
+
+*Imagine a job application system. Each candidate has information*
+
+```python
+candidate = { "name": "Saranya", "education": "B.Tech", "skills": ["Python", "SQL", "Excel"], "experience": 0}
+```
+
+*We can access*
+
+```python
+candidate["name"]             # Saranya
+```
+
+```python
+candidate["skills"]           # ['Python', 'SQL', 'Excel']
+```
+
+*Notice that a dictionary value can itself be a list*
+
+*Values can be different data types*
+
+```python
+{
+    "name": "Saranya",       # str
+    "age": 22,               # int
+    "experience": 0,         # int
+    "skills": ["Python"],    # list
+    "available": True        # bool
+}
+```
+
+---
+
+**Using an index**
+
+```python
+student = {
+    "name": "Rahul",
+    "age": 21
+}
+
+print(student[0])                 # KeyError: 0
+```
+
+*This doesn't work. A dictionary is accessed using its key.*
+
+```python
+print(student["name"])            # Rahul
+```
+
+---
+
+**Accessing a key that doesn't exist**
+
+```python
+student = {
+  "name": "Rahul"
+}
+
+print(student["age"])             # KeyError: 'age'
+```
+
+*This raises ```KeyError```*
+
+---
+
+**Can dictionary values be duplicated?**
+
+```python
+data = {
+  "a": 10,
+  "b":10
+}
+```
+
+*This is perfectly valid. Keys must be unique values don't have to be.*
+
+---
+
+**Are dictionaries ordered?**
+
+*Yes. Since Python 3.7 dictionaries preserve insertion order as a language guarantee.*
+
+---
+
+```python
+data = {
+    "a": 10,
+    "b": 20,
+    "a": 30
+}
+
+print(data)           # {'a': 30, 'b': 20}
+```
+
+---
+
+```txt
+✅ Key-value pairs
+✅ Mutable
+✅ Keys are unique
+✅ Keys must be hashable
+✅ Values can be duplicated
+✅ Values can have different types
+✅ Preserves insertion order
+✅ Average lookup → O(1)
+```
+
+---
+
+### **Nested Dictionary**
+
+
+
+
 
 
 
