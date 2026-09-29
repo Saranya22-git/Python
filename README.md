@@ -12259,8 +12259,194 @@ student is new_student                # False
 
 ### **Dictionary Iteration**
 
+*Dictionary iteration means going through the keys, values, or key-value pairs of a dictionary one by one.*
 
+*The most common way is using a ```for``` loop*
 
+```python
+student = {
+  "name": "Saranya",
+  "age": 10,
+  "city": "eluru"
+}
+
+for key in student:
+  print(key)                      # name
+                                  # age
+                                  # city
+```
+
+```python
+student = {
+  "name": "Saranya",
+  "age": 10,
+  "city": "eluru"
+}
+
+for key, value in student.items():
+  print(key, value)               # name Saranya
+                                  # age 10
+                                  # city eluru
+```
+
+---
+
+**Syntax:**
+
+**Iterate over keys**
+
+```python
+for key in dictionary:
+  print(key)
+```
+
+*or*
+
+```python
+for key in dictionary.keys():
+  print(key)
+```
+
+---
+
+**Iterate over values**
+
+```python
+for value in dictionary.values():
+  print(value)
+```
+
+---
+
+**Iterate over key-value pairs**
+
+```python
+for key, value in dictionary.items():
+  print(key, value)
+```
+
+---
+
+**How it works Internally?**
+
+```python
+for key in student:
+```
+
+*Python iterates through the dictionary's keys*
+
+```python
+student = {
+  "name": "Saranya",
+  "age": 10
+}
+```
+
+*the loop conceptually goes*
+
+```txt
+1st iteration → "name"
+2nd iteration → "age"
+```
+
+*When you use*
+
+```python
+student.items()
+```
+
+*you get key-value pairs*
+
+```txt
+("name", "Saranya")
+("age", 22)
+```
+
+*then*
+
+```python
+for key, value in student.items():
+```
+
+*unpacks each pair into ```key``` and ```value```*
+
+---
+
+```python
+marks = {
+    "Python": 85,
+    "SQL": 90,
+    "Excel": 80,
+    "ML": 88
+}
+```
+
+**Print Subjects**
+
+```python
+for subject in marks:
+  print(subject)                # Python
+                                # SQL
+                                # Excel
+                                # ML
+```
+
+**Print marks**
+
+```python
+for mark in marks.values():
+  print(mark)                   # 85
+                                # 90
+                                # 80
+                                # 88
+```
+
+**Print subject and marks**
+
+```python
+for subject, mark in marks.items():
+  print(subject, mark)          # Python 85
+                                # SQL 90
+                                # Excel 80
+                                # ML 88
+```
+
+**Calculate total marks**
+
+```python
+total = 0
+
+for mark in marks.values():
+  total +=mark
+
+print(total)                    # 343
+```
+
+**Find subjects with marks >= 85**
+
+```python
+for subject, mark in marks.items():
+  if mark>=85:
+    print(subject)
+```
+
+---
+
+**Modifying the dictionary size while iterating**
+
+```python
+for key in student:
+  student.pop(key)
+```
+
+*This can raise ```RuntimeError: dictionary changed size during iteration```*
+
+*If you need to modify the dictionary while processing it, use an appropriate separate structure or iterate over a snapshot*
+
+```python
+for key in list(student.keys()):
+  student.pop(key)
+```
 
 
 
