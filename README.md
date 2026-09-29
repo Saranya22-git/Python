@@ -164,6 +164,17 @@ Hey everybody!!!
     - [**Key-Value pairs**](#key-value-pairs)
     - [**Nested Dictionary**](#nested-dictionary)
     - [**Dictionary Methods**](#dictionary-methods)
+      - [**```get()```:**](#get)
+      - [**```keys()```**](#keys)
+      - [**```values()```**](#values)
+      - [**```items()```**](#items)
+      - [**```update()```**](#update)
+      - [**```setdefault()```**](#setdefault)
+      - [**```pop()```**](#pop-1)
+      - [**```popitem()```**](#popitem)
+      - [**```clear()```**](#clear-1)
+      - [**```copy()```**](#copy)
+    - [**Dictionary Iteration**](#dictionary-iteration)
 
 
 ---
@@ -12007,8 +12018,246 @@ student.get("age")
 
 ---
 
+**How it works Internally?**
 
+*A dictionary is based on a hash-table-based implementation*
 
+*When you use*
+
+```python
+student.get("name")
+```
+
+*Python uses the key to locate its associated value*
+
+```txt
+"name"
+   ↓
+hashing / lookup
+   ↓
+"Saranya"
+```
+
+*Most dictionary key-based operations are ```O(1)``` on average*
+
+*Methods such as ```keys()```, ```values()``` and items()``` provide view objects rather than ordinary lists*
+
+```python
+student.keys()
+```
+
+*returns a dictionary view object*
+
+*You can convert it to a list if needed*
+
+```python
+list(student.keys())          # ['name', 'education', 'skills']
+```
+
+---
+
+**Example**
+
+```python
+student = {
+  "name": "Saranya",
+  "age": 22,
+  "course": "AI & Data Science"
+}
+```
+
+---
+
+#### **```get()```:**
+
+```python
+print(student.get("name"))            # Saranya
+```
+
+*If key doesn't exist*
+
+```python
+print(student.get("city"))            # None
+```
+
+*Instead of raising ```KeyError``` You can also provide a default*
+
+```python
+print(student.get("city", "Not Available"))       # Not Available
+```
+
+```python
+print(student["city"])              # KeyError: 'city'
+```
+
+---
+
+#### **```keys()```**
+
+*Returns a view containing the dictionary's keys*
+
+```python
+print(student.keys())             # dict_keys(['name', 'education', 'skills'])
+```
+
+---
+
+#### **```values()```**
+
+*Returns a view containing the values*
+
+```python
+print(student.values())            # dict_values(['Saranya', {'degree': 'B.Tech', 'branch': 'AI & Data Science', 'year': 2026}, {'programming': 'Python', 'database': 'SQL', 'visualization': 'Power BI'}])
+```
+
+---
+
+#### **```items()```**
+
+*Returns key-value pairs*
+
+```python
+print(student.items())                # dict_items([('name', 'Saranya'), ('education', {'degree': 'B.Tech', 'branch': 'AI & Data Science', 'year': 2026}), ('skills', {'programming': 'Python', 'database': 'SQL', 'visualization': 'Power BI'})])
+```
+
+*Each pair behaves like a tuple ```('name', 'Saranya')```*
+
+---
+
+#### **```update()```**
+
+*Used to add or update key-value pairs*
+
+```python
+student.update({"age": 10})
+
+print(student)              # {'name': 'Saranya', 'education': {'degree': 'B.Tech', 'branch': 'AI & Data Science', 'year': 2026}, 'skills': {'programming': 'Python', 'database': 'SQL', 'visualization': 'Power BI'}, 'age': 10}
+```
+
+- *If key already exists - Its value is updated*
+- *If key doesn't exist - A new key-value pair is added*
+
+---
+
+#### **```setdefault()```**
+
+```python
+student.setdefault("city", "Hyderabad")
+```
+
+*If ```"city"``` doesn't exist it adds ```"city": "Hyderabad"```*
+
+*But if it already exists*
+
+```txt
+student = {
+    "city": "Eluru"
+}
+
+student.setdefault("city", "Hyderabad")
+```
+
+*The existing value remains ```"city": "Eluru"```*
+
+*```setdefault()``` adds a key only if the key doesn't already exist*
+
+---
+
+#### **```pop()```**
+
+*Removes a specified key and returns its value*
+
+```python
+store = student.pop("skills")
+
+print(store)                  # {'programming': 'Python', 'database': 'SQL', 'visualization': 'Power BI'}
+```
+
+*If the key doesn't exist*
+
+```python
+student.pop("salary")             # KeyError: 'salary'
+```
+
+*You can provide a default*
+
+```python
+student.pop("salary", None)
+```
+
+---
+
+#### **```popitem()```**
+
+*Removes and returns the last inserted key-value pair*
+
+```python
+result = student.popitem()
+
+print(result)                   # ('age', 10)
+```
+
+```txt
+```pop()``` → removes a specified key.
+
+```popitem()``` → removes the last inserted key-value pair.
+```
+
+---
+
+#### **```clear()```**
+
+*Removes everything*
+
+```python
+student.clear()
+
+print(student)                    # {}
+```
+
+*The dictionary still exists, but it is empty*
+
+---
+
+#### **```copy()```**
+
+*Creates a shallow copy of the dictionary*
+
+```python
+student = {
+  "name": "Saranya",
+  "age": 22
+}
+
+new_student = student.copy()
+```
+
+*Now*
+
+```python
+student is new_student                # False
+```
+
+*They are separate outer dictionary objects*
+
+---
+
+| Method | Purpose |
+|---|---|
+| `get()` | Safely retrieve a value |
+| `keys()` | Get keys |
+| `values()` | Get values |
+| `items()` | Get key-value pairs |
+| `update()` | Add/update pairs |
+| `setdefault()` | Add key only if absent |
+| `pop()` | Remove specified key |
+| `popitem()` | Remove last inserted pair |
+| `clear()` | Remove everything |
+| `copy()` | Create shallow copy |
+
+---
+
+### **Dictionary Iteration**
 
 
 
