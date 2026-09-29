@@ -175,6 +175,7 @@ Hey everybody!!!
       - [**```clear()```**](#clear-1)
       - [**```copy()```**](#copy)
     - [**Dictionary Iteration**](#dictionary-iteration)
+    - [**Dictionary Comprehension**](#dictionary-comprehension)
 
 
 ---
@@ -12447,6 +12448,12 @@ for key in student:
 for key in list(student.keys()):
   student.pop(key)
 ```
+
+---
+
+### **Dictionary Comprehension**
+
+
 
 
 
