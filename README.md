@@ -176,6 +176,7 @@ Hey everybody!!!
       - [**```copy()```**](#copy)
     - [**Dictionary Iteration**](#dictionary-iteration)
     - [**Dictionary Comprehension**](#dictionary-comprehension)
+  - [**Binary Types**](#binary-types)
 
 
 ---
@@ -12683,7 +12684,209 @@ print(discount)               # {'Laptop': 45000.0, 'Phone': 18000.0, 'Tablet': 
 
 ---
 
+## **Binary Types**
 
+*Binary data is data represented as a sequence of bytes where each byte contains a value from ```0``` to ```255```*
+
+*For example ```65 66 67```*
+
+*These byte values can represent data such as*
+- *encoded text*
+- *images*
+- *audio*
+- *video*
+- *PDF files*
+- *network packets*
+- *files received from APIs*
+
+*Python provides three main binary types*
+
+| Type | Mutable? | Main purpose |
+|---|---|---|
+| `bytes` | ❌ No | Immutable binary data |
+| `bytearray` | ✅ Yes | Mutable binary data |
+| `memoryview` | Depends on underlying object | Access binary data without copying |
+
+---
+
+**Why do we need Binary Types?**
+
+```python
+name = "Saranya"
+```
+
+*This is a string. Strings represent text ```str → text```*
+
+*But computers also work with data that isn't simply text. For example, an image file contains raw binary data.*
+
+```txt
+Image
+ ↓
+Binary data
+ ↓
+Bytes
+ ↓
+0s and 1s
+```
+
+*Python therefore needs a way to work directly with binary data*
+
+---
+
+**Text vs Binary Data**
+
+*Think about a photo ```photo.jpg``` You wouldn't normally treat the entire fil as ```str```*
+
+*Instead you work with its raw bytes*
+
+*For example*
+
+```python
+data = b"ABC"
+```
+
+*The ```b``` means this is a bytes object not a normal string*
+
+---
+
+**Syntax:**
+
+*The three types have different ways of being created*
+
+- **```bytes```**
+
+  ```python
+  data = b"Hello"
+  ```
+
+  *or*
+
+  ```python
+  data = bytes([65, 66, 67])
+  ```
+
+- **```bytearray```**
+
+  ```python
+  data = bytearray(b"Hello")
+  ```
+
+  *or*
+
+  ```python
+  data = bytearray([65, 66, 67])
+  ```
+
+- **```memoryview```**
+
+  ```python
+  data = memoryview(b"Hello")
+  ```
+
+*A memoryview provides a way to access the underlying binary data without creating another copy of the data.*
+
+---
+
+**How Binary Types work internally?**
+
+**Byte:** *A byte consists of 8 bits. Each bit can be ```0 or 1``` Therefore ```1 byte = 8 bits``` An 8-bit value can represent ```00000000``` through ```11111111``` which corresponds to ```0 → 255``` So one byte can store 256 possible values*
+
+**Example:** *The number ```65``` in binary is ```01000001``` and ASCII associates ```65 → A``` So ```bytes([65])``` represents a byte containing the value ```65```*
+
+---
+
+**Simple Example**
+
+```python
+data = b"ABC"
+
+print(data, type(data))             # b'ABC' <class 'bytes'>
+```
+
+---
+
+**Access individual bytes**
+
+```python
+data = b"ABC"
+
+print(data[0])                      # 65
+```
+
+*```A → ASCII value 65```*
+
+*A ```bytes``` object behaves like a sequence of integers from 0 to 255 when indexed*
+
+---
+
+**Creating bytes from integers**
+
+```python
+data = bytes([65, 66, 67])
+
+print(data)                         # b'ABC'
+```
+
+---
+
+**Creating bytearray**
+
+```python
+data = bytearray([65, 66, 67])
+
+print(data)                       # bytearray(b'ABC')
+```
+
+*```Unlike ```bytes```, a ```bytearray``` can be modified```*
+
+---
+
+**Memoryview**
+
+```python
+data = bytearray(b"ABC")
+
+view = memoryview(data)
+
+print(view)               # <memory at 0x000002DC1ECF2EC0>
+```
+
+*The memoryview gives us access to the same underlying binary data*
+
+*We can access*
+
+```python
+print(view[0])              # 65
+```
+
+---
+
+**Real-World Example**
+
+*Imagine downloading an image from a server. The server doesn't necessarily sen you ```"this is a photo"``` It sends binary data.*
+
+```txt
+Server
+   ↓
+Binary data
+   ↓
+bytes
+   ↓
+Python program
+   ↓
+Save/process image
+```
+
+*For example when reading a binary file*
+
+```python
+with open("image.jpg", "rb") as file:
+    data = file.read()
+```
+
+*The "b" in ```"rb"``` means binary mode. The result is binary data typically a ```bytes``` object.*
+
+---
 
 
 
