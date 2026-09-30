@@ -12544,10 +12544,144 @@ n = 3 → 3 : 9
 
 **Simple Example**
 
+**Example-1:** *Number → Square*
 
+```python
+squares = {n: n * n for n in range(1, 6)}
 
+print(squares)                # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+```
 
+```txt
+key   → n
+value → n * n
+```
 
+---
+
+**Example-2:** *Number → Cube*
+
+```python
+cube = {n: n ** 3 for n in range(1, 6)}
+
+print(cube)                   # {1: 1, 2: 8, 3: 27, 4: 64, 5: 125}
+```
+
+---
+
+```python
+names = ["Asha", "Rahul", "Priya"]
+
+name_length = {name: len(name) for name in names}
+
+print(name_length)                # {'Asha': 4, 'Rahul': 5, 'Priya': 5}
+```
+
+---
+
+**With a condition**
+
+```python
+numbers = range(1, 11)
+
+even_numbers = {n: n*n for n in numbers if n % 2 == 0}
+
+print(even_numbers)               # {2: 4, 4: 16, 6: 36, 8: 64, 10: 100}
+```
+
+---
+
+```python
+employees = {
+    "Asha": 40000,
+    "Rahul": 55000,
+    "Priya": 45000,
+    "Kiran": 60000
+}
+
+highest_earning = {name: salary for name, salary in employees.items() if salary>=50000}
+
+print(highest_earning)                # {'Rahul': 55000, 'Kiran': 60000}
+```
+
+---
+
+```python
+prices = {
+    "Laptop": 50000,
+    "Phone": 20000,
+    "Tablet": 30000
+}
+
+discount = {item: price * 0.9 for item, price in prices.items()}
+
+print(discount)               # {'Laptop': 45000.0, 'Phone': 18000.0, 'Tablet': 27000.0}
+```
+
+---
+
+**Dictionary comprehension**
+
+```python
+{name: len(name) for name in names}
+```
+
+**List comprehension**
+
+```python
+[len(name) for name in names]
+```
+
+```txt
+[] → list comprehension
+{} → dictionary comprehension
+```
+
+*For a dictionary we need ```key : value```*
+
+---
+
+**Basic**
+
+```python
+{key: value for item in iterable}
+```
+
+**With condition**
+
+```python
+{key: value for item in iterable if condition}
+```
+
+**From a dictionary**
+
+```python
+{
+    key: value
+    for key, value in dictionary.items()
+}
+```
+
+**Filtering a dictionary**
+
+```python
+{
+    key: value
+    for key, value in dictionary.items()
+    if condition
+}
+```
+
+**Transforming values**
+
+```python
+{
+    key: value * 2
+    for key, value in dictionary.items()
+}
+```
+
+---
 
 
 
