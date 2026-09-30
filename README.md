@@ -177,6 +177,7 @@ Hey everybody!!!
     - [**Dictionary Iteration**](#dictionary-iteration)
     - [**Dictionary Comprehension**](#dictionary-comprehension)
   - [**Binary Types**](#binary-types)
+    - [**```bytes```**](#bytes)
 
 
 ---
@@ -12899,6 +12900,216 @@ with open("image.jpg", "rb") as file:
 ```
 
 ---
+
+### **```bytes```**
+
+*```bytes``` is a Python data type used to represent immutable binary data. A ```bytes``` object is a sequence of integers where each value is between ```0 and 255```*
+
+*or*
+
+*```bytes``` is an immutable sequence of integers in the range 0–255, used to represent binary data*
+
+**Example:**
+
+```python
+data = b"ABC"
+
+print(data)                     # b'ABC'
+```
+
+---
+
+**Why do we need ```bytes```?**
+
+*Strings are used for text ```name = "Saranya"```*
+
+*But many computer systems work with raw binary data such as*
+- *images*
+- *audio*
+- *videos*
+- *PDFs*
+- *network data*
+- *encrypted data*
+- *binary files*
+
+*For these situations, Python provides ```bytes```*
+
+---
+
+**Syntax:**
+
+**Method-1:** *Byte Literal*
+
+*Use the ```b``` prefix*
+
+```python
+data = b"Hello"
+```
+
+*The ```b``` tells python create a ```bytes``` object*
+
+**Method-2:** *```bytes()``` constructor*
+
+```python
+data = bytes([65, 66, 67])
+
+print(data)                   # b'ABC'
+```
+
+*Each integer must be between ```0 and 255```*
+
+**Method-3:** *Convert a string using encoding*
+
+```python
+text = "Hello"
+
+data = text.encode()
+
+print(data, type(data))               # b'Hello' <class 'bytes'>
+```
+
+---
+
+**How it works internally?**
+
+*```1 byte = 8 bits``` therefore one byte can represent ```00000000``` to ```11111111``` which corresponds to ```0 → 255```*
+
+*For example*
+
+```python
+data = bytes([65])
+```
+
+*The byte value is ```65``` In binary ```01000001``` ASCII maps ```65``` to ```A```*
+
+---
+
+**Creating bytes**
+
+```python
+data = b"Python"
+
+print(data)                         # b'Python'
+```
+
+---
+
+**Indexing**
+
+```python
+data = b"ABC"
+
+print(data[0])                      # 65
+```
+
+*Because indexing a ```bytes``` object returns the integer byte value*
+
+```txt
+A → 65
+B → 66
+C → 67
+```
+
+---
+
+**Length**
+
+```python
+data = b"Python"
+
+print(len(data))                  # 6
+```
+
+*Each character here occupies one byte under this ASCII-compatible representation*
+
+---
+
+```python
+data = bytes([65, 66, 67, 68, 69])
+
+print(data)                     # b'ABCDE'
+```
+
+*The values are*
+
+```txt
+65 → A
+66 → B
+67 → C
+68 → D
+```
+
+---
+
+**Iterating through bytes**
+
+```python
+data = b"ABC"
+
+for value in data:
+  print(value)                # 65
+                              # 66
+                              # 67
+```
+
+*Notice that iteration also gives integers*
+
+---
+
+**Slicing bytes**
+
+*Just like other sequence types*
+
+```python
+data = b"Python"
+
+print(data[0:3])                      # b'Pyt'
+```
+
+*A slice produces another ```bytes``` object*
+
+---
+
+**Membership**
+
+```python
+data = b"Python"
+
+print(b"P" in data)                   # True
+```
+
+---
+
+**Real-World Example**
+
+*Suppose you're reading an image file in binary mode*
+
+```python
+with open("photo.jpg", "rb") as file:
+    data = file.read()
+```
+
+*The ```"b"``` means binary mode. ```data``` will typically be a ```bytes``` object containing the raw bytes of the image.*
+
+```txt
+photo.jpg
+   ↓
+raw binary data
+   ↓
+bytes
+   ↓
+Python program
+```
+
+---
+
+
+
+
+ 
+
+
+
 
 
 
