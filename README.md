@@ -12453,6 +12453,96 @@ for key in list(student.keys()):
 
 ### **Dictionary Comprehension**
 
+*Dictionary comprehension is a concise way to create a dictionary using a single expression, usually from an iterable.*
+
+*or*
+
+*Dictionary comprehension is a compact syntax used to create dictionaries by generating key-value pairs from an iterable, optionally with a condition.*
+
+---
+
+**Why do we need it?**
+
+*Suppose we want to create a dictionary containing numbers and thier squares.*
+
+**Without comprehension:**
+
+```python
+squares = {}
+
+for n in range(1, 6):
+  squares[n] = n * n
+
+print(squares)
+```
+
+**Using dictionary comprehension**
+
+```python
+squares = {n: n*n for n in range(1, 6)}
+```
+
+---
+
+**Syntax:**
+
+**Basic syntax**
+
+```python
+{key_expression: value_expression for item in iterable}
+```
+
+**Example:**
+
+```python
+sqaures = {n: n*n for n in range(1, 6)}
+```
+
+---
+
+**With a condition**
+
+```python
+{key_expression: value_expression for item in iterable if condition}
+```
+
+**Example:**
+
+```python
+even_squares = {n: n*n for n in range(1, 6) if n%2 == 0}
+
+print(even_squares)               # {2: 4, 4: 16}
+```
+
+---
+
+**How it works internally?**
+
+```python
+squares = {n: n*n for n in range(1, 4)}
+```
+
+*Python effectively performs*
+
+```txt
+n = 1 → 1 : 1
+n = 2 → 2 : 4
+n = 3 → 3 : 9
+```
+
+*So the final dictionary is*
+
+```python
+{
+    1: 1,
+    2: 4,
+    3: 9
+}
+```
+
+---
+
+**Simple Example**
 
 
 
