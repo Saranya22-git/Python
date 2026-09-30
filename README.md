@@ -12888,7 +12888,17 @@ with open("image.jpg", "rb") as file:
 
 ---
 
+```txt
+                Binary Types
+                     │
+        ┌────────────┼────────────┐
+        ↓            ↓            ↓
+      bytes       bytearray    memoryview
+        │            │            │
+    immutable      mutable     view/access
+```
 
+---
 
 
 
