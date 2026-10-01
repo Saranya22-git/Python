@@ -185,6 +185,8 @@ Hey everybody!!!
   - [**Binary Types**](#binary-types)
     - [**```bytes```**](#bytes)
     - [**```bytearray```**](#bytearray)
+    - [**```memoryview```**](#memoryview)
+  - [**NoneType**](#nonetype)
 
 
 ---
@@ -13298,6 +13300,164 @@ String
 | Can modify elements? | ❌ | ✅ |
 
 ---
+
+### **```memoryview```**
+
+*```memoryview``` is an object that provides a view of the memory of an existing bytes-like object without making a copy of the data.*
+
+*t is mainly useful when we want to work with binary data efficiently without unnecessarily copying it.*
+
+---
+
+**Why do we need it?**
+
+*Suppose we have a large binary object*
+
+```python
+data = bytearray(b"Hello")
+```
+
+*If we create another object containing the same data, memory may be used for another copy.*
+
+*```memoryview``` gives us a view into the existing data instead*
+
+```txt
+Original data
+┌───────────────────┐
+│ H │ e │ l │ l │ o │
+└───────────────────┘
+          ↑
+     memoryview
+       (view)
+```
+
+---
+
+**Syntax:**
+
+```python
+memoryview(object)
+```
+
+**Example:**
+
+```python
+data = bytearray(b"Hello")
+
+view = memoryview(data)
+
+print(view)                   # <memory at 0x000001F34617E740>
+```
+
+*Output will look similar to ```<memory at ...>``` The exact memory address shown can vary*
+
+---
+
+**How it works internally?**
+
+```python
+data = bytearray(b"ABC")
+
+view = memoryview(data)
+```
+
+```txt
+bytearray
+┌────┬────┬────┐
+│ 65 │ 66 │ 67 │
+└────┴────┴────┘
+   ↑
+   │
+memoryview
+```
+
+*The ```memoryview``` does not need to create another copy of those bytes. It provides a view into the existing object's memory.*
+
+*```memoryview``` works with objects that support the buffer protocol such as*
+- *```bytes```*
+- *```bytearray```*
+
+*```memoryview``` can provide direct access to the memory of supported binary objects.*
+
+---
+
+**Simple Example**
+
+```python
+data = bytearray(b"ABC")
+
+view = memoryview(data)
+
+print(view[0])                    # 65
+print(view[1])                    # 66
+print(view[2])                    # 67
+```
+
+*Like ```bytes``` and ```bytearray``` indexing gives byte values*
+
+---
+
+**Modifying through ```memoryview```**
+
+*Because the underlying object here is mutable ```bytearray``` we can modify it through the view.*
+
+```python
+data = bytearray(b"ABC")
+
+view = memoryview(data)
+
+view[0] = 90
+
+print(view)                     # <memory at 0x000001F34617E8C0>
+
+print(data)                     # bytearray(b'ZBC')
+```
+
+```txt
+memoryview
+     ↓
+existing bytearray memory
+     ↓
+same underlying data
+```
+
+*There wasn't a separate copy being modified*
+
+---
+
+```python
+data = bytearray(b"Python")
+
+view = memoryview(data)
+
+part = view[0:2]
+
+print(data)                     # bytearray(b'Python')
+print(part)                     # <memory at 0x000001F34617E8C0>
+
+print(part.tobytes())           # b'Py'
+```
+
+---
+
+**Another useful property**
+
+```python
+data = bytearray(b"Python")
+
+view = memoryview(data)
+
+print(view.nbytes)              # 6
+```
+
+*```nbytes``` tells us the number of bytes accessible thorugh the view*
+
+---
+
+## **NoneType**
+
+
+
 
 
 
