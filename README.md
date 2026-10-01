@@ -158,8 +158,8 @@ Hey everybody!!!
   - [**Sets**](#sets)
     - [**Set Creation**](#set-creation)
     - [**Set Methods**](#set-methods)
-      - [**\`\`\`add()\`\`:** *Adds one element*](#add-adds-one-element)
-      - [**```update()```:** *Adds multiple elements from an iterable*](#update-adds-multiple-elements-from-an-iterable)
+      - [**\`\`\`add()\`\`**](#add)
+      - [**```update()```**](#update)
       - [**```remove()```**](#remove-1)
       - [**```discard()```**](#discard)
       - [**```pop()```**](#pop-1)
@@ -174,7 +174,7 @@ Hey everybody!!!
       - [**```keys()```**](#keys)
       - [**```values()```**](#values)
       - [**```items()```**](#items)
-      - [**```update()```**](#update)
+      - [**```update()```**](#update-1)
       - [**```setdefault()```**](#setdefault)
       - [**```pop()```**](#pop-2)
       - [**```popitem()```**](#popitem)
@@ -10715,120 +10715,124 @@ s.add("Python")
 
 **Simple Example**
 
-#### **```add()``:** *Adds one element*
+#### **```add()``** 
 
-  ```python
-  numbers = {10, 20, 30, 40}
+*Adds one element*
 
-  numbers.add(40)
+```python
+numbers = {10, 20, 30, 40}
 
-  print(numbers)                # {40, 10, 20, 30}
-  ```
+numbers.add(40)
 
-  **Duplicate with ```add()```**
+print(numbers)                # {40, 10, 20, 30}
+```
 
-  ```python
-  numbers = {10, 20, 30}
+**Duplicate with ```add()```**
 
-  numbers.add(20)
+```python
+numbers = {10, 20, 30}
 
-  print(numbers)                  # {10, 20, 30}
-  ```
+numbers.add(20)
 
-  *The set remains ```{10, 20, 30}``` because sets contain unique elements.*
+print(numbers)                  # {10, 20, 30}
+```
 
-#### **```update()```:** *Adds multiple elements from an iterable*
+*The set remains ```{10, 20, 30}``` because sets contain unique elements.*
 
-  ```python
-  numbers = {10, 20}
+#### **```update()```** 
 
-  numbers.update([30, 40, 50])
+*Adds multiple elements from an iterable*
 
-  print(numbers)                  # {40, 10, 50, 20, 30}
-  ```
+```python
+numbers = {10, 20}
 
-  *You can pass different iterables*
+numbers.update([30, 40, 50])
 
-  ```python
-  numbers = {10, 20}
+print(numbers)                  # {40, 10, 50, 20, 30}
+```
 
-  numbers.update((60, 70))
+*You can pass different iterables*
 
-  print(numbers)                  # {70, 10, 20, 60}
+```python
+numbers = {10, 20}
 
-  numbers.update({30, 40})
+numbers.update((60, 70))
 
-  print(numbers)                  # {20, 70, 40, 10, 60, 30}
-  ```
+print(numbers)                  # {70, 10, 20, 60}
+
+numbers.update({30, 40})
+
+print(numbers)                  # {20, 70, 40, 10, 60, 30}
+```
 
 #### **```remove()```**
 
-  ```python
-  numbers = {10, 20, 30}
+```python
+numbers = {10, 20, 30}
 
-  numbers.remove(30)
+numbers.remove(30)
 
-  print(numbers)                  # {10, 20}
-  ``` 
+print(numbers)                  # {10, 20}
+``` 
 
-  *If the element doesn't exist*
+*If the element doesn't exist*
 
-  ```python
-  numbers = {10, 20, 30}
+```python
+numbers = {10, 20, 30}
 
-  numbers.remove(100)
+numbers.remove(100)
 
-  print(numbers)                  # KeyError: 100
-  ```
+print(numbers)                  # KeyError: 100
+```
 
 #### **```discard()```**
 
-  ```python
-  numbers = {10, 20, 30}
+```python
+numbers = {10, 20, 30}
 
-  numbers.discard(20)
+numbers.discard(20)
 
-  print(numbers)                    # {10, 30}
-  ```
+print(numbers)                    # {10, 30}
+```
 
-  *But*
+*But*
 
-  ```python
-  numbers = {10, 20, 30}
+```python
+numbers = {10, 20, 30}
 
-  numbers.discard(100)
+numbers.discard(100)
 
-  print(numbers)                  # {10, 20, 30}
-  ```
+print(numbers)                  # {10, 20, 30}
+```
 
-  *does not raise an error. Nothing happens*
+*does not raise an error. Nothing happens*
 
 #### **```pop()```**
 
-  ```python
-  numbers = {10, 20, 30}
+```python
+numbers = {10, 20, 30}
 
-  x = numbers.pop()
+x = numbers.pop()
 
-  print(x)                            # 10
-  print(numbers)                      # {20, 30}
-  ```
+print(x)                            # 10
+print(numbers)                      # {20, 30}
+```
 
-  *The removed element can be any element*
+*The removed element can be any element*
 
-  *Don't assume ```pop()``` removes the first or last element. A set has no positional order that you should rely on.*
+*Don't assume ```pop()``` removes the first or last element. A set has no positional order that you should rely on.*
 
 #### **```clear()```**
 
-  ```python
-  numbers = {10, 20, 30}
+```python
+numbers = {10, 20, 30}
 
-  numbers.clear()
+numbers.clear()
 
-  print(numbers)                # set()
-  ```
+print(numbers)                # set()
+```
 
-  *The set still exists but it contains no elements*
+*The set still exists but it contains no elements*
 
 ---
 
