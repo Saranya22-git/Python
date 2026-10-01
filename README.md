@@ -184,6 +184,7 @@ Hey everybody!!!
     - [**Dictionary Comprehension**](#dictionary-comprehension)
   - [**Binary Types**](#binary-types)
     - [**```bytes```**](#bytes)
+    - [**```bytearray```**](#bytearray)
 
 
 ---
@@ -13112,6 +13113,131 @@ Python program
 ```
 
 ---
+
+### **```bytearray```**
+
+*```bytearray``` is a mutable sequence of bytes, where each value is an integer from ```0 to 255```*
+
+```python
+data = bytearray(b"ABC")
+
+print(data)                     # bytearray(b'ABC')
+```
+
+---
+
+**Why do we need ```bytearray```?**
+
+*Sometimes we work with binary data that needs to be modified after creation.*
+
+*For example*
+- *Modifying binary data*
+- *Network data processing*
+- *File/buffer manipulation*
+- *Working with raw binary information*
+
+*If the binary data doesn't need modification ```bytes``` is usually suitable. If you need to modify it ```bytearray``` is useful*
+
+```python
+data = bytes(b"ABC")
+```
+
+*You cannot modify it*
+
+```python
+data = bytearray(b"ABC")
+```
+
+*You can modify it*
+
+---
+
+**Syntax:**
+
+**From a bytes/string value**
+
+```python
+bytearray(b"Hello")
+```
+
+**From a list of integers**
+
+```python
+bytearray([65, 66, 67])
+```
+
+**From a string**
+
+*A string must first be encoded*
+
+```python
+bytearray("Hello", "utf-8")
+```
+
+---
+
+**How it works internally?**
+
+```python
+data = bytearray(b"ABC")
+```
+
+*The characters are represented using byte values*
+
+```txt
+A → 65
+B → 66
+C → 67
+```
+
+```txt
+bytearray
+   ↓
+[65, 66, 67]
+```
+
+*Unlike ```bytes``` the values cab be changed*
+
+```python
+data[0] = 90
+```
+
+*Now ```90 → Z```*
+
+```python
+print(data)                       # bytearray(b'ZBC')
+```
+
+**IMPORTANT**
+
+*Every element must be between ```0 and 255```*
+
+```python
+bytearray([256])
+```
+
+*It produces ValueError*
+
+---
+
+**Simple Example**
+
+```python
+data = bytearray(b"ABC")
+
+print(data)                       # bytearray(b'ABC')
+
+data[0] = 89
+
+print(data)                       # bytearray(b'YBC')
+```
+
+*We changed the first byte from ```65`` (```A```) to ```89``` (```Z```)*
+
+
+
+
+
 
 
 
