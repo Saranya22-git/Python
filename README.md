@@ -158,6 +158,12 @@ Hey everybody!!!
   - [**Sets**](#sets)
     - [**Set Creation**](#set-creation)
     - [**Set Methods**](#set-methods)
+      - [**\`\`\`add()\`\`:** *Adds one element*](#add-adds-one-element)
+      - [**```update()```:** *Adds multiple elements from an iterable*](#update-adds-multiple-elements-from-an-iterable)
+      - [**```remove()```**](#remove-1)
+      - [**```discard()```**](#discard)
+      - [**```pop()```**](#pop-1)
+      - [**```clear()```**](#clear-1)
     - [**Set Operations**](#set-operations)
   - [**Frozenset**](#frozenset)
   - [**Dictionary**](#dictionary)
@@ -170,9 +176,9 @@ Hey everybody!!!
       - [**```items()```**](#items)
       - [**```update()```**](#update)
       - [**```setdefault()```**](#setdefault)
-      - [**```pop()```**](#pop-1)
+      - [**```pop()```**](#pop-2)
       - [**```popitem()```**](#popitem)
-      - [**```clear()```**](#clear-1)
+      - [**```clear()```**](#clear-2)
       - [**```copy()```**](#copy)
     - [**Dictionary Iteration**](#dictionary-iteration)
     - [**Dictionary Comprehension**](#dictionary-comprehension)
@@ -10709,7 +10715,7 @@ s.add("Python")
 
 **Simple Example**
 
-- **```add()``:** *Adds one element*
+#### **```add()``:** *Adds one element*
 
   ```python
   numbers = {10, 20, 30, 40}
@@ -10731,7 +10737,7 @@ s.add("Python")
 
   *The set remains ```{10, 20, 30}``` because sets contain unique elements.*
 
-- **```update()```:** *Adds multiple elements from an iterable*
+#### **```update()```:** *Adds multiple elements from an iterable*
 
   ```python
   numbers = {10, 20}
@@ -10755,7 +10761,7 @@ s.add("Python")
   print(numbers)                  # {20, 70, 40, 10, 60, 30}
   ```
 
-- **```remove()```**
+#### **```remove()```**
 
   ```python
   numbers = {10, 20, 30}
@@ -10775,7 +10781,7 @@ s.add("Python")
   print(numbers)                  # KeyError: 100
   ```
 
-- **```discard()```**
+#### **```discard()```**
 
   ```python
   numbers = {10, 20, 30}
@@ -10797,7 +10803,7 @@ s.add("Python")
 
   *does not raise an error. Nothing happens*
 
-- **```pop()```**
+#### **```pop()```**
 
   ```python
   numbers = {10, 20, 30}
@@ -10812,7 +10818,7 @@ s.add("Python")
 
   *Don't assume ```pop()``` removes the first or last element. A set has no positional order that you should rely on.*
 
-- **```clear()```**
+#### **```clear()```**
 
   ```python
   numbers = {10, 20, 30}
