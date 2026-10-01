@@ -13456,6 +13456,255 @@ print(view.nbytes)              # 6
 
 ## **NoneType**
 
+*```NoneType``` is the data type of Python's ```None``` value*
+
+*```None``` represents No value/absence of a value*
+
+*There is only one object of ```NoneType``` and its value is ```None```*
+
+**Example:**
+
+```python
+result = None
+
+print(result)             # None <class 'NoneType'>
+```
+
+---
+
+**Why do we need it?**
+
+*Sometimes a variable needs to exist but we don't have a value for it yet*
+
+*For example*
+
+```python
+user_name = None
+```
+
+*This means "We don't have the user's name yet."*
+
+*Later*
+
+```python
+user_name = "Saranya"
+```
+
+*Now the variable has a value*
+
+*So ```None``` is useful for representing*
+
+- *No value yet*
+- *Missing value*
+- *No result*
+- *Optional value*
+- *An operation taht doesn't return a meaningful value*
+
+---
+
+**Syntax:**
+
+*Simply use*
+
+```python
+None
+```
+
+**Example:**
+
+```python
+x = None
+```
+
+*You don't write*
+
+```python
+NoneType()
+```
+
+*in normal Python programming*
+
+---
+
+**How it works internally?**
+
+```python
+x = None
+```
+
+*Python already has a special singleton object called ```None```*
+
+*The variable ```x``` refers to that object*
+
+```txt
+        x
+        ↓
+     ┌──────┐
+     │ None │
+     └──────┘
+```
+
+*Python has only one ```None``` object*
+
+*Therefore when checking for ```None``` the recommended approach is*
+
+```python
+if x is None:
+  print("No Value")
+```
+
+**Why ```is```?**
+
+*Because ```None``` is a unique singleton object*
+
+---
+
+**Simple Example**
+
+```python
+name = None
+
+print(name)                     # None
+print(type(name))               # <class 'NoneType'>
+```
+
+*Later we can assign a value*
+
+```python
+name = "Saranya"
+
+print(name)                     # Saranya
+```
+
+```txt
+Initially: name → None
+
+Later: name → "Saranya"
+```
+
+---
+
+**Checking whether a value**
+
+```python
+result = None
+
+if result is None:
+  print("No result available")
+else:
+  print(result)
+```
+
+*Output*
+
+```txt
+No result available
+```
+
+```python
+result = 100
+
+if result is None:
+  print("No result available")
+else:
+  print(result)                   
+```
+
+*Output*
+
+```txt
+100
+```
+
+---
+
+**```None is not the same as ```0```**
+
+```python
+x = None
+y = 0
+```
+
+*These mean different things*
+
+```txt
+None → absence of a value
+0    → actual numeric value zero
+```
+
+*Similarly*
+
+```python
+x = None
+y = ""
+z = False
+```
+
+*All three are different values*
+
+---
+
+*Imagine a function that searches for a user*
+
+```python
+def find_user(user_id):
+  #user not found
+  return None
+```
+
+*then*
+
+```python
+user = find_user(101)
+
+if user is None:
+  print("User not found")           # User not found
+```
+
+*Here ```None``` coummincates "The function didn't find a meaningful result"*
+
+---
+
+**Using ```==``` when checking for ```None```**
+
+```python
+if x == None:
+```
+
+*But the recommended Python style is*
+
+```python
+if x is None:
+```
+
+*and for the opposite*
+
+```python
+if x is not None:
+```
+
+---
+
+**Important Comparisons**
+
+| Value | Meaning | Type |
+|---|---|---|
+| `None` | No value | `NoneType` |
+| `0` | Zero | `int` |
+| `False` | False | `bool` |
+| `""` | Empty string | `str` |
+| `"None"` | Text "None" | `str` |
+
+---
+
+
+
+
+
+
+
+
+
 
 
 
