@@ -13232,7 +13232,75 @@ data[0] = 89
 print(data)                       # bytearray(b'YBC')
 ```
 
-*We changed the first byte from ```65`` (```A```) to ```89``` (```Z```)*
+*We changed the first byte from ```65``` (```A```) to ```89``` (```Z```)*
+
+---
+
+**Accessing elements**
+
+```python
+data = bytearray(b"ABC")
+
+print(data[0])                  # 65
+print(data[1])                  # 66
+print(data[2])                  # 67
+```
+
+*Just like ```bytes``` indexing gives an integer not a character*
+
+---
+
+**Modifying multiple bytes**
+
+```python
+data = bytearray(b"Hello")
+
+data[0] = ord("Y")
+data[1] = ord("e")
+
+print(data)                   # bytearray(b'Yello')
+```
+
+*We modified the existing binary data*
+
+---
+
+**Converting back to a string**
+
+```python
+data = bytearray(b"Hello")
+
+text = data.decode("utf-8")
+
+print(text)                 # Hello
+```
+
+```txt
+String
+  ↓ encode()
+Bytes
+  ↓
+Bytearray
+  ↓ decode()
+String
+```
+
+---
+
+**Difference between ```bytes``` vs ```bytearray```**
+
+| Feature | `bytes` | `bytearray` |
+|---|---|---|
+| Mutable | ❌ No | ✅ Yes |
+| Binary data | ✅ | ✅ |
+| Indexing returns | Integer | Integer |
+| Values | 0–255 | 0–255 |
+| Can modify elements? | ❌ | ✅ |
+
+---
+
+
+
 
 
 
