@@ -187,6 +187,7 @@ Hey everybody!!!
     - [**```bytearray```**](#bytearray)
     - [**```memoryview```**](#memoryview)
   - [**NoneType**](#nonetype)
+  - [**Type Casting**](#type-casting)
 
 
 ---
@@ -13697,7 +13698,52 @@ if x is not None:
 
 ---
 
+## **Type Casting**
 
+*Type casting means converting a value from one data type to another data type.*
+
+*For example*
+
+```python
+x = "100"
+```
+
+*Currently ```"100" → string``` We can convert it into an integer*
+
+```python
+x = int("100")
+```
+
+*Now ```100 → integer```*
+
+```txt
+String
+  ↓
+Type Casting
+  ↓
+Integer
+```
+
+```python
+x = "100"
+
+print(type(x))                # <class 'str'>
+
+x = int(x)
+
+print(type(x))                # <class 'int'>
+```
+
+---
+
+**Why do we need Type Casting?**
+
+*Because data doesn't always come in the type we need*
+
+*For example*
+
+```python
+age = input("Enter your age:")
 
 
 
