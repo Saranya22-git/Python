@@ -158,7 +158,7 @@ Hey everybody!!!
   - [**Sets**](#sets)
     - [**Set Creation**](#set-creation)
     - [**Set Methods**](#set-methods)
-      - [**\`\`\`add()\`\`**](#add)
+      - [**```add()```**](#add)
       - [**```update()```**](#update)
       - [**```remove()```**](#remove-1)
       - [**```discard()```**](#discard)
@@ -10715,7 +10715,7 @@ s.add("Python")
 
 **Simple Example**
 
-#### **```add()``** 
+#### **```add()```** 
 
 *Adds one element*
 
