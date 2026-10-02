@@ -188,6 +188,10 @@ Hey everybody!!!
     - [**```memoryview```**](#memoryview)
   - [**NoneType**](#nonetype)
   - [**Type Casting**](#type-casting)
+    - [**```int()``` Type casting**](#int-type-casting)
+      - [**String → Integer**](#string--integer)
+      - [**Float → Integer**](#float--integer)
+      - [**Boolean → Integer**](#boolean--integer)
 
 
 ---
@@ -13744,9 +13748,529 @@ print(type(x))                # <class 'int'>
 
 ```python
 age = input("Enter your age:")
+```
 
+*If the user enters ```21``` Python receives ```"21```" It's a ```string``` but if we want ```age + 1``` we need an integer So*
 
+```python
+age = int(age)
+```
 
+*Now*
+
+```txt
+"21" → 21
+```
+
+*and we can perform arithmetic*
+
+---
+
+**Python Type Casting Functions**
+
+```txt
+Type Casting
+│
+├── int()
+├── float()
+├── bool()
+├── str()
+├── list()
+├── tuple()
+├── set()
+└── dict()
+```
+
+*Each function converts values into a particular type*
+
+---
+
+**```int()```**
+
+*Converts a compatiable value to an integer*
+
+```python
+int("10")                   # 10
+```
+
+---
+
+**```float()```**
+
+*Converts a compatible value to a floating-point number*
+
+```python
+float("10.5")               # 10.5
+```
+
+---
+
+**```bool()```**
+
+*Converts a value to a Boolean*
+
+```python
+True
+```
+
+*or*
+
+```python
+False
+```
+
+**Example:**
+
+```python
+bool(1)                   # True
+```
+
+---
+
+**```str()```**
+
+*Converts a value into a string*
+
+```python
+str(100)                  # 100
+```
+
+---
+
+**```list()```**
+
+*Converts an iterable into a list*
+
+```python
+list("ABC")               # ['A', 'B', 'C']
+```
+
+---
+
+**```tuple()```**
+
+*Converts an iterable into a tuple*
+
+```python
+tuple([1, 2, 3])         # (1, 2, 3)
+```
+
+---
+
+**```set()```**
+
+*Converts an iterable into a set*
+
+```python
+set([1, 2, 3, 2])         # {1, 2, 3}
+```
+
+---
+
+**```dict()```**
+
+*Creates a dictionary from suitable key-value data*
+
+```python
+dict([("name", "saranya"), ("age", 10)])            # {'name': 'saranya', 'age': 10}
+```
+
+---
+
+**Two broad types of Type Conversion**
+
+1. **Implicit Type Conversion**
+
+  *Python automatically converts a value to another compatible type*
+
+  **Example:**
+
+  ```python
+  x = 10
+  y = 2.5
+
+  result = x + y
+
+  print(result)                       # 12.5
+  ```
+
+  *Here ```int → float``` happens automatically during the operation. Python does this because combining an integer with a float can safely produce a float.*
+
+2. **Explicit Type Casting**
+
+  *When we explicitly tell Python to convert a value it is explicit type casting*
+
+  **Example:**
+
+  ```python
+  x = "100"
+
+  y = int(x)
+  ```
+
+  *We explicitly used*
+
+  ```python
+  int()
+  ```
+
+  *Therefore*
+
+  ```txt
+  "100"
+    ↓
+  int()
+    ↓
+  100
+  ```
+
+  *Explicit type casting is when the programmer manually converts a value using functions such as ```int()```, ```float()```, ```str()``` or ```bool()```*
+
+---
+
+**Difference**
+
+**Implicit:** *Python does it*
+
+```python
+x = 10
+y = 2.5
+
+result = x + y
+
+print(result, type(result))             # 12.5 <class 'float'>
+```
+
+**Explicit:** *We do it*
+
+```python
+x = "10"
+
+z = int(x)
+
+print(x, type(x))                     # 10 <class 'str'>
+print(z, type(z))                     # 10 <class 'int'>
+```
+
+---
+
+**Type Casting does not always work**
+
+*Not every type can be converted into every other type*
+
+*For example*
+
+```python
+int("100")
+```
+
+*But*
+
+```python
+int("hello")
+```
+
+*Doesn't work It raises ValueError Similarly*
+
+```python
+int("10.5")
+```
+
+*Doesn't directly work because ```"10.5"``` is a string representation a floating-point number not an integer representation*
+
+---
+
+**Type Casting vs Type Conversion**
+
+*Type casting/Type conversion means changing a value from one data type to another. Explicit conversion is performed using functions such as ```int()```, ```float()```, ```str()``` and ```bool()```*
+
+---
+
+```txt
+                 TYPE CASTING
+                      │
+       ┌──────────────┴──────────────┐
+       │                             │
+   IMPLICIT                      EXPLICIT
+       │                             │
+ Python automatically          Programmer converts
+       │                             │
+       │                    ┌────────┼────────┐
+       │                    │        │        │
+       │                  int()   float()   bool()
+       │
+       │                    str()  list()  tuple()
+       │
+       │                         set()  dict()
+```
+
+---
+
+**Common Examples**
+
+**String → Integer**
+
+```python
+x = "25"
+x = int(x)
+```
+
+**String → Float**
+
+```python
+x = "25.5"
+x = float(x)
+```
+
+**Integer → String**
+
+```python
+x = 25
+x = str(x)
+```
+
+**Integer → Float**
+
+```python
+x = 25
+x = float(x)
+```
+
+**Integer → Boolean**
+
+```python
+x = 1
+x = bool(x)
+```
+
+---
+
+**One important rule**
+
+*Type casting doesn't change the original object in place*
+
+```python
+x = "100"
+
+int(x)
+
+print(type(x))                # <class 'str'>
+```
+
+*```x``` is still ```<class 'str'>``` because we didn't store the converted result*
+
+```python
+x = int(x)
+```
+
+*Now ```x``` refers to an integer*
+
+---
+
+### **```int()``` Type casting**
+
+*```int()``` is a built-in python function used to convert a compatible value into an integer.*
+
+**Examples:**
+
+```python
+x = int("25")
+
+print(x)                    # 25 <class 'int'>
+```
+
+---
+
+**Why do we need it?**
+
+*Very often, data comes into Python as a string, especially from ```input()```*
+
+```python
+age = input("Enter you age:")
+```
+
+*Even if the user enters ```22``` Python receives it as ```"22"``` That's a string*
+
+*If we want to perform arithmetic*
+
+```python
+age = input("Enter your age:")
+
+print(age + 1)
+```
+
+*This gives an error because Python cannot directly add an integer to a string*
+
+*We use*
+
+```python
+age = int(input("Enter your age:"))
+```
+
+*Now ```age``` is an integer*
+
+---
+
+**Syntax:**
+
+*Basic syntax*
+
+```python
+int(value)
+```
+
+**Examples:**
+
+```python
+int("100")                          # 100
+int(25.8)                           # 25
+int(True)                           # 1
+```
+
+**With a number system/base**
+
+```python
+int(value, base)
+```
+
+**Example:**
+
+```python
+print(int("100", 2))                  # 4
+print(int("1010", 2))                 # 10
+```
+
+*Here ```1010``` is interpreted as a binary number*
+
+---
+
+**How it works internally?**
+
+*When python sees*
+
+```python
+x = int("25")
+```
+
+*Python receives the string ```"25"``` ```int()``` interprets those characters as a decimal integer and creates the integer ```25```*
+
+```txt
+"25"   →   int()   →   25
+ str                    int
+```
+
+**IMPORTANT**
+
+*```int()``` does not simply remove quotation marks. It actually interprets the value and converts it into an integer.*
+
+---
+
+**What happens with a float?**
+
+```python
+int(12.5)                     # 12
+```
+
+*It truncates the decimal portion. It does not round ```25.9 → 25```*
+
+*Similarly*
+
+```python
+int(-25.9)                      # -25
+```
+
+*It moves toward zero*
+
+---
+
+**Simple Example**
+
+#### **String → Integer**
+
+```python
+age = "22"
+
+age = int(age)
+
+print(age)                        # 22
+print(type(age))                  # <class 'int'>
+```
+
+---
+
+#### **Float → Integer**
+
+```python
+price = 99.99
+
+price = int(price)
+
+print(price)                    # 99
+```
+
+---
+
+#### **Boolean → Integer**
+
+```python
+print(int(True))                # 1
+print(int(False))               # 0
+```
+
+```txt
+True  → 1
+False → 0
+```
+
+---
+
+**User Input + Arithmetic**
+
+```python
+num1 = int(input("Enter first number:"))
+num2 = int(input("Enter second number:"))
+
+result = num1 + num2
+
+print(result)                 # 60
+```
+
+*Suppose the user enters ```20``` ```40```*
+
+**Without ```int()```**
+
+```python
+num1 = input()
+num2 = input()
+```
+
+*both would be strings*
+
+```python
+"10" + "20"
+```
+
+*produces*
+
+```txt
+"10" + "20"
+```
+
+*not ```30```*
+
+*So ```int()``` is extremely important when handling numeric input*
+
+---
+
+**Base Conversion**
+
+```python
+binary = int("1010", 2)
+
+print(binary)           # 10
+```
+
+```python
 
 
 
