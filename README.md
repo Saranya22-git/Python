@@ -188,10 +188,11 @@ Hey everybody!!!
     - [**```memoryview```**](#memoryview)
   - [**NoneType**](#nonetype)
   - [**Type Casting**](#type-casting)
-    - [**```int()``` Type casting**](#int-type-casting)
+    - [**```int()``` Type Casting**](#int-type-casting)
       - [**String → Integer**](#string--integer)
       - [**Float → Integer**](#float--integer)
       - [**Boolean → Integer**](#boolean--integer)
+    - [**```float()``` Type Casting**](#float-type-casting)
 
 
 ---
@@ -14067,7 +14068,7 @@ x = int(x)
 
 ---
 
-### **```int()``` Type casting**
+### **```int()``` Type Casting**
 
 *```int()``` is a built-in python function used to convert a compatible value into an integer.*
 
@@ -14253,7 +14254,7 @@ num2 = input()
 *produces*
 
 ```txt
-"10" + "20"
+"1020"
 ```
 
 *not ```30```*
@@ -14271,8 +14272,16 @@ print(binary)           # 10
 ```
 
 ```python
+print(int("10", 2))   # 2
+print(int("10", 8))   # 8
+print(int("10", 16))  # 16
+```
 
+*The second argument tells Python which number system the string uses*
 
+---
+
+### **```float()``` Type Casting**
 
 
 
