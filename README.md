@@ -215,6 +215,10 @@ Hey everybody!!!
       - [**List → Set**](#list--set)
       - [**String → Set**](#string--set)
       - [**Tuple → Set**](#tuple--set)
+    - [**```dict()``` Type Casting**](#dict-type-casting)
+      - [**List of tuples → Dictionary**](#list-of-tuples--dictionary)
+      - [**Tuple of Tuples → Dictionary**](#tuple-of-tuples--dictionary)
+- [**Operators**](#operators)
 
 
 ---
@@ -15115,10 +15119,283 @@ print(result)                     # {10, 20, 30}
 
 ---
 
+### **```dict()``` Type Casting**
 
+*```dict()``` is a built-in Python fucntion used to create a dictionary from suitable key-value data or mappings.*
 
+**Example:**
 
+```python
+data = [("name", "Saranya"), ("age", 21)]
 
+result = dict(data)
+
+print(result)                   # {'name': 'Saranya', 'age': 21}
+```
+
+---
+
+**Syntax:**
+
+*There are two important forms*
+
+**From key-value pairs**
+
+```python
+dict(iterable)
+```
+
+**Example:**
+
+```python
+dict([("a", 1), ("b", 2)])
+```
+
+**Using keyword arguments**
+
+```python
+dict(name="Saranya", age=21)              # {'name': 'Saranya', 'age': 21}
+```
+
+---
+
+**How does ```dict()``` work?**
+
+*Suppose we have*
+
+```python
+data = [
+    ("name", "Saranya"),
+    ("age", 21)
+]
+```
+
+*Each element contains two values*
+
+```txt
+("name", "Saranya")
+     ↓       ↓
+    key    value
+
+("age", 21)
+    ↓      ↓
+   key   value
+```
+
+*```dict()``` interprets each pair as ```key → value``` So ```dict(data)``` becomes*
+
+```python
+{
+    "name": "Saranya",
+    "age": 21
+}
+```
+
+---
+
+**Simple Example**
+
+#### **List of tuples → Dictionary**
+
+```python
+data = [
+  ("name", "Saranya"), 
+  ("age", 10)
+]
+
+student = dict(data)
+
+print(student)                  # {'name': 'Saranya', 'age': 10}
+```
+
+#### **Tuple of Tuples → Dictionary**
+
+```python
+data = (
+  ("name", "Saranya"),
+  ("age", 10)
+)
+
+student = dict(data)
+
+print(student)                      # {'name': 'Saranya', 'age': 10}
+```
+
+---
+
+**Using ```dict()``` with keyword Arguments**
+
+```python
+student = dict(name = "Saranya", age = 10, course = "AI")
+
+print(student)                          # {'name': 'Saranya', 'age': 10, 'course': 'AI'}
+```
+
+---
+
+**Converting two lists into a dictionary**
+
+```python
+keys = ["name", "age", "city"]
+values = ["saranya", 10, "Eluru"]
+```
+
+*We can pair them using ```zip()```*
+
+```python
+student = dict(zip(keys, values))
+
+print(student)                            # {'name': 'saranya', 'age': 10, 'city': 'Eluru'}
+```
+
+---
+
+**Using duplicate keys**
+
+```python
+data = [
+    ("name", "Saranya"),
+    ("name", "Priya")
+]
+
+result = dict(data)
+
+print(result)                     # {'name': 'Priya'}
+```
+
+*The later value replaces the earlier value*
+
+```txt
+name → Saranya
+name → Priya
+          ↓
+final → Priya
+```
+
+---
+
+**Thinking values must be unique**
+
+*Dictionary keys must be unique. Values can repeat*
+
+```python
+data = [
+    ("student1", "Python"),
+    ("student2", "Python")
+]
+
+print(dict(data))               # {'student1': 'Python', 'student2': 'Python'}
+```
+
+---
+
+# **Operators**
+
+*An operator is a symbol or keyword used to perform an operation on one or more values or variables.*
+
+*The values on which an operator works are called **operands***
+
+**Example:**
+
+```python
+a = 10
+b = 5
+
+result = a + b
+```
+
+*Here*
+
+```txt
+10  → operand
++   → operator
+5   → operand
+```
+
+*So ```operand + operator + operand``` produces a result*
+
+---
+
+**Why do we need Operators?**
+
+*Operators allow programs to perform actions on data*
+
+*For example*
+
+**Calculate**
+
+```python
+10 + 5
+```
+
+**Compare**
+
+```python 
+10 > 5
+```
+
+**Check conditions**
+
+```python
+age >= 18
+```
+
+**Check membership**
+
+```python
+"A" in "APPLE"
+```
+
+**Modify a variable**
+
+```python
+x += 5
+```
+
+**Work with bits**
+
+```python
+5 & 3
+```
+
+---
+
+**Python Operator Categories**
+
+```txt
+                    OPERATORS
+                        │
+       ┌────────────────┼─────────────────┐
+       │                │                 │
+   Arithmetic       Assignment       Comparison
+       │                │                 │
+       └────────────────┼─────────────────┘
+                        │
+                 Logical Operators
+                        │
+             ┌──────────┴──────────┐
+             │                     │
+         Identity              Membership
+             │                     │
+             └──────────┬──────────┘
+                        │
+                  Bitwise Operators
+                        │
+                  Operator Precedence
+```
+
+| Category | Main purpose |
+|---|---|
+| **Arithmetic** | Mathematical calculations |
+| **Assignment** | Assign/update values |
+| **Comparison** | Compare values |
+| **Logical** | Combine conditions |
+| **Identity** | Check whether two references point to the same object |
+| **Membership** | Check whether a value exists in a collection |
+| **Bitwise** | Work with individual bits |
+| **Operator Precedence** | Determines which operation happens first |
+
+---
 
 
 
