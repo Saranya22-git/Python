@@ -207,6 +207,10 @@ Hey everybody!!!
       - [**Set → List**](#set--list)
       - [**Dictionary → List**](#dictionary--list)
     - [**```tuple()``` Type Casting**](#tuple-type-casting)
+      - [**List → Tuple**](#list--tuple)
+      - [**String → Tuple**](#string--tuple)
+      - [**Set → Tuple**](#set--tuple)
+      - [**Dictionary → Tuple**](#dictionary--tuple)
 
 
 ---
@@ -14943,7 +14947,86 @@ print(type(x[0]))               # <class 'str'>
 
 ### **```tuple()``` Type Casting**
 
+*```tuple()``` is a built-in Python function used to create a tuple from an iterable.*
 
+**Example:**
+
+```python
+numbers = [10, 20, 30, 40]
+
+result = tuple(numbers)
+
+print(result)                 # (10, 20, 30, 40)
+```
+
+---
+
+**Syntax:**
+
+```python
+tuple(iterable)
+```
+
+**Example:**
+
+```python
+print(tuple([1, 2, 3]))                     # (1, 2, 3)
+print(tuple("ABC"))                         # ('A', 'B', 'C')
+print(tuple({10, 20, 30}))                  # (10, 20, 30)
+print(range(5))                             # range(0, 5)
+```
+
+---
+
+**Simple Example**
+
+#### **List → Tuple**
+
+```python
+numbers = [10, 20, 30]
+
+result = tuple(numbers)
+
+print(result)                     # (10, 20, 30)
+print(type(result))               # <class 'tuple'>
+```
+
+#### **String → Tuple**
+
+```python
+word = "Python"
+
+result = tuple(word)
+
+print(result)                 # ('P', 'y', 't', 'h', 'o', 'n')
+```
+
+#### **Set → Tuple**
+
+```python
+numbers = {10, 20, 30}
+
+result = tuple(numbers)
+
+print(result)               # (10, 20, 30)
+```
+
+#### **Dictionary → Tuple**
+
+```python
+student = {
+  "name": "Saranya",
+  "age": 10
+}
+
+result = tuple(student)
+
+print(result)                   # ('name', 'age')
+
+print(tuple(student.items()))       # (('name', 'Saranya'), ('age', 10))
+```
+
+---
 
 
 
