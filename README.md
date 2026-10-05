@@ -197,6 +197,7 @@ Hey everybody!!!
       - [**Integer → Float**](#integer--float)
       - [**Boolean → Float**](#boolean--float)
     - [**```bool()``` Type Casting**](#bool-type-casting)
+    - [**```str()``` Type Casting**](#str-type-casting)
 
 
 ---
@@ -14436,6 +14437,192 @@ float("hello")                  # ValueError
 ---
 
 ### **```bool()``` Type Casting**
+
+*```bool()``` is a built-in Python function that converts a value into a Boolean value either ```True``` or ```False```*
+
+**Example:**
+
+```python
+x = bool(10)
+
+print(x)                      # True
+```
+
+*```bool()``` converts a value into ```True``` or ```False``` based on whether Python considers that value Truthy or Falsy.*
+
+---
+
+**Why do we need ```bool()```?**
+
+*Programs constantly need to make decisions*
+
+```txt
+Is the user logged in?
+Is the list empty?
+Does this value exist?
+Is the number greater than zero?
+```
+
+*Python uses Boolean values ```True``` ```False```*
+
+*```bool()``` allows us to convert other values into Boolean form*
+
+*For example*
+
+```python
+name = "Saranya"
+
+print(bool(name))                     # True
+```
+
+*Because the string is not empty*
+
+---
+
+**Syntax:**
+
+```python
+bool(value)
+```
+
+**Examples:**
+
+```python
+print(bool(10))                     # True
+print(bool(0))                      # False
+print(bool("Hello"))                # True
+print(bool(""))                     # False
+print(bool([1, 2, 3]))              # True
+print(bool([]))                     # False
+```
+
+---
+
+**How does ```bool()``` work internally?**
+
+*Python classifies values as either*
+
+**Truthy:** *Values that are treated as ```True```*
+
+**Falsy:** *Values that are treated as ```False```*
+
+*The most important common falsy values are*
+
+```txt
+False
+None
+0
+0.0
+0j
+""
+[]
+()
+{}
+set()
+```
+
+```txt
+             bool()
+               ↓
+       ┌───────┴───────┐
+       ↓               ↓
+    Truthy           Falsy
+       ↓               ↓
+     True             False
+```
+
+---
+
+**Simple Example**
+
+**Numbers**
+
+```python
+print(bool(1))                     # True
+print(bool(10))                    # True
+print(bool(-5))                    # True
+print(bool(0))                     # False
+``` 
+
+*Only zero is falsy among ordinary integers. Even a negative number is truthy*
+
+---
+
+**Strings**
+
+```python
+print(bool("Hello"))              # True
+print(bool("Python"))             # True
+print(bool(""))                   # False
+```
+
+```txt
+non-empty string → True
+empty string ""  → False
+```
+
+---
+
+**Lists**
+
+```python
+print(bool([1, 2, 3]))              # True
+print(bool([]))                     # False
+```
+
+*The same basic idea applies to other collections*
+
+```python
+print(bool((1, 2)))                   # True          
+print(bool(()))                       # False
+
+print(bool({"a": 1}))                 # True
+print(bool({}))                       # False
+
+print(bool({1, 2}))                   # True
+print(bool(set()))                    # False
+```
+
+```python
+print(bool(list()))                   # False
+print(bool(tuple()))                  # False
+print(bool(dict()))                   # False
+print(bool(set()))                    # False
+```
+
+*Empty collections are generally falsy; non-empty collections are truthy*
+
+---
+
+```python
+name = input("Enter your name:")
+
+if bool(name):
+    print("Name entered")
+else:
+    print("Name is empty")
+```
+
+*Output: Name entered*
+
+*If the user simply presses Enter ```Name is empty```*
+
+---
+
+```python
+print(bool(False))                    # False
+print(bool("False"))                  # True
+
+print(bool(None))                     # False
+```
+
+*But ```None ≠ False``` they are different values*
+
+---
+
+### **```str()``` Type Casting**
+
+
 
 
 
