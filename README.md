@@ -15891,6 +15891,31 @@ print("Average:", average)                  # Average: 85.0
 
 ---
 
+```python
+length = 10
+width = 5
+
+area_of_rectangle = length * width
+
+print(area_of_rectangle)
+```
+
+---
+
+```python
+n = 583
+total = 0
+
+while n > 0:
+    digit = n % 10
+    total = total + digit
+    n = n // 10
+
+print(total)                        # 16
+```
+
+---
+
 ## **Assignment Operators**
 
 
