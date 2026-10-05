@@ -202,6 +202,11 @@ Hey everybody!!!
       - [**Float → String**](#float--string)
       - [**Boolean → String**](#boolean--string)
     - [**```list()``` Type Casting**](#list-type-casting)
+      - [**String → List**](#string--list)
+      - [**Tuple → List**](#tuple--list)
+      - [**Set → List**](#set--list)
+      - [**Dictionary → List**](#dictionary--list)
+    - [**```tuple()``` Type Casting**](#tuple-type-casting)
 
 
 ---
@@ -14770,6 +14775,174 @@ None      → "None"
 ---
 
 ### **```list()``` Type Casting**
+
+*```list()``` is a built-in Python function used to create a list from an iterable.*
+
+*```list()``` converts an iterable, such as a string, tuple, or set, into a list*
+
+**Example:**
+
+```python
+x = "ABC"
+
+result = list(x)
+
+print(result)                     # ['A', 'B', 'C']
+```
+
+---
+
+**Why do we need ```list()```?**
+
+*Sometimes our data is in another collection type, but we need the flexibility of a list.*
+
+*For example*
+
+```python
+data = (10, 20, 30)
+```
+
+*This is a tuple. If we want a mutable collection*
+
+```python
+data = list(data)
+```
+
+```python
+print(data)                 # [10, 20, 30] <class 'list'>
+```
+
+```txt
+(10, 20, 30)
+     ↓
+   list()
+     ↓
+[10, 20, 30]
+```
+
+*We can then modify it ```data.append(40)```*
+
+---
+
+**Syntax:**
+
+```python
+list(iterable)
+```
+
+**Examples:**
+
+```python
+print(list("ABC"))                  # ['A', 'B', 'C']
+print(list((1, 2, 3)))              # [1, 2, 3]
+print(list({10, 20, 30}))           # [10, 20, 30]
+```
+
+*```list()``` expects an iterable when you're converting existing data*
+
+*Common iterables include*
+- *String*
+- *Tuple*
+- *Set*
+- *Dictionary*
+- *```range()```*
+
+---
+
+**Simple Example**
+
+#### **String → List**
+
+```python
+word = "Python"
+
+letters = list(word)
+
+print(letters)                  # ['P', 'y', 't', 'h', 'o', 'n']
+```
+
+#### **Tuple → List**
+
+```python
+numbers = (10, 20, 30)
+
+result = list(numbers)
+
+print(result)                   # [10, 20, 30]
+```
+
+```python
+result.append(40)
+
+print(result)                   # [10, 20, 30, 40]
+```
+
+#### **Set → List**
+
+```python
+numbers = {10, 20, 30}
+
+result = list(numbers)
+
+print(result)                   # [10, 20, 30]
+```
+
+*However, don't depend on a particular ordering when converting a set because sets are unordered collections.*
+
+#### **Dictionary → List**
+
+```python
+student = {
+  "name": 'Saranya',
+  "age": 10
+}
+
+result = list(student)
+
+print(result)                     # ['name', 'age']
+```
+
+*When you iterate over a dictionary you get its keys by default.* 
+
+*If you want values*
+
+```python
+list(student.values())            # ['Saranya', 10]
+```
+
+*If you want key-value pairs*
+
+```python
+list(student.items())             # [('name', 'Saranya'), ('age', 10)]
+```
+
+---
+
+**Passing a non-iterable**
+
+```python
+list(10)
+```
+
+*This raises ```TypeError``` because an integer is not iterable.*
+
+```python
+print(list("10"))             # ['1', '0']
+```
+
+---
+
+```python
+x = list("10")
+
+print(x)                        # ['1', '0']
+print(type(x[0]))               # <class 'str'>
+```
+
+---
+
+### **```tuple()``` Type Casting**
+
 
 
 
