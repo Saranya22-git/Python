@@ -219,6 +219,15 @@ Hey everybody!!!
       - [**List of tuples → Dictionary**](#list-of-tuples--dictionary)
       - [**Tuple of Tuples → Dictionary**](#tuple-of-tuples--dictionary)
 - [**Operators**](#operators)
+  - [**Arithmetic Operators**](#arithmetic-operators)
+    - [**```+``` Addition**](#-addition)
+    - [**```-``` Subtraction**](#--subtraction)
+    - [**```*``` Multiplication**](#-multiplication)
+    - [**```/``` Division**](#-division)
+    - [**```//``` Floor Division**](#-floor-division)
+    - [**```%``` Modulus**](#-modulus)
+    - [**```**``` Exponentiation**](#-exponentiation)
+  - [**Assignment Operators**](#assignment-operators)
 
 
 ---
@@ -15397,19 +15406,492 @@ x += 5
 
 ---
 
+**Arithmetic Operators:** *Used for mathematical calculations*
 
+*Main operators*
 
+```txt
++    Addition
+-    Subtraction
+*    Multiplication
+/    Division
+//   Floor Division
+%    Modulus
+**   Exponentiation
+```
 
+**Example:**
 
+```python
+a = 10
+b = 3
 
+print(a + b)                        # 13
+print(a - b)                        # 7
+print(a * b)                        # 30
+print(a / b)                        # 3.33
+print(a // b)                       # 3
+print(a % b)                        # 1
+print(a ** b)                       # 1000
+```
 
+---
 
+**Assignment Operators:** *Used to assign values to variables*
 
+```python
+x = 10
+```
 
+*Python also provides compound assignment operators*
 
+```txt
++=
+-=
+*=
+/=
+//=
+%=
+**=
+```
 
- 
+**Example:**
 
+```python
+x = 10
+
+x += 5
+
+print(x)                    # 15
+```
+
+*```x = x + 5```*
+
+---
+
+**Comparison Operators:** *Used to compare two values*
+
+*Main operators*
+
+```txt
+==   Equal to
+!=   Not equal to
+>    Greater than
+<    Less than
+>=   Greater than or equal to
+<=   Less than or equal to
+```
+
+**Example:**
+
+```python
+a = 10
+b = 5
+
+print(a > b)                    # True
+```
+
+*Comparison operators generally produce a Boolean result ```True``` or ```False```*
+
+---
+
+**Logical Operators:** *Used to combine or modify conditions*
+
+*Python has*
+
+```txt
+and
+or
+not
+```
+
+**Example:**
+
+```python
+age = 25
+has_id = True
+
+print(age >= 18 and has_id)               # True
+```
+
+*For example*
+
+```txt
+Condition 1 AND Condition 2
+       ↓          ↓
+      True       True
+             ↓
+           True
+```
+
+---
+
+**Identity Operators:** *Identity operators check whether two variables refer to the same object*
+
+*Python provides*
+
+```txt
+is
+is not
+```
+
+**Example:**
+
+```python
+a = None
+
+print(a is None)                        # True
+```
+
+*This is different from comparison*
+
+```txt
+==  → checks equality of values
+is  → checks object identity
+```
+
+---
+
+**Membership Operators:** *Membership operators check whether a value exists inside a collection*
+
+*Python provides*
+
+```txt
+in
+not in
+```
+
+**Example:**
+
+```python
+name = "Saranya"
+
+print("S" in name)                  # True
+```
+
+```python
+numbers = [10, 20, 30]
+
+print(20 in numbers)                # True
+```
+
+---
+
+**Bitwise Operators:** *Bitwise Operators work directly with the binary representation of integers*
+
+*Main operators*
+
+```txt
+&    AND
+|    OR
+^    XOR
+~    NOT
+<<   Left Shift
+>>   Right Shift
+```
+
+**Example:**
+
+```python
+a = 5
+b = 3
+
+print(a & b)
+```
+
+*Python works with their binary representations*
+
+```txt
+5 → 101
+3 → 011
+```
+
+*Then the bitwise operation is performed*
+
+---
+
+**Operator Precedence:** *Sometimes an expression contains multiple operators*
+
+**Example:**
+
+```python
+result = 10 + 2 * 3
+```
+
+**Which happens first?**
+
+*Multiplication: ```2 * 3 = 6``` then ```10 + 6 = 16```*
+
+*Python follows a specific operator precedence order to determine which operation happens first*
+
+*Parentheses can explicitly control the order ```(10 + 2) * 3``` Result ```36```*
+
+---
+
+**Operators based on Number of Operands**
+
+- **Unary Operator:** *Works with one operand*
+
+  **Example:**
+
+  ```python
+  -x
+  ```
+
+  *Here ```-``` works on only ```x```*
+
+- **Binary Operator:** *Works with two operands*
+
+  **Example:**
+
+  ```python
+  a + b
+  ```
+
+  *Here ```+``` works with ```a``` ```b```*
+
+- **Ternary Operator:** *Python has a conditional expression that uses three parts*
+
+  ```python
+  result = "Adult" if age >=18 else "Minor"
+  ```
+
+---
+
+```txt
+                    OPERATORS
+                        │
+ ┌──────────┬───────────┼───────────┬──────────┐
+ ↓          ↓           ↓           ↓          ↓
+Arithmetic Assignment Comparison Logical   Identity
+                                              
+Membership → checks existence
+Bitwise    → works with bits
+Precedence → determines execution order
+```
+
+---
+
+## **Arithmetic Operators**
+
+*Arithmetic operators are operators used to perform mathematical operations such as addition, subtraction, multiplication, division, modulus, floor division, and exponentiation.*
+
+*Python provides these arithmetic operators*
+
+| Operator | Name | Example | Result |
+|---|---|----|----|
+| `+` | Addition | `10 + 3` | `13` |
+| `-` | Subtraction | `10 - 3` | `7` |
+| `*` | Multiplication | `10 * 3` | `30` |
+| `/` | Division | `10 / 3` | `3.333...` |
+| `//` | Floor Division | `10 // 3` | `3` |
+| `%` | Modulus | `10 % 3` | `1` |
+| `**` | Exponentiation | `10 ** 3` | `1000` |
+
+---
+
+**Syntax**
+
+*There isn't one fixed syntax because each arithmetic operator works differently*
+
+```python
+operand operator operand
+```
+
+**Example:**
+
+```python
+a + b
+```
+
+*Here*
+- *```a``` → operand*
+- *```+``` → operator*
+- *```b``` → operand*
+
+```python
+10 + 5
+```
+
+---
+
+**How it works internally?**
+
+```python
+a = 10
+b = 3
+
+result = a + b
+```
+
+```txt
+a → 10
+b → 3
+
+10 + 3
+   ↓
+  13
+   ↓
+result → 13
+```
+
+*Python evaluates the expression and produces a result. For built-in numeric types such as ```int``` and ```float```, Python performs the corresponding numeric operation.*
+
+*Arithmetic operations generally produce a new result*
+
+```python
+a = 10
+b = 20
+
+c = a + b
+```
+
+*```a``` and ```b``` are not changed*
+
+```txt
+a → 10
+b → 20
+c → 30
+```
+
+---
+
+**Simple Examples**
+
+### **```+``` Addition**
+
+```python
+a = 10
+b = 5
+
+print(a + b)                        # 15
+```
+
+---
+
+### **```-``` Subtraction**
+
+```python
+print(a - b)                        # 5
+```
+
+---
+
+### **```*``` Multiplication**
+
+```python
+print(a * b)                        # 50
+```
+
+---
+
+### **```/``` Division**
+
+```python
+print(a / b)                       # 2.0
+```
+
+*Even though ```10``` and ```5``` are integers ```/``` produces a float*
+
+---
+
+### **```//``` Floor Division**
+
+```python
+print(a // b)                       # 2
+```
+
+---
+
+**Important Difference ```/``` vs ```//```**
+
+*```/``` → True Division*
+
+```python
+print(10 / 3)                         # 3.33333335
+```
+
+*```//``` → Floor Division*
+
+```python
+print(10 // 3)                        # 3
+```
+
+```txt
+/   → gives division result
+//  → gives floor-divided result
+```
+
+---
+
+**Negative numbers**
+
+*Python performs flooring, meaning it goes toward negative infinity*
+
+```python
+print(10 // 3)                      # 3
+print(-10 // 3)                     # -4
+```
+
+```txt
+10 / 3  =  3.333...
+floor   =  3
+
+-10 / 3 = -3.333...
+floor    = -4
+```
+
+---
+
+### **```%``` Modulus**
+
+*The modulus operator gives the remainder after division*
+
+```python
+print(a % b)                        # 0
+```
+
+---
+
+### **```**``` Exponentiation**
+
+*```**``` means power*
+
+```python
+print(2 ** 3)                         # 8
+```
+
+*```2 × 2 × 2 = 8```*
+
+```python
+print(5 ** 2)                         # 25
+print(10 ** 3)                        # 1000
+print(4 ** 0)                         # 1
+```
+
+---
+
+```python
+
+```
+
+---
+
+```python
+math = 85
+python = 90
+sql = 80
+
+total  = math + python + sql
+average = total / 3
+
+print("Total:", total)                      # Total: 255
+print("Average:", average)                  # Average: 85.0
+```
+
+---
+
+## **Assignment Operators**
 
 
 
