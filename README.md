@@ -211,6 +211,10 @@ Hey everybody!!!
       - [**String → Tuple**](#string--tuple)
       - [**Set → Tuple**](#set--tuple)
       - [**Dictionary → Tuple**](#dictionary--tuple)
+    - [**```set()``` Type Casting**](#set-type-casting)
+      - [**List → Set**](#list--set)
+      - [**String → Set**](#string--set)
+      - [**Tuple → Set**](#tuple--set)
 
 
 ---
@@ -15028,6 +15032,88 @@ print(tuple(student.items()))       # (('name', 'Saranya'), ('age', 10))
 
 ---
 
+**Common conversions**
+
+```txt
+[1, 2, 3]        → (1, 2, 3)
+
+"ABC"             → ('A', 'B', 'C')
+
+{1, 2, 3}         → tuple containing those elements
+                    (order not guaranteed)
+
+{"a": 1, "b": 2}  → ('a', 'b')
+```
+
+---
+
+### **```set()``` Type Casting**
+
+*```set()``` is a built-in Python function used to create a set from an iterable.*
+
+**Example:**
+
+```python
+numbers = [10, 20, 20, 30, 30]
+
+result = set(numbers)
+
+print(result)                       # {10, 20, 30}
+```
+
+*The duplicate values were removed*
+
+---
+
+**Syntax:**
+
+```python
+set(iterable)
+```
+
+**Examples:**
+
+```python
+print(set([1, 2, 3]))               # {1, 2, 3}
+print(set((1, 2, 3)))               # {1, 2, 3}
+print(set("hello"))                 # {'l', 'o', 'h', 'e'}
+```
+
+---
+
+**Simple Examples**
+
+#### **List → Set**
+
+```python
+numbers = [1, 2, 2, 3, 3, 4]
+
+result = set(numbers)
+
+print(result)                       # {1, 2, 3, 4}
+```
+
+#### **String → Set**
+
+```python
+word = "Hello"
+
+result = set(word)
+
+print(result)                 # {'l', 'o', 'H', 'e'}
+```
+
+#### **Tuple → Set**
+
+```python
+data = (10, 20, 20, 30)
+
+result = set(data)
+
+print(result)                     # {10, 20, 30}
+```
+
+---
 
 
 
