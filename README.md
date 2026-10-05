@@ -193,6 +193,10 @@ Hey everybody!!!
       - [**Float → Integer**](#float--integer)
       - [**Boolean → Integer**](#boolean--integer)
     - [**```float()``` Type Casting**](#float-type-casting)
+      - [**String → Float**](#string--float)
+      - [**Integer → Float**](#integer--float)
+      - [**Boolean → Float**](#boolean--float)
+    - [**```bool()``` Type Casting**](#bool-type-casting)
 
 
 ---
@@ -14281,14 +14285,157 @@ print(int("10", 16))  # 16
 
 ---
 
+**Common Conversions**
+
+```txt
+"25"      → 25
+25.9      → 25
+True      → 1
+False     → 0
+```
+
+**Invalid Conversions**
+
+```python
+int("hello")                            # ValueError
+```
+
+---
+
 ### **```float()``` Type Casting**
 
+*```float()``` is a built-in Python function used to convert a compatible value into a floating-point numver.*
 
+**Example:**
 
+```python
+x = "25.5"
 
+x = float(x)
 
+print(x)                            # 25.5
+print(type(x))                      # <class 'float'>
+```
 
+---
 
+**Syntax:**
+
+*Basic syntax*
+
+```python
+float(value)
+```
+
+**Examples:**
+
+```python
+print(float("10.5"))                      # 10.5
+print(float(10))                          # 10.0
+print(float(True))                        # 1.0
+```
+
+---
+
+**Simple Example**
+
+#### **String → Float**
+
+```python
+temperature = "36.5"
+
+temperature = float(temperature)
+
+print(temperature)                      # 36.5
+print(type(temperature))                # <class 'float'>
+```
+
+---
+
+#### **Integer → Float**
+
+```python
+x = 10
+
+y = float(x)
+
+print(y)                            # 10.0
+```
+
+---
+
+#### **Boolean → Float**
+
+```python
+print(float(True))                  # 1.0
+print(float(False))                 # 0.0
+```
+
+---
+
+**Taking decimal input**
+
+```python
+height = float(input("Enter your height:"))
+
+print(height, type(height))             # 5.8 <class 'float'>
+```
+
+---
+
+**Performing Calculations**
+
+```python
+price = float(input("Enter the price:"))        # 99.50
+quantity = float(input("Enter the quantity:"))    # 3
+
+total = price * quantity
+
+print(total)                          # 298.5
+```
+
+---
+
+```python
+first_decimal_number = float(input("Enter first decimal number:"))                    # 10.5
+second_decimal_number = float(input("Enter second decimal number:"))                    # 20.5
+
+average = (first_decimal_number + second_decimal_number)/2
+
+print(average, type(average))             # 15.5 <class ' float'>
+```
+
+---
+
+```python
+price = float(input("Enter the price:"))            # 250.50
+quantity = float(input("Enter the quantity:"))        # 4
+
+total_price = price * quantity
+
+print(total_price)                          # 1002.0
+```
+
+---
+
+**Common Conversions**
+
+```txt
+"25.5" → 25.5
+25      → 25.0
+True    → 1.0
+False   → 0.0
+```
+
+**Invalid Conversion**
+
+```python
+float("hello")                  # ValueError
+```
+
+---
+
+### **```bool()``` Type Casting**
 
 
 
