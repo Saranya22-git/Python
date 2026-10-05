@@ -198,6 +198,10 @@ Hey everybody!!!
       - [**Boolean → Float**](#boolean--float)
     - [**```bool()``` Type Casting**](#bool-type-casting)
     - [**```str()``` Type Casting**](#str-type-casting)
+      - [**Integer → String**](#integer--string)
+      - [**Float → String**](#float--string)
+      - [**Boolean → String**](#boolean--string)
+    - [**```list()``` Type Casting**](#list-type-casting)
 
 
 ---
@@ -14621,6 +14625,159 @@ print(bool(None))                     # False
 ---
 
 ### **```str()``` Type Casting**
+
+*```str()``` is a built-in Python function used to convert a value into a string.*
+
+**Example:**
+
+```python
+age = 10
+
+age = str(age)
+
+print(age)                          # 10
+print(type(age))                    # <class 'str'>
+```
+
+---
+
+**Why do we need ```str()```?**
+
+*For example*
+
+```python
+age = 21
+
+print("My age is" + age)                # TypeError: can only concatenate str (not "int") to str
+```
+
+```txt
+"My age is " → str
+21           → int
+```
+
+*Python doesn't allow direct concatenation between a string and an integer*
+
+*We can convert the integer*
+
+```python
+age = 21
+
+print("My age is " + str(age))            # My age is 21
+```
+
+---
+
+**Syntax:**
+
+```python
+str(value)
+```
+
+**Examples:**
+
+```python                   
+str(100)                    # '100'
+```
+
+```python
+str(10.5)                   # '10.5'
+```
+
+```python
+print(str(False), type(str(False)))             # False <class 'str'>
+str(True)                     # 'True'
+```
+
+*All of them produce strings*
+
+---
+
+**Simple Example**
+
+#### **Integer → String**
+
+```python
+x = 25
+
+y = str(x)
+
+print(y)                      # 25
+print(type(x))                # <class 'int'>
+y                             # '25'
+```
+
+*Notice that ```25``` and ```"25"``` are different types*
+
+---
+
+#### **Float → String**
+
+```python
+price = 99.50
+
+print(str(price), type(str(price)))                     # 99.5 <class 'str'>
+```
+
+---
+
+#### **Boolean → String**
+
+```python
+print(str(True))                # True
+str(False)                      # 'False'
+```
+
+*```str(True)``` produces ```"True"``` which is a string not a Boolean*
+
+---
+
+**Combining numbers with text**
+
+```python
+name = "Saranya"
+age = 21
+
+print("Name: " + name + ", Age: " + str(age))             # Name: Saranya, Age: 21
+```
+
+---
+
+**Multiple Conversions**
+
+```python
+year = 2026
+month = 10
+day = 5
+
+date = str(year) + "-" + str(10) + "-" + str(day)
+
+print(date)                   # 2026-10-5
+```
+
+---
+
+**Common conversions**
+
+```txt
+100       → "100"
+10.5      → "10.5"
+True      → "True"
+False     → "False"
+None      → "None"
+```
+
+---
+
+### **```list()``` Type Casting**
+
+
+
+
+
+
+
+
 
 
 
