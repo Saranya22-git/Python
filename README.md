@@ -236,6 +236,7 @@ Hey everybody!!!
     - [**```//=``` - Floor-divide and assign**](#---floor-divide-and-assign)
     - [**```%=``` - Reminder and assign**](#---reminder-and-assign)
     - [**```**=``` - Raise to a power and assign**](#---raise-to-a-power-and-assign)
+  - [**Comparison Operators**](#comparison-operators)
 
 
 ---
@@ -16088,6 +16089,47 @@ print(x)                                # 16
 
 ---
 
+```python
+marks = 70
+
+marks += 10
+marks -= 5
+marks *= 2
+
+print(marks)                            # 150
+```
+
+*Each operation uses the variable's current value not its original value.*
+
+---
+
+**Assuming ```+=``` always means numeric addition**
+
+```python
+name = "Sar"
+name += "anya"
+
+print(name)                             # Saranya
+```
+
+*For strings ```+=``` concatenates the strings*
+
+---
+
+**Incorrectly writing the operator**
+
+```python
+x = 10
+x =+ 5
+
+print(x)                                      # 5
+```
+
+*This is valid Python, but it assigns positive ```5``` to ```x``` It is not the same as ```x += 5```*
+
+---
+
+## **Comparison Operators**
 
 
 
