@@ -244,6 +244,8 @@ Hey everybody!!!
     - [**```>=``` - Greater than or equal to**](#---greater-than-or-equal-to)
     - [**```<=``` - Less than or equal to**](#---less-than-or-equal-to)
   - [**Logical Operators**](#logical-operators)
+    - [**```and```**](#and)
+    - [**```or```**](#or)
 
 
 ---
@@ -16310,6 +16312,70 @@ print(10 == 10.0)                 # True
 
 ## **Logical Operators**
 
+*Logical Operators are used to combine conditions or reverse a Boolean result. Python provides three logical operators ```and```, ```or```, and ```not```*
+
+| Operator | Meaning                                  |
+| -------- | ---------------------------------------- |
+| **and**  | True when both conditions are true       |
+| **or**   | True when at least one condition is true |
+| **not**  | Reverses the truth value                 |
+
+---
+
+**Why do we need Logical Operators?**
+
+*In real programs, we often need to check multiple conditions together. For example, a company may require a candidate to be at least 18 years old and have a degree.*
+
+```python
+age = 22
+has_degree = True
+
+print(age >= 18 and has_degree)               # True
+```
+
+---
+
+**Syntax:**
+
+```python
+condition1 and condition2
+condition1 or condition2
+not condition
+```
+
+**Example:**
+
+```python
+print(10 > 5 and 20 > 10)                     # True
+```
+
+*Both conditions are true, so ```and``` produces ```True```*
+
+---
+
+**How Logical Operators work Internally?**
+
+### **```and```**
+
+*For Boolean operands, ```and``` returns ```True``` only when both operands are true.*
+
+| Condition 1 | Condition 2 | Result (`and`) |
+| ----------- | ----------- | -------------- |
+| True        | True        | True           |
+| True        | False       | False          |
+| False       | True        | False          |
+| False       | False       | False          |
+
+```python
+print(True and True)                  # True
+print(True and False)                 # False
+print(False and True)                 # False
+print(False and False)                # False
+```
+
+---
+
+### **```or```**
 
 
 
