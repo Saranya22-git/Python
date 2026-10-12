@@ -228,6 +228,7 @@ Hey everybody!!!
     - [**```%``` Modulus**](#-modulus)
     - [**```**``` Exponentiation**](#-exponentiation)
   - [**Assignment Operators**](#assignment-operators)
+    - [**```=``` - Assignment**](#---assignment)
 
 
 ---
@@ -15917,6 +15918,84 @@ print(total)                        # 16
 ---
 
 ## **Assignment Operators**
+
+*Assignment operators are operators used to assign a value to a variable or update a variable using an operation and assign the result back to it.*
+
+*For example*
+
+```python
+age = 10
+```
+
+*Here ```=``` assigns the value ```10``` to the variable ```age```*
+
+---
+
+**Why do we need Assignment Operators?**
+
+*They help us store values and update them during program execution.*
+
+*For example, suppose we have ₹1000 and receive another ₹500*
+
+```python
+balance = 1000
+
+balance = balance + 500
+
+print(balance)                  # 1500
+```
+
+*Python also provides a shorter way to write this update*
+
+```python
+balance = 1000
+
+balance += 500
+
+print(balance)                 # 1500
+```
+
+*Both produce the same result for this example*
+
+---
+
+**Types of Assignment Operators**
+
+| Operator | Example   | Equivalent Form |
+| -------- | --------- | --------------- |
+| =        | x = 10    | Assign 10 to x  |
+| +=       | x += 5    | x = x + 5       |
+| -=       | x -= 5    | x = x - 5       |
+| *=       | x  *= 5   | x = x  * 5      |
+| /=       | x /= 5    | x = x / 5       |
+| //=      | x //= 5   | x = x // 5      |
+| %=       | x %= 5    | x = x % 5       |
+| **=      | x **= 5   | x = x ** 5      |
+
+*Python also supports bitwise assignment operators such as ```&=```, ```|=```, ```^=```, ```>>=```, ```<<=```*
+
+---
+
+**How do Assignment Operators work internally?**
+
+```python
+x = 10
+x += 5
+```
+
+- **Step-1:** *```x = 10``` The variable x refers to the value 10*
+- **Step-2:** *```x += 5``` Python calculates the updated value ```10 + 5 = 15```*
+- **Step-3:** *Result ```x``` now refers to ```15```*
+
+*For integers, this creates the resulting value and reassigns the variable. With mutable objects such as lists, augmented assignment can modify the existing object instead.*
+
+---
+
+**Simple Example**
+
+### **```=``` - Assignment**
+
+
 
 
 
