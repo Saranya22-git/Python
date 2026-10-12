@@ -16414,8 +16414,23 @@ print(not False)                      # True
 
 **Simple Examples**
 
+**Using ```and```**
 
+```python
+age = 25
 
+print(age >= 18 and age <= 30>)                     # True
+```
+
+---
+
+**Using ```or```**
+
+```python
+day = "Sunday"
+
+print(day == "Saturday" or day == "Sunday")
+```
 
 
 
