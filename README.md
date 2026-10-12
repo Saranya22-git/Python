@@ -16493,9 +16493,54 @@ print(True or (10 / 0))                 # True
 
 ### **Identity Operators**
 
+*Identity operators check whether two variables refer to the same object in memory.*
 
+*Python provides two identity operators*
+- *```is```*
+- *```is not```*
 
+**Example:**
 
+```python
+a = [10, 20]
+b = a
+
+print(a is b)                   # True
+```
+
+*Both variables refer to the same list object*
+
+---
+
+**Syntax:**
+
+```python
+object1 is object2
+object1 is not object2
+```
+
+| Operator | Meaning                                  |
+| -------- | ---------------------------------------- |
+| `is`     | Both operands refer to the same object   |
+| `is not` | Both operands refer to different objects |
+
+*Identity is different from value equality*
+
+---
+
+**How do Identity Operators work internally?**
+
+```python
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+
+print(a == b)                         # True
+print(a is b)                         # True
+
+print(a == c)                         # True
+print(a is c)                         # False
+```
 
 
 
