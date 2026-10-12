@@ -229,6 +229,13 @@ Hey everybody!!!
     - [**```**``` Exponentiation**](#-exponentiation)
   - [**Assignment Operators**](#assignment-operators)
     - [**```=``` - Assignment**](#---assignment)
+    - [**```+=``` - Add and assign**](#---add-and-assign)
+    - [**```-=``` - Subtract and assign**](#----subtract-and-assign)
+    - [**```*=``` - Multiply and assign**](#---multiply-and-assign)
+    - [**```/=``` - Divide and assign**](#---divide-and-assign)
+    - [**```//=``` - Floor-divide and assign**](#---floor-divide-and-assign)
+    - [**```%=``` - Reminder and assign**](#---reminder-and-assign)
+    - [**```**=``` - Raise to a power and assign**](#---raise-to-a-power-and-assign)
 
 
 ---
@@ -15995,7 +16002,91 @@ x += 5
 
 ### **```=``` - Assignment**
 
+```python
+x = 10
+print(x)                              # 10
+```
 
+---
+
+### **```+=``` - Add and assign**
+
+```python
+x = 10
+x += 3
+
+print(x)                              # 13
+```
+
+---
+
+### **```-=``` - Subtract and assign**
+
+```python
+x = 10
+x -= 3
+
+print(x)                               # 7
+```
+
+---
+
+### **```*=``` - Multiply and assign**
+
+```python
+x = 10
+x *= 3
+
+print(x)                                # 30
+```
+
+---
+
+### **```/=``` - Divide and assign**
+
+```python
+x = 10
+x /= 10
+
+print(x)                                # 1.0
+```
+
+*```/=``` produces a floating-point result for ordinary numeric values*
+
+---
+
+### **```//=``` - Floor-divide and assign**
+
+```python
+x = 100
+x //= 100
+
+print(x)                                 # 1
+```
+
+---
+
+### **```%=``` - Reminder and assign**
+
+```python
+x = 9
+x %= 3
+
+print(x)                                # 0
+```
+
+---
+
+### **```**=``` - Raise to a power and assign**
+
+```python
+x = 2
+x **= 4
+
+print(x)                                # 16
+```
+
+---
 
 
 
