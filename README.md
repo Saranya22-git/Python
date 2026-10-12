@@ -237,6 +237,13 @@ Hey everybody!!!
     - [**```%=``` - Reminder and assign**](#---reminder-and-assign)
     - [**```**=``` - Raise to a power and assign**](#---raise-to-a-power-and-assign)
   - [**Comparison Operators**](#comparison-operators)
+    - [**```==``` - Equal to**](#---equal-to)
+    - [**```!=``` - Not Equal to**](#---not-equal-to)
+    - [**```>``` - Greater than**](#---greater-than)
+    - [**```<``` - Less than**](#---less-than)
+    - [**```>=``` - Greater than or equal to**](#---greater-than-or-equal-to)
+    - [**```<=``` - Less than or equal to**](#---less-than-or-equal-to)
+  - [**Logical Operators**](#logical-operators)
 
 
 ---
@@ -16131,7 +16138,177 @@ print(x)                                      # 5
 
 ## **Comparison Operators**
 
+*Comparison operators compare two values and return a Boolean result ```True``` or ```False```*
 
+*For example*
+
+```python
+a = 10
+b = 20
+
+print(a < b)                    # True
+```
+
+---
+
+**Why do we need Comparison Operators?**
+
+*Comparison operators help programs make decisions based on conditions.*
+
+**Examples include:**
+- *Checking whether a student passed an exam*
+- *Checking whether a person is eligible for a job*
+- *Comparing product prices*
+- *Checking whether a password meets a condition*
+- *Determining whether an account balance is sufficient*
+
+**Example:**
+
+```python
+marks = 75
+
+print(marks >= 35)                      # True
+```
+
+---
+
+**Syntax:**
+
+```python
+value1 comparison_operator value2
+```
+
+**Example:**
+
+```python 
+10>5                    #True
+```
+
+---
+
+**Types of Comparison Operators**
+
+| Operator | Meaning                  | Example  | Result |
+| -------- | ------------------------ | -------- | ------ |
+| ==       | Equal to                 | 10 == 10 | True   |
+| !=       | Not equal to             | 10 != 5  | True   |
+| >        | Greater than             | 10 > 5   | True   |
+| <        | Less than                | 5 < 10   | True   |
+| >=       | Greater than or equal to | 10 >= 10 | True   |
+| <=       | Less than or equal to    | 5 <= 10  | True   |
+
+---
+
+### **```==``` - Equal to**
+
+*Checks whether two values are equal*
+
+```python
+a = 10
+b = 10
+
+print(a == b)                     # True
+```
+
+```python
+a = 10
+b = 20
+
+print(a == b)                           # False
+```
+
+---
+
+### **```!=``` - Not Equal to**
+
+*Checks whether two values are different*
+
+```python
+print(10 != 20)                         # True
+print(10 != 10)                         # False
+```
+
+---
+
+### **```>``` - Greater than**
+
+*Checks whether the left value is greater than the right value*
+
+```python
+print(20 > 30)                        # False
+print(30 > 20)                        # True
+print(20 > 20)                        # False
+```
+
+*If both values are equal the result is ```False```*
+
+---
+
+### **```<``` - Less than**
+
+*Checks whether the left value is smaller than the right value*
+
+```python
+print(10<5)                         # False
+print(5<10)                         # True
+print(10<10)                        # False 
+```
+
+---
+
+### **```>=``` - Greater than or equal to**
+
+*Checks whether the left value is greater than or equal to the right value*
+
+```python
+print(10 >= 10)                    # True
+print(15 >= 10)                    # True
+print(5 >= 10)                     # False
+```
+
+---
+
+### **```<=``` - Less than or equal to**
+
+*Checks whether the left valye is less than or equal to the right value*
+
+```python
+print(5 <= 10)                     # True
+print(10 <= 10)                    # True
+print(100 <= 10)                   # False
+```
+
+---
+
+```python
+age = 19
+
+result = age >= 18
+
+print(result)                     # True
+```
+
+---
+
+**Comparing incompatible types**
+
+```python
+print("25" > 10)          # TypeError: '>' not supported between instances of 'str' and 'int'
+```
+
+*This raises a ```TypeError``` in Python 3 because a string and an integer cannot be ordered against each other this way.*
+
+---
+
+```python
+print(10 == 10.0)                 # True
+```
+
+*Python considers these numerically equal, even though ```10``` is an integer and ```10.0``` is a float*
+
+---
+
+## **Logical Operators**
 
 
 
