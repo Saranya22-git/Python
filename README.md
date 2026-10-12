@@ -247,6 +247,7 @@ Hey everybody!!!
     - [**```and```**](#and)
     - [**```or```**](#or)
     - [**```not```**](#not)
+    - [**Identity Operators**](#identity-operators)
 
 
 ---
@@ -16431,6 +16432,67 @@ day = "Sunday"
 
 print(day == "Saturday" or day == "Sunday")
 ```
+
+---
+
+**Using ```not```**
+
+```python
+is_raining = False
+
+print(not is_raining)                   # True
+```
+
+---
+
+```python
+a = 10
+b = 20
+c = 30
+
+print(a < b and b < c)                # True
+print(a > b or b < c)                 # True
+print(not (a == b))                   # True
+```
+
+---
+
+**Assuming logical operators always return Booleans**
+
+*For Boolean expressions, the examples above produce ```True``` or ```False``` but python's ```and``` and ```or``` can return one of their operands not necessarily a Boolean.*
+
+```python
+print(10 and 20)                # 20
+print(0 or 50)                  # 50
+print(not 10)                   # False
+print(not 0)                    # True
+print(0 or "" or None or 25)    # 25
+print("" or "Python")           # Python
+print(None or False or 0)       # 0
+```
+
+*Python evaluates truthiness and returns an operand according to the rules of ```and``` and ```or```*
+
+---
+
+**Ignoring short-circuit evaluation**
+
+*Python may skip evaluating the second operand when the first operand determines the result.*
+
+```python
+print(False and (10 / 0))               # False
+```
+
+*Similaryly*
+
+```python
+print(True or (10 / 0))                 # True
+```
+
+---
+
+### **Identity Operators**
+
 
 
 
