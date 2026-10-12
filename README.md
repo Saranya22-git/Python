@@ -246,6 +246,7 @@ Hey everybody!!!
   - [**Logical Operators**](#logical-operators)
     - [**```and```**](#and)
     - [**```or```**](#or)
+    - [**```not```**](#not)
 
 
 ---
@@ -16376,6 +16377,43 @@ print(False and False)                # False
 ---
 
 ### **```or```**
+
+*For Boolean operands ```or``` returns ```True``` when at least one operand is true.*
+
+| Condition 1 | Condition 2 | Result (`or`) |
+| ----------- | ----------- | ------------- |
+| True        | True        | True          |
+| True        | False       | True          |
+| False       | True        | True          |
+| False       | False       | False         |
+
+```python
+print(True or True)                   # True
+print(True or False)                  # True
+print(False or True)                  # True
+print(False or False)                 # False
+```
+
+---
+
+### **```not```**
+
+*```not``` reverses a Boolean value*
+
+| Input       | Result |
+| ----------- | ------ |
+| `not True`  | False  |
+| `not False` | True   |
+
+```python
+print(not True)                       # False
+print(not False)                      # True
+```
+
+---
+
+**Simple Examples**
+
 
 
 
