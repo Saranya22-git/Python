@@ -248,6 +248,8 @@ Hey everybody!!!
     - [**```or```**](#or)
     - [**```not```**](#not)
     - [**Identity Operators**](#identity-operators)
+    - [**Membership Operators**](#membership-operators)
+    - [**Bitwise Operators**](#bitwise-operators)
 
 
 ---
@@ -16541,6 +16543,210 @@ print(a is b)                         # True
 print(a == c)                         # True
 print(a is c)                         # False
 ```
+
+---
+
+**Simple Examples**
+
+**Using ```is```**
+
+```python
+a = [10, 20]
+b = a
+
+print(a is b)
+```
+
+**Using ```is not```**
+
+```python
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+print(a is not b)                   # True
+```
+
+*The two lists contain the same values, but they are separate objects*
+
+**Checking ```None```**
+
+```python
+value = None
+
+print(value is None)                # True
+print(value is not None)            # False
+```
+
+---
+
+```python
+a = [1, 2]
+b = a
+
+b.append(3)
+
+print(a)                  # [1, 2, 3]
+print(b)                  # [1, 2, 3]
+print(a == b)             # True
+print(a is b)             # True
+```
+
+*```b = a``` does not create a new list. It makes ```b``` refer to the same list as ```a```. So modifying that list through ```b``` is visible through ```a``` too*
+
+```python
+a = [1, 2]
+b = [1, 2]
+
+b.append(3)
+
+print(a)                  # [1, 2]        
+print(b)                  # [1, 2, 3]
+print(a is b)             # False
+print(a == b)             # False
+```
+
+---
+
+### **Membership Operators**
+
+*Membership operators check whether a value exists in a sequence or collection.*
+
+*Python provides two membership operators*
+- *```in```*
+- *```not in```*
+
+**Example:**
+
+```python
+numbers = [10, 20, 30]
+
+print(20 in numbers)                # True
+```
+
+*Because ```20``` exists in the list*
+
+---
+
+**Syntax:**
+
+```python
+value in collection
+value not in collection
+```
+
+| Operator | Meaning                                  |
+| -------- | ---------------------------------------- |
+| `in`     | Returns `True` if the value is found     |
+| `not in` | Returns `True` if the value is not found |
+
+---
+
+**How do Membership Operators work internally?**
+
+```python
+fruits = ["apple", "banana", "mango"]
+
+print("banana" in fruits)               # True
+```
+
+```txt
+apple   → Not a match
+banana  → Match found
+           ↓
+         True
+```
+
+*For a list, membership checking generally examines elements until a match is found or the list ends.*
+
+*For a dictionary, membership checks keys not values*
+
+```python
+student = {
+  "name": "Saranya",
+  "age": 10
+}
+
+print("name" in student)                      # True
+print("Saranya" in student)                   # False
+```
+
+*The first checks for the key ```"name"```. The second checks whether ```"Saranya"``` is a key which it isn't*
+
+---
+
+**Simple Example**
+
+**Using ```in``` with a list**
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+print(30 in numbers)                    # True
+print(60 in numbers)                    # False
+```
+
+**Using ```not in``` with a list**
+
+```python
+fruits = ["apple", "banana"]
+
+print("Mango" not in fruits)                # True
+print("apple" not in fruits)                # False
+```
+
+**Using ```in``` with a string**
+
+*Membership checking is case-sensitive*
+
+```python
+word = "Python"
+
+print("P" in word)                    # True
+print("p" in word)                    # False
+print("on" in word)                   # True
+```
+
+**Using ```in``` with a tuple**
+
+```python
+values = (10, 20, 30)
+
+print(20 in values)                   # True
+```
+
+---
+
+```python
+skills = ["Python", "SQL", "Excel", "Power BI"]
+
+required_skill = "SQL"
+
+if required_skill in skills:
+  print("Skill found")                # Skill found
+else:
+  print("Skill not found")
+```
+
+---
+
+```python
+student = {
+    "name": "Saranya",
+    "age": 10,
+    "course": "AI and Data Science"
+}
+
+print("name" in student)
+print("marks" in student)
+print("Saranya" in student.values())
+```
+
+---
+
+### **Bitwise Operators**
+
+
+
 
 
 
