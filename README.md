@@ -17001,6 +17001,232 @@ print("0101" & "0011")      # TypeError: unsupported operand type(s) for &: 'str
 
 ### **Operator Precedence**
 
+*Operator precedence is the set of rules that determines the order in which operators are evaluated in an expression.*
+
+*For example*
+
+```python
+result = 10 + 2 * 3
+print(result)           # 16
+```
+
+*Why not ```36```?*
+
+*Python performs multiplication before addition*
+- *```2 * 3 = 6```*
+- *```10 + 6 = 16```*
+
+*If you want addition first use parentheses*
+
+```python
+result = (10 + 2) * 3
+
+print(result)               # 36
+```
+
+*Parentheses can change the default order of evaluation*
+
+---
+
+**Syntax:**
+
+*There is no special syntax for operator precedence. It applies automatically when you write expressions.*
+
+```python
+result = expression
+```
+
+**Example:**
+
+```python
+result = 10 + 5 * 2
+
+print(result)             # 20
+```
+
+---
+
+**How Operator Precedence works internally?**
+
+*Python evaluates operators according to their precedence levels.*
+
+*Operators higher in the table generally bind more tightly that operators lower down*
+
+| Priority | Operators                                    | Meaning                                           |
+| -------- | -------------------------------------------- | ------------------------------------------------- |
+| Highest  | `()`                                         | Parentheses for grouping                          |
+| 2        | `**`                                         | Exponentiation                                    |
+| 3        | `+x`, `-x`, `~x`                             | Unary plus, unary minus, bitwise NOT              |
+| 4        | `*`, `/`, `//`, `%`                          | Multiplication, division, floor division, modulus |
+| 5        | `+`, `-`                                     | Addition and subtraction                          |
+| 6        | `<<`, `>>`                                   | Bitwise left shift and right shift                |
+| 7        | `&`                                          | Bitwise AND                                       |
+| 8        | `^`                                          | Bitwise XOR                                       |
+| 9        | `\|`                                         | Bitwise OR                                        |
+| 10       | `<`, `<=`, `>`, `>=`, `==`, `!=`, `is`, `in` | Comparisons, identity, membership                 |
+| 11       | `not`                                        | Logical NOT                                       |
+| 12       | `and`                                        | Logical AND                                       |
+| Lowest   | `or`                                         | Logical OR                                        |
+
+**Example:**
+
+```python
+result = 10 + 4 * 2 ** 2
+print(result)             # 26
+```
+
+---
+
+**Simple Examples**
+
+**Multiplication before addition**
+
+```python
+print(5 + 3 * 2)                # 11
+```
+
+**Parentheses first**
+
+```python
+print((5 + 3) * 2)              # 16
+```
+
+**Division before subtraction**
+
+```python
+print(20 - 12 / 3)             # 16.0
+```
+
+**Exponentiation before multiplication**
+
+```python
+print(3 * 2 ** 3)               # 24
+```
+
+---
+
+**Several arithmetic operators**
+
+```python
+print(10 + 6 / 2 * 3)             # 19.0
+```
+
+*Multiplication and division have the same precedence so they are evaluated from left to right.*
+
+**Exponentiation associativity**
+
+```python
+print(2 ** 3 ** 2)
+```
+
+*Exponentiation groups from right to left*
+
+**Comparison before logical AND**
+
+```python
+print(10 > 5 and 8 < 3)             # False
+```
+
+*First python evaluates the comparisons*
+
+```txt
+10 > 5  → True
+8 < 3   → False
+```
+
+```txt
+True and False → False
+```
+
+**Logical NOT**
+
+```python
+print(not 5 > 2)                # False
+```
+
+*Python evaluates the comparison before applying ```not```*
+
+---
+
+```python
+price = 1000
+discount_percent = 10
+
+final_price = price - price * discount_percent / 100
+
+print(final_price)                # 900.0
+```
+
+*Python evaluates multiplication and division before subtraction*
+
+```txt
+1000 * 10 = 10000
+10000 / 100 = 100.0
+1000 - 100.0 = 900.0
+```
+
+---
+
+**Associativity**
+
+*Associativity determines the order in which operators of the same precedence are evaluated when an expression contains multiple operators.*
+
+*In simple words when two or more operators have the same priority associativity tells python whether to evaluate them from left to right or right to left.*
+
+*There are two main directions*
+- *Left-to-right associativity*
+- *Right-to-left associativity*
+
+---
+
+**Left-to-right associativity**
+
+*Most Python arithmetic operators such as ```+```, ```-```, ```*```, and ```/``` associative from left to right when they have the same precedence.*
+
+**Examples:**
+
+```python
+print(10 - 3 - 2)                   # 5
+```
+
+*Left-to-right means start from the left side*
+
+---
+
+**Right-to-left associativity**
+
+*The exponentiation operator ```**``` associates from right to left*
+
+**Examples:**
+
+```python
+print(2 ** 3 ** 2)                  # 512
+```
+
+---
+
+**Difference between precedence and associativity**
+
+| Aspect     | Precedence                                                                                     | Associativity                                                               |
+| ---------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Definition | Determines which operator is evaluated first when different operators appear in an expression. | Determines the order of evaluation when operators have the same precedence. |
+| Purpose    | Decides operator priority.                                                                     | Decides grouping direction.                                                 |
+| Example    | `*` has higher precedence than `+`.                                                            | `-` is evaluated from left to right.                                        |
+| Expression | `2 + 3 * 4`                                                                                    | `10 - 3 - 2`                                                                |
+| Evaluation | `2 + (3 * 4)`                                                                                  | `(10 - 3) - 2`                                                              |
+| Result     | `14`                                                                                           | `5`                                                                         |
+
+---
+
+
+
+
+
+
+
+
+
+
 
 
 
