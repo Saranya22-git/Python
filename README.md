@@ -16745,6 +16745,37 @@ print("Saranya" in student.values())
 
 ### **Bitwise Operators**
 
+*Bitwise Operators perform operations on the individual bits of integer values.*
+
+*Computers represent integer values using binary digits called **```bits```***
+- *```0``` represents a binary digit that is off*
+- *```1``` represents a binary digit that is on*
+
+*For example deciaml number ```5``` is represented in binary as ```101```*
+
+```txt
+Decimal 5 → Binary 101
+Decimal 3 → Binary 011
+```
+
+*Bitwise operators work with these binary representations*
+
+---
+
+**Syntax:**
+
+*Python provides six main bitwise operators*
+
+| Operator | Name        | Example    | Result   |     
+| -------- | ----------- | ---------- | -------- | 
+| `&`      | Bitwise AND | `5 & 3`    | `1`      |     
+| `|`      | Bitwise OR  | `5 \| 3`    | `7`      |
+| `^`      | Bitwise XOR | `5 ^ 3`    | `6`      |     
+| `~`      | Bitwise NOT | `~5`       | `-6`     |     
+| `<<`     | Left Shift  | `5 << 1`   | `10`     |     
+| `>>`     | Right Shift | `5 >> 1`   | `2`      |     
+
+
 
 
 
