@@ -249,7 +249,14 @@ Hey everybody!!!
     - [**```not```**](#not)
     - [**Identity Operators**](#identity-operators)
     - [**Membership Operators**](#membership-operators)
-    - [**Bitwise Operators**](#bitwise-operators)
+  - [**Bitwise Operators**](#bitwise-operators)
+    - [**Bitwise AND - ```&```**](#bitwise-and---)
+    - [**Bitwise OR - ```\|```**](#bitwise-or---)
+    - [**Bitwise XOR - ```^```**](#bitwise-xor---)
+    - [**Bitwise NOT - ```~```**](#bitwise-not---)
+    - [**Left Shift - ```<<```**](#left-shift---)
+    - [**Right Shift - ```>>```**](#right-shift---)
+    - [**Operator Precedence**](#operator-precedence)
 
 
 ---
@@ -16743,7 +16750,7 @@ print("Saranya" in student.values())
 
 ---
 
-### **Bitwise Operators**
+## **Bitwise Operators**
 
 *Bitwise Operators perform operations on the individual bits of integer values.*
 
@@ -16769,15 +16776,230 @@ Decimal 3 → Binary 011
 | Operator | Name        | Example    | Result   |     
 | -------- | ----------- | ---------- | -------- | 
 | `&`      | Bitwise AND | `5 & 3`    | `1`      |     
-| `|`      | Bitwise OR  | `5 \| 3`    | `7`      |
+| `\|`     | Bitwise OR  | `5 \| 3`   | `7`      |
 | `^`      | Bitwise XOR | `5 ^ 3`    | `6`      |     
 | `~`      | Bitwise NOT | `~5`       | `-6`     |     
 | `<<`     | Left Shift  | `5 << 1`   | `10`     |     
 | `>>`     | Right Shift | `5 >> 1`   | `2`      |     
 
+---
 
+**How Bitwise Operators work internally?**
 
+```python
+a = 5
+b = 3
+```
 
+*Their binary representations, using four bits for illustration are*
+
+```txt
+Each position represents a binary place values 8421
+Decimal 5                                      0101
+Decimal 3                                      0011
+```
+
+*For example ```0101``` means ```0(8) + 1(4) + 0(2) + 1(1) = 5```*
+
+---
+
+### **Bitwise AND - ```&```**
+
+*A bit becomes ```1``` only when both corresponding bits are ```1```*
+
+| Bit A | Bit B | Result |
+| ----- | ----- | ------ |
+| `0`   | `0`   | `0`    |
+| `0`   | `1`   | `0`    |
+| `1`   | `0`   | `0`    |
+| `1`   | `1`   | `1`    |
+
+**Example:**
+
+```python
+print(5&3)
+```
+
+```txt
+  0101
+& 0011
+------
+  0001
+```
+
+---
+
+### **Bitwise OR - ```\|```**
+
+*A bit becomes ```1``` when at least one corresponding bit is ```1```*
+
+| Bit A | Bit B | Result |
+| ----- | ----- | ------ |
+| `0`   | `0`   | `0 `   |
+| `0`   | `1`   | `1`    |
+| `1`   | `0`   | `1`    |
+| `1 `  | `1`   | `1`    |
+
+**Example:**
+
+```python
+print(5 | 3)                   # 7
+```
+
+```txt
+  0101
+| 0011
+------
+  0111
+```
+
+---
+
+### **Bitwise XOR - ```^```**
+
+*XOR means exclusive OR. A bit becomes ```1``` when the corresponding bits are different.*
+
+| Bit A | Bit B | Result |
+| ----- | ----- | ------ |
+| `0`   | `0`   | `0`    |
+| `0`   | `1`   | `1`    |
+| `1`   | `0`   | `1`    |
+| `1`   | `1`   | `0`    |
+
+**Example:**
+
+```python
+print(5 ^ 3)                  # 6
+```
+
+```txt
+  0101
+^ 0011
+------
+  0110
+```
+
+---
+
+### **Bitwise NOT - ```~```**
+
+*Bitwise NOT flips each bit*
+- *```0``` becomes ```1```*
+- *```1``` becomes ```0```*
+
+*In Python, the result for an integer follows this rule ```~x = -(x + 1)```*
+
+**Example:**
+
+```python
+print(~5)                   # -6
+```
+
+*Python defines integer bitwise NOT using the equivalent of flipping all bits in an infinite sign-extended two's-complement representation.*
+
+---
+
+### **Left Shift - ```<<```**
+
+*Left shift moves the bits to the left by a specified number of positions.*
+
+*```x << n = x * 2^n```*
+
+*Here ```n``` is the number of positions shifted*
+
+| Expression | Calculation | Result |
+| ---------- | ----------- | ------ |
+| `5 << 0`   | 5 × 2⁰      | 5      |
+| `5 << 1`   | 5 × 2¹      | 10     |
+| `5 << 2`   | 5 × 2²      | 20     |
+| `5 << 3`   | 5 × 2³      | 40     |
+| `3 << 2`   | 3 × 2²      | 12     |
+
+```python
+print(5 << 1)                   # 10
+```
+
+```txt
+0101  →  1010
+```
+
+*For non-negative integers, shifting left by one position is equivalent to multiplying by two.*
+
+```python
+print(5 << 2)                   # 20
+```
+
+---
+
+### **Right Shift - ```>>```**
+
+*Right shift moves the bits to the right*
+
+```python
+print(5 >> 1)
+```
+
+```txt
+0101  →  0010
+```
+
+*For non-negative integers shifting right by one position is equivalent to floor-dividing by two*
+
+*```x >> n = [x / 2^n]```*
+
+*Here, ```n``` is the number of positions shifted*
+
+| Expression | Calculation          | Result |
+| ---------- | -------------------- | ------ |
+| `10 >> 0`  | 10 ÷ 1               | 10     |
+| `10 >> 1`  | 10 ÷ 2               | 5      |
+| `10 >> 2`  | 10 ÷ 4               | 2      |
+| `20 >> 2`  | 20 ÷ 4               | 5      |
+| `40 >> 3`  | 40 ÷ 8               | 5      |
+| `7 >> 1`   | 7 ÷ 2 (rounded down) | 3      |
+
+---
+
+**Simple Example**
+
+```python
+a = 5
+b = 3
+
+print("AND:", a & b)
+print("OR:", a | b)
+print("XOR:", a ^ b)
+print("NOT:", ~a)
+print("Left Shift:", a << 1)
+print("Right Shift:", a >> 1)
+```
+
+---
+
+```python
+READ = 4
+WRITE = 2
+EXECUTE = 1
+
+permissions = READ | WRITE
+
+print(bool(permissions & READ))             # True
+print(bool(permissions & EXECUTE))          # False
+```
+
+---
+
+**Assuming binary strings are integers**
+
+```python
+print("0101" & "0011")      # TypeError: unsupported operand type(s) for &: 'str' and 'str'
+```
+
+*This raises a ```TypeError``` because these are strings not integers*
+
+---
+
+### **Operator Precedence**
 
 
 
