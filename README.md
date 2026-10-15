@@ -257,6 +257,8 @@ Hey everybody!!!
     - [**Left Shift - ```<<```**](#left-shift---)
     - [**Right Shift - ```>>```**](#right-shift---)
     - [**Operator Precedence**](#operator-precedence)
+- [**Input \& Output**](#input--output)
+  - [**```input()```**](#input)
 
 
 ---
@@ -17217,6 +17219,111 @@ print(2 ** 3 ** 2)                  # 512
 | Result     | `14`                                                                                           | `5`                                                                         |
 
 ---
+
+# **Input & Output**
+
+*Input and Output in Python refer to the processes of receiving data from a source and presenting or sending the results to a destination.*
+
+- **Input:** *Data that a program receives*
+- **Output:** *Information that a program produces or displays*
+
+*Python commonly uses ```input()``` to receive keyboard input and ```print()``` to display output.*
+
+---
+
+**Why do we need Input & Output?**
+
+*Without Input, a program may only work with values already written in its code. Input allows user to provide different values each time they run it.*
+
+*Without output, users may not be able to see the results of the program.*
+
+*For example, imagine a problem that adds two numbers*
+
+```txt
+           Input
+   User enters 10 and 20
+
+             ↓
+
+          Processing
+   Python calculates 10 + 20
+
+             ↓
+
+           Output
+   The program displays 30
+```
+
+---
+
+| Order | Topic             | Purpose                                   |
+| ----- | ----------------- | ----------------------------------------- |
+| 1     | `input()`         | Receive data from the user                |
+| 2     | Multiple Inputs   | Receive several values                    |
+| 3     | Type Conversion   | Convert input into the required data type |
+| 4     | `print()`         | Display results                           |
+| 5     | Formatting Output | Control how results appear                |
+
+---
+
+**How Input and Output work?**
+
+```python
+name = input("Enter your name:")
+print("Hello", name)                  # Hello Sony
+```
+
+*The execution flow is*
+1. *Python displays ```Enter your name:```*
+2. *The user types a name*
+3. *```input()``` receives the entered text*
+4. *The entered text is assigned to ```name```*
+5. *```print()``` displays the greeting*
+
+*Notice that ```input()``` receives the user's data while ```print()``` displays information*
+
+---
+
+**Simple Example**
+
+```python
+print("Welcome to Python!")           # Welcome to Python!
+```
+
+*This program displays a message without asking the user for any input*
+
+---
+
+```python
+name = input("Enter your name:")
+city = input("Enter your city:")
+
+print("Name:", name)                # Name: Sony
+print("City:", city)                # City: Eluru
+```
+
+*This program collects two pieces of information and displays them*
+
+---
+
+```python
+student_name = input("Enter student name:")
+course = input("Enter course name:")
+
+print("Student:", student_name)           # Student: Saranya
+print("Course:", course)                  # Course: AI&DS
+print("Registration details received.")   # Registration details received.
+```
+
+---
+
+## **```input()```**
+
+
+
+
+
+
 
 
 
