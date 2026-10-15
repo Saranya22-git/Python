@@ -17319,6 +17319,24 @@ print("Registration details received.")   # Registration details received.
 
 ## **```input()```**
 
+*The ```input()``` function reads input from the user through the standard input and returns the entered data as a string (```str```)*
+
+**Example:**
+
+```python
+name = input("Enter your name:")
+print(name)                   # Sony
+```
+
+```txt
+Enter your name: Sony
+Sony
+```
+
+*Here Python receives the text ```Sony``` and stores it in the variable ```name```*
+
+---
+
 
 
 
