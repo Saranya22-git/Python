@@ -259,6 +259,7 @@ Hey everybody!!!
     - [**Operator Precedence**](#operator-precedence)
 - [**Input \& Output**](#input--output)
   - [**```input()```**](#input)
+  - [**Multiple Inputs**](#multiple-inputs)
 
 
 ---
@@ -17337,7 +17338,230 @@ Sony
 
 ---
 
+**Why do we need ```input()```?**
 
+*Without ```input()``` we usually have to write values directly in the program*
+
+*For example*
+
+```python
+name = "Saranya"
+```
+
+*This value is fixed in the code*
+
+*Using ```input()``` lets the user enter different values whenever the program runs*
+
+```python
+name = input("Enter your name:")
+```
+
+*Now one program can accept different names without changing its code*
+
+---
+
+**Syntax:**
+
+```python
+input(prompt)
+```
+
+- *```input()``` is the built-in function*
+- *```prompt``` is an optional message displayed to the user*
+- *The function returns the entered text as a string*
+- *The user typically presses Enter to finish entering the input*
+
+**Example:**
+
+```python
+city = input("Enter your city:")
+```
+
+*The message ```Enter your city:``` is displayed before Python waits for the user's response*
+
+---
+
+**How does ```input()``` work internally?**
+
+```python
+age = input("Enter your age:")
+print(age)                            # 10
+print(type(age))                      # <class 'str'>
+```
+
+*Suppose the user enters ```10```*
+
+*Execution happens like this*
+
+- **Step-1:** *Python displays the prompt ```Enter your age:```*
+- **Step-2:** *User enters ```10``` Python receives the text ```"10"```*
+- **Step-3:** *Python assigns the string to ```age``` ```age = "10"```*
+
+---
+
+**Simple Examples**
+
+**Reading a name**
+
+```python
+name = input("Enter your name:")
+
+print("Hello", name)                  # Hello Sony
+```
+
+---
+
+**Reading a number**
+
+```python
+num = input("Enter a number:")
+
+print(num)                              # 25
+print(type(num))                        # <class 'str'>
+```
+
+---
+
+**Input without a prompt**
+
+```python
+name = input()
+
+print(name)                           # Sony
+```
+
+---
+
+**Understanding Input as Text**
+
+```python
+a = input("Enter first number:")          # 10
+b = input("Enter second number:")         # 20
+
+print(a + b)                              # 1020
+```
+
+*Why didn't Python print ```30```? Because both values are strings ```a = "10"``` ```b = "20"```*
+
+*The ```+``` operator joins the strings together ```"10" + "20" = "1020"```*
+
+```python
+name = input("Enter student name: ")      # Saranya
+course = input("Enter course: ")          # AI&DS
+
+print("Student:", name)             # Student: Saranya
+print("Course:", course)            # Course: AI&DS
+```
+
+---
+
+**Forgetting to store the returned value**
+
+```python
+input("Enter your name:")             # 'Sony'
+```
+
+*This accepts input but if you need to use the entered value later store it*
+
+```python
+name = input("Enter your name:")        # Sony
+
+print(name)                             # Sony
+```
+
+---
+
+## **Multiple Inputs**
+
+*Multiple Inputs in Python means accepting two or more values from the user, either through separate ```input()``` calls or by reading multiple values from a single input line.*
+
+*For example, we can collect a name and city using two separate calls*
+
+```python
+name = input("Enter your name:")  # Saranya 
+city = input("Enter your city:")  # Eluru
+
+print(name, city)                 # Saranya Eluru
+```
+
+---
+
+**Syntax:**
+
+*There are two common approaches*
+
+**Method-1:** *Separate ```input()``` calls*
+
+```python
+a = input()
+
+b = input()
+``` 
+
+**Method-2:** *Multiple values on one line using ```split()```*
+
+```python
+a, b = map(int, input().split())        # 10 20
+
+print(a)                    # 10
+print(b)                    # 20
+```
+
+*In the second method if the user types ```10 20```, Python separates the text into two strings ```"10"``` and ```"20"```*
+
+---
+
+**How it works internally?**
+
+```python
+a, b = input().split()                    # 1 2
+
+print(a)                      # 1
+print(b)                      # 2
+```
+
+*Suppose the user enters ```1 2```*
+
+*The process is*
+
+```txt
+User enters: 1 2
+          |
+          v
++-----------------------------+
+|          input()            |
+| Reads the entire line       |
+| as a string                 |
++-----------------------------+
+          |
+          v
++-----------------------------+
+|          .split()           |
+|  ["1", "2"]                 |
++-----------------------------+
+          |
+          v
++-----------------------------+
+|        Assignment           |
+| a = "1"                     |
+| b = "2"                     |
++-----------------------------+
+```
+
+*Both values are strings becuase ```input()``` reads text*
+
+---
+
+**Simple Example**
+
+**Two separate inputs**
+
+```python
+first_name = input("Enter first name:")
+second_name = input("Enter second name:")
+
+print(first_name, second_name)
+```
 
 
 
