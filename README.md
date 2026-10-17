@@ -266,6 +266,7 @@ Hey everybody!!!
     - [**Method-1:** *f-strings*](#method-1-f-strings)
     - [**Method-2:** *```format()```*](#method-2-format)
     - [**Method-3:** *```%``` formatting*](#method-3--formatting)
+- [**Control Flow**](#control-flow)
 
 
 ---
@@ -18074,7 +18075,63 @@ print(f"{"Python": ^10}|")            #   Python  |
 
 ---
 
+# **Control Flow**
 
+*Control flow is the order in which statements in a program are executed.*
+
+*By default, Python executes statements from top to bottom. Control flow statements allow a program to make decisions, repeat instructions or skip certain statements depending on conditions.*
+
+---
+
+**Why do we need control flow?**
+
+*Imagine you're building a login system*
+- *If the password is correct, allow login*
+- *Otherwise display an error*
+- *If the user enters the wrong password repeatedly repeat the process or stop after a limit*
+
+*Without control flow, a program couldn't make these decisions or repeat actions based on conditions.*
+
+---
+
+**Three main categories of Control Flow**
+
+1. **Conditional Statements**
+
+  *Used to make decisions based on conditions*
+
+  **Examples:** *```if```, ```if else```, ```if elif else```, ```nested if```*
+
+  *Check whether a candidate passed an interview*
+
+2. **Loops**
+
+  *Used to repeat a block of code*
+
+  **Examples:** *```while```, ```for```, ```range()```, ```enumerate()```*
+
+  *Process every student's marks in a list*
+
+3. **Loop control statements**
+
+  *Used to change how a loop behaves*
+
+  **Examples:** *```break```, ```continue```, ```pass```, loop ```else```*
+
+  *Stop searching when the required record is found*
+
+---
+
+**How Control Flow works?**
+
+```python
+age = 20
+
+if age >= 18:
+  print("Eligible")         # Eligible
+```
+
+- **
 
 
 
