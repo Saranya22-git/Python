@@ -260,6 +260,7 @@ Hey everybody!!!
 - [**Input \& Output**](#input--output)
   - [**```input()```**](#input)
   - [**Multiple Inputs**](#multiple-inputs)
+  - [**Type Conversion in Input \& Output**](#type-conversion-in-input--output)
 
 
 ---
@@ -17557,11 +17558,66 @@ User enters: 1 2
 **Two separate inputs**
 
 ```python
-first_name = input("Enter first name:")
-second_name = input("Enter second name:")
+first_name = input("Enter first name:")     # Saranya
+second_name = input("Enter second name:")   # Sammeta 
 
-print(first_name, second_name)
+print(first_name, second_name)            # Sammeta Saranya
 ```
+
+**Two values on one line**
+
+```python
+a, b = input("Enter two values:").split()       # 1 2
+
+print(a)              # 1
+print(b)              # 2
+```
+
+**Three values on one line**
+
+```python
+a, b, c = input("Enter three values:").split()    # 1 2 3
+
+print(a)            # 1
+print(b)            # 2
+print(c)            # 3
+```
+
+---
+
+**Collect Student Details**
+
+```python
+name, course, city = input("Enter name, course and city:").split()
+
+print("Student Name:", name)       # Student Name: Saranya
+print("Course:", course)           # Course: AI&DS
+print("City:", city)               # City: Eluru
+```
+
+*This version expects exactly three whitespace separated values*
+
+**What if the number of values is incorrect?**
+
+*For example*
+
+```python
+a, b = input().split()
+```
+
+*If the user enters ```10 20 30``` Python raises a ```ValueError``` because three values cannot be unpacked into two variables*
+
+*Likewise, entering only ```10``` causes an error because there is only one value*
+
+---
+
+## **Type Conversion in Input & Output**
+
+
+
+
+
+
 
 
 
