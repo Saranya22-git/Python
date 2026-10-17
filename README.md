@@ -261,6 +261,7 @@ Hey everybody!!!
   - [**```input()```**](#input)
   - [**Multiple Inputs**](#multiple-inputs)
   - [**Type Conversion in Input \& Output**](#type-conversion-in-input--output)
+  - [**```print()```**](#print)
   - [**Formatting Output**](#formatting-output)
 
 
@@ -17731,7 +17732,152 @@ print("Average:", average)            # 5.0
 
 ---
 
+## **```print()```**
+
+*The ```print()``` function in Python is a built-in function used to display information on the standard output, usually the screen or terminal.*
+
+**Example:**
+
+```python
+print("Hello, World!")              # Hello, World!
+```
+
+---
+
+**Syntax of ```print()```**
+
+```python
+print(*objects, sep='', end='\n', file=None, flusj=False)
+```
+
+| Argument  | Purpose                          |
+| --------- | -------------------------------- |
+| `objects` | Values to display                |
+| `sep`     | Separator between values         |
+| `end`     | What to display after the output |
+
+---
+
+**How does ```print()``` work internally?**
+
+```python
+a = 10
+b = 20
+
+print(a, b)             # 10 20
+```
+
+*Python evaluates the arguments converts the values to their printable representations, separates them with a space by default, and writes the result to standard output.*
+
+*```print()``` displays values, it does not return the displayed text. Its return value is ```None```*
+
+```python
+result = print("Hello")             # Hello
+print(result)                       # None
+```
+
+---
+
+**Simple Example**
+
+**Display text**
+
+```python
+print("Python")                 # Python
+```
+
+---
+
+**Display a number**
+
+```python
+print(100)                      # 100
+```
+
+---
+
+**Display a calculation**
+
+```python
+print(10 + 20)                  # 30
+```
+
+---
+
+**Display multiple values**
+
+```python
+print("Age:", 2)                # Age: 2
+```
+
+---
+
+**Using ```sep```**
+
+*The default separator between multiple objects is a space*
+
+```python
+print("Saranya", "2026", "17", "10")      # Saranya 2026 17 10
+```
+
+---
+
+**Change the separator**
+
+```python
+print("2026", "10", "17", sep="-")        # 2026-10-17
+```
+
+*You can also use other separators*
+
+```python
+print("Python", "SQL", "Excel", sep=" | ")      # Python | SQL | Excel
+```
+
+---
+
+**Using ```end```**
+
+*By default, ```print()``` ends with a newline (```\n```). Therefore the next ```print()``` starts on a new line*
+
+```python
+print("Hello")              # Hello
+print("World")              # World
+```
+
+*Change ```end``` to keep output on the same line*
+
+```python
+print("Hello", end = " ")
+print("World")                    # Hello World
+```
+
+```python
+print("Loading", end="...")
+print("Done")                 # Loading...Done
+```
+
+---
+
+**Combining ```sep``` and ```end```**
+
+```python
+print(10, 20, 30, sep="-", end = "!")       # 10-20-30!
+```
+
+---
+
+**Forgetting quotation marks around text**
+
+```python
+print(Hello)                    # NameError: name 'Hello' is not defined
+```
+
+---
+
 ## **Formatting Output**
+
+
 
 
 
