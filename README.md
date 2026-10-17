@@ -261,6 +261,7 @@ Hey everybody!!!
   - [**```input()```**](#input)
   - [**Multiple Inputs**](#multiple-inputs)
   - [**Type Conversion in Input \& Output**](#type-conversion-in-input--output)
+  - [**Formatting Output**](#formatting-output)
 
 
 ---
@@ -17613,6 +17614,124 @@ a, b = input().split()
 
 ## **Type Conversion in Input & Output**
 
+*Type conversion is the process of converting a values from one data type to another. In input handling, it is commonly used to convert the string returned by ```input()``` into a numeric type so that calculations can be performed.*
+
+*For example*
+
+```python
+age = int(input("Enter your age:"))
+
+print(age)              # 12
+
+print(age + 1)          # 13
+```
+
+---
+
+**Why do we need Type Conversion?**
+
+*```input()``` always returns a string*
+
+```python
+a = input("Enter first number:")            # 10
+b = input("Enter second number:")           # 20
+
+print(a + b)                                # 1020
+```
+
+*If the user enters ```10``` and ```20``` the result is ```1020```*
+
+*Python joins the two strings instead of adding the numbers*
+
+*To perform arithmetic convert the strings into integers*
+
+```python
+a = int(input("Enter first number:"))         # 12
+b = int(input("Enter second number:"))        # 12
+
+print(a + b)                                  # 24
+```
+
+---
+
+**Syntax:**
+
+**Convert input to an integer**
+
+```python
+number = int(input("Enter a number:"))
+```
+
+---
+
+**Convert input to float**
+
+```python
+number = float(input("Enter a number:"))
+```
+
+---
+
+**Keep input as a string**
+
+```python
+name = input("Enter your name:")
+```
+
+---
+
+**Convert multiple inputs**
+
+```python
+a, b = map(int, input(). split())
+```
+
+*Here ```map()``` applies ```int()``` to each separated values.*
+
+---
+
+**How it works internally?**
+
+```python
+number = int(input("Enter a number:"))
+```
+
+*Suppose the user enters ```25```*
+
+```txt
+           User Input
+
+           Value: "25"
+        Type: String (str)
+
+                ↓
+
+            int("25")
+ Converts numeric text to an integer
+
+                ↓
+
+           Stored Value
+
+             Value: 25
+        Type: Integer (int)
+```
+
+---
+
+```python
+a, b, c = map(int, input("Enter three marks: ").split())      # 5 5 5 
+
+total = a + b + c
+average = total / 3
+
+print("Total:", total)                # 15
+print("Average:", average)            # 5.0
+```
+
+---
+
+## **Formatting Output**
 
 
 
