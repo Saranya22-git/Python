@@ -263,6 +263,9 @@ Hey everybody!!!
   - [**Type Conversion in Input \& Output**](#type-conversion-in-input--output)
   - [**```print()```**](#print)
   - [**Formatting Output**](#formatting-output)
+    - [**Method-1:** *f-strings*](#method-1-f-strings)
+    - [**Method-2:** *```format()```*](#method-2-format)
+    - [**Method-3:** *```%``` formatting*](#method-3--formatting)
 
 
 ---
@@ -17876,6 +17879,127 @@ print(Hello)                    # NameError: name 'Hello' is not defined
 ---
 
 ## **Formatting Output**
+
+*Output formatting is the process of controlling how values, variables, and expressions appear when displayed by a program.*
+
+*It helps make output readable, organized and professional*
+
+*For example*
+
+```python
+name= "Saranya"
+marks = 95
+
+print("Name:", name, "Marks:", marks)         # Name: Saranya Marks: 95
+```
+
+---
+
+**Three main formatting techniques**
+
+*Python supports several ways to format output. The three common techniques are f-strings, ```str.format()```, and ```%``` formatting.*
+
+### **Method-1:** *f-strings*
+
+**Syntax:**
+
+```python
+f"text {variable}"
+```
+
+**Example:**
+
+```python
+name = "Saranya"
+age = 12
+
+print(f "My name is {name} and I'm {age} years old")      # My name is Saranya and I'm 12 years old
+```
+
+*The ```f``` before the quotation mark allows Python to evaluate expressions inside ```{}```*
+
+---
+
+### **Method-2:** *```format()```*
+
+**Syntax:**
+
+```python
+"text {}".format(value)
+```
+
+**Example:**
+
+```python
+name= "Saranya"
+age = 12
+
+print("My name is {} and I'm {} years old".format(name, age))               # My name is Saranya and I'm 12 years old
+```
+
+*You can also use positional indexes*
+
+```python
+name = "Saranya"
+age = 12
+
+print("My name is {0} and I'm {1} years old".format(name, age))         # My name is Saranya and I'm 12 years old
+```
+
+*Here ```{0}``` refers to the first value and ```{1}``` to the second*
+
+---
+
+### **Method-3:** *```%``` formatting*
+
+```python
+name = "Saranya"
+age = 12
+
+print("My name is %s and I'm %d years old" % (name, age))   # My name is Saranya and I'm 12 years old
+```
+
+---
+
+**How formatting works internally?**
+
+```python
+name = "Saranya"
+marks = 95
+
+message = f"{name} scored {marks} marks"
+
+print(message)              # Saranya scored 95 marks
+```
+
+*Python evaluates the expression inside the f-string, inserts their values into the string, creates the resulting string, and then ```print()``` displays it*
+
+- *Formatting creates a string representation*
+- *```print()``` displays that representation*
+
+---
+
+**Simple Examples**
+
+**Insert a variable**
+
+```python
+language = "Python"
+
+print(f"I am learning {language}")      # I am learning Python
+```
+
+---
+
+**Insert an expression**
+
+```python
+a = 10
+b = 20
+
+print(f"Sum = {a + b}")           # Sum = 30
+```
+
 
 
 
