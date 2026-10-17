@@ -18000,9 +18000,79 @@ b = 20
 print(f"Sum = {a + b}")           # Sum = 30
 ```
 
+---
 
+**Display a calculation**
 
+```python
+price = 50
+quantity = 3
 
+print(f"Total bill = {price*quantity}")     # Total bill = 150
+```
+
+---
+
+**Precision and Alignment**
+
+**Control decimal places**
+
+*Suppose a price contains many decimal digits*
+
+```python
+Price = 123.4567
+
+print(f"{Price:.2f}")           # 123.46
+```
+
+- *```:``` begins the format specification*
+- *```.2``` requests two digits after the decimal point*
+- *```f``` requests fixed-point formatting*
+
+```python
+number = 12.5678
+
+print(f"{number:.1f}")  # 12.6
+print(f"{number:.2f}")  # 12.57
+print(f"{number:.3f}")  # 12.568
+```
+
+*Formatting does not change the original variable*
+
+```python
+price = 123.4567
+
+print(f"{price:.2f}")               # 123.46
+print(price)                        # 123.4567
+```
+
+---
+
+**Format Percentages**
+
+```python
+score = 0.875
+
+print(f"{score:.1%}")           # 87.5%
+```
+
+*The percentage format multiples the value by 100 for display*
+
+---
+
+**Align text**
+
+```python
+print(f"{"Name": <10}|")              # Name      |
+print(f"{"Age": >10}|")               #        Age|
+print(f"{"Python": ^10}|")            #   Python  |
+```
+
+- *```<10``` - left align within a field of width 10*
+- *```>10``` - right align within a field of width 10*
+- *```^10``` - center within a field of width 10*
+
+---
 
 
 
