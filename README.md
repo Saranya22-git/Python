@@ -270,6 +270,7 @@ Hey everybody!!!
   - [**Conditional Statements**](#conditional-statements)
     - [**```if```**](#if)
     - [**```if else```**](#if-else)
+    - [**```if elif else```**](#if-elif-else)
 
 
 ---
@@ -18325,7 +18326,122 @@ print("Assessment completed")       # Assessment completed
 
 ### **```if else```**
 
+*An ```if else``` statement is a conditional statement that selects one of two code blocks based on whether a condition evaluates to ```True``` or ```False```*
 
+```python
+score = 50
+
+if score >= 70:
+    print("Selected")
+else:
+    print("Not selected")             # Not selected
+```
+
+---
+
+**Syntax:**
+
+```python
+if condition:
+  # Executes when condition is True
+  statement_1
+else:
+  # Executes when condition if False
+  statement_2
+```
+
+- *```if``` checks the condition*
+- *```else``` handles the alternative case*
+- *Both ```if``` and ```else``` require a colon*
+- *Both blocks must be correctly indented*
+- *```else``` does not have its own condition*
+
+---
+
+**Simple Examples**
+
+**Even or Odd**
+
+```python
+number = 7
+
+if number % 2 == 0:
+  print("Even")
+else:
+  print("Odd")                    # Odd
+```
+
+---
+
+**Positive or Not positive**
+
+```python
+n = -9
+
+if n > 0:
+  print("Positive")
+else:
+  print("Zero or negative")           # Zero or negative
+```
+
+---
+
+**Pass or fail**
+
+```python
+marks = 45
+
+if marks >= 90:
+  print("Pass")
+else:
+  print("Fail")                 # Fail
+```
+
+---
+
+**Find the larger of two numbers**
+
+```python
+a = 20
+b = 30
+
+if a > b:
+  print("a is larger")
+else:
+  print("b is larger or equal")               # b is larger or equal
+```
+
+---
+
+**Check login credentials**
+
+```python
+stored_password = "python@123"
+entered_password = "python@123"
+
+if stored_password == entered_password:
+  print("Login successful")               # Login successful
+else:
+  print("Incorrect password")
+```
+
+---
+
+**Combine conditions**
+
+```python
+age = 18
+has_id = False
+
+if age >= 20 and has_id:
+  print("Entry allowed")
+else:
+  print("Entry denied")             # Entry denied
+```
+
+---
+
+### **```if elif else```**
 
 
 
