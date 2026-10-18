@@ -18443,6 +18443,106 @@ else:
 
 ### **```if elif else```**
 
+*The ```if elif else``` statement is a conditional structure used to check multiple conditions in sequence and execute the block associated with the first condition that evaluates to ```True```*
+
+---
+
+**Syntax:**
+
+```python
+if condition1:
+  statement1
+elif condition2:
+  statement2
+elif condition3:
+  statement3
+else:
+  default_statement
+```
+
+- *```if``` checks the first condition*
+- *```elif``` means "else if" and checks another condition when previous conditions were false*
+- *```else``` handles the case where none of the preceding conditions were true*
+
+**Example:**
+
+```python
+marks = 75
+
+if marks >= 90:
+  print("Excellent")
+elif marks >= 70:
+  print("Good")                       # Good
+elif marks >= 40:
+  print("Pass")
+else:
+  print("Fail")
+```
+
+*Once Python finds a true condition in an ```if elif else``` chain it executes that block and skips the remaining branches.*
+
+---
+
+**Simple Examples**
+
+**Positive, Negative or Zero**
+
+```python
+number = 0
+
+if number > 0:
+  print("Positive")
+elif number < 0:
+  print("Negative")
+else:
+  print("Zero")                   # Zero
+```
+
+---
+
+**Categorize marks**
+
+```python
+marks = 35
+
+if marks >= 90:
+  print("Excellent")
+elif marks >= 70:
+  print("Good")
+elif marks >= 40:
+  print("Pass")
+else:
+  print("Fail")                   # Fail
+```
+
+---
+
+**Grade Calculator**
+
+```python
+marks = 82
+
+if marks >= 90:
+  grade = "A"
+elif marks >= 80:
+  grade = "B"
+elif marks >= 70:
+  grade = "C"
+elif marks >= 40:
+  grade = "D"
+else:
+  grade = "F"
+
+print("Grade:", grade)                  # Grade: B
+```
+
+---
+
+**Number Comparison**
+
+```python
+
+
 
 
 
