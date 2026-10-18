@@ -267,6 +267,7 @@ Hey everybody!!!
     - [**Method-2:** *```format()```*](#method-2-format)
     - [**Method-3:** *```%``` formatting*](#method-3--formatting)
 - [**Control Flow**](#control-flow)
+  - [**Conditional Statements**](#conditional-statements)
 
 
 ---
@@ -18131,7 +18132,29 @@ if age >= 18:
   print("Eligible")         # Eligible
 ```
 
-- **
+- *Python assigns ```20``` to ```age```*
+- *It checks whether ```age >= 18```*
+- *The condition is ```True```*
+- *Python executes the indented statement*
+
+| Concept      | Purpose                | Example |
+| ------------ | ---------------------- | ------- |
+| Conditional  | Choose what to execute | `if`    |
+| Loop         | Repeat instructions    | `for`   |
+| Loop control | Change loop execution  | `break` |
+
+---
+
+- **Incorrect indentation:** *Python uses indentation to define code blocks*
+- **Incorrect conditions:** *A wrong comparison can produce unexpected results*
+- **Infinite loops:** *A loop may continue forever if its stopping condition is never reached*
+- **Using the wrong statement:** *```break``` stops a loop, while ```continue``` skips to its next iteration*
+
+---
+
+## **Conditional Statements**
+
+
 
 
 
