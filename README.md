@@ -271,6 +271,7 @@ Hey everybody!!!
     - [**```if```**](#if)
     - [**```if else```**](#if-else)
     - [**```if elif else```**](#if-elif-else)
+      - [**Nested ```if```**](#nested-if)
 
 
 ---
@@ -18541,6 +18542,119 @@ print("Grade:", grade)                  # Grade: B
 **Number Comparison**
 
 ```python
+a = 20
+b = 20
+
+if a > b:
+  print("a is greater")
+elif a < b:
+  print("b is greater")
+else:
+  print("Both are equal")             # Both are equal
+```
+
+*The ```else``` branch handles equality because both comparisons are false*
+
+---
+
+#### **Nested ```if```**
+
+*A nested ```if``` statement is an ```if``` statement placed inside another ```if``` statement or conditional block.*
+
+---
+
+**Syntax:**
+
+```python
+if outer_condition:
+  if inner_condition:
+    statement
+```
+
+- *The outer ```if``` checks the first condition*
+- *The inner ```if``` checks another condition inside the outer block*
+- *The inner condition is checked only when execution reaches it*
+- *Correct indentation is essential*
+
+---
+
+**Simple Examples**
+
+**Both conditions are true**
+
+```python
+number = 10
+
+if number > 0:
+  if number % 2 == 0:
+    print("Positive even number")         # Positive even number
+```
+
+**Outer condition is false**
+
+```python
+number = -4
+
+if number > 0:
+  if number % 2 == 0:
+    print("Positive even number")         
+```
+
+*Nothing is displayed because ```number > 0```` is false Python never enters the outer block*
+
+---
+
+**Outer condition is true, inner condition is false**
+
+```python
+age = 20
+has_id = False
+
+if age >= 18:
+  if has_id:
+    print("Entry allowed")
+```
+
+*Nothing is displayed. The age condition is true, but the inner condition is false*
+
+---
+
+**Check divisibility by both 2 and 3**
+
+```python
+number = 12
+
+if number % 2 == 0:
+  if number % 3 == 0:
+    print("Divisible by both 2 and 3")            # Divisible by both 2 and 3
+```
+
+---
+
+**Nested ```if``` with ```else```**
+
+```python
+age = 20
+has_id = False
+
+if age >= 18:
+  if has_id:
+    print("Entry allowed")
+  else:
+    print("ID required")              # ID required
+else:
+  print("Underage")
+```
+
+*The first ```else``` belongs to the inner ```if``` while the final ```else``` belongs to the outer ```if```*
+
+---
+
+
+
+
+
+
 
 
 
