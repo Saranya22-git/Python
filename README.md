@@ -271,7 +271,9 @@ Hey everybody!!!
     - [**```if```**](#if)
     - [**```if else```**](#if-else)
     - [**```if elif else```**](#if-elif-else)
-      - [**Nested ```if```**](#nested-if)
+    - [**Nested ```if```**](#nested-if)
+  - [**Loops**](#loops)
+    - [**```while```**](#while)
 
 
 ---
@@ -18557,7 +18559,7 @@ else:
 
 ---
 
-#### **Nested ```if```**
+### **Nested ```if```**
 
 *A nested ```if``` statement is an ```if``` statement placed inside another ```if``` statement or conditional block.*
 
@@ -18649,6 +18651,155 @@ else:
 *The first ```else``` belongs to the inner ```if``` while the final ```else``` belongs to the outer ```if```*
 
 ---
+
+## **Loops**
+
+*A loop is a control flow structure that repeatedly executes a block of code while a condition is satisfied or while items remain in a sequence.*
+
+*For example, Suppose you want to print ```"Hello"``` five times*
+
+**Without a loop**
+
+```python
+print("Hello")            # Hello
+print("Hello")            # Hello
+print("Hello")            # Hello
+print("Hello")            # Hello
+print("Hello")            # Hello
+```
+
+**With a loop**
+
+```python
+for i in range(5):
+  print("Hello")          # Hello
+                          # Hello
+                          # Hello
+                          # Hello
+                          # Hello                         
+```
+
+---
+
+**Types of loops in Python**
+
+1. **```while``` loop:** *Repeats a block while a condition remains true*
+
+  ```python
+  count = 1
+
+  while count <= 3:
+    print(count)
+    count += 1
+  ```
+
+  **Output:** *```1 2 3``` each on a separate line*
+
+2. **```for``` loop:** *Iterates over items in an iterable such as a list, string, or range*
+
+  ```python
+  for number in range(1, 4):
+    print(number)               # 1
+                                # 2
+                                # 3
+  ```
+
+---
+
+**How does a loop work?**
+
+```python
+count = 1
+
+while count <= 3:
+  print(count)
+  count += 1
+```
+
+| Iteration | count | Is `count <= 3` true? | Action                    |
+| --------- | ----- | --------------------- | ------------------------- |
+| 1         | 1     | Yes                   | Print 1; increase `count` |
+| 2         | 2     | Yes                   | Print 2; increase `count` |
+| 3         | 3     | Yes                   | Print 3; increase `count` |
+| 4         | 4     | No                    | Stop the loop             |
+
+*The output is*
+
+```txt
+1
+2
+3
+```
+
+---
+
+| Term              | Meaning                                                          |
+| ----------------- | ---------------------------------------------------------------- |
+| **Iteration**     | One repetition of a loop                                         |
+| **Loop body**     | The indented block of code that repeats                          |
+| **Condition**     | A test that determines whether a `while` loop continues          |
+| **Iterable**      | An object whose items can be traversed, such as a list or string |
+| **Infinite loop** | A loop that never terminates on its own                          |
+
+---
+
+### **```while```**
+
+*A ```while``` loop is a control flow statement that repeatedly executes a block of code as long as its condition evaluates to ```True```*
+
+*Python checks a condition. If it is true the loop executes. Then Python checks the condition again and repeats until it becomes false*
+
+---
+
+**Syntax:**
+
+```python
+while condition:
+  statements
+```
+
+- *```while``` starts the loop*
+- *```condition``` determines whether the loop continues*
+- *```:``` begins the loop body*
+- *Indented statements form the body that repeats*
+
+---
+
+**How does it work internally?**
+
+```python
+count = 1
+
+while count <= 3:
+  print(count)
+  count += 1
+```
+
+```txt
+                 Initialize
+                  count = 1
+                      |
+                      v
+
+              Check condition
+                count <= 3
+                      |
+         +------------+------------+
+         |                         |
+       True                      False
+         |                         |
+   Execute body               Exit loop
+ Print and increment
+         |
+         +-------------------------+
+                   |
+                   v
+            Check condition
+              count <= 3
+```
+
+
+
 
 
 
