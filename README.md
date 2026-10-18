@@ -268,6 +268,8 @@ Hey everybody!!!
     - [**Method-3:** *```%``` formatting*](#method-3--formatting)
 - [**Control Flow**](#control-flow)
   - [**Conditional Statements**](#conditional-statements)
+    - [**```if```**](#if)
+    - [**```if else```**](#if-else)
 
 
 ---
@@ -18212,8 +18214,116 @@ if age >= 18:
 
 ---
 
+**Branching:** *Branching means choosing a path of execution based on a condition*
 
+---
 
+**Difference between a condition and a conditional statement**
+
+**Condition:** *A condition is the expression being checked*
+
+**Conditional statement:** *A conditional statement uses that result to control which code executes*
+
+---
+
+### **```if```**
+
+*An ```if``` statement executes a block of code only when a specified condition evaluates to ```True```*
+
+---
+
+**Syntax:**
+
+```python
+if condition:
+  statement
+```
+
+| Part        | Meaning                                      |
+| ----------- | -------------------------------------------- |
+| `if`        | Starts the conditional statement             |
+| `condition` | Expression evaluated as true or false        |
+| `:`         | Marks the beginning of the block             |
+| Indentation | Identifies the statements controlled by `if` |
+
+---
+
+**Simple Examples**
+
+**Check a positive number**
+
+```python
+n = 9
+
+if n > 0:
+  print("Positive")               # Positive
+```
+
+**Check age**
+
+```python
+age = 18
+
+if age >= 18:
+  print("Eligible to vote")             # Eligible to vote
+``` 
+
+**Condition is false**
+
+```python
+n = -9
+
+if n > 0:
+  print("Positive")
+```
+
+*Nothing is displayed. The program does not produce an error. It simply skips the block.*
+
+---
+
+**Combine Conditions**
+
+```python
+age = 18
+has_id = True
+
+if age >= 18 and has_id:
+  print("Entry allowed")            # Entry allowed
+```
+
+*Both conditions must be ```True``` because we used ```and```*
+
+---
+
+**Check whether a number is even**
+
+```python
+n = 8
+
+if n % 2 == 0:
+  print("Even number")              # Even number
+```
+
+*The ```%``` gives the remainder. An even number has remainder ```0``` when divided by ```2```*
+
+---
+
+**Statements outside the block**
+
+```python
+score = 50
+
+if score >= 70:
+  print("Selected")
+
+print("Assessment completed")       # Assessment completed
+```
+
+*The first ```print()``` is skipped. The second is outside the ```if``` block so it executes*
+
+---
+
+### **```if else```**
 
 
 
