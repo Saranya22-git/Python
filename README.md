@@ -18154,6 +18154,64 @@ if age >= 18:
 
 ## **Conditional Statements**
 
+*Conditional statements are control flow statements that allow a program to make decisions and execute different blocks of code depending on whether specified conditions are true or false.*
+
+*For example, Imagine you're checking whether you're eligible for a job interview based on a minimum score of 70*
+- *If your score is 85, you're eligible*
+- *If your score is 45, you don't meet the required score*
+
+*Your decision depends on your score. Python uses conditional statements to implement this kind of logic.*
+
+---
+
+**Types of Conditional Statements in Python**
+
+1. **```if```:** *Executes a block only when the condition is true*
+
+  ```python
+  score = 70
+
+  if score >= 70:
+    print("Eligible")                 # Eligible
+  ```
+
+2. **```if else```:** *Chooses between two alternatives*
+
+  ```python
+  score = 70
+
+  if score >= 70:
+    print("Eligible")             # Eligible
+  else:
+    print("Not eligible")
+  ```
+
+3. **```if elif else```:** *Checks multiple conditions in order*
+
+  ```python
+  score = 70
+
+  if score >= 90:
+    print("Excellent")
+  elif score >= 70:
+    print("Good")               # Good
+  else:
+    print("Needs improvement")
+  ```
+
+4. **```Nested if```:** *Places one ```if``` statement inside another ```if``` statement*
+
+  ```python
+  age = 22
+  has_id = True
+
+  if age >= 18:
+    if has_id:
+      print("Entry allowed")          # Entry allowed
+  ```
+
+---
+
 
 
 
