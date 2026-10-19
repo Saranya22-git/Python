@@ -274,6 +274,7 @@ Hey everybody!!!
     - [**Nested ```if```**](#nested-if)
   - [**Loops**](#loops)
     - [**```while```**](#while)
+    - [**```for```**](#for)
 
 
 ---
@@ -18797,6 +18798,118 @@ while count <= 3:
             Check condition
               count <= 3
 ```
+
+*The loop stops when count becomes ```4``` because ```4 <= 3``` is false*
+
+---
+
+**Simple Example**
+
+**Print numbers from 1 to 5**
+
+```python
+i = 1
+
+while i <= 5:
+  print(i)
+  i += 1
+```
+
+**Output:**
+
+```txt
+1
+2
+3
+4
+5
+```
+
+---
+
+**Countdown**
+
+```python
+i = 3
+
+while i >= 1:
+  print(i)
+  i -= 1
+
+print(Go!)
+```
+  
+```txt
+3
+2
+1
+Go!
+```
+
+---
+
+**A condition that is initially false**
+
+```python
+x = 10
+
+while x < 5:
+  print(x)
+```
+
+*Nothing is displayed. Python checks the condition before the iteration.Since it is false the loop body never executes*
+
+---
+
+**Calculate the sum from 1 to 5**
+
+```python
+i = 1
+sum = 0
+
+while i >= 5:
+  sum = sum + i
+  i += 1
+
+print(sum)                  # 15
+```
+
+---
+
+**Repeat until the target is reached**
+
+```python
+count =  0
+
+while count < 3:
+  print("Practising Python")
+  count += 1
+```
+
+**Output:**
+
+```txt
+Practising Python
+Practising Python
+Practising Python
+```
+
+---
+
+**Forgetting to update the counter**
+
+```python
+i = 1
+
+while i <= 3:
+  print(i)
+```
+
+*This creates an infinite loop because ```i``` stays ```1``` so the condition never becomes false*
+
+---
+
+### **```for```**
 
 
 
