@@ -18911,6 +18911,157 @@ while i <= 3:
 
 ### **```for```**
 
+*A ```for``` loop is a control flow statement that iterates over the items of an iterable and executes a block of code for each item.*
+
+*For example, if you have a list of five students you can use a ```for``` loop to display every student's name without writing five separate ```print()``` statements*
+
+*Suppose you have this list*
+
+```python
+students = ["Ravi", "Sita", "Arun"]
+```
+
+**Without a loop:**
+
+```python
+print(students[0])              # Ravi
+print(students[1])              # Sita
+print(students[2])              # Arun
+```
+
+**With a loop:**
+
+```python
+for student in students:
+  print(student)                # Ravi
+                                # Sita
+                                # Arun
+```
+
+---
+
+**Syntax:**
+
+```python
+for variable in iterable:
+  statements
+```
+
+| Part                | Meaning                                  |
+| ------------------- | ---------------------------------------- |
+| `for`               | Starts the loop                          |
+| `variable`          | Receives the current item                |
+| `in`                | Connects the variable to the iterable    |
+| `iterable`          | An object that supplies items one by one |
+| `:`                 | Starts the loop body                     |
+| Indented statements | Code executed for each item              |
+
+*An iterable is an object that can provide its element one at a time such as a list, string, tuple or range.*
+
+---
+
+**How does it work internally?**
+
+```python
+fruits = ["Apple", "Mango", "Banana"]
+
+for fruit in fruits:
+  print(fruit)
+```
+
+**Output:**
+
+```txt
+Apple
+Mango
+Banana
+```
+
+*Python processes the list in order*
+
+```txt
+Iterable
+["Apple", "Mango", "Banana"]
+
+        ↓
+
+fruit = "Apple" → print("Apple")
+fruit = "Mango" → print("Mango")
+fruit = "Banana" → print("Banana")
+
+        ↓
+
+No more items → Loop finishes
+```
+
+*Each iteration assigns the next item to ```fruit``` and executes the loop body. Once there are no more items, the loop finishes*
+
+---
+
+**Simple Examples**
+
+**Iterate over a list**
+
+```python
+number = [10, 20, 30]
+
+for numbers in number:
+  print(numbers)
+```
+
+**Output:**
+
+```txt
+10
+20
+30
+```
+
+---
+
+**Iterate over a string**
+
+```python
+for letter in "CAT":
+  print(letter)
+```
+
+**Output:**
+
+```txt
+C
+A
+T
+```
+
+*A string is iterable, so Python visits each character in sequence*
+
+---
+
+**Iterate over a tuple**
+
+```python
+numbers = (10, 20, 30, 40)
+
+for i in numbers:
+  print(i)
+```
+
+**Output:**
+
+```txt
+10
+20
+30
+40
+```
+
+---
+
+**Calculate the sum of list elements**
+
+```python
+
 
 
 
