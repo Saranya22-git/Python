@@ -276,6 +276,10 @@ Hey everybody!!!
     - [**```while```**](#while)
     - [**```for```**](#for)
     - [**```range()```**](#range)
+    - [**```enumerate()```**](#enumerate)
+  - [**Loop Control**](#loop-control)
+    - [**```break```**](#break)
+    - [**```continue```**](#continue)
 
 
 ---
@@ -19109,14 +19113,677 @@ course
 
 ### **```range()```**
 
+*The ```range()``` function returns a range object representing a sequence of integers, commonly used to control how many times a ```for``` loop iterates.*
 
+---
 
+**Why do we need ```range()```?**
 
+*Suppose you want to print numbers from 1 to 5*
 
+**Without ```range()```:**
 
+```python
+print(1)
+print(2)
+print(3)
+print(4)
+print(5)
+```
 
+**With ```range()```:**
 
+```python
+for i in range(1, 6):
+  print(i)
+```
 
+**Output:**
+
+```txt
+1
+2
+3
+4
+5
+```
+
+---
+
+**Syntax of ```range()```:**
+
+*Python supports three common forms*
+
+- **Form-1:** *```range(stop)```*
+
+  ```python
+  range(5)                    # range(0, 5)
+  ```
+
+  *Generates ```0, 1, 2, 3, 4``` Starts at 0 and stops before 5*
+
+- **Form-2:** *```range(start, stop)```*
+
+  ```python
+  range(2, 6)
+  ```
+
+  *Generates ```2, 3, 4, 5``` Starts at 2 and stops before 6*
+
+- **Form-3:** *```range(start, stop, stop)```*
+
+  ```python
+  range(2, 11, 2)
+  ```
+
+  *Generates ```2, 4, 6, 8, 10``` Starts at 2 and increases by 2*
+
+*The ```stop``` value is exclusive it is not included in the sequence.*
+
+---
+
+**How does ```range()``` work internally?**
+
+```python
+for i in range(1, 5):
+  print(i)
+```
+
+*Python generates the sequence represented by the range object and provides each value to the loop*
+
+| Iteration | Value of i | Is it below 5? |
+| --------- | ---------- | -------------- |
+| 1         | 1          | Yes            |
+| 2         | 2          | Yes            |
+| 3         | 3          | Yes            |
+| 4         | 4          | Yes            |
+| Next      | 5          | No more values |
+
+**Output:**
+
+```txt
+1
+2
+3
+4
+```
+
+*```5``` is excluded. Also ```range()``` itself does not return a list. It returns a range object which represents the integer sequence efficiently.*
+
+---
+
+**Simple Example**
+
+**```range(stop)```**
+
+```python
+for i in range(5):
+  print(i)
+```
+
+**Output:**
+
+```txt
+0
+1
+2
+3
+4
+```
+
+*When only ```stop``` is supplied counting starts from ```0```*
+
+---
+
+**```range(start, stop)```**
+
+```python
+for i in range(1, 6):
+  print(i)
+```
+
+**Output:**
+
+```txt
+1
+2
+3
+4
+5
+```
+
+---
+
+**Display a sequence in one line**
+
+```python
+print(list(range(1, 6)))            # [1, 2, 3, 4, 5]
+```
+
+---
+
+**Use a positive step**
+
+```python
+for i in range(2, 11, 2):
+  print(i)
+```
+
+**Output:**
+
+```txt
+2
+4
+6
+8
+10
+```
+
+*The step is ```2``` so Python advances by two each time*
+
+---
+
+**Count backward**
+
+```python
+for i in range(10, 1, -1):
+  print(i)
+```
+
+**Output:**
+
+```txt
+10
+9
+8
+7
+6
+5
+4
+3
+2
+```
+
+*A negative step makes the sequence decrease*
+
+---
+
+**Calculate the sum from 1 to 5**
+
+```python
+sum = 0
+
+for i in range(1, 6):
+  sum += i
+
+print(sum)                      # 15
+```
+
+---
+
+**Use ```range()``` with a list index**
+
+```python
+fruits = ["Apple", "Mango", "Banana"]
+
+for i in range(len(fruits)):
+  print(i, fruits[i])
+```
+
+**Output:**
+
+```txt
+0 Apple
+1 Mango
+2 Banana
+```
+
+---
+
+**Generate a multiplication table**
+
+```python
+number = 5
+
+for i in range(1, 11):
+  print(number, "x", i, "=", number * i)
+```
+
+**Output:**
+
+```txt
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+```
+
+---
+
+**Using a zero step**
+
+```python
+range(1, 10, 0)             # ValueError: range() arg 3 must not be zero
+```
+
+---
+
+**Using the wrong step direction**
+
+```python
+for i in range(5, 0):
+  print(i)
+```
+
+*This prints nothing because the default step is positive ```1``` but the start is already greater than the stop*
+
+---
+
+**Confusing ```range()``` with a list**
+
+```python
+x = range(5)
+
+print(x)                  # range(0, 5)
+```
+
+*To display the actual numbers as a list use ```list(x)```*
+
+---
+
+### **```enumerate()```**
+
+*The ```enumerate()``` function is a built-in Python function that returns an iterator containing pairs of an index and its corresponding value from an iterabe.*
+
+*```enumerate()``` allows us to access both the index and the value of each item while iterating over an iterable.*
+
+---
+
+**Why do we need ```enumerate()```?**
+
+*Imagine you have a list of students*
+
+```python
+students = ["Ravi", "Priya", "Arun"]
+```
+
+*You want to print each student's position along with their name*
+
+**Without ```enumerate()```:**
+
+```python
+students = ["Ravi", "Priya", "Arun"]
+
+for i in range(len(students)):
+  print(i, students[i])
+```
+
+**Output:**
+
+```txt
+0 Ravi
+1 Priya
+2 Arun
+```
+
+**With ```enumerate()```:**
+
+```python
+students = ["Ravi", "Priya", "Arun"]
+
+for index, name in enumerate(students):
+  print(index, name)
+```
+
+**Output:**
+
+```txt
+0 Ravi
+1 Priya
+2 Arun
+```
+
+---
+
+**Syntax:**
+
+```python
+enumerate(index, start = 0)
+```
+
+| Parameter  | Meaning                                    |
+| ---------- | ------------------------------------------ |
+| `iterable` | A list, tuple, string, or another iterable |
+| `start`    | Starting index; defaults to `0`            |
+
+*By default indexing starts at ```0``` You can change it to ```1``` or another number.*
+
+---
+
+**How does ```enumerate()``` work internally?**
+
+```python
+fruits = ["Apple", "Mango", "Banana"]
+
+for index, fruit in enumerate(fruits):
+  print(index, fruit)
+```
+
+**Output:**
+
+```txt
+0 Apple
+1 Mango
+2 Banana
+```
+
+- *```enumerate(fruits)``` creates an enumerate iterator*
+- *The first iteration produce ```(0, "Apple")```*
+- *Python unpacks that pair into ```index = 0``` and ```fruit = "Apple"```*
+- *The next iterations produce ```(1, "Mango")``` and ```(2, "Banana")```*
+
+*```enumerate()``` returns an iterator not a list. To see all its pairs at once you can use ```list(enumerate(fruits))```*
+
+```python
+print(list(enumerate(fruits)))            # [(0, 'Apple'), (1, 'Mango'), (2, 'Banana')]
+```
+
+---
+
+**Simple Example**
+
+```python
+colors = ["Red", "Green", "Blue"]
+
+for index, color in enumerate(colors):
+  print(index, color)
+```
+
+**Output:**
+
+```txt
+0 Red
+1 Green
+2 Blue
+```
+
+---
+
+**Display a numbered list starting from ```1```**
+
+```python
+tasks = ["Study Python", "Practice SQL", "Revise Concepts"]
+
+for index, task in enumerate(tasks, start=1):
+  print(index, task)
+```
+
+**Output:**
+
+```txt
+1 Study Python
+2 Practice SQL
+3 Revise Concepts
+```
+
+---
+
+**Print student names with their roll numbers**
+
+```python
+students = ["Anu", "Ravi", "Priya", "Kiran"]
+
+for roll_number, student in enumerate(students, start = 57):
+    print("Roll Number:", roll_number, "Name:", student)
+```
+
+**Output:**
+
+```txt
+Roll Number: 57 Name: Anu
+Roll Number: 58 Name: Ravi
+Roll Number: 59 Name: Priya
+Roll Number: 60 Name: Kiran
+```
+
+---
+
+## **Loop Control**
+
+*Loop control statements change the normal execution of a loop. They allow us to stop a loop, skip an iteration, or use a placeholder where a statement is syntactically required.*
+
+*Python has three main loop control statements*
+- *```break```*
+- *```continue```*
+- *```pass```*
+
+*Python also supports a loop ```else``` clause which behaves differently from these three statements*
+
+---
+
+- **```break```:** *Stop the loop*
+
+  ```python
+  for n in range(5):
+    if n == 3:
+      break
+    print(n)
+  ```
+
+  **Output:**
+
+  ```txt
+  0
+  1
+  2
+  ```
+
+  *Exits the nearest enclosing loop immediately*
+
+- **```continue```:** *Skip this iteration*
+
+  ```python
+  for n in range(5):
+    if n == 3:
+      continue
+    print(n)
+  ```
+
+  **Output:**
+
+  ```txt
+  0
+  1
+  2
+  4
+  ```
+
+  *Skips the remaining body of the current iteration and moves to the next iteration*
+
+- **```pass```:** *Do nothing*
+
+  ```python
+  for n in range(3):
+    pass
+  ```
+
+  *A placeholder statement; execution continues normally*
+
+- **Loop ```else```:** *Check how the loop finished*
+
+  ```python
+  for n in range(3):
+    print(n)
+  else:
+    print("Completed")
+  ```
+
+  ```txt
+  0
+  1
+  2
+  Completed
+  ```
+
+  *The ```else``` block runs when the loop finishes normally without being terminated by ```break```*
+
+---
+
+### **```break```**
+
+*The ```break``` statement immediately terminates the nearest enclosing ```for``` or ```while``` loop when Python executes it.*
+
+---
+
+**Syntax:**
+
+```python
+for item in iterable:
+  if condition:
+    break
+```
+
+*It also works with ```while```*
+
+```python
+while condition:
+  if another_condition:
+    break
+```
+
+---
+
+**How does ```break``` work internally?**
+
+```python
+for number in range(1, 6):
+  if number == 3:
+    break
+  print(number)
+
+print("Loop ended")
+```
+
+**Output:**
+
+```txt
+1
+2
+Loop ended
+```
+
+| Number | What happens?                      |
+| ------ | ---------------------------------- |
+| 1      | Condition is false; print `1`      |
+| 2      | Condition is false; print `2`      |
+| 3      | Condition is true; execute `break` |
+| 4, 5   | Never reached by this loop         |
+
+*Once ```break``` executes control moves to the first statement after the loop*
+
+---   
+
+**Simple Example**
+
+**Print numbers from 1 to 10 but stop at 5**
+
+```python
+for number in range(1, 11):
+  if number == 5:
+    break
+  print(number)
+```
+
+**Output:**
+
+```txt
+1
+2
+3
+4
+```
+
+---
+
+**Find the first number divisible by 7**
+
+```python
+for number in range(1, 31):
+  if number % 7 == 0:
+    print("Found:", number)
+    break
+```
+
+**Output:**
+
+```txt
+Found: 7
+```
+
+- *```%``` calculates the remainder*
+- *A remainder of ```0``` means the number is divisible by 7*
+- *Once ```7``` is found ```break``` ends the loop*
+
+---
+
+**Search for a student's name**
+
+```python
+students = ["Ravi", "Priya", "Arun", "Kiran"]
+target = "Arun"
+
+for student in students:
+    if student == target:
+        print("Student found:", student)
+        break
+```
+
+**Output:**
+
+```txt
+Student found: Arun
+```
+
+---
+
+**Using ```break``` outside a loop**
+
+```python
+break
+```
+
+*This raises a ```SyntaxError```*
+
+---
+
+**Assuming ```break``` exits every nested loop**
+
+```python
+for i in range(1, 3):
+  for j in range(1, 4):
+    if j == 2:
+      break
+    print(i, j)
+```
+
+**Output:**
+
+```txt
+1 1
+2 1
+```
+
+*Only the inner loop ends. The outer loop continues*
+
+---
+
+### **```continue```**
 
 
 
