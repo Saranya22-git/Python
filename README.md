@@ -280,6 +280,8 @@ Hey everybody!!!
   - [**Loop Control**](#loop-control)
     - [**```break```**](#break)
     - [**```continue```**](#continue)
+    - [**```pass```**](#pass)
+    - [**Loop ```else```**](#loop-else)
 
 
 ---
@@ -19912,6 +19914,243 @@ for mark in marks:
 ```
 
 ---
+
+### **```pass```**
+
+*The ```pass``` statement is a null operation in Python. When Python executes it nothing happens; execution continues with the next statement.*
+
+*```pass``` is a placeholder statement used when Python syntax requires a statement, but we don't want to perform any action yet.*
+
+---
+
+**Why do we need ```pass()```?**
+
+*Python doesn't allow certain code blocks to remain empty*
+
+*For example, suppose you're creating a function but haven't decided what code to write inside it yet*
+
+```python
+def calculate_salary():
+  pass
+```
+
+*Without ```pass`` this empty function would cause a ```SyntaxError```*
+
+---
+
+**Syntax:**
+
+```python
+pass
+```
+
+*It can appear inside loops, conditions, functions, classes and other blocks that require a statement*
+
+**Example:**
+
+```python
+for i in range(3):
+  pass
+
+print("Completed")
+```
+
+**Output:**
+
+```txt
+Completed
+```
+
+*The loop executes three iterations but the loop body does nothing.*
+
+---
+
+**How does ```pass``` work internally?**
+
+```python
+for i in range(1, 4):
+  if i == 2:
+    pass
+  print(i)
+```
+
+**Output:**
+
+```txt
+1
+2
+3
+```
+
+| Value of `i` | What happens?                                               |
+| -----------: | ----------------------------------------------------------- |
+|            1 | The condition is false; `print(1)`                          |
+|            2 | The condition is true; `pass` does nothing, then `print(2)` |
+|            3 | The condition is false; `print(3)`                          |
+
+*Unlike ```continue```, ```pass``` does not skip the remaining statements in the current iteration.*
+
+---
+
+**Simple Example**
+
+```python
+for number in range(1, 6):
+  if number == 3:
+    pass
+  print(number)
+```
+
+**Output:**
+
+```txt
+1
+2
+3
+4
+5
+```
+
+---
+
+**Create a loop structure now and add the actual logic later**
+
+```python
+for i in range(1, 6):
+  if i % 2 == 0:
+    pass
+  else:
+    print(i)
+```
+
+**Output:**
+
+```txt
+1
+3
+5
+```
+
+---
+
+### **Loop ```else```**
+
+*In Python, a loop can have an optional ```else``` block that executes when the loop finishes without being terminated by a ```break``` statement.*
+
+*The ```else``` clause of a ```for``` or ```while``` loop runs when the loop completes normally including when a ```while``` condition is initially false or a ```for``` loop has no items to iterate over.*
+
+---
+
+**Syntax:**
+
+*For a ```for``` loop:*
+
+```python
+for item in iterable:
+  if condition:
+    break
+else:
+  # Runs if the loop wasn't terminated by break
+```
+
+*For a ```while``` loop:*
+
+```python
+while condition:
+  if another_condition:
+    break
+else:
+  # Runs if the loop wasn't terminated by break
+```
+
+*The ```else``` must align with the ```for``` or ```while```, not with the ```if``` inside the loop*
+
+---
+
+**How does it work internally?**
+
+```python
+for i in range(1, 4):
+  print(i)
+else:
+  print("Loop completed")
+```
+
+**Output:**
+
+```txt
+1
+2
+3
+Loop completed
+```
+
+- *The loop processes ```1```, ```2``` and ```3```*
+- *The loop finishes normally*
+- *Since no ```break``` terminated it, the ```else``` block executes*
+
+---
+
+```python
+for i in range(1, 4):
+    if i == 2:
+        break
+    print(i)
+else:
+    print("Loop completed")
+```
+
+**Output:**
+
+```txt
+1
+```
+
+*When ```i``` becomes ```2```, ```break``` terminates the loop. Therefore the loop's ```else``` block is skipped.*
+
+---
+
+**Simple Example**
+
+```python
+for number in range(3):
+  print(number)
+else:
+  print("Finished")
+```
+
+**Output:**
+
+```python
+0
+1
+2
+Finished
+```
+
+*The loop completes normally so ```else``` runs*
+
+---
+
+**Search for a number in a list and print a message if it isn't found**
+
+```python
+numbers = [10, 20, 30, 40]
+target = 25
+
+for number in numbers:
+  if target == numbers:
+    print("Number found")
+    break
+else:
+  print("Number not found")
+```
+
+
+
+
+
+
 
 
 
