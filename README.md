@@ -275,6 +275,7 @@ Hey everybody!!!
   - [**Loops**](#loops)
     - [**```while```**](#while)
     - [**```for```**](#for)
+    - [**```range()```**](#range)
 
 
 ---
@@ -19061,6 +19062,53 @@ for i in numbers:
 **Calculate the sum of list elements**
 
 ```python
+list = [10, 20, 30, 40]
+sum = 0
+
+for i in list:
+  sum += i
+
+print(sum)                      # 100
+```
+
+---
+
+**Count even numbers**
+
+```python
+numbers = [1, 2, 3, 4, 5, 6]
+count = 0
+
+for i in numbers:
+  if i % 2 == 0:
+    count += 1
+
+print(count)                  # 3
+```
+
+---
+
+**Iterate over a dictionary**
+
+```python
+dict = {"name": "Saranya", "age": 10, "course": "B.Tech"}
+
+for i in dict:
+    print(i)
+```
+
+**Output:**
+
+```txt
+name
+age
+course
+```
+
+---
+
+### **```range()```**
+
 
 
 
