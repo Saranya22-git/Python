@@ -19785,6 +19785,133 @@ for i in range(1, 3):
 
 ### **```continue```**
 
+*The ```continue``` statement skips the remaining statements in the current loop iteration and moves to the next iteration.*
+
+---
+
+**Syntax:**
+
+```python
+for item in iterable:
+  if condition:
+    continue
+  # Remaining statements
+```
+
+*It also works with ```while``` loops*
+
+```python
+while condition:
+  if another_condition:
+    continue
+  # Remaining statements
+```
+
+*With a ```while``` loop, make sure your loop-control variable is updated appropriately. Otherwise ```continue``` can accidentally cause an infinite loop*
+
+---
+
+**How does ```continue``` work internally?**
+
+```python
+for i in range(1, 6):
+  if i == 3:
+    continue
+  print(i)
+```
+
+**Output:**
+
+```txt
+1
+2
+4
+5
+```
+
+| Value of `i` | Condition `i == 3` | Action          |
+| ------------ | ------------------ | --------------- |
+| 1            | False              | Print `1`       |
+| 2            | False              | Print `2`       |
+| 3            | True               | Skip `print(i)` |
+| 4            | False              | Print `4`       |
+| 5            | False              | Print `5`       |
+
+*When ```i == 3``` Python skips the remaining body of that iteration. The loop continues with ```i == 4```*
+
+---
+
+**Simple Example**
+
+**Print numbers from 1 to 10 excluding 5**
+
+```python
+for i in range(1, 11):
+  if i == 5:
+    continue
+  print(i)
+```
+
+**Output:**
+
+```txt
+1
+2
+3
+4
+6
+7
+8
+9
+10
+```
+
+*Only ```5``` is skipped. The loop continues normally afterward*
+
+---
+
+**Print only odd numbers from 1 to 10 using continue**
+
+```python
+for i in range(1, 11):
+  if i % 2 == 0:
+    continue
+  print(i)
+```
+
+**Output:**
+
+```txt
+1
+3
+5
+7
+9
+```
+
+---
+
+**Process a list of student marks while skipping invalid negative marks**
+
+```python
+marks = [85, -1, 90, 70, -5, 95]
+
+for mark in marks:
+  if mark < 0:
+    continue
+  print(mark)
+```
+
+**Output:**
+
+```txt
+85
+90
+70
+95
+```
+
+---
 
 
 
