@@ -282,6 +282,7 @@ Hey everybody!!!
     - [**```continue```**](#continue)
     - [**```pass```**](#pass)
     - [**Loop ```else```**](#loop-else)
+- [**Functions**](#functions)
 
 
 ---
@@ -20139,12 +20140,51 @@ numbers = [10, 20, 30, 40]
 target = 25
 
 for number in numbers:
-  if target == numbers:
+  if number == target:
     print("Number found")
     break
 else:
   print("Number not found")
 ```
+
+**Output:**
+
+```txt
+Number not found
+```
+
+- *Python checks each number*
+- *None matches ```25```*
+- *The loop finishes normally*
+- *The ```else``` block executes*
+
+*If ```target = 30``` the output is ```Number found```. The ```break``` prevents the loop's ```else``` block from running.*
+
+---
+
+**Check whether a student passed a required subject**
+
+```python
+marks = [75, 82, 68, 90]
+required_mark = 35
+
+for mark in marks:
+  if mark < required_mark:
+    print("At least one subject was failed")
+    break
+else:
+  print("Passed all subjects")
+```
+
+**Output:**
+
+```txt
+Passed all subjects
+```
+
+---
+
+# **Functions**
 
 
 
