@@ -20186,6 +20186,117 @@ Passed all subjects
 
 # **Functions**
 
+*A function is a reusable block of code designed to perform a specific task. It can accept inputs, process them and optionally return a result.*
+
+*A function helps organize code into reusable, modular blocks, reducing repetition and improving readability and maintainability.*
+
+---
+
+**Why do we need functions?**
+
+*Imagine you need to calculate the total price of an order several times*
+
+*Without a function you might repeat the same calculation*
+
+```python
+price1 = 100
+quantity1 = 2
+print(price1 * quantity1)             # 200
+
+price2 = 250
+quantity2 = 3
+print(price2 * quantity2)             # 750
+```
+
+*With a function you can reuse the logic*
+
+```python
+def calculate_total(price, quantity):
+  return price * quantity
+
+print(calculate_total(100, 2))        # 200
+print(calculate_total(250, 3))        # 750
+```
+
+*You write the calculation once and use it whenever you need it*
+
+---
+
+**Main Components of a function**
+
+```txt
+┌───────────────────────────────────────────────┐
+│                     Input                     │
+│           Values passed to the function       │
+└───────────────────────────────────────────────┘
+                        │
+                        ▼
+┌───────────────────────────────────────────────┐
+│                   Function                    │
+│     Processes the input using instructions    │
+└───────────────────────────────────────────────┘
+                        │
+                        ▼
+┌───────────────────────────────────────────────┐
+│                    Output                     │
+│   A result returned by the function, if any   │
+└───────────────────────────────────────────────┘
+```
+
+*Not every function needs inputs or returns a result. For example a function may simply print a message.*
+
+---
+
+**Types of functions**
+
+| Type                 | Meaning                              | Example               |
+| -------------------- | ------------------------------------ | --------------------- |
+| Built-in functions   | Provided by Python                   | print(), len()        |
+| User-defined functions | Created by programmers             | calculate_total()     |
+| Anonymous functions  | Small functions created using lambda | lambda x: x * 2       |
+| Recursive functions  | Functions that call themselves       | A factorial function  |
+
+---
+
+**How does a function work?**
+
+```python
+def greet():
+  print("Hello!")
+
+greet()
+```
+
+**Output:**
+
+```txt
+Hello!
+```
+
+- *```def greet():``` defines the function*
+- *The indented statement is its body*
+- *```greet()``` calls the function*
+- *Python executes the function body*
+
+*Defining a function doesn't automatically execute its body.*
+
+---
+
+**Suppose a data analyst needs to calculate an average multiple times**
+
+```python
+def calculate_average(total, count):
+  return total / count
+
+average = calculate_average(450, 5)
+print(average)
+```
+
+**Output:**
+
+```txt
+90.0
+```
 
 
 
