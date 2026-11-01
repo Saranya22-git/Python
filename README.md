@@ -283,6 +283,8 @@ Hey everybody!!!
     - [**```pass```**](#pass)
     - [**Loop ```else```**](#loop-else)
 - [**Functions**](#functions)
+  - [**Basics**](#basics)
+    - [**def**](#def)
 
 
 ---
@@ -20249,12 +20251,12 @@ print(calculate_total(250, 3))        # 750
 
 **Types of functions**
 
-| Type                 | Meaning                              | Example               |
-| -------------------- | ------------------------------------ | --------------------- |
-| Built-in functions   | Provided by Python                   | print(), len()        |
-| User-defined functions | Created by programmers             | calculate_total()     |
-| Anonymous functions  | Small functions created using lambda | lambda x: x * 2       |
-| Recursive functions  | Functions that call themselves       | A factorial function  |
+| Type                       | Meaning                              | Example               |
+| -------------------------- | ------------------------------------ | --------------------- |
+| **Built-in functions**     | Provided by Python                   | print(), len()        |
+| **User-defined functions** | Created by programmers               | calculate_total()     |
+| **Anonymous functions**    | Small functions created using lambda | lambda x: x * 2       |
+| **Recursive functions**    | Functions that call themselves       | A factorial function  |
 
 ---
 
@@ -20297,6 +20299,56 @@ print(average)
 ```txt
 90.0
 ```
+
+---
+
+## **Basics**
+
+### **def**
+
+*The ```def``` keyword is used to define a user-defined function in Python.*
+
+*It creates a function object and associates it with a function name. The function body executes when the function is called, not when it is defined.*
+
+---
+
+**Why do we need ```def```?**
+
+*Imagine you want to calculate the square of several numbers*
+
+**Without defining a function:**
+
+```python
+print(5 * 5)
+print(8 * 8)
+print(10 * 10)
+```
+
+*You repeat the same logic*
+
+**With ```def```:**
+
+```python
+def square():
+  print(5 * 5)
+```
+
+*Now you've created a reusable function structure*
+
+---
+
+**Syntax:**
+
+```python
+def function_name():
+  # Function body
+  statements
+```
+
+
+
+
+
 
 
 
