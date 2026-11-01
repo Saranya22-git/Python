@@ -20353,6 +20353,99 @@ def function_name():
 | **```:```**             | Marks the beginning of the function body |
 | **Indentation**         | Defines the function body                |
 
+---
+
+**How does ```def``` work internally?**
+
+```python
+def greet():
+  print("Hello!")
+
+print("Program started")
+
+greet()
+
+print("Program ended")
+```
+
+**Output:**
+
+```txt
+Program started
+Hello!
+Program ended
+```
+
+**Step-by-step:**
+
+1. *Python encounters ```def greet():```*
+2. *Python creates a function object*
+3. *The function is associated with the name ```greet```*
+4. *Python moves to the next statement without executing the function body*
+5. *When Python encounters ```greet()``` it executes the function body*
+6. *Execution continues after the function call*
+
+*Function definition and function execution are two different things*
+
+---
+
+**Simple Example**
+
+**Define a function that prints a welcome message**
+
+```python
+def message():
+    print("Welcome")
+
+message()
+```
+
+**Output:**
+
+```txt
+Welcome
+```
+
+---
+
+**Create separate functions for addition and subtraction**
+
+```python
+def add():
+    a = 10
+    b = 10
+    print(a + b)
+
+def sub():
+    a = 10
+    b = 10
+    print(a - b)
+
+add()
+sub()
+```
+
+**Output:**
+
+```txt
+20
+0
+```
+
+*Each function contains its own set of instructions*
+
+---
+
+**Using an invalid function name**
+
+```python
+def 2calculate():
+  pass
+```
+
+*Function names must follow Python's identifier naming rules*
+
+---
 
 
 
