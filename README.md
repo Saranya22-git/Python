@@ -20345,7 +20345,7 @@ def function_name():
   statements
 ```
 
-| Component               | Meaning                           |
+| Component               | Meaning                                  |
 | ----------------------- | ---------------------------------------- |
 | **```def```**           | Keyword used to define a function        |
 | **```function_name```** | Name given to the function               |
