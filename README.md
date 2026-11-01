@@ -286,6 +286,7 @@ Hey everybody!!!
   - [**Basics**](#basics)
     - [**def**](#def)
     - [**Calling Functions**](#calling-functions)
+    - [**return**](#return)
 
 
 ---
@@ -20498,7 +20499,104 @@ def welcome():
 welcome()
 ```
 
+- *```def welcome():``` defines the function*
+- *```welcome()``` calls the function*
+- *The indented statement executes when the function is called*
 
+---
+
+**How does a function call work internally?**
+
+```python
+def first():
+  print("First function")
+
+def second():
+  print("Second function")
+
+print("Program started")
+
+second()
+first()
+
+print("Program ended")
+```
+
+**Output:**
+
+```txt
+Program started
+Second function
+First function
+Program ended
+```
+
+---
+
+**Simple Example**
+
+**Create and call a function that displays your name**
+
+```python
+def show_name():
+  print("My name is Saranya")
+
+show_name()
+```
+
+**Output:**
+
+```txt
+My name is Saranya
+```
+
+*You can call the same function multiple times*
+
+```python
+show_name()
+show_name()
+show_name()
+```
+
+**Output:**
+
+```txt
+My name is Saranya
+My name is Saranya
+My name is Saranya
+```
+
+*One definition, multiple calls*
+
+---
+
+**Create a function and call it multiple times**
+
+```python
+def calculate_square():
+  number = 5
+  print(number * number)
+
+calculate_square()
+calculate_square()
+calculate_square()
+```
+
+**Output:**
+
+```txt
+25
+25
+25
+```
+
+*Each call executes the function body again*
+
+---
+
+### **return**
+
+*The ```return``` statement is used to terminate the execution of a function and send a result back to the place where the function was called*
 
 
 
