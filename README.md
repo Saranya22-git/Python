@@ -285,6 +285,7 @@ Hey everybody!!!
 - [**Functions**](#functions)
   - [**Basics**](#basics)
     - [**def**](#def)
+    - [**Calling Functions**](#calling-functions)
 
 
 ---
@@ -20443,9 +20444,64 @@ def 2calculate():
   pass
 ```
 
-*Function names must follow Python's identifier naming rules*
+*Function names must follow Python's identifier naming rules.*
 
 ---
+
+### **Calling Functions**
+
+*A function call is an instruction that tells Python to execute the body of a previously defined function.*
+
+---
+
+**Why do we need function calls?**
+
+*Defining a function only creates it. It doesn't automatically execute the instructions inside it.*
+
+*For example*
+
+```python
+def greet():
+  print("Hello!")
+```
+
+*Nothing is printed because we haven't called the function*
+
+*To execute it*
+
+```python
+greet()
+```
+
+**Output:**
+
+```python
+Hello!
+```
+
+*We need function calls to reuse and execute the logic whenever required*
+
+---
+
+**Syntax:**
+
+```python
+function_name()
+```
+
+*For example*
+
+```python
+def welcome():
+  print("Welcome!")
+
+welcome()
+```
+
+
+
+
+
 
 
 
