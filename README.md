@@ -20870,8 +20870,73 @@ addition(10, 20)
 
 | Type | Explanation | Example |
 | ---- | ----------- | ------- |
-| **Positional** | Values assigned by position | ```add(10, 20) |
+| **Positional** | Values assigned by position | ```add(10, 20)``` |
+| **Keyword** | Values assigned by parameter name | ```add(a = 10, b = 20)``` |
+| **Default** | Parameter has a predefined value | ```def greet(name = "Guest")``` |
+| **Variable-length positional** | Accepts multiple positional arguments | ```*args``` |
+| **Variable-length keyword** | Accepts multiple keyword arguments | ```*kwargs``` |
 
+---
+
+**Simple Example**
+
+```python
+def greet(name):
+  print("Hello", name)
+
+greet("Ravi")
+greet("Priya")
+greet("Arun")
+```
+
+**Output:**
+
+```txt
+Hello Ravi
+Hello Priya
+Hello Arun
+```
+
+*Here*
+- *```name``` is parameter*
+- *```"Ravi", "Priya", "Arun"``` are arguments*
+- *Each call supplies a different value*
+
+---
+
+**A function can have multiple parameters**
+
+```python
+def calculate_total(price, quantity):
+  total = price * quantity
+  return total
+
+result = calculate_total(100, 5)
+print(result)
+```
+
+**Output:**
+
+```txt
+500
+```
+
+---
+
+**Passing fewer arguments than required**
+
+```python
+def addition(a, b):
+  return a + b
+
+addition(10)
+```
+
+**Output:**
+
+```txt
+TypeError: addition() missing 1 required positional argument: 'b'
+```
 
 
 
