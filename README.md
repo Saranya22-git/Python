@@ -287,6 +287,7 @@ Hey everybody!!!
     - [**def**](#def)
     - [**Calling Functions**](#calling-functions)
     - [**return**](#return)
+  - [**Parameters**](#parameters)
 
 
 ---
@@ -20795,6 +20796,83 @@ print(result)
 | **Multiple return values** | Packed into a tuple |
 
 ---
+
+## **Parameters**
+
+- *A parameter is a variable declared in a function definition that receives a value when the function is called.*
+- *Parameters allow functions to accept input values and work with different data*
+
+---
+
+**Why do we need parameters?**
+
+*Imagine you want to calculate the sum of different numbers*
+
+**Without parameters:**
+
+```python
+def addition():
+  return 10 + 20
+
+print(addition())
+```
+
+*What if you want to calculate ```50 + 60```? You would need to change the function or create another function*
+
+**With parameters:**
+
+```python
+def addition(a, b):
+  return a + b
+
+print(addition(10, 20))
+print(addition(30, 89))
+print(addition(10999, 46587))
+```
+
+**Output:**
+
+```txt
+30
+119
+57586
+```
+
+*The same function works with different inputs*
+
+*Parameters make functions flexible and reusable*
+
+---
+
+**Parameters vs Arguments**
+
+```python
+def addition(a, b):
+  return a + b
+
+addition(10, 20)
+```
+
+| Term | Example | Meaning |
+| ---- | ------- | ------- |
+| **Function** | ```addition()``` | Reusable block of code |
+| **Parameters** | ```a```, ```b``` | Variables in the function definition |
+| **Arguments** | ```10```, ```20``` | Values supplied during the call |
+
+- *Parameters are empty boxes waiting for values*
+- *Arguments are the actual values placed inside those boxes*
+
+---
+
+**Types of Parameters and Arguments**
+
+*Python supports different ways of passing values to functions*
+
+| Type | Explanation | Example |
+| ---- | ----------- | ------- |
+| **Positional** | Values assigned by position | ```add(10, 20) |
+
+
 
 
 
