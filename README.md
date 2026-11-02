@@ -288,6 +288,7 @@ Hey everybody!!!
     - [**Calling Functions**](#calling-functions)
     - [**return**](#return)
   - [**Parameters**](#parameters)
+    - [**Positional Parameters**](#positional-parameters)
 
 
 ---
@@ -20938,10 +20939,152 @@ addition(10)
 TypeError: addition() missing 1 required positional argument: 'b'
 ```
 
+---
 
+### **Positional Parameters**
 
+- *Positional Parameters are parameters that receive values based on their position in the function call.*
+- *The first argument is assigned to the first parameter, the second argument to the second parameter and so on.*
 
+---
 
+**Why do we need positional parameters?**
+
+```python
+def addition():
+  return 10 + 20
+```
+
+*Every time you call it, it calculates the same numbers*
+
+*What if you want to add different numbers? Instead of writing separate functions, you can receive values through parameters.*
+
+```python
+def addition(a, b):
+  return a + b
+
+print(addition(10, 20))
+print(addition(50, 30))
+```
+
+**Output:**
+
+```txt
+30
+80
+```
+
+*Now the same function can work with different inputs*
+
+---
+
+**Syntax:**
+
+```python
+def function_name(parameter1, parameter2):
+  statements
+  return result
+
+function_name(argument1, argument2)
+```
+
+**Example:**
+
+```python
+def addition(a, b):
+    return a + b
+
+addition(10, 20)
+```
+
+- *```a``` and ```b``` are parameters*
+- *```10``` and ```20``` are arguments*
+
+---
+
+**How does it work internally?**
+
+```python
+def addition(a, b):
+  result = a + b
+  return result
+
+answer = addition(10, 20)
+print(answer)
+```
+
+**Output:**
+
+```txt
+30
+```
+
+- **Step-1:** *Function definition*
+
+  ```python
+  def addition(a, b):
+  ```
+
+  *Python creates the function with two parameters*
+
+- **Step-2:** *Function call*
+
+  ```python
+  addition(10, 20)
+  ```
+
+  *Two arguments are supplied*
+
+- **Step-3:** *Positional arguments*
+
+  ```txt
+  Parameter ```a``` ```10``` First argument
+
+  Parameter ```b``` ```20``` Second argument
+  ```
+
+- **Step-4:** *Calculation*
+
+  ```python
+  result = 10 + 20              # 30
+  ```
+
+- **Step-5:** *Return*
+
+  ```python
+  return result
+  ```
+
+  *The value ```30``` goes back to the caller*
+
+---
+
+**Simple Example**
+
+**Create a function that displays a person's name and age**
+
+```python
+def details(name, age):
+  print("Name:", name)
+  print("Age:", age)
+
+details("Saran", 10)
+```
+
+**Output:**
+
+```txt
+Name: Saran
+Age: 10
+```
+
+---
+
+**Passing fewer arguments than required and passing extra arguments**
+
+*Both raises ```TypeError```*
+
+---
 
 
 
