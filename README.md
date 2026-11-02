@@ -20788,7 +20788,7 @@ print(result)
 
 | Concept  |  Meaning  |
 | -------- | --------- |
-| **```return value** | Sends a value back |
+| **```return value```** | Sends a value back |
 | **```return```** | Returns ```None``` and exits |
 | **No return statement** | Automatically returns ```None``` |
 | **```print()```** | Displays information |
