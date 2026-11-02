@@ -20597,8 +20597,204 @@ calculate_square()
 ### **return**
 
 *The ```return``` statement is used to terminate the execution of a function and send a result back to the place where the function was called*
+ 
+---
 
+**Why do we need ```return```?**
 
+*Imagine you want to calculate the sum of two numbers and use that result somewhere else in your program*
+
+**Without ```return```:**
+
+```python
+def addition():
+  print(10 + 20)
+
+addition()
+```
+
+**Output:**
+
+```txt
+30
+```
+
+*The result is displayed but you cannot directly reuse it as the function's returned result*
+
+**With ```return```:**
+
+```python
+def addition():
+  return 10 + 20
+
+result = addition()
+print(result)
+```
+
+**Output:**
+
+```txt
+30
+```
+
+*Now the returned valued can be stored, reused, compared or passed to another function*
+
+---
+
+**Syntax:**
+
+```python
+def function_name():
+  statements
+  return value
+```
+
+*There are three possibilities*
+
+- **Return a value**
+
+```python
+def calculate():
+  return 100
+```
+
+- **Return without a value**
+
+```python
+def calculate():
+  return
+```
+
+*This returns ```None```*
+
+- **No explicit return statement**
+
+```python
+def calculate():
+  print("Hello")
+```
+
+*Python automatically returns ```None``` when the function finishes without an explicit return value*
+
+---
+
+**How does ```return``` work internally?**
+
+```python
+def calculate():
+  print("Step 1")
+  return 100
+  print("Step 2")
+
+result = calculate()
+print(result)
+```
+
+**Output:**
+
+```txt
+Step 1
+100
+```
+
+**Step-by-step execution:**
+- *Python calls ```calculate()```*
+- *It prints ```"Step 1"```*
+- *It encounters ```return 100```*
+- *The function immediately terminates*
+- *The value ```100``` is passed back to the caller*
+- *The returned value is assigned to ```result```*
+- *```print(result)``` displays ```100```*
+
+*Statements after an executed ```return``` in the same function execution are not reached*
+
+---
+
+**Simple Example**
+
+**Return the square of a number**
+
+```python
+def square():
+  return 5 * 5
+
+result = square()
+print(result)
+```
+
+**Output:**
+
+```txt
+25
+```
+
+*The function calculates ```25``` and returns it. The caller stores that result in ```result```*
+
+---
+
+**Create a function that returns the sum of two numbers**
+
+```python
+def addition(a, b):
+  result = a + b
+  return
+
+answer = addition(10, 20)
+print(answer)
+```
+
+**Output:**
+
+```txt
+30
+```
+
+---
+
+**Can we return multiple values from a function?**
+
+*Yes Python packages them into a tuple*
+
+```python
+def calculate():
+  return 10, 20
+
+result = calculate()
+print(result)
+```
+
+**Output:**
+
+```txt
+(10, 20)
+```
+
+---
+
+**Write a function named ```find_largest``` that accepts two numbers, returns the larger number, and prints the returned result.**
+
+```python
+def find_largest(a, b):
+  if a > b:
+    return a
+  else:
+    return b
+
+result = find_largest(10, 20)
+print(result)
+```
+
+---
+
+| Concept  |  Meaning  |
+| -------- | --------- |
+| **```return value** | Sends a value back |
+| **```return```** | Returns ```None``` and exits |
+| **No return statement** | Automatically returns ```None``` |
+| **```print()```** | Displays information |
+| **Multiple return values** | Packed into a tuple |
+
+---
 
 
 
