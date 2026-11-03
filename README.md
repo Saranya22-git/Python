@@ -291,6 +291,8 @@ Hey everybody!!!
     - [**Positional Parameters**](#positional-parameters)
     - [**Keyword Parameters (Keyword Arguments)**](#keyword-parameters-keyword-arguments)
     - [**Default Parameters**](#default-parameters)
+    - [**Variable-Length Parameters**](#variable-length-parameters)
+    - [](#-1)
 
 
 ---
@@ -21466,7 +21468,161 @@ SyntaxError: parameter without a default follows parameter with a default
 
 ---
 
+### **Variable-Length Parameters**
 
+*Variable-length parameters allow a function to accept a flexible number of arguments instead of requiring a fixed number.*
+
+*Normally a function may expect a fixed number of arguments*
+
+```python
+def add(a, b):
+  return a + b
+
+print(add(10, 20))                  # 30
+```
+
+*Here the function accepts exactly two arguments. But what if we want to pass 2, 3, 5, or 10 numbers to the same function?*
+
+---
+
+**Why do we need it?**
+
+*Imagine creating a function to calculate the sum of numbers*
+
+*Without variable-length parameters you might need separate functions:*
+
+```python
+def add_two(a, b):
+  return a + b
+
+def add_three(a, b, c):
+  return a + b + c
+
+def add_four(a, b, c, d):
+  return a + b + c + d
+```
+
+*This creates unnecessary repetition.*
+
+*With variable-length parameters one function can accept different number of arguments*
+
+```python
+def add_numbers(*args):
+  return sum(args)
+
+print(add_numbers(10, 20))
+print(add_numbers(10, 20, 30))
+print(add_numbers(10, 20, 30, 40))
+```
+
+**Output:**
+
+```txt
+30
+60
+100
+```
+
+---
+
+**Syntax:**
+
+*Python supports two forms of variable-length parameters.*
+
+| Type | Syntax | Collects |
+| ---- | ------ | -------- |
+| **Variable-length positional** | ```*args``` | Extra positional arguments into a tuple |
+| **Variable-length keyword** | ```**kwargs``` | Extra keyword arguments into a dictionary |
+
+---
+
+**How does it work internally?**
+
+```python
+def display_numbers(*args):
+  print(args)
+
+display_numbers(10, 20, 30, 40)
+```
+
+**Output:**
+
+```txt
+(10, 20, 30, 40)
+```
+
+**Step-by-step:**
+- *Python defines the function ```display_numbers```*
+- *When the function is called, four positional arguments are supplied*
+- *Python collects those arguments into a tuple*
+- *The tuple is assigned to the parameter ```args```*
+- *The function prints that tuple*
+
+*```args``` is a conventional name, not a Python keyword. The ```*``` is what makes the parameter collect extra positional arguments*
+
+---
+
+**Simple Example**
+
+```python
+def calculate_sum(*args):
+  print(args)
+
+calculate_sum(5, 10)
+calculate_sum(5, 10, 15)
+```
+
+**Output:**
+
+```txt
+(5, 10)
+(5, 10, 15)
+```
+
+*The same function accepts different number of arguments*
+
+---
+
+*A function that calculate the average of any number of values*
+
+```python
+def calculate_average(*args):
+    total = sum(args) / len(args)
+    return total
+
+print(calculate_average(10, 20))
+print(calculate_average(10, 20, 30))
+print(calculate_average(10, 20, 30, 40))
+```
+
+**Output:**
+
+```txt
+15.0
+20.0
+25.0
+```
+
+*Here*
+- *```sum(args)``` calculates the total*
+- *```len(args)``` counts the values*
+- *The function divides the total by the count*
+
+---
+
+**Forgetting that zero arguments are also allowed**
+
+```python
+def show(*args):
+  print(args)
+
+show()
+```
+
+---
+
+
+### 
 
 
 
