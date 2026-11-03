@@ -293,6 +293,7 @@ Hey everybody!!!
     - [**Default Parameters**](#default-parameters)
     - [**Variable-Length Parameters**](#variable-length-parameters)
     - [**```*args``` - Variable-Length Positional Arguments**](#args---variable-length-positional-arguments)
+    - [**```**kwargs``` - Variable-Length Keyword Arguments**](#kwargs---variable-length-keyword-arguments)
 
 
 ---
@@ -21767,8 +21768,157 @@ Anu
 
 ---
 
+### **```**kwargs``` - Variable-Length Keyword Arguments**
 
+- *```**kwargs``` allows a Python function to accept any number of keyword arguments.*
+- *Python collects these arguments into a dictionary*
 
+**Example:**
+
+```python
+def student_details(**kwargs):
+  print(kwargs)
+
+student_details(name = "Ravi", age = 22, city = "Hyderabad")
+```
+
+**Output:**
+
+```txt
+{'name': 'Ravi', 'age': 22, 'city': 'Hyderabad'}
+```
+
+---
+
+**Why do we need ```**kwargs```?**
+
+*Imagine creating a function to store employee details*
+
+*Different employees may have different information:*
+- *Employee 1: name, age*
+- *Employee 2: name, age, department*
+- *Employee 3: name, age, department, salary*
+
+*Without ```**kwargs``` you may need to define many parameters or create different functions.*
+
+*With ```**kwargs``` one function can accept flexible keyword information*
+
+```python
+def employee_details(**kwargs):
+  print(kwargs)
+
+employee_details(name = "Ravi", age = 22)
+employee_details(name = "Priya", age = 24, department = "IT", salary = 30000)
+```
+
+**Output:**
+
+```txt
+{'name': 'Ravi', 'age': 22}
+{'name': 'Priya', 'age': 24, 'department': 'IT', 'salary': 30000}
+```
+
+---
+
+**Syntax:**
+
+```python
+def function_name(**kwargs):
+  # function body
+  pass
+```
+
+- *```**``` tells Python to collect extra keyword arguments*
+- *```kwargs``` is a conventional name, not a Python keyword*
+- *The collected arguments are stored in a dictionary*
+- *Each keyword becomes a dictionary key, and its value becomes the corresponding dictionary value*
+
+*You can use another valid parameter name too*
+
+```python
+def show(**details):
+  print(details)
+
+show(name = "Anu", age = 22)
+```
+
+**Output:**
+
+```txt
+{'name': 'Anu', 'age': 22}
+```
+
+---
+
+**Simple Example**
+
+**Let's print all employee information using a loop**
+
+```python
+def employee_details(**kwargs):
+  for key, value in kwargs.items():
+    print(key, ":", value)
+
+employee_details(name = "Priya", age = 24, department = "Data Analytics")
+```
+
+**Output:**
+
+```txt
+name : Priya
+age : 24
+department : Data Analytics
+```
+
+---
+
+**Create a function that calculates the total marks of a student**
+
+```python
+def calculate_marks(**kwargs):
+  total = sum(kwargs.values())
+  return total
+
+result = calculate_marks(python = 90, sql = 85, excel = 95)
+print(result)
+```
+
+**Output:**
+
+```txt
+270
+```
+
+---
+
+**What is the difference between ```*args``` and ```**kwargs```?**
+
+| **```*args```** | **```*kwargs```** |
+| --------------- | ----------------- |
+| Positional arguments | Keyword arguments |
+| Collects into a tuple | Collects into a dictionary |
+| Uses one asterisk | Uses two asterisks |
+
+**Example using both:**
+
+```python
+def student(name, *marks, **details):
+  print("Name:", name)
+  print("Marks:", marks)
+  print("Other Details:", details)
+
+student("Ravi", 90, 85, city = "Eluru", department = "AI")
+```
+
+**Output:**
+
+```txt
+Name: Ravi
+Marks: (90, 85)
+Other Details: {'city': 'Eluru', 'department': 'AI'}
+```
+
+---
 
 
 
