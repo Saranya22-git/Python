@@ -289,6 +289,7 @@ Hey everybody!!!
     - [**return**](#return)
   - [**Parameters**](#parameters)
     - [**Positional Parameters**](#positional-parameters)
+    - [**Keyword Parameters (Keyword Arguments)**](#keyword-parameters-keyword-arguments)
 
 
 ---
@@ -21085,6 +21086,239 @@ Age: 10
 *Both raises ```TypeError```*
 
 ---
+
+### **Keyword Parameters (Keyword Arguments)**
+
+- *Keyword arguments are arguments passed to a function by explicitly specifying the parameter name along with its value.*
+- *They allow us to pass values without depending on their positional order.*
+
+---
+
+**Why do we need Keyword arguments?**
+
+```python
+def student(name, age, city):
+  print(name, age, city)
+
+student("Ravi", 12, "Eluru")
+```
+
+**Output:**
+
+```txt
+Ravi 12 Eluru
+```
+
+- *Here values are assigned based on position but imagine you have many parameters. Remembering their order can become confusing*
+
+**With Keyword Arguments:**
+
+```python
+def student(name, age, city):
+  print(name, age, city)
+
+student (city = "Hyderabad", age = 22, name = "Ravi")
+```
+
+**Output:**
+
+```txt
+Ravi 22 Hyderabad
+```
+
+*Notice that we changed the argument order, but Python assigned the values correctly using their names.*
+
+---
+
+**Syntax:**
+
+```python
+function_name(parameter1 = value1, parameter2 = value2)
+```
+
+**Example:**
+
+```python
+def greet(name, message):
+  print(message, name)
+
+greet(name = "Ravi", message = "Hello")
+```
+
+**Output:**
+
+```txt
+Hello Ravi
+```
+
+---
+
+**How does it work internally?**
+
+```python
+def calculate(a, b, c):
+  return a + b + c
+
+result = calculate(c = 30, a = 10, b = 20)
+print(result)
+```
+
+**Output:**
+
+```txt
+60
+```
+
+**Step-by-step:**
+- *Python defines three parameters ```a```, ```b``` and ```c```*
+- *The function is called with keyword arguments*
+- *Python matches each argument name with its corresponding parameter*
+- *```a``` receives ```10```*
+- *```b``` receives ```20```*
+- *```c``` receives ```30```*
+- *The function calculates ```10 + 20 + 30```*
+- *It returns ```60```*
+
+---
+
+**Simple Example**
+
+```python
+def display_details(name, age):
+  print("Name:", name)
+  print("Age:", age)
+
+display_details(age = 22, name = "Priya")
+```
+
+**Output:**
+
+```txt
+Name: Priya
+Age: 22
+```
+
+---
+
+**Calculate the total price of an order**
+
+```python
+def calculate_bill(price, quantity, discount):
+  total = price * quantity
+  final_bill = total - discount
+  return final_bill
+
+result = calculate_bill(discount = 200, price = 500, quantity = 3)
+print(result)
+```
+
+**Output:**
+
+```txt
+1300
+```
+
+*The order of keyword arguments does not matter*
+
+---
+
+**Using an incorrect parameter name**
+
+```python
+def greet(name):
+  print(name)
+
+greet(username = "Ravi")
+```
+
+**Output:**
+
+```txt
+TypeError: greet() got an unexpected keyword argument 'username'
+```
+
+*This raises a ```TypeError``` because ```username``` isn't parameter of the function*
+
+---
+
+**Providing the same parameter twice**
+
+```python
+def addition(a, b):
+  return a + b
+
+addition(10, a = 20)
+```
+
+**Output:**
+
+```txt
+TypeError: addition() got multiple values for argument 'a'
+```
+
+*This raises a ```TypeError``` because ```a``` receives two values*
+
+---
+
+**Forgetting a required parameter**
+
+```python
+def student(name, age):
+  print(name, age)
+
+student(name = "Ravi")
+```
+
+**Output:**
+
+```txt
+TypeError: student() missing 1 required positional argument: 'age'
+```
+
+*This raises a ```TypeError``` because ```age``` hasn't received a value*
+
+---
+
+**Mixing positional and keyword arguments incorrectly**
+
+```python
+def student(name, age):
+  print(name, age)
+
+student(name = "Ravi", 22)
+```
+
+**Output:**
+
+```txt
+SyntaxError: positional argument follows keyword argument
+```
+
+*Python raises a ```SyntaxError``` because a positional argument cannot follow a keyword argument*
+
+```python
+def student(name, age):
+  print(name, age)
+
+student("Ravi", age = 22)
+```
+
+**Output:**
+
+```txt
+Ravi 22
+```
+
+- *Positional arguments must come before keyword arguments in a function call*
+
+---
+
+
+
+
+
+
+
 
 
 
