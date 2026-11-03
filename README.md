@@ -294,6 +294,7 @@ Hey everybody!!!
     - [**Variable-Length Parameters**](#variable-length-parameters)
     - [**```*args``` - Variable-Length Positional Arguments**](#args---variable-length-positional-arguments)
     - [**```**kwargs``` - Variable-Length Keyword Arguments**](#kwargs---variable-length-keyword-arguments)
+  - [**Scope**](#scope)
 
 
 ---
@@ -21919,6 +21920,68 @@ Other Details: {'city': 'Eluru', 'department': 'AI'}
 ```
 
 ---
+
+## **Scope**
+
+*Scope refers to the region of a Python program where a variable or name can be accessed.*
+
+**Example:**
+
+```python
+x = 100
+
+def display():
+  y = 50
+  print(y)
+
+display()
+print(x)
+```
+
+**Output:**
+
+```txt
+50
+100
+```
+
+*Here*
+- *```x``` is created outside the function*
+- *```y``` is created inside the function*
+- *Both variables have different scopes*
+
+---
+
+**Why do we need Scope?**
+
+*Imagine you are developing a large application with hundreds of variables and functions.*
+
+**Without scope:**
+- *Variables could accidentally interfere with each other*
+- *It would become difficult to manage code*
+- *Changes in one part of a program could affect another part unexpectedly*
+
+*Scope helps us*
+1. *Control where variables can be accessed*
+2. *Avoid naming conflicts*
+3. *Organize code*
+4. *Manage variables inside and outside functions*
+
+---
+
+**Types of Scope**
+
+*Python has four main levels of scope, commonly explained using the LEGB rule*
+
+| Scope | Meaning |
+| ----- | ------- |
+| Local | Inside the current function |
+| Enclosing | Inside an outer function containing a nested function |
+| Global | At the module/program level |
+| Built-in | Names provided by Python |
+
+---
+
 
 
 
