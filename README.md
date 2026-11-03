@@ -290,6 +290,7 @@ Hey everybody!!!
   - [**Parameters**](#parameters)
     - [**Positional Parameters**](#positional-parameters)
     - [**Keyword Parameters (Keyword Arguments)**](#keyword-parameters-keyword-arguments)
+    - [**Default Parameters**](#default-parameters)
 
 
 ---
@@ -21313,6 +21314,90 @@ Ravi 22
 
 ---
 
+### **Default Parameters**
+
+*A Default parameter is a parameter that is assigned a predefined value in a function definition. If the caller doesn't provide an argument for that parameter, Python uses the default value.*
+
+---
+
+**Why do we need default parameters?**
+
+*Imagine you are creating a function to greet users*
+
+**Without default parameters:**
+
+```python
+def greet(name):
+  print("Hello", name)
+
+greet("Ravi")
+greet("Priya")
+```
+
+**Output:**
+
+```txt
+Hello Ravi
+Hello Priya
+```
+
+*Every call must provide a name*
+
+*What if you want to greet a user without providing a name?*
+
+*You can use a default parameter*
+
+```python
+def greet(name = "Guest"):
+  print("Hello", name)
+
+greet("Ravi")
+greet()
+```
+
+**Output:**
+
+```txt
+Hello Ravi
+Hello Guest
+```
+
+*The default value is used when no argument is supplied*
+
+---
+
+**Syntax:**
+
+```python
+def function_name(parameter = default_value):
+  statements
+```
+
+**Example:**
+
+```python
+def welcome(name = "Guest"):
+  print("Welcome", name)
+
+welcome()
+welcome("Ravi")
+```
+
+**Output:**
+
+```txt
+Welcome Guest
+Welcome Ravi
+```
+
+- *If an argument is supplied, it replaces the default for that call*
+- *If no argument is supplied, the default value is used*
+
+---
+
+**Simple Example**
+
+**Create a function with a default country**
 
 
 
