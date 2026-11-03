@@ -292,7 +292,7 @@ Hey everybody!!!
     - [**Keyword Parameters (Keyword Arguments)**](#keyword-parameters-keyword-arguments)
     - [**Default Parameters**](#default-parameters)
     - [**Variable-Length Parameters**](#variable-length-parameters)
-    - [](#-1)
+    - [**```*args``` - Variable-Length Positional Arguments**](#args---variable-length-positional-arguments)
 
 
 ---
@@ -21621,8 +21621,157 @@ show()
 
 ---
 
+**Create a function called find_largest() that accepts any number of numbers and returns the largest number**
 
-### 
+```python
+def find_largest(*args):
+    largest = max(args)
+    return largest
+
+print(find_largest(12, 45, 7, 89, 23))          # 89
+```
+
+---
+
+### **```*args``` - Variable-Length Positional Arguments**
+
+- *```*args``` allows a Python function to accept any number of positional arguments.*
+- *Python collects all extra positional arguments into a tuple.*
+
+*For example*
+
+```python
+def display(*args):
+  print(args)
+
+display(10, 20, 30)
+```
+
+**Output:**
+
+```txt
+(10, 20, 30)
+```
+
+*```*args``` is used when we don't hknow in advance how many positional arguments will be passed to a function.*
+
+---
+
+**Why do we need ```*args```?**
+
+*Suppose you want to add different numbers of values*
+
+**Without ```*args```:**
+
+```python
+def add(a, b):
+  return a + b
+```
+
+*This function accepts only two arguments.*
+
+**With ```*args```:**
+
+```python
+def add(*args):
+  return sum(args)
+
+print(add(10, 20))
+print(add(10, 20, 30))
+print(add(10, 20, 30, 40))
+```
+
+**Output:**
+
+```txt
+30
+60
+100
+```
+
+*One function handles different number of arguments*
+
+---
+
+**Syntax:**
+
+```python
+def function_name(*args):
+  # function body
+  pass
+```
+
+- *```*``` tells Python to collect extra positional arguments*
+- *```args``` is a conventional parameter name. You can use another valid name*
+- *The collected arguments are stored in a tuple*
+
+*For example*
+
+```python
+def show(*values):
+  print(values)
+
+show(10, 20, 30)
+```
+
+**Output:**
+
+```txt
+(10, 20, 30)
+```
+
+---
+
+**How does it work internally?**
+
+```python
+def calculate(*args):
+  print(args)
+
+calculate(5, 10, 15)
+```
+
+**Output:**
+
+```txt
+(5, 10, 15)
+```
+
+- *Python defines the function ```calculate```*
+- *The function is called with three positional arguments*
+- *Python collects the arguments into a tuple*
+- *That tuple is assigned to ```args```*
+- *```print(args)``` displays the tuple*
+
+---
+
+**Simple Example**
+
+```python
+def display_names(*args):
+  for name in args:
+    print(name)
+
+display_names("Ravi", "Priya", "Anu")
+```
+
+**Output:**
+
+```txt
+Ravi
+Priya
+Anu
+```
+
+*Here the ```for``` loop visits each value in the tuple*
+
+---
+
+
+
+
+
+
 
 
 
