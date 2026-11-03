@@ -21399,6 +21399,73 @@ Welcome Ravi
 
 **Create a function with a default country**
 
+```python
+def display_country(country = "India"):
+  print("Country:", country)
+
+display_country()
+display_country("Japan")
+```
+
+**Output:**
+
+```txt
+Country: India
+Country: Japan
+```
+
+*The first call uses the default. The second call overrides it.*
+
+---
+
+**Calculate an employee's salary with a default bonus**
+
+```python
+def calculate_salary(basic_salary, bonus = 5000):
+  total_salary = basic_salary + bonus
+  return total_salary
+
+print(calculate_salary(30000))
+print(calculate_salary(30000, 10000))
+```
+
+**Output:**
+
+```txt
+35000
+40000
+```
+
+---
+
+**Placing a non-default parameter after a default parameter**
+
+```python
+def student(age = 21, name):
+  print(name, age)
+
+student(age, name = "Ravi")
+```
+
+**Output:**
+
+```txt
+SyntaxError: parameter without a default follows parameter with a default
+```
+
+---
+
+| Concept | Remember |
+| ------- | -------- |
+| **Default parameter** | Parameter with a predefined value |
+| **Argument supplied** | Supplied value is used |
+| **Argument omitted** | Default value is used |
+| **Explicit ```None```** | ```None``` is assigned |
+| **Required parameter** | Must come before default parameters |
+| **Mutable defaults** | Can retain changes across calls |
+
+---
+
 
 
 
