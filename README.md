@@ -22124,6 +22124,118 @@ print(x)
 
 ### **Local**
 
+- *Local scope refers to the area inside a function where a variable is created and can be accessed.*
+- *A variable created inside a function is called a local variable.*
+
+**Example:**
+
+```python
+def display():
+  name = "Ravi"
+  print(name)
+
+display()
+```
+
+**Output:**
+
+```txt
+Ravi
+```
+
+*Here ```name``` is a local variable because it is created inside the ```display()``` function.*
+
+---
+
+**Why do we need Local Scope?**
+
+*Imagine an application with many functions. Each function may need its own variables. Local scope helps keep those variables separate.*
+
+*Benefits:*
+- *Prevents unwanted interference between functions*
+- *Avoids naming conflicts*
+- *Keeps temporary data inside the function*
+- *Makes programs easier to maintain*
+
+**Example:**
+
+```python
+def student():
+  marks = 90
+  print(marks)
+
+def employee():
+  marks = 80
+  print(marks)
+
+student()
+employee()
+```
+
+**Output:**
+
+```txt
+90
+80
+```
+
+*Both functions have a variable named ```marks``` but they are separate local variables.*
+
+---
+
+**Syntax:**
+
+```python
+def function_name():
+  variable = value
+  # Use the variable inside this function
+```
+
+**Example:**
+
+```python
+def calculate():
+  total = 100
+  print(total)
+
+calculate()
+```
+
+**Output:**
+
+```txt
+100
+```
+
+---
+
+**How does it work internally?**
+
+```python
+def calculate():
+  x = 10
+  y = 20
+  result = x + y
+  print(result)
+
+calculate()
+```
+
+**Output:**
+
+```txt
+30
+```
+
+**Step-by-step:**
+- *Python defines the function ```calculate()```*
+- *When the function is called, Python creates a local execution scope*
+- *```x``` is assigned ```10```*
+- *```y``` is assigned ```20```*
+- *```result``` is calculated as ```30```*
+- *```print(result)``` displays 30*
+- *When the function finishes, its local execution frame is removed*
+
 
 
 
