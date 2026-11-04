@@ -295,6 +295,7 @@ Hey everybody!!!
     - [**```*args``` - Variable-Length Positional Arguments**](#args---variable-length-positional-arguments)
     - [**```**kwargs``` - Variable-Length Keyword Arguments**](#kwargs---variable-length-keyword-arguments)
   - [**Scope**](#scope)
+    - [**Local**](#local)
 
 
 ---
@@ -21980,7 +21981,153 @@ print(x)
 | Global | At the module/program level |
 | Built-in | Names provided by Python |
 
+
+```txt
+Python Scope — LEGB
+L — Local Scope
+
+Variables created inside the current function.
+E — Enclosing Scope
+
+Variables in an outer function.
+G — Global Scope
+
+Variables defined at the module level.
+B — Built-in Scope
+
+Python's built-in names, such as print(), len(), and sum().
+```
+
+*LEGB is the order Python searches when resolving a name.*
+
 ---
+
+**How does it work internally?**
+
+*Python follows the LEGB lookup rule when it needs to find a variable name.*
+
+*LEGB means:*
+- **Local:** *Is the name available in the current function?*
+- **Enclosing:** *Is it available in an outer function?*
+- **Global:** *Is it available at the module level?*
+- **Built-in:** *Is it a Python built-in name?*
+
+**Example:**
+
+```python
+x = 100
+
+def display():
+  x = 50
+  print(x)
+
+display()
+```
+
+**Output:**
+
+```txt
+50
+```
+
+- *Python first checks the local scope*
+- *It finds ```x = 50```*
+- *Therefore, it uses the local value*
+- *It doesn't need to search the global scope*
+
+---
+
+**Simple Example**
+
+```python
+name = "Global"
+
+def show():
+  name = "Local"
+  print(name)
+
+show()
+print(name)
+```
+
+- *```name = "Global"``` belongs to the global scope*
+- *```name = "Local"``` belongs to the local scope*
+- *The local variable does not overwrite the global variable*
+
+---
+
+**Let's see how a function can access a global variable**
+
+```python
+company = "Google"
+
+def employee():
+  print(company)
+
+employee()
+```
+
+**Output:**
+
+```txt
+Google
+```
+
+*Python searches*
+- *Local scope: ```company``` not found*
+- *Enclosing scope: no enclosing function*
+- *Global scope: ```company``` found*
+- *So it prints ```"Google"```*
+
+---
+
+**Imagine an employee management application**
+
+```python
+company_name = "ABC Technologies"
+
+def employee_details():
+    employee_name = "Ravi"
+    employee_salary = 30000
+
+    print("Company:", company_name)
+    print("Employee:", employee_name)
+    print("Salary:", employee_salary)
+
+employee_details()
+```
+
+**Output:**
+
+```txt
+Company: ABC Technologies
+Employee: Ravi
+Salary: 30000
+```
+
+- *```company_name``` is global because it is shared at the module level*
+- *```employee_name``` and ```employee_salary``` are local to the function*
+
+---
+
+**Assuming local variables are accessible everywhere**
+
+```python
+def show():
+  x = 10
+
+show()
+print(x)
+```
+
+---
+
+### **Local**
+
+
+
+
+
 
 
 
