@@ -296,6 +296,7 @@ Hey everybody!!!
     - [**```**kwargs``` - Variable-Length Keyword Arguments**](#kwargs---variable-length-keyword-arguments)
   - [**Scope**](#scope)
     - [**Local**](#local)
+    - [**Global**](#global)
 
 
 ---
@@ -22236,9 +22237,85 @@ calculate()
 - *```print(result)``` displays 30*
 - *When the function finishes, its local execution frame is removed*
 
+---
 
+**Simple Example**
 
+```python
+def greet():
+  message = "Hello Python"
+  print(message)
 
+greet()
+```
+
+---
+
+**Let's use the same variable name in two different functions**
+
+```python
+def first():
+  number = 100
+  print("First:", number)
+
+def second():
+  number = 200
+  print("Second:", number)
+
+first()
+second()
+```
+
+**Output:**
+
+```txt
+First: 100
+Second: 200
+```
+
+- *```number``` inside ```first()``` belongs to the first function's local scope*
+- *```number``` inside ```second()``` belongs to the second function's local scope*
+- *They don't overwrite each other*
+
+---
+
+**Accessing a local variable outside its function**
+
+```python
+def display():
+  x = 50
+
+display()
+print(x)
+```
+
+**Output:**
+
+```txt
+NameError: name 'x' is not defined
+```
+
+---
+
+**Using a local variable before assigning it**
+
+```python
+def display():
+  print(x)
+  x = 10
+
+display()
+```
+
+**Output:**
+
+```txt
+UnboundLocalError: cannot access local variable 'x' where it is not associated with a value
+```
+
+---
+
+### **Global**
 
 
 
