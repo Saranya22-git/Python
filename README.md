@@ -297,6 +297,7 @@ Hey everybody!!!
   - [**Scope**](#scope)
     - [**Local**](#local)
     - [**Global**](#global)
+    - [**```nonlocal```**](#nonlocal)
 
 
 ---
@@ -22522,6 +22523,207 @@ print(count)
 ```txt
 11
 ```
+
+---
+
+### **```nonlocal```**
+
+- *The nonlocal keyword is used inside a nested function to refer to a variable from its nearest enclosing function.*
+- *It allows the inner function to modify a variable belonging to the outer function.*
+
+**Example:**
+
+```python
+def outer():
+  x = 10
+
+  def inner():
+    nonlocal x
+    x = 20
+
+  inner()
+  print(x)
+
+outer()
+```
+
+**Output:**
+
+```txt
+20
+```
+
+*The inner function changes the outer function's ```x``` from ```10``` to ```20```*
+
+---
+
+**Syntax:**
+
+```python
+def outer():
+  x = 10
+
+  def inner():
+    nonlocal x
+    x = 20
+
+  inner()
+```
+
+- *```nonlocal``` is used inside a nested function*
+- *The variable must already exist in an enclosing function*
+- *It cannot refer to a global variable*
+- *It modifies the nearest enclosing binding with that name*
+
+---
+
+**How does it work internally?**
+
+```python
+def outer():
+    count = 0
+
+    def inner():
+        nonlocal count
+        count = count + 1
+
+    inner()
+    inner()
+
+    print(count)
+
+outer()
+```
+
+**Step-by-step execution:**
+- *Python calls ```outer()```*
+- *```count``` is created with outer ```0``` in the outer function*
+- *Python defines the nested function ```inner()```*
+- *The first call to ```inner()``` finds ```nonlocal count```*
+- *It updates the enclosing ```count``` from ```0``` to ```1```*
+- *The second call updates it from ```1``` to ```2```*
+- *```outer()``` prints the updated value*
+
+---
+
+**Simple Example**
+
+```python
+def outer():
+  message = "Hello"
+
+  def inner():
+    nonlocal message
+    message = "Welcome"
+
+  inner()
+  print(message)
+
+outer()
+```
+
+**Output:**
+
+```txt
+Welcome
+```
+
+---
+
+```python
+def counter():
+    count = 0
+
+    def increase():
+        nonlocal count
+        count += 1
+        print(count)
+
+    increase()
+    increase()
+    increase()
+
+counter()
+```
+
+**Output:**
+
+```txt
+1
+2
+3
+```
+
+---
+
+```python
+def create_tracker():
+    total_actions = 0
+
+    def track_action():
+        nonlocal total_actions
+        total_actions += 1
+        return total_actions
+
+    return track_action
+
+
+tracker = create_tracker()
+
+print(tracker())
+print(tracker())
+print(tracker())
+```
+
+**Output:**
+
+```txt
+1
+2
+3
+```
+
+---
+
+**What is the difference between ```global``` and ```nonlocal```?**
+
+*```global``` is used to modify a variable at the module level, whereas ```nonlocal``` is used to modify a variable in the nearest enclosing function. Both keywords affect where Python looks for the variable assignment.*
+
+**Example:**
+
+```python
+x = 100
+
+def outer():
+  y = 10
+
+  def inner():
+    global x
+    nonlocal y
+
+    x = 200
+    y = 20
+
+  inner()
+  print(y)
+
+outer()
+print(x)
+```
+
+**Output:**
+
+```txt
+20 
+200
+```
+
+---
+
+
+
+
+
 
 
 
