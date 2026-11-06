@@ -22317,6 +22317,216 @@ UnboundLocalError: cannot access local variable 'x' where it is not associated w
 
 ### **Global**
 
+- *Global scope refers to the area outside all functions, where variables can be accessed throughout the module (Python file).*
+- *A variable created at the global level is called a global variable.*
+
+**Example:**
+
+```python
+company = "Google"
+
+def display():
+  print(company)
+
+display()
+print(company)
+```
+
+**Output:**
+
+```txt
+Google
+Google
+```
+
+*Here ```company``` is a global variable because it is created outside the function.*
+
+---
+
+**Why do we need Global Scope?**
+
+*Imagine an application where multiple functions need to access the same information.*
+
+*For example*
+- *Company name*
+- *Application configuration*
+- *Tax rate*
+- *Website settings*
+
+*Instead of creating the same variable repeatedly inside every function, we can define it at the global level.*
+
+**Example:**
+
+```python
+tax_rate = 18
+
+def calculate_tax(amount):
+  return amount * tax_rate / 100
+
+print(calculate_tax(1000))
+print(calculate_tax(2000))
+```
+
+**Output:**
+
+```txt
+180.0
+360.0
+```
+
+*Both function calls can access the same global variable.*
+
+---
+
+**Syntax:**
+
+*A global variable is created outside functions*
+
+```python
+variable_name = value
+
+def function_name():
+  print(variable_name)
+```
+
+**Example:**
+
+```python
+message = "Welcome"
+
+def greet():
+  print(message)
+
+greet()
+```
+
+**Output:**
+
+```txt
+Welcome
+```
+
+*Reading a global variable inside a function does not require the ```global``` keyword.*
+
+---
+
+**How does it work internally?**
+
+```python
+x = 100
+
+def display():
+  print(x)
+
+display()
+```
+
+**Output:**
+
+```txt
+100
+```
+
+**Step-by-step:**
+- *Python creates the global variable ```x``` and assigns ```100```*
+- *Python defines the function ```display()```*
+- *When ```display()``` is called, Python checks its local scope for ```x```*
+- *It doesn't find ```x``` locally*
+- *Python searches the enclosing scope, if one exists*
+- *It then checks the global scope*
+- *It finds ```x = 100```*
+- *The function prints ```100```*
+
+*This follows the LEGB lookup rule*
+
+---
+
+**Simple Example**
+
+```python
+name = "Saranya"
+
+def show_name():
+  print(name)
+
+show_name()
+```
+
+**Output:**
+
+```txt
+Saranya
+```
+
+*The function accessed the global variable ```name```*
+
+---
+
+**What happens when a local variable has the same name as a global variable**
+
+```python
+x = 100
+
+def display():
+  x = 50
+  print("Inside:", x)
+
+display()
+
+print("Outside:", x)
+```
+
+**Output:**
+
+```txt
+Inside: 50
+Outside: 100
+```
+
+---
+
+**Assigning to a global variable without ```global```**
+
+```python
+x = 100
+
+def update():
+    x = x + 10
+
+update()
+```
+
+**Output:**
+
+```txt
+UnboundLocalError: cannot access local variable 'x' where it is not associated with a value
+```
+
+---
+
+**Can we modify a global variable inside a function?**
+
+```python
+count = 10
+
+def update():
+  global count
+  count += 1
+
+update()
+print(count)
+```
+
+**Output:**
+
+```txt
+11
+```
+
+
+
+
+
 
 
 
