@@ -298,6 +298,8 @@ Hey everybody!!!
     - [**Local**](#local)
     - [**Global**](#global)
     - [**```nonlocal```**](#nonlocal)
+  - [**Advanced**](#advanced)
+    - [**Recursion**](#recursion)
 
 
 ---
@@ -22719,6 +22721,130 @@ print(x)
 ```
 
 ---
+
+## **Advanced**
+
+### **Recursion**
+
+*Recursion is a programming technique in which a function calls itself to solve a problem.*
+
+*OR*
+
+*A function repeatedly calls itself with a smaller or simpler input until it reaches a stopping condition.*
+
+**Example:**
+
+```python
+def countdown(n):
+  if n == 0:
+    return
+
+  print(n)
+  countdown(n - 1)
+
+countdown(5)
+```
+
+**Output:**
+
+```txt
+5
+4
+3
+2
+1
+```
+
+---
+
+**Why do we need Recursion?**
+
+*Some problems can be solved naturally by breaking them into smaller versions of the same problem.*
+
+**Examples:**
+- *Calculating factorial*
+- *Generating Fibonacci numbers*
+- *Traversing folders and directories*
+- *Searching tree data structures*
+- *Solving certain mathematical problems*
+
+*Instead of writing repetitive code for every step, recursion allows a function to solve smaller versions of the same problem.*
+
+---
+
+**Main Components of Recursion**
+
+*Every recursive function generally needs two important components.*
+
+1. **Base Case:** *The condition that stops the function from calling itself*
+2. **Recursive Case:** *The part where the function calls itself with a smaller or simpler input.*
+
+**Example:**
+
+```python
+def countdown(n):
+
+  # Base Case
+  if n == 0:
+    return
+
+  # Recursive Case
+  print(n)
+  countdown(n - 1)
+
+countdown(3)
+```
+
+**Output:**
+
+```txt
+3
+2
+1
+```
+
+---
+
+**Simple Example**
+
+**Let's print a message three times using recursion**
+
+```python
+def repeat_message(n):
+  if n == 0:
+    return
+
+  print("Hello")
+  repeat_message(n - 1)
+
+repeat_message(3)
+```
+
+**Output:**
+
+```txt
+Hello
+Hello
+Hello
+```
+
+*The function calls itself until ```n``` becomes zero*
+
+---
+
+**Factorial problem**
+
+```python
+
+
+
+
+  
+
+  
+
+
+
 
 
 
