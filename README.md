@@ -300,6 +300,7 @@ Hey everybody!!!
     - [**```nonlocal```**](#nonlocal)
   - [**Advanced**](#advanced)
     - [**Recursion**](#recursion)
+    - [**Lambda**](#lambda)
 
 
 ---
@@ -22909,6 +22910,53 @@ def countdown(n):
   
 countdown(5)
 ```
+
+---
+
+### **Lambda**
+
+- *A lambda function is a small anonymous function in Python that is defined using the ```lambda``` keyword.*
+- *Unlike a normal function, a lambda function can contain only one expression.*
+
+**Example:**
+
+```python
+# Normal function
+def square(n):
+  return n * n
+
+print(square(5))
+```
+
+**Output:**
+
+```txt
+25
+```
+
+*The same operation using a lambda function*
+
+```python
+square : lambda n : n * n
+
+print(square(5))
+```
+
+**Output:**
+
+```txt
+25
+```
+
+*Both produce the same result*
+
+*Lambda functions are useful for writing short, simple functions in a single expression.*
+
+---
+
+
+
+
 
   
 
