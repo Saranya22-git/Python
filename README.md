@@ -22835,7 +22835,82 @@ Hello
 **Factorial problem**
 
 ```python
+def factorial(n):
+    if n == 1:
+        return 1
 
+    return n * factorial(n - 1)
+
+print(factorial(5))
+```
+
+**Output:**
+
+```txt
+120
+```
+
+---
+
+**Write a recursive function to print numbers from 1 to 5**
+
+```python
+def numbers(n):
+    if n == 0:
+        return
+
+    print(n)
+    numbers(n - 1)
+
+numbers(5)
+```
+
+**Output:**
+
+```txt
+5
+4
+3
+2
+1
+```
+
+---
+
+**Write a recursive function to calculate the sum of numbers from 1 to n**
+
+```python
+def sum(n):
+  if n == 0:
+    return 0
+
+  return n + sum(n - 1)
+
+sum(5)
+```
+
+**Output:**
+
+```txt
+15
+```
+
+---
+
+**Write a recursive function taht prints numbers from ```n``` down to 1**
+
+```python
+def countdown(n):
+  if n == 1:
+    return 1
+  
+  print(n)
+  return n - 1
+  
+countdown(5)
+```
+
+  
 
 
 
