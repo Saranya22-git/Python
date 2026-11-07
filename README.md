@@ -22954,6 +22954,110 @@ print(square(5))
 
 ---
 
+**Why do we need Lambda Functions?**
+
+*Imagine you need a function for a small operation such as*
+- *Adding two numbers*
+- *Squaring a number*
+- *Checking whether a number is even*
+- *Sorting data based on a particular value*
+
+*Writing a separate function using ```def``` for every small operation can sometimes be unnecessary.*
+
+*Lambda allows us to write these small functions concisely*
+
+**Example:**
+
+```python
+add = lambda a, b : a + b
+
+print(add(9, 9))                  # 18
+```
+
+---
+
+**Syntax:**
+
+*General syntax*
+
+```python
+lambda arguments: expression
+```
+
+- *```lambda``` - Keyword used to create a lambda function*
+- *```arguments``` - Inputs accepted by the function*
+- *```:``` - Separate arguments and expression*
+- *```expression``` - Operation whose result is returned*
+
+**Example:**
+
+```python
+multiply = lambda a, b : a * b
+
+multiply(5, 10)                     # 50
+```
+
+- *Lambda can accept zero or multiple arguments*
+- *It contains one expression*
+- *The expression's result is returned automatically*
+- *You don't write ```return``` explicitly*
+
+---
+
+**Simple Example**
+
+**Add two numbers**
+
+```python
+add = lambda a , b : a + b
+
+print(add(10, 20))                  # 30
+print(add(30, 40))                  # 70
+```
+
+---
+
+**Check whether a number is even or odd**
+
+```python
+number = lambda n : "Even" if n % 2 == 0 else "odd"
+
+print(number(9))              # odd
+```
+
+*This uses Python's conditional expression*
+- *If ```n % 2 == 0``` return ```"Even"```*
+- *Otherwise return ```"Odd"```*
+
+---
+
+**Find the largest of two numbers**
+
+```python
+largest = lambda a, b: a if a > b else b
+
+print(largest(9, 8))                  # 9
+print(largest(10, 100))               # 100
+```
+
+---
+
+**Sorting employees based on salary**
+
+```python
+employees = [("Ravi", 30000), ("Priya", 45000), ("Anu", 25000)]
+
+employees.sort(key = lambda employee: employee[1])
+
+print(employees)              # [('Anu', 25000), ('Ravi', 30000), ('Priya', 45000)]
+```
+
+---
+
+**What is the difference between lambda and normal functions?**
+
+| 
+
 
 
 
