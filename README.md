@@ -303,6 +303,7 @@ Hey everybody!!!
     - [**Lambda**](#lambda)
     - [**```map()```**](#map)
     - [**```filter()```**](#filter)
+    - [**```reduce()```**](#reduce)
 
 
 ---
@@ -23386,6 +23387,36 @@ print(list(result))                 # []
 ```
 
 ---
+
+**Difference between ```map()``` and ```filter()```?**
+
+| ```map()``` | ```filter()``` |
+| ----------- | -------------- |
+| Transforms elements | Selects elements |
+| Applies a function to every item | Checks a condition for every item |
+| Result can have a different value for each input | Keeps original matching elements |
+| Returns a map iterator | Returns a filter iterator |
+
+**Example:**
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+# Transform
+result1 = list(map(lambda n : n * 10, numbers))
+
+# Select
+result2 = list(filter(lambda n : n > 3, numbers))
+
+print(result1)                  # [10, 20, 30, 40, 50]
+print(result2)                  # [4, 5]
+```
+
+---
+
+### **```reduce()```**
+
+
 
 
 
