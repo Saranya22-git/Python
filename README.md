@@ -302,6 +302,7 @@ Hey everybody!!!
     - [**Recursion**](#recursion)
     - [**Lambda**](#lambda)
     - [**```map()```**](#map)
+    - [**```filter()```**](#filter)
 
 
 ---
@@ -23230,6 +23231,163 @@ print(list(result))               # []
 *After the first iteration, the iterator is exhausted.*
 
 ---
+
+### **```filter()```**
+
+- *The ```filter()``` function is a Python built-in function that selects elements from an iterable based on a given condition.*
+- *It applies a function to each element and keeps only the elements for which the function returns ```True```.*
+
+**Example:**
+
+```python
+numbers = [1, 2, 3, 4, 5, 6]
+
+def is_even(n):
+  return n % 2 == 0
+
+result = filter(is_even, numbers)
+
+print(list(result))               # [2, 4, 6]
+```
+
+---
+
+**Why do we need ```filter()```?**
+
+*Imagine you have a list of employee salaries and want to find employees earning more than ₹30, 000.*
+
+**Without ```filter()```:**
+
+```python
+salaries = [20000, 35000, 25000, 45000, 50000]
+
+result = []
+
+for n in salaries:
+  if n > 30000:
+    result.append(n)
+
+print(result)             # [35000, 45000, 50000]
+```
+
+**With ```filter()```:**
+
+```python
+salaries = [20000, 35000, 25000, 45000, 50000]
+
+def max_salary(n):
+  return n > 30000
+
+result = filter(max_salary, salaries)
+
+print(list(result))             # # [35000, 45000, 50000]
+```
+
+*OR*
+
+```python
+salaries = [20000, 35000, 25000, 45000, 50000]
+
+result = filter(lambda salary : salary > 30000, salaries)
+
+print(list(result))             # [35000, 45000, 50000]
+```
+
+**Benefits:**
+- *Selects data based on conditions*
+- *Reduces repetitive filtering code*
+- *Useful for processing collections*
+- *Common in data cleaning and analysis*
+
+---
+
+**Syntax:**
+
+```python
+filter(function, iterable)
+```
+
+| Parameter | Meaning |
+| --------- | ------- |
+| ```function``` | Function that checks a condition |
+| ```iterable``` | Collection of elements to examine |
+
+**Example:**
+
+```python
+numbers = [10, 15, 20, 25, 30]
+
+result = filter(lambda n : n > 20, numbers)
+
+print(list(result))             # [25, 30]
+```
+
+- *```filter()``` returns a filter iterator, not a list. Use ```list()``` to collect its results into a list.*
+- *Also, the function supplied to ```filter()``` should return a truthy or falsy result.*
+
+---
+
+**How does it work internally?**
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+result = filter(lambda n : n > 2, numbers)
+
+print(list(result))             # [3, 4, 5]
+```
+
+**Step-by-step:**
+- *Python creates the list of numbers*
+- *The lambda function defines the condition ```n > 2```*
+- *```filter()``` receives the function and iterable*
+- *It checks each element when the iterator is consumed*
+- *If the condition is True, the element is kept*
+- *If the condition is False, the element is skipped*
+- *```list()``` collects the selected elements*
+
+---
+
+**Simple Example**
+
+**Find even numbers**
+
+```python
+numbers = [10, 15, 20, 25, 30, 35]
+
+result = filter(lambda n : n % 2 == 0, numbers)
+
+print(list(result))               # [10, 20, 30]
+```
+
+---
+
+**Filter names starting with the letter A**
+
+```python
+names = ["Anu", "Ravi", "Arjun", "Priya", "Akhil"]
+
+result = filter(lambda name : name.startswith("A"), names)
+
+print(list(result))         # ['Anu', 'Arjun', 'Akhil']
+```
+
+*```startswith()``` is case-sensitive*
+
+---
+
+**Reusing an exhausted iterator**
+
+```python
+result = filter(lambda n : n > 2, [1, 2, 3, 4])
+
+print(list(result))                 # [3, 4]
+print(list(result))                 # []
+```
+
+---
+
+
 
 
 
