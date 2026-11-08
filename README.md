@@ -23416,6 +23416,166 @@ print(result2)                  # [4, 5]
 
 ### **```reduce()```**
 
+- *The ```reduce()``` function applies a function cumulatively to the items of an iterable and reduces them to a single result.*
+- *Unlike ```map()```, which transforms every element, and ```filter()```, which selects elements, ```reduce()``` combines elements to produce one final value.*
+- *```reduce()``` is available in Python's ```functools``` module so we need to import it.*
+
+**Example:**
+
+```python
+from functools import reduce
+
+numbers = [1, 2, 3, 4]
+
+result = reduce(lambda a, b: a + b, numbers)
+
+print(result)                   # 10
+```
+
+---
+
+**Syntax:**
+
+```python
+from functools import reduce
+
+reduce(function, iterable, initializer)
+```
+
+| Parameter | Meaning |
+| --------- | ------- |
+| ```function``` | Function that combines two values |
+| ```iterable``` | Collection of values |
+| ```initializer``` | Optional starting value |
+
+**Example:**
+
+```python
+from functools import reduce
+
+numbers = [10, 20, 30]
+
+result = reduce(lambda a, b: a + b, numbers, 100)
+
+print(result)             # 160
+```
+
+---
+
+**How does it work internally?**
+
+```python
+from functools import reduce
+
+numbers = [1, 2, 3, 4]
+
+result = reduce(lambda a, b : a + b, numbers)
+
+print(result)                 # 10
+```
+
+- **Step-1:** *Take the first two elements*
+
+  ```txt
+  a = 1
+  b = 2
+
+  a + b = 1 + 2 = 3
+  ```
+
+- **Step-2:** *Use the previous result with the next element*
+
+  ```txt
+  a = 3
+  b = 3
+
+  a + b = 3 + 3 = 6
+  ```
+
+- **Step-3:** *Continue with the next element*
+
+  ```txt
+  a = 6
+  b = 4
+
+  a + b = 6 + 4 = 10
+  ```
+
+- **Step-4:** *No more elements remain. Final result ```10```*
+
+*```reduce()``` processes the iterable cumulatively and returns one final value. Unlike ```map()``` and ```filter()```, it does not return an iterator.*
+
+---
+
+**Simple Example**
+
+**Calculate the sum of numbers**
+
+```python
+from functools import reduce
+
+numbers = [10, 20, 30, 40]
+
+result = reduce(lambda a, b : a + b , numbers)
+
+print(result)             # 100
+```
+
+---
+
+**Find the largest number using ```reduce()```**
+
+```python
+from functools import reduce
+
+numbers = [15, 45, 10, 80, 30]
+
+result = reduce(lambda a, b : a if a > b else b, numbers)
+
+print(result)                 # 80
+```
+
+---
+
+**Using ```reduce()``` on an empty iterable without an initializer**
+
+```python
+from functools import reduce
+
+numbers = []
+
+result = reduce(lambda a, b : a + b, numbers)     # TypeError: reduce() of empty iterable with no initial value
+```
+
+*This raises ```TypeError``` because there is no initial pair of values.*
+
+---
+
+**What is the difference between ```map()```, ```filter()``` and ```reduce()```?**
+
+| Function | Purpose | Return |
+| -------- | ------- | ------ |
+| ```map()``` | Transforms every element | Map iterator |
+| ```filter()``` | Selects matching elements | Filter iterator |
+| ```reduce()``` | Combines elements into one result | Single result |
+
+```python
+from functools import reduce
+
+numbers = [1, 2, 3, 4]
+
+a = list(map(lambda n : n * 2, numbers))
+
+b = list(filter(lambda n : n > 2, numbers))
+
+c = reduce(lambda x, y : x + y, numbers)
+
+print(a)                    # [2, 4, 6, 8]
+print(b)                    # [3, 4]
+print(c)                    # 10
+```
+
+---
 
 
 
