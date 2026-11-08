@@ -304,6 +304,9 @@ Hey everybody!!!
     - [**```map()```**](#map)
     - [**```filter()```**](#filter)
     - [**```reduce()```**](#reduce)
+  - [**Professional Concepts**](#professional-concepts)
+    - [**First-Class Functions**](#first-class-functions)
+    - [\*\*\*\*](#-1)
 
 
 ---
@@ -23577,7 +23580,13 @@ print(c)                    # 10
 
 ---
 
+## **Professional Concepts**
 
+### **First-Class Functions**
+
+
+
+### ****
 
 
 
