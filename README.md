@@ -301,6 +301,7 @@ Hey everybody!!!
   - [**Advanced**](#advanced)
     - [**Recursion**](#recursion)
     - [**Lambda**](#lambda)
+    - [**```map()```**](#map)
 
 
 ---
@@ -23056,7 +23057,23 @@ print(employees)              # [('Anu', 25000), ('Ravi', 30000), ('Priya', 4500
 
 **What is the difference between lambda and normal functions?**
 
-| 
+| Normal Function | Lambda Function |
+| --------------- | --------------- |
+| Defined using ```def``` | Defined using ```lambda``` |
+| Has a function name | Usually anonymous |
+| Can contain multiple statements | Contains one expression |
+| Uses explicit ```return``` when needed | Returns expression automatically |
+| Suitable for complex logic | Suitable for short operations |
+
+*A lambda function is an anonymous function created using the lambda keyword. It can accept multiple arguments but contains only one expression, whose result is returned automatically. It is commonly used with functions like ```map()```, ```filter()```, and sorting operations.*
+
+---
+
+### **```map()```**
+
+
+
+
 
 
 
