@@ -23173,6 +23173,67 @@ print(list(result))             # [2, 4, 6]
 
 ---
 
+**Simple Example**
+
+**Convert a list of strings containing numbers into integers**
+
+```python
+numbers = ["10", "20", "30", "40"]
+
+result = map(int, numbers)
+
+print(result)                   # [10, 20, 30, 40]
+```
+
+---
+
+**Use ```map()``` with a lambda function to add 10 to every problem**
+
+```python
+numbers = [5, 10, 15, 20]
+
+result = map(lambda n : n + 10, numbers)
+
+print(list(result))         # [15, 20, 25, 30]
+```
+
+---
+
+**Using ```map()``` with multiple iterables**
+
+*```map()``` can also pass corresponding items from multiple iterables to a function.*
+
+```python
+a = [10, 20, 30]
+b = [1, 2, 3]
+
+result = map(lambda x, y: x + y, a, b)
+
+print(list(result))           # [11, 22, 33]
+```
+
+*When multiple iterables are supplied, ```map()``` stops when the shortest iterable is exhausted.*
+
+---
+
+**map iterators are consumed**
+
+```python
+numbers = [1, 2, 3]
+
+result = map(lambda n : n * 2, numbers)
+
+print(list(result))               # [2, 4, 6]
+print(list(result))               # []
+```
+
+*After the first iteration, the iterator is exhausted.*
+
+---
+
+
+
+
 
 
 
