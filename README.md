@@ -23071,6 +23071,108 @@ print(employees)              # [('Anu', 25000), ('Ravi', 30000), ('Priya', 4500
 
 ### **```map()```**
 
+*The ```map()``` function is a Python built-in function that applies a given function to every item in an iterable and returns a map iterator containing the results.*
+
+**Example:**
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+def square(n):
+  return n * n
+
+result = map(square, numbers)
+
+print(list(result))               # [1, 4, 9, 16, 25]
+```
+
+---
+
+**Why do we need ```map()```?**
+
+*Suppose you have a list of numbers and want to calculate the square of every number*
+
+**Without ```map()```:**
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+result = []
+
+for n in numbers:
+  result.append(n * n)
+
+print(result)                 # [1, 4, 9, 16, 25]
+```
+
+**Using ```map()```:**
+
+```python 
+numbers = [1, 2, 3, 4, 5]
+
+result = map(lambda n: n * n, numbers)
+
+print(list(result))           # [1, 4, 9, 16, 25]
+```
+
+**Benefits:**
+- *Reduces repetitive code*
+- *Applies the same operation to every item*
+- *Works with different iterble types*
+- *Commonly used in data transformation*
+
+---
+
+**Syntax:**
+
+```python
+map(function, iterable)
+```
+
+| Parameter | Meaning |
+| --------- | ------- |
+| ```function``` | Function to apply to each item |
+| ```iterable``` | Collection of values such as a list or tuple |
+
+**Example:**
+
+```python
+numbers = [10, 20, 30]
+
+result = map(str, numbers)
+
+print(list(result))               # ['10', '20', '30']
+```
+
+*```map()``` returns a map iterator, not a list. Use ```list()``` when you want to display or store all results as a list.*
+
+---
+
+**How does it work internally?**
+
+```python
+numbers = [1, 2, 3]
+
+def double(n):
+  return n * 2
+
+result = map(double, numbers)
+
+print(list(result))             # [2, 4, 6]
+```
+
+**Step-by-step:**
+- *Python creates the list ```[1, 2, 3]```*
+- *Python defines the function ```double()```*
+- *```map()``` receives the function and the list*
+- *It applies ```double()``` to the first item ```1```*
+- *It applies ```double()``` to the second item ```2```*
+- *It applies ```double()``` to the third item ```3```*
+- *The results are produced as the map iterator is consumed*
+- *```list()``` collects those results into a list*
+
+---
+
 
 
 
