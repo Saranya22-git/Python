@@ -23584,7 +23584,13 @@ print(c)                    # 10
 
 ### **First-Class Functions**
 
+*In Python, functions are first-class objects, which means we can treat functions like other objects.*
 
+*We can*
+- *Assign a function to a variable*
+- *Pass a function as an argument to another function*
+- *Return a function from another function*
+- *Store functions in data structures like lists and dictionaries*
 
 ### ****
 
