@@ -307,6 +307,8 @@ Hey everybody!!!
   - [**Professional Concepts**](#professional-concepts)
     - [**First-Class Functions**](#first-class-functions)
     - [**Higher-Order Functions**](#higher-order-functions)
+    - [**Function Annotations**](#function-annotations)
+    - [**Docstrings**](#docstrings-1)
 
 
 ---
@@ -23722,7 +23724,9 @@ def outer():
   return inner
 ```
 
+### **Function Annotations**
 
+### **Docstrings**
 
 
 
