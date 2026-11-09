@@ -23592,6 +23592,107 @@ print(c)                    # 10
 - *Return a function from another function*
 - *Store functions in data structures like lists and dictionaries*
 
+---
+
+**Why do we need First-Class Functions?**
+
+*They help us:*
+- *Reuse functions flexibly*
+- *Pass behaviour as an argument*
+- *Build reusable and dynamic programs*
+- *Create advanced concepts such as decorators and higher-order functions*
+
+---
+
+**Syntax**
+
+*There is no special syntax. We simply use a function names as an object.*
+
+```python
+def greet():
+  print("Hello")
+
+x = greet()
+x()
+```
+
+**Output:**
+
+```txt
+Hello
+```
+
+| Expression | Meaning |
+| ---------- | ------- |
+| ```greet``` | Refers to the function object |
+| ```greet()``` | Calls the function |
+| ```x = greet``` | Assigns the function to ```x``` |
+| ```x()``` | Calls the function through ```x``` |
+
+---
+
+**How does it work internally?**
+
+```python
+def greet():
+  print("Hello!")
+
+x = greet
+```
+
+**Step-by-step:**
+- *Python executes ```def greet()```*
+- *A function object is created in memory*
+- *The name ```greet``` refers to that function object*
+- *```x = greet``` makes ```x``` refer to the same function object*
+- *Both names refer to the same function*
+
+---
+
+**Simple Example**
+
+**Assigning a function to a Variable**
+
+```python
+def greet():
+  print("Hello, Welcome!")
+
+message = greet
+
+message()
+```
+
+**Output:**
+
+```txt
+Hello, Welcome!
+```
+
+---
+
+**Passing a Function as an Argument**
+
+```python
+def square(n):
+  return n * n
+
+def calculate(func, value):
+  return func(value)
+
+result = calculate(square, 5)
+
+print(result)                   # 25
+```
+
+**Step-by-step:**
+- *```square``` is passed as an argument to ```calculate```*
+- *```func``` receives the function object ```square```*
+- *```func(value)``` calls ```square(5)```*
+- *```square(5)``` returns ```25```*
+- *```calculate()``` returns ```25```*
+
+---
+
 ### ****
 
 
