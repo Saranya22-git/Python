@@ -306,7 +306,7 @@ Hey everybody!!!
     - [**```reduce()```**](#reduce)
   - [**Professional Concepts**](#professional-concepts)
     - [**First-Class Functions**](#first-class-functions)
-    - [\*\*\*\*](#-1)
+    - [**Higher-Order Functions**](#higher-order-functions)
 
 
 ---
@@ -23693,7 +23693,38 @@ print(result)                   # 25
 
 ---
 
-### ****
+### **Higher-Order Functions**
+
+*A Higher-Order Function (HOF) is a function that does at least one of these things:*
+- *Accepts another function as an argument*
+- *Returns another function as its result*
+
+*Python supports higher-order functions because functions are first-class objects.*
+
+---
+
+**Syntax**
+
+**Accepting a function as an argument**
+
+```python
+def higher_order_function(func):
+  func()
+```
+
+**Returning a function**
+
+```python
+def outer():
+  def inner():
+    print("Hello")
+  
+  return inner
+```
+
+
+
+
 
 
 
