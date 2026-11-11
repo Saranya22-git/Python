@@ -309,6 +309,7 @@ Hey everybody!!!
     - [**Higher-Order Functions**](#higher-order-functions)
     - [**Function Annotations**](#function-annotations)
     - [**Docstrings**](#docstrings-1)
+- [**Comprehensions**](#comprehensions)
 
 
 ---
@@ -23728,6 +23729,106 @@ def outer():
 
 ### **Docstrings**
 
+---
+
+# **Comprehensions**
+
+*Comprehensions are a concise way of creating new collections from existing iterables using a single expression.*
+
+*Python supports:*
+- *List Comprehension*
+- *Set Comprehension*
+- *Dictionary Comprehension*
+
+---
+
+**Why do we need Comprehension?**
+
+*Suppose we want to create a list of squares from 1 to 5*
+
+**Without Comprehension:**
+
+```python
+squares = []
+
+for i in range(1, 6):
+  squares.append(i * i)
+
+print(squares)                    # [1, 4, 9, 16, 25]
+```
+
+**With Comprehension:**
+
+```python
+squares = [i * i for i in range(1, 6)]
+
+print(squares)                   # [1, 4, 9, 16, 25]
+```
+
+---
+
+**Syntax:**
+
+*General structure*
+
+```python
+[expression for item in iterable if condition]
+```
+
+| Part | Meaning |
+| ---- | ------- |
+| ```expression``` | What to store |
+| ```for item``` | Iterates through elements |
+| ```in iterable``` | Source collection |
+| ```if condition``` | Optional filtering condition |
+
+*The condition is optional*
+
+---
+
+**How does it work internally?**
+
+```python
+numbers = [1, 2, 3, 4]
+
+result = [x * 2 for x in numbers]
+
+print(result)                     # [2, 4, 6, 8]
+```
+
+**Step-by-step:**
+- *Python takes the first element ```1```*
+- *Calculates ```1 * 2 = 2```*
+- *Stores ```2``` in the new list*
+- *Takes the next element ```2```*
+- *Calculates ```2 * 2 = 4```*
+- *Repeats until all elements are processed*
+
+---
+
+**Simple Example**
+
+**Creating a list**
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+result = [x for x in numbers]
+
+print(result)                 # [1, 2, 3, 4, 5]
+```
+
+---
+
+**Filtering Values**
+
+```python
+numbers = [1, 2, 3, 4, 5, 6]
+
+even_numbers = [x for x in numbers if x % 2 == 0]
+
+print(even_numbers)           # [2, 4, 6]
+```
 
 
 
